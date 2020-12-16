@@ -1,0 +1,89 @@
+#############
+# Armor Psi #
+#############
+@armor_5S = 145
+@armor_5M = 365
+@armor_5L = 870
+
+@armor_6S = 185
+@armor_6M = 465
+@armor_6L = 1110
+
+@armor_7S = 245
+@armor_7M = 565
+@armor_7L = 1350
+
+utility_component_template = {
+	key = "SMALL_PSI_ARMOR"
+	size = small
+	icon = "GFX_ship_part_psi_armor"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_7S
+	}
+	
+	prerequisites = { "tech_psionic_armor" }
+	component_set = "PSI_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5
+		}		
+		upkeep = {
+			sr_dark_matter = 0.005
+			energy = 0.5
+			sr_living_metal = 0.005
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_PSI_ARMOR"
+	size = medium
+	icon = "GFX_ship_part_psi_armor"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_7M
+	}
+	
+	prerequisites = { "tech_psionic_armor" }
+	component_set = "PSI_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}		
+		upkeep = {
+			sr_dark_matter = 0.01
+			energy = 1
+			sr_living_metal = 0.01
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_PSI_ARMOR"
+	size = large
+	icon = "GFX_ship_part_psi_armor"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_7L
+	}
+	
+	prerequisites = { "tech_psionic_armor" }
+	component_set = "PSI_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+		}		
+		upkeep = {
+			sr_dark_matter = 0.015
+			energy = 1.5
+			sr_living_metal = 0.015
+		}
+	}
+}

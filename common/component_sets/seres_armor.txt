@@ -1,0 +1,15 @@
+# Component
+
+component_set = {
+	key = "SMALL_CRYSTAL_ARMOR_1a"
+	
+	icon = "GFX_ship_part_crystal_armor_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SMALL_CRYSTAL_ARMOR_2a"
+	
+	icon = "GFX_ship_part_crystal_armor_2"
+	icon_frame = 1
+}

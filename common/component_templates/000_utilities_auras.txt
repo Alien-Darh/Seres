@@ -1,0 +1,74 @@
+@power4 = -100
+@shipAuraRangeCrisis = 150
+
+# #################
+#   Crisis Aura   #
+# #################
+
+#Offensive
+utility_component_template = {
+	key = "SHIP_AURA_SHIELD_CRISIS"
+	size = medium
+	icon = "GFX_ship_part_aura_shield_crisis"
+	icon_frame = 1
+	power = @power4
+	prerequisites = { "tech_aura_shield_crisis" }
+	
+	size_restriction = { "titan" }
+	component_set = "ship_aura_components"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 250
+		}
+
+		upkeep = {
+			alloys = 25
+			sr_living_metal = 1
+		}
+	}
+
+	hostile_aura = {
+		name = "aura_shield_crisis"
+		radius = @shipAuraRangeCrisis
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_shield_dampener
+			priority = 1
+		}
+		
+		modifier = {
+			damage_vs_country_type_swarm_mult = 0.2
+			damage_vs_country_type_extradimensional_mult = 0.2
+			damage_vs_country_type_extradimensional_2_mult = 0.2
+			damage_vs_country_type_extradimensional_3_mult = 0.2
+			damage_vs_country_type_ai_empire_mult = 0.2
+			damage_vs_country_type_gray_goo_mult = 0.2
+			damage_vs_country_type_fallen_empire_mult = 0.2
+			damage_vs_country_type_awakened_fallen_empire_mult = 0.2
+			damage_vs_country_type_gate_builders_mult = 0.2
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_energy
+		}
+	}
+}

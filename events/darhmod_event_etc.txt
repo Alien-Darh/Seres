@@ -1,0 +1,71 @@
+namespace = darhetc
+
+event = {
+	id = darhetc.0
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = { is_ai = no }
+			country_event = { id = darhetc.1 days = 3600 } #10años
+		}
+	}
+}
+country_event = {
+	id = darhetc.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			33 = { set_global_flag = darhmod_precursor_set_seres }
+			#33 = { set_global_flag = darhmod_precursor_set_seres_1 }
+			#33 = { set_global_flag = darhmod_precursor_set_seres_2 }				
+			1 = {
+				set_global_flag = darhmod_precursor_set_seres
+				#set_global_flag = darhmod_precursor_set_seres_1
+				#set_global_flag = darhmod_precursor_set_seres_2
+			}				
+		}
+	}
+}
+
+ship_event = {
+	id = darhetc.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#mid_game_years_passed > -60	
+		has_global_flag = darhmod_precursor_set_seres
+		owner = { is_ai = no }	
+		from = {
+			solar_system = {
+				exists = star
+				NOR = {
+					has_star_flag = empire_cluster
+					is_fe_cluster = yes
+				}
+				any_system_planet = {
+					NOT = { exists = archaeological_site }
+				}
+			}
+			has_anomaly = no
+			OR = {
+				is_colonizable = yes
+				is_planet_class = pc_barren
+				is_planet_class = pc_barren_cold
+			}
+			NOR = {
+				exists = archaeological_site
+				has_planet_flag = precursor_world
+				has_global_flag = darhmod_precursor_seres_start
+			}
+		}
+	}
+	
+	immediate = {
+		from = { create_archaeological_site = DARH_seres_site_1 }
+	}
+}

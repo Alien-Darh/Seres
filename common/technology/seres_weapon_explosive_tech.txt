@@ -1,0 +1,239 @@
+# ##################
+# Swarming Missiles
+# ##################
+
+tech_swarmer_missiles_1 = {
+	area = physics
+	cost = @tier2cost2
+	tier = 2
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_missiles_2" }
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+#Whirlwind Missiles
+tech_swarmer_missiles_2 = {
+	area = physics
+	cost = @tier3cost2
+	tier = 3
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_swarmer_missiles_1" }
+	weight = @tier3weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+tech_sbs_swarmer_missiles_3 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_swarmer_missiles_2" }
+	weight = @tier4weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+tech_sbs_swarmer_missiles_4 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_sbs_swarmer_missiles_3" }
+	weight = @tier4weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+tech_sbs_swarmer_missiles_5 = {
+	area = physics
+	cost = @tier4cost3
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_sbs_swarmer_missiles_4" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}

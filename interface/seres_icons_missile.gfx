@@ -1,0 +1,15 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_sbs_ship_part_swarmer_missile_3"
+		texturefile = "gfx/interface/icons/ship_parts/sbs_ship_part_swarmer_missile_3.dds"
+	}
+	spriteType = {
+		name = "GFX_sbs_ship_part_swarmer_missile_4"
+		texturefile = "gfx/interface/icons/ship_parts/sbs_ship_part_swarmer_missile_4.dds"
+	}
+	spriteType = {
+		name = "GFX_sbs_ship_part_swarmer_missile_5"
+		texturefile = "gfx/interface/icons/ship_parts/sbs_ship_part_swarmer_missile_5.dds"
+	}
+}

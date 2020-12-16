@@ -1,0 +1,23 @@
+
+#Swarming Missiles
+
+component_set = {
+	key = "SBS_SWARMER_MISSILE_3"
+	
+	icon = "GFX_sbs_ship_part_swarmer_missile_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SBS_SWARMER_MISSILE_4"
+	
+	icon = "GFX_sbs_ship_part_swarmer_missile_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SBS_SWARMER_MISSILE_5"
+	
+	icon = "GFX_sbs_ship_part_swarmer_missile_5"
+	icon_frame = 1	
+}

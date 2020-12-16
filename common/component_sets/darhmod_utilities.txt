@@ -1,0 +1,8 @@
+
+
+component_set = {
+	key = "DARHMOD_SERES_HOLOGRAM"
+	
+	icon = "GFX_ship_part_darhmod_seres_hologram"
+	icon_frame = 1	
+}

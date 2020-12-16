@@ -1,0 +1,136 @@
+﻿l_spanish:
+
+ ### ETC ###
+ decision_darhmod_digsite_selection:0 "Open Digsite Selector Mk II"
+ decision_darhmod_digsite_selection_desc:0 "Click to open."
+ darh_archology_fast:0 "Fast Dig"
+ darhmod_test.1.name:0 "Digsite Selector Mk II"
+ darhmod_test.1.desc:0 "It's me, Your Digsite Selector!"
+ darhmod_test.1.c:0 "Precursor - the seres Empire"
+ darhmod_test.1.d:0 "Exit."
+ darhmod_relic_activation_cooldown:0 "Special $relic_activation_cooldown$"
+ darhmod_special_relic_cooldown_info:0 "Special Relic can be activated independently with normal relics."
+ darhmod_requires_relic_no_cooldown:0 "$TRIGGER_FAIL$§RCannot activate another relic while §Y$darhmod_relic_activation_cooldown$§! is active.§!"
+
+
+ ### [Precursor] Seres de Luz ###
+
+ DARH_seres_site_1:0 "Señales desconocidas"
+ DARH_seres_site_1_desc:0 "Unas extrañas lecturas, débiles y constantes que son captadas por nuestro satélite experimental en el sistema §H[Root.Solar_System.GetName]§!, sugieren una mejor investigación y se adapta una nave especial de sondeo no tripulada.\n\nAL llegar a la zona los scanneres experimentales de la nave en orbita confirma una posible señal en el subsuelo de §H[From.Planet.GetName]§! y localiza una posible entrada en la superficie hacia el interior, sin embargo se discute el riesgo de esta expedición ya que algunos piensan que la señal puede ser algún tipo de advertencia.\n\nUna expedición fue §Yautorizada§! y un equipo de nuestros mejores científicos se prepara para el primer asentamiento arqueológico de envergadura de nuestra historia en una superficie extraterrestre."
+
+ darhmod_seres.1.name:0 "Acceso a las instalaciones"
+ darhmod_seres.1.desc:0 "La entrada a las instalaciones es fantástica y surgen algunas dudas al respecto... estaremos preparados para lo que encontremos en §H[From.Planet.GetName]§!?.\n\nLa primera hipotiposis de nuestro científico §Y[Leader.GetName]§! al traducir algunos símbolos, es que esto fue un asentamiento arqueológico escavado hace miles de años y lo que hallan descubierto acá tal vez ya no exista.\n\nLas inscripciones de la entrada ya fueron resueltas y al accionar algunos símbolos se energizó la instalación dejando libre acceso al interior... nuestro equipo de exploración se dispone a bajar al segundo nivel de las instalaciones.\n\nUsaremos esta tecnología de §Genergía§! que nuestro equipo de ingenieros ha encontrado, para potenciar los reactores de nuestras naves es sus secciones auxiliares."
+ darhmod_seres.1.a:0 "Investigar el segundo nivel"
+
+ darhmod_seres_chain_title:0 "Seres de luz"
+ darhmod_seres_chain_desc:0 "Hemos recuperado artefactos de un antiguo imperio que controlaba esta parte de la galaxia hace unos 100.000 años en §H[From.Planet.GetName]§!.\n\nSus orígenes y su naturaleza exacta aun son un misterio pero la traducción de escritura nos revela grandes avances en tecnología de exploración y más, sin embargo hay enlaces de otros asentamientos como este en alguna parte de este sistema.\n\nSi podemos encontrar suficiente información de sus asentamientos, podría ser posible determinar la ubicación de su sistema de origen."
+ darhmod_seres_colonies:0 "Asentamiento descubierto"
+
+ darhmod_seres.2.name:0 "Investigación en peligro"
+ darhmod_seres.2.desc:0 "§Y[Root.GetLeaderName]§! y su equipo han bajado a un extraño sector de las instalaciones... al llegar allí se activaron luces de entrada automatizadas que llevan a otra sección interior donde se origina la §Hseñal§!.\n\nDel centro de control de misión en la superficie, sugieren proceder con cautela ya que la puerta de entrada esta codificada de manera diferente a las otras que se han encontrado antes.\n\nSerá necesario hackear la seguridad de la entrada y esperar que no se active ningún sistema de defensa que nos impida averiguar de que se trata todo esto. Además, esperar que en, §H[From.Planet.GetName]§! no ocurran mas temblores que podrían estropear la expedición o dejarnos aquí para siempre.\n\nMientras tanto los ingenieros lograron llegar al reactor principal unos niveles mas abajo y nos advierten que está en muy mal estado, sin embargo nos aseguran que su tecnología puede ser usada para la §Gpropulsión§! de nuestras naves."
+ darhmod_seres.2.a:0 "Hackear la entrada."
+ darhmod_seres.3.name:0 "Seres de luz"
+ darhmod_seres.3.desc:0 "Nuestro científico §Y[Root.GetLeaderName]§! pudo acceder al centro de mando y encontró tecnología avanzada en exploración llamada: §HPrometheus 3D Scanner§!, que por alguna extraña razón se habrían activado y era el origen de la señal. Al desconectar estos §HPups de exploración§!, aparecieron en la consola de control, coordenadas de otros asentamientos enlazados a §H[From.Planet.GetName]§!.\n\nDe los fragmentos de datos extraídos de esta especie desconocida, que nuestro científico §Y[Root.GetLeaderName]§! los llamo §YSeres de luz§! por sus luminosos símbolos... buscaban en este lugar una especie de reliquia llamada §HUltra Crisis§!.\n\nDe pronto un gran temblor sacudió a §H[From.Planet.GetName]§! y al parecer el reactor de la instalación comenzó a colapsar, ocurriendo una gran explosión que impidió seguir con la investigación. Afortunadamente salvamos la información de las coordenadas y no hubo heridos de gravedad.\n\nMientras tanto usaremos estos §GPups de exploración§!, que pueden ser instaladas fácilmente en cualquiera de nuestras naves científicas en sus secciones auxiliares."
+ darhmod_seres.3.a:0 "Interesante"
+
+ darhmod_seres_colony_2_coordinates_poi:0 "1.- Coordenada Seres de luz"
+ darhmod_seres_colony_2_coordinates_desc:0 "Pudimos asegurar esta coordenada con un enlace de la sección central descubierta"
+
+ DARH_seres_site_2:0 "Seres de luz"
+ DARH_seres_site_2_desc:0 "La primeras sondas han llegado a las coordenadas ubicadas en §H[From.Planet.GetName]§! y los scanners indican que se trataría de una instalación bajo la superficie, de características industriales y ensamblaje de componentes.\n\nLa entrada a las instalaciones es incierta y solo un equipo de exploración terrestre en §H[From.Planet.GetName]§! podría averiguar como acceder a su interior.\n\nLa instalación aun dispone de algún tipo de energía muy leve y no se detecta vida orgánica aunque si se detecta algún tipo de movimiento mecánico que se puede ver a través de los scanners.\n\nUn primer equipo de exploradores se dirige a las coordenadas para un estudio arqueológico más de cerca."
+ 
+ darhmod_seres.4.name:0 "Como en casa"
+ darhmod_seres.4.desc:0 "Después de un tiempo de exploración en la superficie de §H[From.Planet.GetName]§!, el científico §Y[Root.GetLeaderName]§! se encontró con una especie de entrada la cual no tenia ninguna forma de cerradura y era prácticamente imposible de abrir, sin embargo al llegar los §HPups de exploración§! al lugar, las enormes puertas se abrieron automáticamente como si nos estuvieran esperando.\n\nLos §HPups§! inmediatamente entraron a escanear el lugar y sabían perfectamente donde ir para cargar su energía en el interior de la instalación que es parte de su programación.\n\nLa expedición al interior se ha retrasado por los sistemas de defensa y habrá que estar muy atentos para no activar ningún tipo de sensor que pueda poner en riesgo la excavación.\n\nLos avances en esta tecnología de §Gcombate y defensa§! beneficiaran a toda nuestra flota de naves en sus secciones auxiliares."
+ darhmod_seres.4.a:0 "Búsqueda de registros"
+ darhmod_seres.5.name:0 "Acercamiento"
+ darhmod_seres.5.desc:0 "Al acceder al interior de §H[From.Planet.GetName]§! después de algunos percances, todo el equipo de exploración quedó asombrado al ver la cantidad de pequeños enjambres de nanobots activos. Parece que de alguna manera fueron reactivados pero sin ordenes especificas, así que lo único que hacen es deambular de un lado a otro esperando instrucciones.\n\nSe encontró también al interior de §H[From.Planet.GetName]§! mucha información de la reliquia que estos §YSeres luz§! buscaban, que según los fragmentos incompletos, señalan una misteriosa §HAura de Luz§! que los segaba... También se encontró la ruta de las posibles coordenadas de su sistema natal...\n\nMientras tanto utilizaremos esta nueva tecnología de §Gnanobots§! encontrada para mejorar nuestras naves en sus secciones auxiliares."
+ darhmod_seres.5.a:0 "Investigar las coordenadas"
+
+ darhmod_seres_colony_3_coordinates_poi:0 "2.- Coordenada Mundo Seres de luz"
+ darhmod_seres_colony_3_coordinates_desc:0 "Hemos encontrado las coordenadas del sistema donde probablemente vienen estos seres ancestrales de impresionante tecnología."
+
+ DARH_seres_site_3:0 "Desastre"
+ DARH_seres_site_3_desc:0 "Lo que fue una gran civilización al parecer ya no existe... las coordenadas en el sistema §H[[Root.Solar_System.GetName]§!, nos llevaron a §H[From.Planet.GetName]§! que esta absolutamente destrozado, carente de vida y sin rastro alguno de actividad mecánica según nuestros sensores de largo alcance.\n\nLos scanner indican que la devastación no fue natural ya que hay signos de grandes cantidades de radiación artificial, y su reliquia, tal vez su última esperanza, al parecer no fue encontrada o no tuvo éxito contra esta amenaza galáctica...\n\n"§HDadas las condiciones en que se encuentra el planeta, llevará un tiempo a la expedición arqueológica descifrar sus enigmas§!".\n\nLas primeras expediciones a §H[From.Planet.GetName]§! no revelaron nada interesante pero nuestros científicos aseguran que hay algo allá abajo, escondido en alguna parte, así que habrá que investigar más de cerca."
+
+ darhmod_seres.6.name:0 "Mundo oculto Seres"
+ darhmod_seres.6.desc:0 "Lo que queda del planeta §H[From.Planet.GetName]§!, en parte no estaba del todo desolado. El líder de nuestro equipo §Y[Root.GetLeaderName]§! descubrió al explorar la superficie con su nave a baja altitud y realizando detalladas pruebas de sensores... una leve señal extraña, pero esta vez de codificación cerrada e irregular.\n\nSin embargo §Y[Root.GetLeaderName]§! cree que esta débil lectura que solo puede que ser captada por nuestros sensores, es una pista clara que habrá que investigar más de cerca con un equipo terrestre.\n\nSin embargo, el equipo anterior de exploración nos advirtió que §H[From.Planet.GetName]§! es muy inestable y hay muchos sistemas de defensa inoperantes, pero otros muy activos de un material desconocido."
+ darhmod_seres.6.a:0 "Todo se esta aclarando"
+ darhmod_seres.7.name:0 "Misteriosa tecnología"
+ darhmod_seres.7.desc:0 "Al final del laberinto de cuevas en §H[From.Planet.GetName]§! encontramos un enorme fabrica de aleaciones y mucha información de materiales §YExtra-Duros§! y otros materiales de §YExperimentación-Regenerativa§!.\n\nAl parecer este planeta fue devastado tácticamente ya que estas fabricas suministraban componentes para naves y estaciones de defensa.\n\nTodo indica que algunos sobrevivieron después del holocausto pero por alguna razón desaparecieron o fallecieron con el paso del tiempo... buscaremos más pistas en las redes de túneles para encontrar información que nos pueda ayudar a esclarecer lo que paso acá.\n\n§YNuestro líder científico nos advierte que hay algo en este lugar que nos esta vigilando y que de alguna manera hicimos contacto§!.\n\nAnalizaremos estos complejos algoritmos de materiales §Gdinámicos§! para incorporarlos en nuestras naves de combate."
+ darhmod_seres.7.a:0 "Apagar los sistemas"
+
+ mod_darhmod_precursor_seres_hidden_world:0 "Mundo oculto Seres"
+ mod_darhmod_precursor_seres_hidden_world_desc:0 "Lo que queda de este planeta no está totalmente destruido. Simplemente lo parece."
+
+ darhmod_seres.8.name:0 "Amenaza fantasma"
+ darhmod_seres.8.desc:0 "En los registros se encontraron vestigios de lo que fue la destrucción de §H[From.Planet.GetName]§!... el ataque fue hecho por una raza denominada §RCrisis Paradox§!, que según las escrituras fue diezmada pero no aniquilada totalmente.\n\nEn una sección aparte, escondido en unas ruinas subterráneas, se descubrió avanzadas tecnologías de experimentación genética y es muy probable que las especies encontradas en otros mundos cercanos provengan de acá.\n\nNuestro científico §Y[Root.GetLeaderName]§!, especula que la reliquia arqueológica, según los símbolos... ocasionó algo más, que los llevo a un plano diferente del que conocemos.\n\nNo se sabe si quedaron sobrevivientes o si ellos perecieron con el tiempo en este o en algún otro lugar... los últimos archivos encontrados solo señalan una eventual retirada enemiga, una ascensión y una advertencia que dice: §REllos volverán§!.\n\nTodos en la tripulación de alguna manera están experimentando visiones y sueños enigmáticos del lugar, recuerdos y mensajes no muy claros. Nuestro científico §Y[Root.GetLeaderName]§! cree que estos §YSeres de luz§! están en otro plano dimensional tratando de hacer contacto y no somos capaces de entender o simplemente no estamos listos aún."
+ darhmod_seres.8.a:0 "Extraños acontecimientos."
+ darhmod_seres.9.name:0 "Territorio desconocido"
+ darhmod_seres.9.desc:0 "Un examen más detallado por nuestro científico §Y[Root.GetLeaderName]§! y algunos más destacados psíquicos en esta área, lograron establecer que de algún modo los sueños e imágenes de la la tripulación en §H[From.Planet.GetName]§!, corresponden a unas misteriosas coordenadas que según nuestras cartas de navegación ya ha sido explorado y no hay nada de interés allí.\n\nSin embargo esto va más allá de la comprensión hasta ahora y no cave duda alguna en los miembros del proyecto que es algo que de debe investigar aunque parezca incierto o absurdo.\n\nEl almirante a cargo en §H[From.Planet.GetName]§! siguiere estar preparado para cualquier cosa imprevista ya que si bien hay mucho misticismo detrás de esto, lo cierto es que hay una amenaza latente que no sabemos si aun existe en el universo conocido.\n\nAnalizaremos los ingeniosos sistemas de §Gescudos§! que encontramos en los túneles para incorporarlos en nuestras naves de combate."
+ darhmod_seres.9.a:0 "Estado de alerta..."
+
+ darhmod_seres_colony_4_coordinates_poi:0 "3.- Coordenadas subliminales Seres de luz"
+ darhmod_seres_colony_4_coordinates_desc:0 "Hemos llegado con éxito a las coordenadas descritas por nuestros científicos"
+
+ DARH_seres_site_4:0 "Coordenadas subliminales"
+ DARH_seres_site_4_desc:0 "La sorpresa es desalentadora ya que las coordenadas descritas no parecen tener ningún tipo de interés en §H[Root.Solar_System.GetName]§!.\n\nHabrá que seguir investigando la zona en busca de alguna señal o replantear la interpretación de las visiones en los sueños.\n\nNuestro líder §Y[Root.GetLeaderName]§! insiste en que hay que esperar que algo ocurra, no puede ser tan obvio llegar y encontrar algo que cualquiera pudiera ver.\n\nVarios equipos de exploración indagan en las inmediaciones de las coordenadas en busca de alguna pista que los lleve a descubrir algún precedente importante."
+
+ darhmod_seres.10.name:0 "Señales sospechosas"
+ darhmod_seres.10.desc:0 "Nuestro equipo localizó con sensores gravitacionales de ultima generación en §H[From.Planet.GetName]§!, un lugar donde se encuentran unas estructuras únicas en el subsuelo profundo.\n\nUn primer equipo de exploración descubrió en la entrada al recinto información táctica de asalto planetario y fuerzas cuerpo a cuerpo, también se encontraron muchos componentes cibernéticos, seguramente de servicio.\n\nSe ha solicitado autorización para un segundo equipo de expedición para explorar el núcleo del complejo a 25km bajo tierra.\n\nAnalizaremos estas §Galeaciones de cristal§! que encontramos en los depósitos para incorporarlos en nuestras naves de combate."
+ darhmod_seres.10.a:0 "Solicitud autorizada."
+ darhmod_seres.11.name:0 "Base abandonada"
+ darhmod_seres.11.desc:0 "Nuestros científicos pudieron llegar después de algunos días de excavación al núcleo central del complejo, scanneadas por la nave de reconocimiento en orbita en §H[From.Planet.GetName]§!\n\nDesde acá se coordinó la contraofensiva contra el imperio hostil. Hay mucha información estratégica de como enfrentarlos y cuales son sus puntos débiles.\n\nLo más intrigante según nuestro científico §Y[Root.GetLeaderName]§!, es la §YPuerta de Enlace§! encontrada unos niveles más abajo, aunque el portal está inservible por el paso del tiempo, se pudo descifrar la información que contiene y averiguamos que las coordenadas señaladas, no coinciden con nuestras cartas de navegación.\n\nAnalizaremos estas aleaciones de cristal que componían la puerta de enlace para incorporarlos en nuestros mega proyectos y naves de combate."
+ darhmod_seres.11.a:0 "Estamos cerca"
+
+ darhmod_seres_colony_5_coordinates_poi:0 "4. Coordenadas sistema Seres de luz"
+ darhmod_seres_colony_5_coordinates_desc:0 "Finalmente hemos descubierto la ubicación del sistema de origen de los Seres de luz."
+
+ darhmod_seres.12.name:0 "Nibiru"
+ darhmod_seres.12.desc:0 "Encontramos el sistema §HNubbia§!, en ella hay un mundo anillo destruido y un hábitat totalmente operativo para colonizar, ademas hay un planeta llamado §YNibiru§!, seguramente lo que fue alguna vez la capital de estos §YSeres de Luz Ancestrales§!."
+ darhmod_seres.12.a:0 "Excelente..."
+ 
+ DARH_seres_site_5:0 "Mundo Seres de Luz"
+ DARH_seres_site_5_desc:0 "El mundo natal permanece en gran parte desolado, su civilización alcanzo un nivel tecnológico muy avanzado por lo que habrá que investigar con cuidado para no estropear ningún descubrimiento ya que no se sabe con exactitud a primera vista que es real y que es ficticio.\n\nMiles de organismos inofensivos carente de pensamientos, seguramente de alguna nanotecniologia, deambulan libremente con algún tipo de programación compleja... su alimentación de energía es de tipo micro-celular captada por el magnetismo del hoyo negro del sistema.\n\nPor las noches las estructuras y calles por así decirlo son iluminadas con algún tipo de sensor al calor y van alumbrando el camino según exploramos el lugar.\n\nHay una cantidad importante de laboratorios con mucha información de experimentación tecnológica, que sin duda servirán enormemente en nuestras investigaciones, sin embargo, al parecer todo este avance tegnologico no sirvio de nada para contrarestar lo que finalmente los aniquilo, al menos eso es lo que parece."
+
+ darhmod_seres.13.name:0 "Nuevos descubrimientos"
+ darhmod_seres.13.desc:0 "Un equipo especializado en investigación inversa a recopilado numerosa información de los laboratorios en §H[From.Planet.GetName]§!, Al bajar unos niveles en las instalaciones centrales, nos encontramos con un laboratorio militar... hubo que emplear mucho tiempo en desactivar los programas disuasivos, pero al fin se logro acceder.\n\nPara nuestro asombro, la información en los paneles describe un cambio de desarrollo armamentístico. Si bien los componentes sugieren una avanzada tecnología en armas tipo §GLáser§!, pareciera que no fueron efectivas contra las defensas enemigas y la planimetría encontrada en desarrollo es de tipo: §GMisil, enjambres de ellos§!.\n\nNuestros ingenieros sugieren que nuestros 'físicos en teoría cuántica' ayuden en el proyecto para su desarrollo de §R5 niveles§! de proyectiles de ataque masivo."
+ darhmod_seres.14.name:0 "Alguien nos observa"
+ darhmod_seres.14.desc:0 "En una sección apartada de las instalaciones del laboratorio militar se descubrió información detallada de armamento energético en tecnología §Gláser§!: Unos enormes rayos de emisión montados en naves tipo acorazado para sus secciones L.\n\nHabrá que estudiar con mayor detenimiento de que se tratan estos §Gemisores de arcos§!, ya que su decodificación es de un lenguaje que supera todo entendimiento... hasta ahora.\n\nUn equipo de investigación al otro lado de la cuidad ha dado una a alerta al encontrar un templo que se a energizado por completo y envuelto con una misteriosa aura... todos los equipos de exploradores acuden a la alerta."
+ darhmod_seres.14.a:0 "Que así sea..."
+ darhmod_seres.15.name:0 "Ascensión"
+ darhmod_seres.15.desc:0 "Al llegar al templo de §H[From.Planet.GetName]§! se pudo observar la misteriosa aura, un equipo de asalto es enviado al lugar para resguardar la zona mientras tanto los investigadores se disponen a entrar con extrema cautela.\n\nEl interior parece una gran biblioteca de cristal y en el centro una inmensa §Broca azul§! iluminada naturalmente por la abertura en el techo.\n\nEn los módulos de cristal hay información reveladora de esta civilización:\n\n1.- Los archivos incompletos del primer módulo indican que la reliquia que buscaban en realidad, la reliquia los encontró a ellos y había estado oculta en la galaxia por milenios, hasta que hubiese algún peligro inminente.\n\n2.- Mientras se investigaba el segundo modulo, la curiosidad de nuestro científico §Y[Root.GetLeaderName]§! lo llevo a tocar unos símbolos en la roca central y de pronto aparecieron unas imagen tipo holográficas de unos §GSeres de Luz§! que nos invitaron a escuchar con mucha atencion:\n\n§H"Los hemos estado esperando desde que fueron creados... ustedes son nuestra última esperanza, fueron creados en nuestros laboratorios solo con un solo propósito, ser 'impredecibles' y así poder combatir una amenaza tan grande en galaxia que nosotros no pudimos derrotar. Nosotros ascendimos a un nivel mas allá de lo evidente y muy diferente al terrenal... esperamos que ustedes algún día también, cuando estén listos.\n\nLa vida es un estado en la materia muy peculiar y a la vez peligrosa, pero interesante para vivirla... dispongan de toda la tecnología encontrada hasta ahora para derrotar esta amenaza que aun no ha sido derrotada del todo y están a unos años de arribar a esta galaxia nuevamente... si son derrotados se habrá acabado todo§!.\n\nDe pronto la piedra central comenzó a levitar y dejo al descubierto justo debajo, una puerta que unos de los §Yseres de luz§! nos conduce a entrar...\n\nLa historia no ha dejado indiferente a nadie y el efecto en la población a sido favorable y a unido de mejor forma todas las ideologías.\n\nEn los módulos aparecieron dos luces resaltadas: habrá que tomar una decisión de cual tomar."
+ darhmod_seres.15.a:0 "Juggernaut"
+ darhmod_seres.15.b:0 "Titán"
+ darhmod_seres.16.name:0 "Ultra Crisis"
+ darhmod_seres.16.desc:0 "Nuestro equipo finalmente llego a un recinto en donde los §Yseres de luz§! estaban esperando para que tomáramos la reliquia §GUltra Crisis§!... Esta reliquia es particulamente espacial para combatir crisis de fin de siglo, sin embargo hay que saber activarla en el momento preciso ya que es muy poderosa pero su efecto se disuelve muy rápido y cuesta un tiempo recargar.\n\n"Si embargo, nuestros científicos creen que se podrá sacar mas tecnología §GUltra§! del templo ya que se ha descubierto en los módulos de cristal información detallada de la reliquia encontrada." 
+ darhmod_seres.16.a:0 "Tomarla."
+ darhmod_seres.16.a.tooltip:0 "§HDesbloquea la acción de artefactos menores:§! $artifact_darhmod_precursor_seres_research$\n"
+ darhmod_seres.16.b:0 "Tal vez sea demasiado peligroso... no la usaremos."
+ 
+ r_darhmod_seres_last_projector:0 "Ultra Crisis"
+ r_darhmod_seres_last_projector_desc:0 "Este dispositivo consta de una poderosa fuerza que ayudara con los invasores de fin de siglo, habrá que saber usarla con sabiduría en su momento justo para mostrar superioridad galáctica."
+ mod_darhmod_precursor_seres_history_never_repeats:0 "Esta historia jamás se repetirá"
+
+ relic_darhmod_seres_last_projector_effect_passive:0 "$MOD_SHIP_ACCURACY_ADD$: §G+5%§!\n$MOD_SHIP_TRACKING_ADD$: §G+5%§!\n$MOD_SHIP_EVASION_MULT$: §G+5%§!"
+ relic_darhmod_seres_last_projector_effect:0 "§HDesbloquea:§! Ultra Crisis"
+ mod_r_darhmod_seres_last_projector:0 "Ultra Crisis Paradox"
+ mod_r_darhmod_seres_last_projector_tooltip:0 "§HDesbloquea:§!
+
+ artifact_darhmod_precursor_seres_research:0 "Secretos de los Seres de Luz."
+ artifact_darhmod_precursor_seres_research_desc:0 "Profundizar los Secretos de los Seres de Luz"
+ DARHMOD_PRECURSOR_SERES_SECRETS:0 "Investigar secretos de los Seres de Luz."
+ DARHMOD_PRECURSOR_SERES_SECRETS_DESC:0 "Examinar el templo en busca de mas tecnología."
+
+ darhmod_seres.17.name:0 "Armadura Ultra Defensa"
+ darhmod_seres.17.desc:0 "Parece que se había descubierto de alguna manera la forma de materializar energía de la reliquia en armadura, pero nunca pudieron ponerla en práctica. Nuestras flotas podrían usar esto cuando este terminado."
+ darhmod_seres.17.a:0 "Úselo para nuestras flotas."
+ 
+ mod_darhmod_precursor_seres_secrets:0 "Secretos de los seres de luz"
+ mod_darhmod_precursor_seres_secrets_2:0 "Mas secretos"
+ 
+ DARHMOD_SERES_HOLOGRAM:0 "Armadura Ultra Defensa"
+ DARHMOD_SERES_HOLOGRAM_DESC:0 "Esta armadura se ha modificado para adaptarse a nuestro barco. aunque se necesitara muchos recursos para mantenerla... aumenta eneormemente la posibilidad de supervivencia de nuestra nave."
+ tech_psionic_armor:0 "$DARHMOD_SERES_HOLOGRAM$"
+ tech_psionic_armor_desc:0 "$DARHMOD_SERES_HOLOGRAM_DESC$"
+ 
+

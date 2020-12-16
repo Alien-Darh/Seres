@@ -1,0 +1,92 @@
+
+tech_aura_shield_crisis = {
+	area = physics
+	cost = @tier5cost2
+	tier = 5
+	category = { particles }	
+	weight = @tier5weight2
+	is_rare = yes
+	is_dangerous = yes
+	prerequisites = { "tech_psionic_armor" "tech_mine_living_metal" }
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_AURA_CRISIS_TITLE"
+			desc = "TECH_UNLOCK_AURA_CRISIS_DESC"
+		}
+	}
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 2
+			has_technology = tech_titans
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 3 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+
+tech_computer_titan = {
+	area = physics
+	cost = @tier4cost3
+	tier = 4
+	category = { particles }	
+	weight = @tier4weight3
+	is_rare = yes
+	is_dangerous = yes
+	
+	prerequisites = { "tech_psionic_armor" }	
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_COMPUTER_TITAN_TITLE"
+			desc = "TECH_UNLOCK_COMPUTER_TITAN_DESC"
+		}
+	}
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 2
+			has_technology = tech_titans
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 3 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}

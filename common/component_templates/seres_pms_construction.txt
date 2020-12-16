@@ -1,0 +1,33 @@
+#############################
+# Automated Construction Pms #
+#############################
+
+utility_component_template = {
+	key = "PMS_CONSTRUCTION"
+	size = aux
+	icon = "GFX_ship_part_pms_construction"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 20
+		}
+	}
+
+	ship_modifier = {
+		ship_speed_mult = 0.75
+	}
+
+	modifier = {
+		shipclass_mining_station_build_speed_mult = 0.4
+	}
+
+	prerequisites = { tech_assembly_pattern }
+	size_restriction = { "constructor" }
+	component_set = "PMS_CONSTRUCTION"
+
+	ai_weight = {
+		weight = 4
+	}
+}

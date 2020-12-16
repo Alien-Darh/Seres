@@ -1,0 +1,17 @@
+# ##################
+# Hull tissue
+# ##################
+
+tech_regenerative_hull_tissue = {
+	area = society
+	cost = @tier2cost3
+	tier = 2
+	is_rare = yes
+	category = { biology }
+	ai_update_type = military
+	weight = @tier2weight2
+
+	weight_modifier = {
+		factor = 0 		# Can only be reverse engineered
+	}
+}

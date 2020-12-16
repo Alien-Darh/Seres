@@ -1,0 +1,24 @@
+#icon_frame = 1 # green frame
+#icon_frame = 2 # yellow frame
+#icon_frame = 3 # red frame
+
+
+darhmod_relic_activation_cooldown = {
+	icon = "gfx/interface/icons/modifiers/mod_relic_cooldown.dds"
+}
+
+mod_darhmod_precursor_seres_history_never_repeats = {
+	all_technology_research_speed = 0.20
+}
+mod_r_darhmod_seres_last_projector = {
+	damage_vs_country_type_swarm_mult = 0.25
+	damage_vs_country_type_extradimensional_mult = 0.25
+	damage_vs_country_type_extradimensional_2_mult = 0.25
+	damage_vs_country_type_extradimensional_3_mult = 0.25	
+	damage_vs_country_type_ai_empire_mult = 0.25
+	damage_vs_country_type_gray_goo_mult = 0.25
+}
+
+mod_darhmod_precursor_seres_secrets = {
+	all_technology_research_speed = 0.1
+}

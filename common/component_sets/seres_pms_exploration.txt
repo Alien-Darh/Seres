@@ -1,0 +1,8 @@
+# Pms Component
+
+component_set = {
+	key = "PMS_EXPLORATION"
+	
+	icon = "GFX_ship_part_pms_exploration"
+	icon_frame = 1
+}

@@ -1,0 +1,17 @@
+on_game_start = {
+	events = {
+		darhetc.0
+	}
+}
+
+on_entering_system_first_time = {
+	events = {
+		darhmod_seres.12
+	}
+}
+on_survey = {
+	events = {
+		darhetc.2
+		darhetc.3
+	}
+}
