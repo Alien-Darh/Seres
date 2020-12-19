@@ -128,9 +128,4 @@
  mod_darhmod_precursor_seres_secrets:0 "Secretos de los seres de luz"
  mod_darhmod_precursor_seres_secrets_2:0 "Mas secretos"
  
- DARHMOD_SERES_HOLOGRAM:0 "Armadura Ultra Defensa"
- DARHMOD_SERES_HOLOGRAM_DESC:0 "Esta armadura se ha modificado para adaptarse a nuestro barco. aunque se necesitara muchos recursos para mantenerla... aumenta eneormemente la posibilidad de supervivencia de nuestra nave."
- tech_psionic_armor:0 "$DARHMOD_SERES_HOLOGRAM$"
- tech_psionic_armor_desc:0 "$DARHMOD_SERES_HOLOGRAM_DESC$"
- 
 

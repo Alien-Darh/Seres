@@ -128,9 +128,4 @@
  mod_darhmod_precursor_seres_secrets:0 "Secrets of the light beings"
  mod_darhmod_precursor_seres_secrets_2:0 "More secrets"
  
- DARHMOD_SERES_HOLOGRAM:0 "Ultra Defense Armor"
- DARHMOD_SERES_HOLOGRAM_DESC:0 "This armor has been modified to suit our ship. even though it took many resources to maintain it ... it greatly increases our ship's chance of survival."
- tech_psionic_armor:0 "$DARHMOD_SERES_HOLOGRAM$"
- tech_psionic_armor_desc:0 "$DARHMOD_SERES_HOLOGRAM_DESC$"
- 
 
