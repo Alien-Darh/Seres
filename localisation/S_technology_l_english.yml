@@ -26,8 +26,9 @@
   ################
  
   SMALL_CRYSTAL_ARMOR_1a:0 "Auxiliary Crystal Infused Armor"
+  SMALL_CRYSTAL_ARMOR_1a_DESC:0 "Auxiliary Crystal Infused Armor"
   SMALL_CRYSTAL_ARMOR_2a:0 "Auxiliary Crystal Infused Armor"
- 
+  SMALL_CRYSTAL_ARMOR_2a_DESC:0 "Auxiliary Crystal Infused Armor"
   ################
  
   tech_sbs_swarmer_missiles_3:0 "Tornado missiles"
