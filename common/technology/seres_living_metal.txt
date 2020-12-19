@@ -39,7 +39,7 @@ tech_mine_living_metal = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = engineering
+				area = physics
 				has_trait = "leader_trait_expertise_materials"
 			}
 		}
