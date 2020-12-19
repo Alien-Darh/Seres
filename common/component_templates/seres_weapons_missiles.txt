@@ -103,8 +103,7 @@ weapon_component_template = {
 			is_country_type = fallen_empire
 		}
 	}
-	
-	cost = 80	
+		
 	power = -35
 	damage = { min = 46 max = 69 }
 	#hull_damage = 1.1
@@ -163,7 +162,6 @@ weapon_component_template = {
 		}
 	}
 	
-	cost = 95	
 	power = -44
 	damage = { min = 59 max = 90 }
 	#hull_damage = 1.20
@@ -221,7 +219,6 @@ weapon_component_template = {
 		}
 	}
 	
-	cost = 110
 	power = -53
 	damage = { min = 72 max = 111 }
 	hull_damage = 1.25
