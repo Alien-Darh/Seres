@@ -24,20 +24,6 @@ fleet_event = {
 		name = darhmod_seres.1.a
 		owner = {
 			begin_event_chain = { event_chain = darhmod_seres_chain }
-			random_owned_leader = {
-				limit = {
-					is_researching_area = physics
-				}
-				if = {
-					limit = {
-						NOT = { has_trait = leader_trait_expertise_physics }
-					}
-					add_trait = leader_trait_expertise_physics
-				}
-				else = {
-					add_experience = 200
-				}
-			}
 			if = {
 				limit = { NOT = { has_technology = tech_reactor_boosters_1 } }
 				give_technology = { tech = tech_reactor_boosters_1 }
@@ -68,20 +54,6 @@ fleet_event = {
 		name = darhmod_seres.2.a
 		small_artifact_reward = yes
 		owner = {
-			random_owned_leader = {
-				limit = {
-					is_researching_area = engineering
-				}
-				if = {
-					limit = {
-						NOT = { has_trait = leader_trait_expertise_engineering }
-					}
-					add_trait = leader_trait_expertise_engineering
-				}
-				else = {
-					add_experience = 200
-				}
-			}
 			if = {
 				limit = { NOT = { has_technology = tech_afterburners_1 } }
 				give_technology = { tech = tech_afterburners_1 }
@@ -134,20 +106,6 @@ fleet_event = {
 		name = darhmod_seres.3.a
 		small_artifact_reward = yes
 		owner = {
-			random_owned_leader = {
-				limit = {
-					is_researching_area = physics
-				}
-				if = {
-					limit = {
-						NOT = { has_trait = leader_trait_expertise_physics }
-					}
-					add_trait = leader_trait_expertise_physics
-				}
-				else = {
-					add_experience = 200
-				}
-			}
 			if = {
 				limit = { NOT = { has_technology = tech_automated_exploration } }
 				give_technology = { tech = tech_automated_exploration }
@@ -208,20 +166,6 @@ fleet_event = {
 		name = darhmod_seres.4.a
 		small_artifact_reward = yes
 		owner = {
-			random_owned_leader = {
-				limit = {
-					is_researching_area = physics
-				}
-				if = {
-					limit = {
-						NOT = { has_trait = leader_trait_expertise_physics }
-					}
-					add_trait = leader_trait_expertise_physics
-				}
-				else = {
-					add_experience = 200
-				}
-			}
 			if = {
 				limit = { NOT = { has_technology = tech_auxiliary_fire_control } }
 				give_technology = { tech = tech_auxiliary_fire_control }
@@ -652,20 +596,6 @@ fleet_event = {
 		name = DIG
 		small_artifact_reward = yes
 		owner = {
-			random_owned_leader = {
-				limit = {
-					is_researching_area = physics
-				}
-				if = {
-					limit = {
-						NOT = { has_trait = leader_trait_expertise_physics }
-					}
-					add_trait = leader_trait_expertise_physics
-				}
-				else = {
-					add_experience = 200
-				}
-			}
 			if = {
 				limit = { NOT = { has_technology = tech_swarmer_missiles_1 } }
 				give_technology = { tech = tech_swarmer_missiles_1 }
