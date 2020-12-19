@@ -1,13 +1,13 @@
 
-darhmod_astanine_duplicated_home_system_hide_effect = {
+darhmod_seres_duplicated_home_system_hide_effect = {
 	if = {
 		limit = {
 			count_system = {
 				limit = {
-					has_star_flag = darhmod_astanine_home_system
+					has_star_flag = darhmod_seres_home_system
 					any_system_planet = {
 						exists = archaeological_site
-						archaeological_site = { is_site_type = DARH_astanine_site_5 }
+						archaeological_site = { is_site_type = DARH_seres_site_5 }
 					}
 				}
 				count > 1
@@ -15,10 +15,10 @@ darhmod_astanine_duplicated_home_system_hide_effect = {
 		}
 		random_system = {
 			limit = {
-				has_star_flag = darhmod_astanine_home_system
+				has_star_flag = darhmod_seres_home_system
 				any_system_planet = {
 					exists = archaeological_site
-					archaeological_site = { is_site_type = DARH_astanine_site_5 }
+					archaeological_site = { is_site_type = DARH_seres_site_5 }
 				}
 			}
 			random_system_megastructure = {
@@ -36,15 +36,15 @@ darhmod_astanine_duplicated_home_system_hide_effect = {
 	else_if = {
 		limit = {
 			count_system = {
-				limit = { has_star_flag = darhmod_astanine_home_system }
+				limit = { has_star_flag = darhmod_seres_home_system }
 				count > 1
 			}
 			count_system = {
 				limit = {
-					has_star_flag = darhmod_astanine_home_system
+					has_star_flag = darhmod_seres_home_system
 					any_system_planet = {
 						exists = archaeological_site
-						archaeological_site = { is_site_type = DARH_astanine_site_5 }
+						archaeological_site = { is_site_type = DARH_seres_site_5 }
 					}
 				}
 				count = 1
@@ -55,10 +55,10 @@ darhmod_astanine_duplicated_home_system_hide_effect = {
 				NOT = {
 					any_system_planet = {
 						exists = archaeological_site
-						archaeological_site = { is_site_type = DARH_astanine_site_5 }
+						archaeological_site = { is_site_type = DARH_seres_site_5 }
 					}
 				}
-				has_star_flag = darhmod_astanine_home_system
+				has_star_flag = darhmod_seres_home_system
 			}
 			random_system_megastructure = {
 				limit = { is_megastructure_type = ring_world_ruined }
