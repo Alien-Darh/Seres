@@ -478,13 +478,14 @@ fleet_event = {
     	        give_technology = { tech = tech_crystal_armor_1 }
     	    }
     	    else_if = {
-    	        limit = { NOT = { has_technology = tech_crystal_armor_2 } }
-    	        give_technology = { tech = tech_crystal_armor_2 }
-    	    }
-    	    else_if = {
     	        limit = { NOT = { has_technology = tech_cruiser_hull_1 } }
     	        give_technology = { tech = tech_cruiser_hull_1 }
-			}			
+    	    }
+    	    else_if = {
+    	        limit = { NOT = { has_technology = tech_cruiser_hull_2 } }
+    	        give_technology = { tech = tech_cruiser_hull_2 }
+			}
+			add_research_option = tech_crystal_armor_2			
 		}	
 	}
 }
@@ -544,8 +545,8 @@ fleet_event = {
     	        give_technology = { tech = tech_mega_engineering }
     	    }
     	    else_if = {
-    	        limit = { NOT = { has_technology = tech_crystal_armor_2 } }
-    	        give_technology = { tech = tech_crystal_armor_2 }
+    	        limit = { NOT = { has_technology = tech_cruiser_hull_1 } }
+    	        give_technology = { tech = tech_cruiser_hull_1 }
 			}
     	    else_if = {
     	        limit = { NOT = { has_technology = tech_cruiser_hull_2 } }
