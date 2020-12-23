@@ -525,7 +525,7 @@ fleet_event = {
 					initializer = darhmod_seres_home_system
 				}
 			}
-			darhmod_seres_duplicated_home_system_hide_effect = yes
+			#darhmod_seres_duplicated_home_system_hide_effect = yes
 		}
 		owner = {
 			create_point_of_interest = {
