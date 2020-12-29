@@ -620,6 +620,7 @@ country_event = {
 				}
 			link_wormholes = event_target:darhmod_seres_11_temp
 		}
+		clear_global_event_target = darhmod_seres_11_temp
 	}
 }
 
