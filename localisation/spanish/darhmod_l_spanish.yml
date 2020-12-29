@@ -1,16 +1,11 @@
 ﻿l_spanish:
 
   ### ETC ###
-  decision_darhmod_digsite_selection:0 "Open Digsite Selector Mk II"
-  decision_darhmod_digsite_selection_desc:0 "Click to open."
-  darh_archology_fast:0 "Fast Dig"
-  darhmod_test.1.name:0 "Digsite Selector Mk II"
-  darhmod_test.1.desc:0 "It's me, Your Digsite Selector!"
-  darhmod_test.1.c:0 "Precursor - The Seres Empire"
+  darhmod_test.1.c:0 "Precursor - Imperio Seres"
   darhmod_test.1.d:0 "Exit."
   darhmod_relic_activation_cooldown:0 "Special $relic_activation_cooldown$"
-  darhmod_special_relic_cooldown_info:0 "Special Relic can be activated independently with normal relics."
-  darhmod_requires_relic_no_cooldown:0 "$TRIGGER_FAIL$§RCannot activate another relic while §Y$darhmod_relic_activation_cooldown$§! is active.§!"
+  darhmod_special_relic_cooldown_info:0 "La reliquia especial se puede activar de forma independiente con las reliquias normales."
+  darhmod_requires_relic_no_cooldown:0 "$TRIGGER_FAIL$§RNo se puede activar otra reliquia mientras §Y$darhmod_relic_activation_cooldown$§! esta activo.§!"
 
 
   ### [Precursor] Seres de Luz ###

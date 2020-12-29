@@ -494,7 +494,7 @@ fleet_event = {
 	}
 }
 #chapter 2
-fleet_event = {
+	fleet_event = {
 	id = darhmod_seres.11
 	title = "darhmod_seres.11.name"
 	desc = "darhmod_seres.11.desc"
@@ -505,62 +505,122 @@ fleet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		from = { set_site_progress_locked = yes }
+	from = { set_site_progress_locked = yes }
 	}
 
 	after = {
-		from = { set_site_progress_locked = no }
+	from = { set_site_progress_locked = no }
 	}
 
 	option = {
 		name = darhmod_seres.11.a
-		hidden_effect = {
-			random_planet = {
-				limit = { has_planet_flag = darhmod_seres_near_home_colony }
-				spawn_system = {
-					min_jumps = 0
-					max_jumps = 0
-					min_distance = 5
-					max_distance = 20
-					initializer = darhmod_seres_home_system
+			hidden_effect = {
+				set_spawn_system_batch = begin
+				random_planet = {
+					limit = { has_planet_flag = darhmod_seres_near_home_colony }
+					spawn_system = {
+						min_jumps = 0
+						max_jumps = 0
+						min_distance = 5
+						max_distance = 20
+						initializer = darhmod_seres_temp_system
+					}
+				}
+				random_system = {
+					limit = { has_star_flag = darhmod_seres_temp_system }
+					save_event_target_as = darhmod_seres_11_temp
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+					}
+					every_system_planet = {
+						prevent_anomaly = yes
+					}
+				}
+				random_planet = {
+					limit = { has_planet_flag = darhmod_seres_near_home_colony }				
+					spawn_system = { 
+						min_distance = 10
+						max_distance = 25
+						hyperlane = no
+						initializer = darhmod_seres_home_system
+					}
+				}
+				random_system = {
+					limit = { has_star_flag = darhmod_seres_home_system }
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+					}
+					link_wormholes = event_target:darhmod_seres_11_temp
+				}
+				set_spawn_system_batch = end
+				event_target:global_event_country = {
+				country_event = { id = darhmod_seres.110 days = 1080 }
+				}				
+			}
+			owner = {
+				create_point_of_interest = {
+					id = darhmod_seres_hidden_planet_4
+					name = "darhmod_seres_colony_5_coordinates_poi"
+					desc = "darhmod_seres_colony_5_coordinates_desc"
+					event_chain = darhmod_seres_chain
+					location = event_target:darhmod_seres_home_planet
+				}
+				add_event_chain_counter = {
+					event_chain = darhmod_seres_chain
+					counter = darhmod_seres_colonies
+					amount = 1
+				}	
+				add_resource = {
+					energy = -2000
+					alloys = -1000
+				}
+				if = {
+					limit = { NOT = { has_technology = tech_mega_engineering } }
+					give_technology = { tech = tech_mega_engineering }
+				}
+				else_if = {
+					limit = { NOT = { has_technology = tech_cruiser_hull_1 } }
+					give_technology = { tech = tech_cruiser_hull_1 }
+				}
+				else_if = {
+					limit = { NOT = { has_technology = tech_cruiser_hull_2 } }
+					give_technology = { tech = tech_cruiser_hull_2 }
+				}
+				else_if = {
+					limit = { NOT = { has_technology = tech_cruiser_build_speed } }
+					give_technology = { tech = tech_cruiser_build_speed }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = darhmod_seres.110
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_planet = {
+			limit = { has_planet_flag = darhmod_seres_near_home_colony }				
+			spawn_system = { 
+				min_distance = 10
+				max_distance = 25
+				hyperlane = no
+				initializer = darhmod_seres_home_system
 				}
 			}
-			#darhmod_seres_duplicated_home_system_hide_effect = yes
-		}
-		owner = {
-			create_point_of_interest = {
-				id = darhmod_seres_hidden_planet_4
-				name = "darhmod_seres_colony_5_coordinates_poi"
-				desc = "darhmod_seres_colony_5_coordinates_desc"
-				event_chain = darhmod_seres_chain
-				location = event_target:darhmod_seres_home_planet
+			random_system = {
+				limit = { has_star_flag = darhmod_seres_home_system }
+				spawn_natural_wormhole = {
+				bypass_type = wormhole
+				random_pos = yes
+				}
+				link_wormholes = event_target:darhmod_seres_11_temp
 			}
-			add_event_chain_counter = {
-				event_chain = darhmod_seres_chain
-				counter = darhmod_seres_colonies
-				amount = 1
-			}
-			add_resource = { 
-			energy = -2000 
-			alloys = -1000 
-			}
-    	    if = {
-    	        limit = { NOT = { has_technology = tech_mega_engineering } }
-    	        give_technology = { tech = tech_mega_engineering }
-    	    }
-    	    else_if = {
-    	        limit = { NOT = { has_technology = tech_cruiser_hull_1 } }
-    	        give_technology = { tech = tech_cruiser_hull_1 }
-			}
-    	    else_if = {
-    	        limit = { NOT = { has_technology = tech_cruiser_hull_2 } }
-    	        give_technology = { tech = tech_cruiser_hull_2 }
-			}
-    	    else_if = {
-    	    	limit = { NOT = { has_technology = tech_cruiser_build_speed } }
-    	        give_technology = { tech = tech_cruiser_build_speed }
-    	    }													
-		}
+		clear_global_event_target = darhmod_seres_11_temp
 	}
 }
 

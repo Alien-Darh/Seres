@@ -1,11 +1,6 @@
-﻿l_english:
+﻿l_french:
 
   ### ETC ###
-  decision_darhmod_digsite_selection:0 "Open Digsite Selector Mk II"
-  decision_darhmod_digsite_selection_desc:0 "Click to open."
-  darh_archology_fast:0 "Fast Dig"
-  darhmod_test.1.name:0 "Digsite Selector Mk II"
-  darhmod_test.1.desc:0 "It's me, Your Digsite Selector!"
   darhmod_test.1.c:0 "Precursor - The Seres Empire"
   darhmod_test.1.d:0 "Exit."
   darhmod_relic_activation_cooldown:0 "Special $relic_activation_cooldown$"

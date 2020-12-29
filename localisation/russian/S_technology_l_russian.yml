@@ -1,0 +1,76 @@
+﻿l_russian:
+ 
+  tech_technology_research_speed_1:0 "Beings of light"
+  tech_technology_research_speed_1_desc:1 "Strange beings from another dimension are assisting your investigations for a while until you are ready to ascend."
+
+  tech_technology_research_speed_2:0 "Beings of light"
+  tech_technology_research_speed_2_desc:1 "Strange beings from another dimension are assisting your investigations for a while until you are ready to ascend."
+ 
+  tech_technology_research_speed_3:0 "Beings of light"
+  tech_technology_research_speed_3_desc:1 "Strange beings from another dimension are assisting your investigations for a while until you are ready to ascend."
+ 
+  ################
+ 
+  PMS_EXPLORATION:0 "Pups exploration"
+  PMS_EXPLORATION_DESC:0 "Prometheus 3D Scanner; The installation of this module improves the exploration of the systems using advanced probes."
+
+  TECH_UNLOCK_PROMETHEUS_PROTOCOLS_DESC:0 "Incorporates an advanced Pups search section into science ships; §YPrometheus 3D Scanner§! to probe the planets with better accuracy and faster."
+  TECH_UNLOCK_PROMETHEUS_PROTOCOLS_TITLE:0 "§SUnlock the component:§! Scanner Pups"
+
+  ################
+ 
+  PMS_CONSTRUCTION:0 "Construction Nanites"
+  PMS_CONSTRUCTION_DESC:0 "Advanced Nanites; The installation of this module in the ships improves the orbital construction by means of advanced nanites."
+  mod_shipclass_mining_station_build_speed_mult:0 "Build speed"
+ 
+  ################
+ 
+  SMALL_CRYSTAL_ARMOR_1a:0 "Auxiliary Crystal Infused Armor"
+  SMALL_CRYSTAL_ARMOR_1a_DESC:0 "Auxiliary Crystal Infused Armor"
+  SMALL_CRYSTAL_ARMOR_2a:0 "Auxiliary Crystal Infused Armor"
+  SMALL_CRYSTAL_ARMOR_2a_DESC:0 "Auxiliary Crystal Infused Armor"
+  ################
+ 
+  tech_sbs_swarmer_missiles_3:0 "Tornado missiles"
+  tech_sbs_swarmer_missiles_3_desc:0 "Technological advances allow these missiles to form very fast flight paths. These missiles are more difficult to detect on enemy radars and an AI component. it causes these missiles to change their trajectory if they see a tactical advantage in point defenses."
+  SBS_SWARMER_MISSILE_3:0 "$tech_sbs_swarmer_missiles_3$"
+  SBS_SWARMER_MISSILE_3_DESC:0 "High precision and speed category III missiles"
+
+  tech_sbs_swarmer_missiles_4:0 "Falcon missiles"
+  tech_sbs_swarmer_missiles_4_desc:0 "Advances in alternative science allow us to create antimatter nuclei in quantum reaction control systems that can be used in these missiles, giving each missile incredible flight and destruction capabilities both when hit and hit. objective."
+  SBS_SWARMER_MISSILE_4:0 "$tech_sbs_swarmer_missiles_4$"
+  SBS_SWARMER_MISSILE_4_DESC:0 "High precision and speed category IV missiles"
+ 
+  tech_sbs_swarmer_missiles_5:0 "Ghost Missiles"
+  tech_sbs_swarmer_missiles_5_desc:0 "Improvements in guidance, propulsion and sensor control give these missiles a phantom flight pattern. The warheads are composed of neutral matter and calibrated with lithium liquid that when hitting the target creates a sound expansion wave that destroys everything solid around it, causing much damage to enemy defenses."
+  SBS_SWARMER_MISSILE_5:0 "$tech_sbs_swarmer_missiles_5$"
+  SBS_SWARMER_MISSILE_5_DESC:0 "High precision and speed category V missiles."
+ 
+  ARTILLERY_BEHAVIOR_DESC:0 "§HArtillery tactics:§! the ship stays at a great distance (§Y100§!) and fires the long-range weapons at the target."
+  LINE_BEHAVIORS_DESC:0 "§HOnline Tactic:§! the ship will maintain mid-range advance (§Y60§!) and maintain formation." 
+  TITAN_BEHAVIOR_DESC:0 "§HArtillería táctica:§! The Titan stays behind the fleet formation to fire its primary weapons at the target (§Y200 pársec§!)"
+  COMBAT_COMPUTER_TITAN:0 "Titan combat computer" 
+ 
+  ################ 
+
+  tech_psionic_armor:0 "Ancient armor"
+  tech_psionic_armor_desc:0 "Elemental armor with ancestral powers, unique in its kind, is strongly resistant ... it must be manipulated by admirals capable of withstanding the stress of the most extreme combat." 
+  LARGE_PSI_ARMOR:0 "Ultimate Ancestral Armor"
+  MEDIUM_PSI_ARMOR:0 "Middle Ancestral Armor" 
+  SMALL_PSI_ARMOR:0 "Minor ancestral armor" 
+  PSI_ARMOR:0 "Ancestral Armor"
+  PSI_ARMOR_DESC:0 "Elemental armor with ancestral powers, unique in its kind, is strongly resistant ... it must be manipulated by admirals capable of withstanding the stress of the most extreme combat."
+  SHIP_AURA_SHIELD_CRISIS:0 "Aura Ancestral"
+  aura_shield_crisis:0 "Aura Ancestral"
+ 
+  tech_aura_shield_crisis:0 "Aura Ancestral"
+  tech_aura_shield_crisis_desc:0 "A mysterious component derived from an ancient dimensional link adds a cognitive aura to our flagships to counter unexpected turn-of-the-century attacks."
+  TECH_UNLOCK_AURA_CRISIS_DESC:0 "A mysterious component derived from an ancient dimensional link adds a cognitive aura to our flagships to counter unexpected turn-of-the-century attacks."
+  TECH_UNLOCK_AURA_CRISIS_TITLE:0 "§SUnlock the component:§! Aura Ancestral \n§Scomponents:§! Titan \n§SAncestral class:§! Crisis class"
+
+  tech_computer_titan:0 "Componente de Horus"
+  tech_computer_titan_desc:0 "$TECH_UNLOCK_COMPUTER_TITAN_DESC$" 
+  TECH_UNLOCK_COMPUTER_TITAN_DESC:0 "A component taken from the ancient relic adds strike distance to our Titan ship ... Horus, the all-seeing eye."
+  TECH_UNLOCK_COMPUTER_TITAN_TITLE:0 "§SUnlock the component:§! Horus \n§Scomponents:§! Titan \n§SClass:§! Ancestral." 
+
+  TITAN_BEHAVIOR_DESC:0 "§Hartillería táctica:§! The Titan stays behind the fleet formation to fire its primary weapons at the target (§Y200 pársec§!)" 
