@@ -612,13 +612,13 @@ country_event = {
 				initializer = darhmod_seres_home_system
 				}
 			}
-			random_system = {
+		random_system = {
 				limit = { has_star_flag = darhmod_seres_home_system }
 				spawn_natural_wormhole = {
 				bypass_type = wormhole
 				random_pos = yes
 				}
-				link_wormholes = event_target:darhmod_seres_11_temp
+			link_wormholes = event_target:darhmod_seres_11_temp
 		}
 	}
 }
