@@ -22,8 +22,7 @@ spriteTypes = {
 	### evets ###
 
 	spriteType = {
-		name = "GFX_evt_mega_ring_world"
-		texturefile = "gfx/interface/planetview/mega_ring_world.dds"
-		scale = 0.9
+		name = "GFX_evt_habitat"
+		texturefile = "gfx/interface/planetview/habitat.dds"	
 	}		
 }
