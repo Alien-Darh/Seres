@@ -6,18 +6,6 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
-		random_country = {
-			limit = { is_ai = no }
-			country_event = { id = darhetc.1 days = 3600 } #10años
-		}
-	}
-}
-country_event = {
-	id = darhetc.1
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
 		set_global_flag = darhmod_precursor_set_seres
 	}
 }
@@ -52,7 +40,6 @@ ship_event = {
 				exists = archaeological_site
 				has_planet_flag = precursor_world
 				has_global_flag = darhmod_precursor_seres_start
-				
 				has_planet_flag = pspmod_sless_colony
 				has_planet_flag = pspmod_coprean_colony
 				has_planet_flag = pspmod_astanine_colony
@@ -61,6 +48,18 @@ ship_event = {
 	}
 	
 	immediate = {
-		from = { create_archaeological_site = DARH_seres_site_1 }
+		from = {
+			set_planet_flag = precursor_world
+			planet_event = { id = darhetc.4 days = 3600 } #10 years after
+		}
+	}
+}
+planet_event = {
+	id = darhetc.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_archaeological_site = DARH_seres_site_1
 	}
 }
