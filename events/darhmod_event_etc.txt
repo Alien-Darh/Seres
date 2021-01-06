@@ -18,16 +18,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		random_list = {
-			33 = { set_global_flag = darhmod_precursor_set_seres }
-			#33 = { set_global_flag = darhmod_precursor_set_seres_1 }
-			#33 = { set_global_flag = darhmod_precursor_set_seres_2 }				
-			1 = {
-				set_global_flag = darhmod_precursor_set_seres
-				#set_global_flag = darhmod_precursor_set_seres_1
-				#set_global_flag = darhmod_precursor_set_seres_2
-			}				
-		}
+		set_global_flag = darhmod_precursor_set_seres
 	}
 }
 
@@ -61,6 +52,10 @@ ship_event = {
 				exists = archaeological_site
 				has_planet_flag = precursor_world
 				has_global_flag = darhmod_precursor_seres_start
+				
+				has_planet_flag = pspmod_sless_colony
+				has_planet_flag = pspmod_coprean_colony
+				has_planet_flag = pspmod_astanine_colony
 			}
 		}
 	}
