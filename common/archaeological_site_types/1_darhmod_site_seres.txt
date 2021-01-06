@@ -2,7 +2,7 @@ DARH_seres_site_1 = {
 	desc = "DARH_seres_site_1_desc"
 	picture = GFX_evt_ship_in_orbit
 	stages = 3
-	weight = { base = 0 } #check darhetc.3 to see real spawn chance
+	weight = { base = 0 } 
 	
 	allow = {
 		exists = leader
@@ -21,6 +21,7 @@ DARH_seres_site_1 = {
 	on_create = {
 		root.planet = {
 			set_global_flag = darhmod_precursor_seres_start
+			set_planet_flag = precursor_world
 			set_planet_flag = darhmod_seres_colony
 		}
 	}
