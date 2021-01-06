@@ -285,6 +285,26 @@ fleet_event = {
 	option = {
 		name = darhmod_seres.6.a
 		small_artifact_reward = yes
+		owner = {
+			if = {
+				limit = {
+					NOT = { has_technology = tech_gateway_construction }
+				}
+				give_technology = { tech = tech_gateway_construction }
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_gateway_activation }
+				}
+				give_technology = {  tech = tech_gateway_activation }
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_wormhole_stabilization }
+				}
+				give_technology = { tech = tech_wormhole_stabilization }
+			}	
+		}				
 	}
 }
 
@@ -357,6 +377,14 @@ fleet_event = {
 	option = {
 		name = darhmod_seres.8.a
 		small_artifact_reward = yes
+		owner = {	
+			if = {
+				limit = {
+					NOT = { has_technology = tech_amoeba_strike_craft_1 }
+				}
+				give_technology = { tech = tech_amoeba_strike_craft_1 }
+			}
+		}		
 	}
 }
 
@@ -726,10 +754,11 @@ fleet_event = {
 		owner = {
 			add_resource = { unity = 6000 }
 			add_resource = { energy = -2500 }
-			add_research_option = tech_juggernaut
-			add_tech_progress = {
-				tech = tech_juggernaut
-				progress = 0.5
+			if = {
+				limit = {
+					NOT = { has_technology = tech_juggernaut }
+				}
+				give_technology = { tech = tech_juggernaut }			
 			}
 		}
 	}
@@ -741,9 +770,9 @@ fleet_event = {
 			add_resource = { energy = -1000 }
 			if = {
 				limit = {
-					NOT = { has_technology = tech_titans }
+					NOT = { has_technology = tech_mega_shipyard }
 				}
-				give_technology = { tech = tech_titans }
+				give_technology = { tech = tech_mega_shipyard }
 			}
 		}
 	}

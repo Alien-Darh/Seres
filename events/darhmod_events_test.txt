@@ -10,7 +10,7 @@ country_event = {
 			limit = {
 				count_system = {
 					limit = {
-						has_star_flag = darhmod_seres_temp_system
+						has_star_flag = darhmod_seres_home_system
 						any_system_planet = {
 							exists = archaeological_site
 							archaeological_site = { is_site_type = DARH_seres_site_5 }
@@ -21,7 +21,7 @@ country_event = {
 			}
 			random_system = {
 				limit = {
-					has_star_flag = darhmod_seres_temp_system
+					has_star_flag = darhmod_seres_home_system
 					any_system_planet = {
 						exists = archaeological_site
 						archaeological_site = { is_site_type = DARH_seres_site_5 }
@@ -43,13 +43,13 @@ country_event = {
 			limit = {
 				count_system = {
 					limit = {
-						has_star_flag = darhmod_seres_temp_system
+						has_star_flag = darhmod_seres_home_system
 					}
 					count > 1
 				}
 				count_system = {
 					limit = {
-						has_star_flag = darhmod_seres_temp_system
+						has_star_flag = darhmod_seres_home_system
 						any_system_planet = {
 							exists = archaeological_site
 							archaeological_site = { is_site_type = DARH_seres_site_5 }

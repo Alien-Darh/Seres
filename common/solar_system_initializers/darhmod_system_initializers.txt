@@ -3,7 +3,7 @@
 
 darhmod_seres_home_system = {
 	name = "Nubbia"
-	class = "sc_black_hole"
+	class = "rl_standard_stars"	
 	usage = misc_system_init
 	usage_odds = 0
 	flags = { darhmod_seres_home_system }
