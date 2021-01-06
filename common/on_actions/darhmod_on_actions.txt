@@ -11,6 +11,6 @@ on_entering_system_first_time = {
 }
 on_survey = {
 	events = {
-		darhetc.2
+		darhetc.3
 	}
 }
