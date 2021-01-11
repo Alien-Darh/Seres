@@ -1,6 +1,7 @@
 namespace = darhmod_seres
 #dig site 1
 #chapter 1
+
 fleet_event = {
 	id = darhmod_seres.1
 	title = "darhmod_seres.1.name"
@@ -9,12 +10,15 @@ fleet_event = {
 	show_sound = event_ghost_town
 	archaeology = yes
 	is_triggered_only = yes
+	
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
+	
 	after = {
 		from = { set_site_progress_locked = no }
 	}
+	
 	option = {
 		name = darhmod_seres.1.a
 		owner = {
@@ -38,12 +42,15 @@ fleet_event = {
 	show_sound = event_big_door_opening
 	archaeology = yes
 	is_triggered_only = yes
+	
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
+	
 	after = {
 		from = { set_site_progress_locked = no }
 	}
+	
 	option = {
 		name = darhmod_seres.2.a
 		small_artifact_reward = yes

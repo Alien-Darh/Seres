@@ -8,6 +8,11 @@
   darhmod_requires_relic_no_cooldown:0 "$TRIGGER_FAIL$§RNo se puede activar otra reliquia mientras §Y$darhmod_relic_activation_cooldown$§! esta activo.§!"
 
 
+  ### Archaeology: Seres
+  
+  DARH_seres_anomaly_category:0 "Distorsión"
+  DARH_seres_anomaly_desc:0 "Nuestra nave de investigación experimentó una leve distorsión en sus instrumentos de navegación al pasar por el sistema §H[Root.Solar_System.GetName]§!.\n\nHabrá que investigar la causa de esta anomalía, aunque nuestro científico sospecha que podría ser algún tipo de reactor en mal estado en la superficie de §H[From.Planet.GetName]§!, que genera esta distorsión temporal."
+
   ### [Precursor] Seres de Luz ###
 
   DARH_seres_site_1:0 "Señales desconocidas"

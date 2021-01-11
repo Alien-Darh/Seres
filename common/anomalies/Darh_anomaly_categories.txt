@@ -1,0 +1,38 @@
+
+DARH_seres_anomaly_category = {
+	desc = DARH_seres_anomaly_desc
+	picture = GFX_evt_ship_travel
+	level = 10
+	should_ai_use = no    	
+	max_once_global = yes
+	
+	spawn_chance = {
+		modifier = {
+			add = 100	
+			OR = {
+				is_planet_class = pc_molten
+				is_planet_class = pc_toxic
+				is_planet_class = pc_frozen
+			}
+            solar_system = {
+                exists = star
+                NOR = {
+                    exists = archaeological_site
+                    any_system_planet = { has_anomaly = yes }
+                    has_star_flag = empire_cluster
+                    is_fe_cluster = yes
+                }
+            }    
+        }
+        modifier = {
+            factor = 10
+            is_inside_nebula = yes
+        }
+        modifier = {
+            factor = 5    
+                years_passed >= 5
+                years_passed <= 10    
+            }
+        }            
+    on_success = darhetc.1
+}

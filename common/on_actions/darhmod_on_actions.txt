@@ -1,16 +1,10 @@
 on_game_start = {
 	events = {
-		darhetc.0
+		darhetc.1
 	}
 }
-
 on_entering_system_first_time = {
 	events = {
 		darhmod_seres.12
-	}
-}
-on_survey = {
-	events = {
-		darhetc.2
 	}
 }
