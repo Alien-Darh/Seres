@@ -5,36 +5,7 @@ event = {
 	hide_window = yes
 	is_triggered_only = yes
 
-	trigger = {
-		has_global_flag = darhmod_precursor_seres
-		owner = { is_ai = no }	
-		from = {
-			solar_system = {
-				exists = star
-				NOR = {
-					has_star_flag = empire_cluster
-					is_fe_cluster = yes
-				}
-				any_system_planet = {
-					NOT = { exists = archaeological_site }
-				}
-			}
-			has_anomaly = no
-			OR = {
-				is_planet_class = pc_molten
-				is_planet_class = pc_toxic
-				is_planet_class = pc_frozen
-			}
-			NOR = {
-				exists = archaeological_site
-				has_planet_flag = precursor_world
-				has_global_flag = darhmod_precursor_seres_start
-			}
-		}
-	}
-	
 	immediate = {
-		from = { create_archaeological_site = DARH_seres_site_1 }
-
+		set_global_flag = darhmod_precursor_seres
 	}
 }

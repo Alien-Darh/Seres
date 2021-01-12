@@ -1,11 +1,27 @@
 namespace = darhmod_seres
-#dig site 1
-#chapter 1
 
-fleet_event = {
+#intro
+ship_event = {
 	id = darhmod_seres.1
 	title = "darhmod_seres.1.name"
 	desc = "darhmod_seres.1.desc"
+	picture = GFX_evt_ancient_alien_temple
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = darhmod_seres.1.a
+		owner = { begin_event_chain = { event_chain = darhmod_seres_chain } }
+		from = { create_archaeological_site = DARH_seres_site_1 }
+	}
+	
+#dig site 1
+#chapter 1	
+fleet_event = {
+	id = darhmod_seres.2
+	title = "darhmod_seres.2.name"
+	desc = "darhmod_seres.2.desc"
 	picture = GFX_evt_alien_city
 	show_sound = event_ghost_town
 	archaeology = yes
@@ -20,9 +36,8 @@ fleet_event = {
 	}
 	
 	option = {
-		name = darhmod_seres.1.a
+		name = darhmod_seres.2.a
 		owner = {
-			begin_event_chain = { event_chain = darhmod_seres_chain }
 			if = {
 				limit = {
 					NOT = { has_technology = tech_reactor_boosters_1 }
@@ -35,9 +50,9 @@ fleet_event = {
 
 #chapter 2
 fleet_event = {
-	id = darhmod_seres.2
-	title = "darhmod_seres.2.name"
-	desc = "darhmod_seres.2.desc"
+	id = darhmod_seres.3
+	title = "darhmod_seres.3.name"
+	desc = "darhmod_seres.3.desc"
 	picture = GFX_evt_discovered_hidden_door
 	show_sound = event_big_door_opening
 	archaeology = yes
@@ -52,7 +67,7 @@ fleet_event = {
 	}
 	
 	option = {
-		name = darhmod_seres.2.a
+		name = darhmod_seres.3.a
 		small_artifact_reward = yes
 		owner = {
 			if = {
@@ -67,9 +82,9 @@ fleet_event = {
 
 #chapter 3
 fleet_event = {
-	id = darhmod_seres.3
-	title = "darhmod_seres.3.name"
-	desc = "darhmod_seres.3.desc"
+	id = darhmod_seres.4
+	title = "darhmod_seres.4.name"
+	desc = "darhmod_seres.4.desc"
 	picture = GFX_evt_archaeologists_escaping
 	show_sound = event_ship_explosion
 	archaeology = yes
@@ -106,7 +121,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.3.a
+		name = darhmod_seres.4.a
 		small_artifact_reward = yes
 		owner = {
 			if = {
@@ -153,9 +168,9 @@ planet_event = {
 #dig site 2
 #chapter 1
 fleet_event = {
-	id = darhmod_seres.4
-	title = "darhmod_seres.4.name"
-	desc = "darhmod_seres.4.desc"
+	id = darhmod_seres.5
+	title = "darhmod_seres.5.name"
+	desc = "darhmod_seres.5.desc"
 	picture = GFX_evt_ship_offloading_cargo
 	show_sound = event_finding_loot
 	archaeology = yes
@@ -167,7 +182,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.4.a
+		name = darhmod_seres.5.a
 		small_artifact_reward = yes
 		owner = {
 			if = {
@@ -182,9 +197,9 @@ fleet_event = {
 
 #chapter 2
 fleet_event = {
-	id = darhmod_seres.5
-	title = "darhmod_seres.5.name"
-	desc = "darhmod_seres.5.desc"
+	id = darhmod_seres.6
+	title = "darhmod_seres.6.name"
+	desc = "darhmod_seres.6.desc"
 	picture = GFX_evt_star_chart
 	show_sound = event_administrative_work
 	archaeology = yes
@@ -225,7 +240,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.5.a
+		name = darhmod_seres.6.a
 		small_artifact_reward = yes
 		owner = {
 			if = {
@@ -276,9 +291,9 @@ planet_event = {
 #dig site 3
 #chapter 1
 fleet_event = {
-	id = darhmod_seres.6
-	title = "darhmod_seres.6.name"
-	desc = "darhmod_seres.6.desc"
+	id = darhmod_seres.7
+	title = "darhmod_seres.7.name"
+	desc = "darhmod_seres.7.desc"
 	picture = GFX_evt_big_landing_ship
 	show_sound = event_mystic_reveal
 	archaeology = yes
@@ -290,7 +305,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.6.a
+		name = darhmod_seres.7.a
 		small_artifact_reward = yes
 		owner = {
 			if = {
@@ -317,9 +332,9 @@ fleet_event = {
 
 #chapter 2
 fleet_event = {
-	id = darhmod_seres.7
-	title = "darhmod_seres.7.name"
-	desc = "darhmod_seres.7.desc"
+	id = darhmod_seres.8
+	title = "darhmod_seres.8.name"
+	desc = "darhmod_seres.8.desc"
 	picture = GFX_evt_synth_sabotage
 	show_sound = event_power_down
 	archaeology = yes
@@ -331,7 +346,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.7.a
+		name = darhmod_seres.8.a
 		small_artifact_reward = yes
 		owner = {
 			add_resource = {
@@ -368,9 +383,9 @@ fleet_event = {
 
 #chapter 3
 fleet_event = {
-	id = darhmod_seres.8
-	title = "darhmod_seres.8.name"
-	desc = "darhmod_seres.8.desc"
+	id = darhmod_seres.9
+	title = "darhmod_seres.9.name"
+	desc = "darhmod_seres.9.desc"
 	picture = GFX_evt_victorious_army
 	show_sound = event_bad_omen
 	archaeology = yes
@@ -382,7 +397,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.8.a
+		name = darhmod_seres.9.a
 		small_artifact_reward = yes
 		owner = {	
 			if = {
@@ -397,9 +412,9 @@ fleet_event = {
 
 #chapter 4
 fleet_event = {
-	id = darhmod_seres.9
-	title = "darhmod_seres.9.name"
-	desc = "darhmod_seres.9.desc"
+	id = darhmod_seres.10
+	title = "darhmod_seres.10.name"
+	desc = "darhmod_seres.10.desc"
 	picture = GFX_evt_ancient_records
 	show_sound = event_radio_chatter
 	archaeology = yes
@@ -436,7 +451,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.9.a
+		name = darhmod_seres.10.a
 		small_artifact_reward = yes
 		owner = {
 			create_point_of_interest = {
@@ -493,9 +508,9 @@ planet_event = {
 #dig site 4
 #chapter 1
 fleet_event = {
-	id = darhmod_seres.10
-	title = "darhmod_seres.10.name"
-	desc = "darhmod_seres.10.desc"
+	id = darhmod_seres.11
+	title = "darhmod_seres.11.name"
+	desc = "darhmod_seres.11.desc"
 	picture = GFX_evt_archaeology_camp
 	show_sound = event_alien_signal
 	archaeology = yes
@@ -507,7 +522,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.10.a
+		name = darhmod_seres.11.a
 		small_artifact_reward = yes
 		owner = {
 			add_resource = {
@@ -545,9 +560,9 @@ fleet_event = {
 
 #chapter 2
 fleet_event = {
-	id = darhmod_seres.11
-	title = "darhmod_seres.11.name"
-	desc = "darhmod_seres.11.desc"
+	id = darhmod_seres.12
+	title = "darhmod_seres.12.name"
+	desc = "darhmod_seres.12.desc"
 	picture = GFX_evt_underground_city
 	show_sound = event_planetary_riot
 	archaeology = yes
@@ -559,7 +574,7 @@ fleet_event = {
 	from = { set_site_progress_locked = no }
 	}
 	option = {
-	name = darhmod_seres.11.a
+	name = darhmod_seres.12.a
 	hidden_effect = {
 			set_spawn_system_batch = begin
 				random_planet = {
@@ -669,24 +684,24 @@ country_event = {
 }
 
 ship_event = {
-	id = darhmod_seres.12
-	title = "darhmod_seres.12.name"
-	desc = "darhmod_seres.12.desc"
+	id = darhmod_seres.13
+	title = "darhmod_seres.13.name"
+	desc = "darhmod_seres.13.desc"
 	picture = GFX_evt_habitat
 	location = from
 	is_triggered_only = yes
 	trigger = {
 		from = { has_star_flag = darhmod_seres_home_system }
 	}
-	option = { name = darhmod_seres.12.a }
+	option = { name = darhmod_seres.13.a }
 }
 
 #dig site 5
 #chapter 1
 fleet_event = {
-	id = darhmod_seres.13
-	title = "darhmod_seres.13.name"
-	desc = "darhmod_seres.13.desc"
+	id = darhmod_seres.14
+	title = "darhmod_seres.14.name"
+	desc = "darhmod_seres.14.desc"
 	picture = GFX_evt_sapient_AI
 	show_sound = event_scanner
 	archaeology = yes
@@ -713,9 +728,9 @@ fleet_event = {
 
 #chapter 2
 fleet_event = {
-	id = darhmod_seres.14
-	title = "darhmod_seres.14.name"
-	desc = "darhmod_seres.14.desc"
+	id = darhmod_seres.15
+	title = "darhmod_seres.15.name"
+	desc = "darhmod_seres.15.desc"
 	picture = GFX_evt_small_space_battle
 	show_sound = event_space_battle
 	archaeology = yes
@@ -727,7 +742,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.14.a
+		name = darhmod_seres.15.a
 		small_artifact_reward = yes
 		owner = {
 			add_resource = { energy = -1000 }
@@ -742,9 +757,9 @@ fleet_event = {
 
 #chapter 3
 fleet_event = {
-	id = darhmod_seres.15
-	title = "darhmod_seres.15.name"
-	desc = "darhmod_seres.15.desc"
+	id = darhmod_seres.16
+	title = "darhmod_seres.16.name"
+	desc = "darhmod_seres.16.desc"
 	picture = GFX_evt_ruined_system
 	show_sound = event_wind_ruins
 	archaeology = yes
@@ -756,7 +771,7 @@ fleet_event = {
 		from = { set_site_progress_locked = no }
 	}
 	option = {
-		name = darhmod_seres.15.a
+		name = darhmod_seres.16.a
 		small_artifact_reward = yes
 		owner = {
 			add_resource = { unity = 6000 }
@@ -770,7 +785,7 @@ fleet_event = {
 		}
 	}
 	option = {
-		name = darhmod_seres.15.b
+		name = darhmod_seres.16.b
 		small_artifact_reward = yes
 		owner = {
 			add_resource = { unity = 9000 }
@@ -787,9 +802,9 @@ fleet_event = {
 
 #chapter 4
 fleet_event = {
-	id = darhmod_seres.16
-	title = "darhmod_seres.16.name"
-	desc = "darhmod_seres.16.desc"
+	id = darhmod_seres.17
+	title = "darhmod_seres.17.name"
+	desc = "darhmod_seres.17.desc"
 	picture = GFX_evt_ancient_artifact
 	show_sound = event_conversation
 	archaeology = yes
@@ -808,7 +823,7 @@ fleet_event = {
 		}
 	}
 	option = {
-		name = darhmod_seres.16.a
+		name = darhmod_seres.17.a
 		owner = {
 			add_relic = r_darhmod_seres_last_projector
 			add_research_option = tech_computer_titan
@@ -819,7 +834,7 @@ fleet_event = {
 		}
 	}
 	option = {
-		name = darhmod_seres.16.b
+		name = darhmod_seres.17.b
 		owner = {
 			add_modifier = {
 				modifier = mod_darhmod_precursor_seres_history_never_repeats
@@ -831,13 +846,13 @@ fleet_event = {
 
 #darhMOD_PRECURSOR_seres_SECRETS effect event
 country_event = {
-	id = darhmod_seres.17
-	title = "darhmod_seres.17.name"
-	desc = "darhmod_seres.17.desc"
+	id = darhmod_seres.18
+	title = "darhmod_seres.18.name"
+	desc = "darhmod_seres.18.desc"
 	picture = GFX_evt_board_meeting
 	is_triggered_only = yes
 	option = {
-		name = darhmod_seres.17.a
+		name = darhmod_seres.18.a
 		give_technology = { tech = tech_psionic_armor }
 		add_modifier = {
 			modifier = mod_darhmod_precursor_seres_secrets

@@ -1,6 +1,6 @@
 on_game_start = {
 	events = {
-		darhetc.1
+		darhetc.1	
 	}
 }
 on_entering_system_first_time = {

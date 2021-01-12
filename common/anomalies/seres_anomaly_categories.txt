@@ -1,0 +1,56 @@
+
+#Anomalie
+
+seres_anomaly_category = {
+	desc = seres_anomaly_desc
+	picture = GFX_evt_ship_travel
+	level = 1
+	should_ai_use = no
+	max_once_global = yes
+
+	spawn_chance = {
+		base = 100
+		has_global_flag = darhmod_precursor_seres	
+		modifier = {
+		factor = 0
+			NOR = {
+				has_global_flag = darhmod_precursor_seres_start
+			}
+		}	
+		modifier = {
+		factor = 0
+			NOR = {
+			is_planet_class = pc_molten
+			is_planet_class = pc_toxic
+			is_planet_class = pc_frozen
+			}
+		}
+		modifier = {
+		factor = 0
+			solar_system = {
+				OR = {
+					NOT = { exists = star }
+					has_star_flag = empire_cluster
+					is_fe_cluster = yes
+					any_system_planet = {
+						exists = archaeological_site
+						has_anomaly = yes
+					}
+				}
+			}
+		}
+		modifier = {
+		factor = 10
+			is_inside_nebula = yes
+		}
+		modifier = {
+		factor = 0.01
+			years_passed < 5
+		}
+	}
+	
+	on_spawn = {
+		set_global_flag = darhmod_precursor_seres_start
+	}	
+	on_success = darhmod_seres_1
+}
