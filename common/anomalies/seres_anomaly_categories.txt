@@ -48,6 +48,5 @@ seres_anomaly_category = {
 			years_passed < 5
 		}
 	}
-
 	on_success = darhmod_seres_1
 }
