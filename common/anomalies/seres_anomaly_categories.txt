@@ -10,13 +10,13 @@ seres_anomaly_category = {
 
 	spawn_chance = {
 		base = 100
-		has_global_flag = darhmod_precursor_seres	
 		modifier = {
-		factor = 0
-			NOR = {
+			factor = 0
+				OR = {
+				NOT = { has_global_flag = darhmod_precursor_seres }
 				has_global_flag = darhmod_precursor_seres_start
 			}
-		}	
+		}
 		modifier = {
 		factor = 0
 			NOR = {
@@ -48,9 +48,6 @@ seres_anomaly_category = {
 			years_passed < 5
 		}
 	}
-	
-	on_spawn = {
-		set_global_flag = darhmod_precursor_seres_start
-	}	
+
 	on_success = darhmod_seres_1
 }
