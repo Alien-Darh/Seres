@@ -15,7 +15,7 @@ ship_event = {
 		owner = { begin_event_chain = { event_chain = darhmod_seres_chain } }
 		from = { create_archaeological_site = DARH_seres_site_1 }
 	}
-	
+}
 #dig site 1
 #chapter 1	
 fleet_event = {
@@ -574,32 +574,32 @@ fleet_event = {
 	from = { set_site_progress_locked = no }
 	}
 	option = {
-	name = darhmod_seres.12.a
-	hidden_effect = {
+		name = darhmod_seres.12.a
+		hidden_effect = {
 			set_spawn_system_batch = begin
-				random_planet = {
+			random_planet = {
 				limit = { has_planet_flag = darhmod_seres_near_home_colony }
 				spawn_system = {
-				min_jumps = 0
-				max_jumps = 0
-				min_distance = 5
-				max_distance = 20
-				initializer = darhmod_seres_temp_system
-					}
-				}
-				random_system = {
-					limit = { has_star_flag = darhmod_seres_temp_system }
-					save_global_event_target_as = darhmod_seres_11_temp
-					every_system_planet = { prevent_anomaly = yes }
-				}
-				set_spawn_system_batch = end
-					event_target:global_event_country = {
-					country_event = {
-					id = darhmod_seres.110
-					days = 1800
-					}
+					min_jumps = 0
+					max_jumps = 0
+					min_distance = 5
+					max_distance = 20
+					initializer = darhmod_seres_temp_system
 				}
 			}
+			random_system = {
+				limit = { has_star_flag = darhmod_seres_temp_system }
+				save_global_event_target_as = darhmod_seres_11_temp
+				every_system_planet = { prevent_anomaly = yes }
+			}
+			set_spawn_system_batch = end
+			event_target:global_event_country = {
+				country_event = {
+					id = darhmod_seres.110
+					days = 1800
+				}
+			}
+		}
 		owner = {
 			create_point_of_interest = {
 			id = darhmod_seres_hidden_planet_4

@@ -14,7 +14,7 @@
   DARH_seres_site_1_desc:0 "Strange, weak and constant readings that are picked up by our experimental satellite in the §H[Root.Solar_System.GetName]§! system suggest better investigation and an unmanned survey spacecraft is fitted.\n\nWhen arriving to the area the experimental scanners of the orbiting spacecraft confirm a possible underground signal of §H[From.Planet.GetName]§! and locates a possible inland surface entry, however the risk of this expedition is discussed as some think the sign may be some kind of warning.\n\nOne expedition was §Yauthorized§! and a team of our best scientists prepares for the first major archaeological settlement in our history on an extraterrestrial surface."
 
   darhmod_seres.1.name:0 "Access to facilities"
-  darhmod_seres.1.desc:0 "The entrance to the facility is fantastic and there are some doubts about it... we will be prepared for what we find in §H[From.Planet.GetName]§!?.\n\nThe first hypothesis of our scientist §Y[Leader. GetName]§! when translating some symbols, it is that this was an archaeological settlement excavated thousands of years ago and what they have discovered here may no longer exist.\n\nThe inscriptions at the entrance have already been resolved and when activating some symbols the installation was energized, leaving free access to the interior... our exploration team is preparing to go down to the second level of the facilities.\n\nWe will use this technology from §Genergía§! that our team of engineers has found, to power the reactors of our ships in their auxiliary sections."
+  darhmod_seres.1.desc:0 "The entrance to the facility is fantastic and there are some doubts about it... we will be prepared for what we find in §H[From.Planet.GetName]§!?.\n\nThe first hypothesis of our scientist §Y[Leader.GetName]§! when translating some symbols, it is that this was an archaeological settlement excavated thousands of years ago and what they have discovered here may no longer exist.\n\nThe inscriptions at the entrance have already been resolved and when activating some symbols the installation was energized, leaving free access to the interior... our exploration team is preparing to go down to the second level of the facilities.\n\nWe will use this technology from §Genergía§! that our team of engineers has found, to power the reactors of our ships in their auxiliary sections."
   darhmod_seres.1.a:0 "Investigate the second level"
 
   darhmod_seres_chain_title:0 "Beings of light"
@@ -41,7 +41,7 @@
   darhmod_seres.5.desc:0 "When accessing inside §H[From.Planet.GetName]§! After a few mishaps, the entire exploration team was astonished to see the number of tiny swarms of active nanobots. It seems that somehow they were reactivated but without specific commands, so all they do is wander around waiting for instructions.\n\nIt was also found inside §H[From.Planet.GetName]§! much information of the relic that these §YLight Beings§! they were looking for, which according to the incomplete fragments, indicate a mysterious §HAura de Luz§! that was reaping them... The path of the possible coordinates of their native system was also found...\n\nIn the meantime we will use this new technology from §Gnanobots§! found to improve our ships in their auxiliary sections."
   darhmod_seres.5.a:0 "Investigate the coordinates"
 
-  darhmod_seres_colony_3_coordinates_poi:0 "2.- Beings of light coordinate
+  darhmod_seres_colony_3_coordinates_poi:0 "2.- Beings of light coordinate"
   darhmod_seres_colony_3_coordinates_desc:0 "We have found the coordinates of the system where these ancient beings of impressive technology probably come."
 
   DARH_seres_site_3:0 "Disaster"
@@ -109,7 +109,7 @@
   relic_darhmod_seres_last_projector_effect_passive:0 "$MOD_SHIP_ACCURACY_ADD$: §G+5%§!\n$MOD_SHIP_TRACKING_ADD$: §G+5%§!\n$MOD_SHIP_EVASION_MULT$: §G+5%§!"
   relic_darhmod_seres_last_projector_effect:0 "§HUnlock:§! Ultra Crisis"
   mod_r_darhmod_seres_last_projector:0 "Ultra Crisis Paradox"
-  mod_r_darhmod_seres_last_projector_tooltip:0 "§HUnlock:§!
+  mod_r_darhmod_seres_last_projector_tooltip:0 "§HUnlock:§!"
 
   artifact_darhmod_precursor_seres_research:0 "Secrets of the Beings of Light."
   artifact_darhmod_precursor_seres_research_desc:0 "Deepening the Secrets of the Beings of Light"

@@ -12,41 +12,43 @@ seres_anomaly_category = {
 		base = 100
 		modifier = {
 			factor = 0
-				OR = {
+			OR = {
 				NOT = { has_global_flag = darhmod_precursor_seres }
 				has_global_flag = darhmod_precursor_seres_start
 			}
 		}
 		modifier = {
-		factor = 0
+			factor = 0
 			NOR = {
-			is_planet_class = pc_molten
-			is_planet_class = pc_toxic
-			is_planet_class = pc_frozen
+				is_planet_class = pc_molten
+				is_planet_class = pc_toxic
+				is_planet_class = pc_frozen
 			}
 		}
 		modifier = {
-		factor = 0
+			factor = 0
 			solar_system = {
 				OR = {
 					NOT = { exists = star }
 					has_star_flag = empire_cluster
 					is_fe_cluster = yes
 					any_system_planet = {
-						exists = archaeological_site
-						has_anomaly = yes
+						OR = {
+							exists = archaeological_site
+							has_anomaly = yes
+						}
 					}
 				}
 			}
 		}
 		modifier = {
-		factor = 10
+			factor = 10
 			is_inside_nebula = yes
 		}
 		modifier = {
-		factor = 0.01
+			factor = 0.01
 			years_passed < 5
 		}
 	}
-	on_success = darhmod_seres_1
+	on_success = darhmod_seres.1
 }

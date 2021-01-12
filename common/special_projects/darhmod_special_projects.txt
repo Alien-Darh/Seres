@@ -10,7 +10,7 @@ special_project = {
 
 	on_success = {
 		owner = {
-			country_event = { id = darhmod_seres.17 }
+			country_event = { id = darhmod_seres.18 }
 		}
 	}
 }
