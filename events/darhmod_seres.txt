@@ -406,7 +406,25 @@ fleet_event = {
 				}
 				give_technology = { tech = tech_amoeba_strike_craft_1 }
 			}
-		}		
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_destroyer_hull_1 }
+				}
+				give_technology = { tech = tech_destroyer_hull_1 }
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_destroyer_hull_2 }
+				}
+				give_technology = { tech = tech_destroyer_hull_2 }
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_destroyer_build_speed }
+				}
+				give_technology = { tech = tech_destroyer_build_speed }
+			}
+		}
 	}
 }
 
@@ -589,7 +607,7 @@ fleet_event = {
 			}
 			random_system = {
 				limit = { has_star_flag = darhmod_seres_temp_system }
-				save_global_event_target_as = darhmod_seres_11_temp
+				save_global_event_target_as = darhmod_seres_12_temp
 				every_system_planet = { prevent_anomaly = yes }
 			}
 			set_spawn_system_batch = end
@@ -650,7 +668,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-	log = "[event_target:darhmod_seres_11_temp.GetName]"
+	log = "[event_target:darhmod_seres_12_temp.GetName]"
 	set_spawn_system_batch = begin
 	random_planet = {
 		limit = { has_planet_flag = darhmod_seres_near_home_colony }
@@ -661,7 +679,7 @@ country_event = {
 		initializer = darhmod_seres_home_system
 		}
 	}
-	event_target:darhmod_seres_11_temp = {
+	event_target:darhmod_seres_12_temp = {
 		spawn_natural_wormhole = {
 		bypass_type = wormhole
 		random_pos = yes
@@ -670,16 +688,16 @@ country_event = {
 	random_system = {
 		limit = {
 			has_star_flag = darhmod_seres_home_system
-			NOT = { is_same_value = event_target:darhmod_seres_11_temp }
+			NOT = { is_same_value = event_target:darhmod_seres_12_temp }
 		}
 		spawn_natural_wormhole = {
 			bypass_type = wormhole
 			random_pos = yes
 			}
-		link_wormholes = event_target:darhmod_seres_11_temp
+		link_wormholes = event_target:darhmod_seres_12_temp
 		}
 		set_spawn_system_batch = end
-		clear_global_event_target = darhmod_seres_11_temp
+		clear_global_event_target = darhmod_seres_12_temp
 	}
 }
 

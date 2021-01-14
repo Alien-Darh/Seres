@@ -1,10 +1,10 @@
 
-#Anomalie
+#Anomalie Seres
 
 seres_anomaly_category = {
 	desc = seres_anomaly_desc
 	picture = GFX_evt_ship_travel
-	level = 1
+	level = 9
 	should_ai_use = no
 	max_once_global = yes
 
@@ -47,7 +47,7 @@ seres_anomaly_category = {
 		}
 		modifier = {
 			factor = 0.01
-			years_passed < 5
+			years_passed < 5 #(before)
 		}
 	}
 	on_success = darhmod_seres.1
