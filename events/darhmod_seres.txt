@@ -833,7 +833,7 @@ fleet_event = {
 	after = {
 		from = { set_site_progress_locked = no }
 		owner = {
-			custom_tooltip = darhmod_seres.16.a.tooltip
+			custom_tooltip = darhmod_seres.17.a.tooltip
 			end_event_chain = darhmod_seres_chain
 		}
 		hidden_effect = {

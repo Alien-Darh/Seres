@@ -223,17 +223,17 @@ DARH_seres_site_5 = {
 		event = darhmod_seres.14
 	}
 	stage = {
-		difficulty = 13
+		difficulty = 12
 		icon = GFX_archaeology_runes_D2
 		event = darhmod_seres.15
 	}
 	stage = {
-		difficulty = 14
+		difficulty = 12
 		icon = GFX_archaeology_runes_D3
 		event = darhmod_seres.16
 	}
 	stage = {
-		difficulty = 15
+		difficulty = 12
 		icon = GFX_archaeology_runes_D4
 		event = darhmod_seres.17
 	}
