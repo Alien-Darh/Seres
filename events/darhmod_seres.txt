@@ -798,7 +798,7 @@ fleet_event = {
 	}
 	option = {
 		name = darhmod_seres.15.a
-		small_artifact_reward = yes
+		medium_artifact_reward = yes
 		owner = {
 			add_resource = { energy = -1000 }
 			add_research_option = tech_arc_emitter_1
@@ -827,7 +827,7 @@ fleet_event = {
 	}
 	option = {
 		name = darhmod_seres.16.a
-		small_artifact_reward = yes
+		medium_artifact_reward = yes
 		owner = {
 			add_resource = { unity = 6000 }
 			add_resource = { energy = -2500 }
