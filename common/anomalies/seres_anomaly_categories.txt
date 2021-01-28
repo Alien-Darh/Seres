@@ -3,7 +3,7 @@
 
 seres_anomaly_category = {
 	desc = seres_anomaly_desc
-	picture = GFX_evt_ship_travel
+	picture = GFX_evt_ship_seres
 	level = 9
 	should_ai_use = no
 	max_once_global = yes

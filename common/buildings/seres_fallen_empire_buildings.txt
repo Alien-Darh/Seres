@@ -9,6 +9,8 @@ building_ancient_control_center = {
 	can_demolish = yes
 	icon = building_maintenance_depot
 	
+	prerequisites = { "tech_psionic_armor" }
+	
 	potential = {
 		exists = owner
 		owner = { is_regular_empire = yes }
@@ -52,6 +54,8 @@ building_ancient_palace = {
 	can_build = no
 	can_demolish = yes
 	icon = building_palace
+
+	prerequisites = { "tech_psionic_armor" }
 	
 	potential = {
 		exists = owner
@@ -119,6 +123,8 @@ building_hab_fe_capital = {
 	can_demolish = yes
 	icon = building_capital
 
+	prerequisites = { "tech_psionic_armor" }
+	
 	potential = {
 		is_planet_class = pc_habitat
 		exists = owner
@@ -189,6 +195,8 @@ building_empyrean_shrine = {
 	can_build = no
 	can_demolish = yes
 	icon = building_citadel_of_faith
+
+	prerequisites = { "tech_psionic_armor" }
 	
 	potential = {
 		exists = owner
@@ -221,6 +229,8 @@ building_ancient_cryo_chamber = {
 	base_buildtime = @b2_time
 	can_build = no
 	can_demolish = yes
+
+	prerequisites = { "tech_psionic_armor" }
 	
 	potential = {
 		exists = owner
@@ -249,6 +259,8 @@ building_fe_xeno_zoo = {
 	capital = yes
 	can_build = no
 	can_demolish = yes
+
+	prerequisites = { "tech_psionic_armor" }
 	
 	potential = {
 		exists = owner
@@ -288,6 +300,8 @@ building_fe_dome = {
 	base_buildtime = @b2_time
 	can_build = yes
 	icon = building_paradise_dome
+	
+	prerequisites = { "tech_psionic_armor" }	
 	
 	potential = {
 		custom_tooltip = {
@@ -339,6 +353,8 @@ building_affluence_center = {
 	can_build = yes
 	can_demolish = yes
 
+	prerequisites = { "tech_psionic_armor" }
+	
 	category = resource
 
 	potential = {
@@ -386,6 +402,8 @@ building_class_4_singularity = {
 	can_build = yes
 	can_demolish = yes
 
+	prerequisites = { "tech_psionic_armor" }
+	
 	category = resource
 
 	potential = {
@@ -428,6 +446,8 @@ building_dimensional_fabricator = {
 	can_build = yes
 	can_demolish = yes
 
+	prerequisites = { "tech_psionic_armor" }
+	
 	category = resource
 
 	potential = {
@@ -485,6 +505,8 @@ building_master_archive = {
 	can_build = yes
 	can_demolish = yes
 
+	prerequisites = { "tech_psionic_armor" }
+	
 	category = research
 
 	potential = {
@@ -498,7 +520,6 @@ building_master_archive = {
 	    }
 	}
 
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -506,7 +527,6 @@ building_master_archive = {
 		}
 		job_fe_archivist_add = 10
 	}
-
 
 	triggered_planet_modifier = {
 		potential = {
@@ -531,7 +551,6 @@ building_master_archive = {
 		text = job_researcher_effect_desc
 	}
 
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -554,7 +573,6 @@ building_master_archive = {
 		}
 		text = job_brain_drone_effect_desc
 	}
-
 
 	triggered_planet_modifier = {
 		potential = {
@@ -579,7 +597,6 @@ building_master_archive = {
 		text = job_calculator_effect_desc
 	}
 
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -602,6 +619,8 @@ building_nano_forge = {
 	can_build = yes
 	can_demolish = yes
 
+	prerequisites = { "tech_psionic_armor" }
+	
 	category = resource
 
 	potential = {
@@ -648,6 +667,8 @@ building_nourishment_center = {
 	can_build = yes
 	can_demolish = yes
 
+	prerequisites = { "tech_psionic_armor" }
+	
 	category = resource
 
 	potential = {
@@ -697,6 +718,8 @@ building_fe_stronghold = {
 	add_to_first_building_slot = yes
 	base_cap_amount = 1
 
+	prerequisites = { "tech_psionic_armor" }
+	
 	category = army
 
 	potential = {
@@ -719,7 +742,6 @@ building_fe_stronghold = {
 		army_starting_experience_add = 150
 	}
 
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -727,7 +749,6 @@ building_fe_stronghold = {
 		}
 		job_fe_protector_add = 10
 	}
-
 
 	triggered_planet_modifier = {
 		potential = {
@@ -752,7 +773,6 @@ building_fe_stronghold = {
 		text = job_soldier_effect_desc
 	}
 
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -775,7 +795,6 @@ building_fe_stronghold = {
 		}
 		text = job_warrior_drone_effect_desc
 	}
-
 
 	resources = {
 		category = planet_buildings

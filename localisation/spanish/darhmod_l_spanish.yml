@@ -10,7 +10,7 @@
   ### Anomaly: Seres
   
   seres_anomaly_category:0 "Distorsión"
-  seres_anomaly_desc:0 "Nuestra nave de investigación experimentó una leve distorsión en sus instrumentos de navegación al pasar por el sistema §H[Root.Solar_System.GetName]§!.\n\nHabrá que investigar la causa de esta anomalía, aunque nuestro científico sospecha que podría ser algún tipo de reactor en mal estado en la superficie de §H[From.Planet.GetName]§!, que genera esta distorsión temporal."
+  seres_anomaly_desc:0 "Nuestra nave de investigación experimentó una leve distorsión en sus instrumentos de navegación al pasar por el sistema §H[Root.Solar_System.GetName]§!.\n\nHabrá que investigar la causa de esta anomalía y unas extrañas visiones que nuestro cientifico ha reportado al pasar cerca de la superficie de §H[From.Planet.GetName]§!."
 
   ### [Precursor] Seres de Luz ###
   

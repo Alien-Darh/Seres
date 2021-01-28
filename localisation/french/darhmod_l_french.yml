@@ -10,7 +10,7 @@
   ### Anomaly: Seres
   
   seres_anomaly_category:0 "Distortion"
-  seres_anomaly_desc:0 "Our research ship experienced a slight distortion in its navigational instruments as it passed through the §H[Root.Solar_System.GetName]§! System.\n\nThe cause of this anomaly will need to be investigated, although our scientist suspects it could be something a bad reactor type on the surface of §H[From.Planet.GetName]§!, which generates this temporal distortion."
+  seres_anomaly_desc:0 "Our research ship experienced a slight distortion in its navigation instruments when passing through the §H[Root.Solar_System.GetName]§! system.\n\nThe cause of this anomaly and some strange visions that our scientist has reported will have to be investigated when passing near the surface of §H[From.Planet.GetName]§!."
 
   ### [Precursor] Beings of light ###
 

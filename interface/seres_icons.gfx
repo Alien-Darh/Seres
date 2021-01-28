@@ -25,4 +25,10 @@ spriteTypes = {
 		name = "GFX_evt_habitat"
 		texturefile = "gfx/interface/planetview/habitat.dds"	
 	}
+	spriteType = {
+		name = "GFX_evt_ship_seres"
+		texturefile = "gfx/event_pictures/ship_seres.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}	
 }
