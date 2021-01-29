@@ -9,7 +9,7 @@ seres_anomaly_category = {
 	max_once_global = yes
 
 	spawn_chance = {
-		base = 50
+		base = 25
 		modifier = {
 			factor = 0
 			OR = {

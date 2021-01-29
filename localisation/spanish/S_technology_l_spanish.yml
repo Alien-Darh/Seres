@@ -50,7 +50,7 @@
   TITAN_BEHAVIOR_DESC:0 "§HArtilleria táctica:§! El Titan se queda detrás de la formación de la flota para disparar sus armas principales al objetivo (§Y200 pársec§!)"
   COMBAT_COMPUTER_TITAN:0 "Ordenador de combate Titan" 
  
- ################ 
+ ################
 
   tech_psionic_armor:0 "Armadura ancestral"
   tech_psionic_armor_desc:0 "Armadura elemental de poderes ancestrales, único en su tipo es fuertemente resistente... debe ser manipulada por almirantes capaces de soportar la tensión del combate mas extremo." 
@@ -73,3 +73,62 @@
   TECH_UNLOCK_COMPUTER_TITAN_TITLE:0 "§SDesbloquea el componente:§! Horus \n§SComponente:§! Titan \n§SClase:§! Ancestral." 
 
   TITAN_BEHAVIOR_DESC:0 "§HArtilleria táctica:§! El Titan se queda detrás de la formación de la flota para disparar sus armas principales al objetivo (§Y200 pársec§!)" 
+  
+  ########### Tecnología Ancestral ###########
+  
+  tech_class_4_singularity:0 "Singularidad clase 4"
+  tech_class_4_singularity_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante generador de energía único en su clase que nos impulsará un paso mas allá en el entendimiento energético."
+  TECH_UNLOCK_CLASS_4_SINGULARITY_TITLE:0 "Edificio de energía §YSeres de luz§!"
+  TECH_UNLOCK_CLASS_4_SINGULARITY_DESC:0 "Singularidad clase 4"
+  building_class_4_singularityx:0 "Singularidad clase 4"
+  building_class_4_singularityx_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante generador de energía único en su clase que nos impulsará un paso mas allá en el entendimiento energético."
+  
+  tech_dimensional_fabricator:0 "Fabrica dimensional"
+  tech_dimensional_fabricator_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a esta impresionante fabrica única en su clase que nos impulsará un paso mas allá en el conocimiento de nuevos elementos del universo."
+  TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE:0 "Fabrica excéntrica §YSeres de luz§!"
+  TECH_UNLOCK_DIMENSIONAL_FABRICATOR_DESC:0 "Fabrica Dimensional"
+  building_dimensional_fabricatorx:0 "Fabrica dimensional"
+  building_dimensional_fabricatorx_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a esta impresionante fabrica única en su clase que nos impulsará un paso mas allá en el conocimiento de nuevos elementos del universo."
+  
+  tech_nourishment_center:0 "Centro de nutrición"
+  tech_nourishment_center_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante centro de nutrición único en su clase que nos impulsará un paso mas allá en la elaboración de nuevas tecnologías alimenticias."
+  TECH_UNLOCK_NOURISHMENT_CENTER_TITLE:0 "Centro de nutrición §YSeres de luz§!"
+  TECH_UNLOCK_NOURISHMENT_CENTER_DESC:0 "Centro de Nutrición"
+  building_nourishment_centerx:0 "Centro de nutrición"
+  building_nourishment_centerx_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante centro de nutrición único en su clase que nos impulsará un paso mas allá en la elaboración de nuevas tecnologías alimenticias."
+  
+  tech_affluence_center:0 "Centro de afluencia"
+  tech_affluence_center_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante centro de afluencia único en su clase que nos impulsará un paso mas allá para la producción de bienes de consumo."
+  TECH_UNLOCK_AFFLUENCE_CENTER_TITLE:0 "Centro de afluencia §YSeres de luz§!"
+  TECH_UNLOCK_AFFLUENCE_CENTER_DESC:0 "Centro de afluencia"
+  building_affluence_centerx:0 "Centro de afluencia"
+  building_affluence_centerx_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante centro de afluencia único en su clase que nos impulsará un paso mas allá para la producción de bienes de consumo."
+  
+  tech_nano_forge:0 "Nanoforja"
+  tech_nano_forge_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a esta impresionante nanoforja única en su clase que nos impulsará un paso mas allá en la elaboración de aleaciones."
+  TECH_UNLOCK_NANO_FORGE_TITLE:0 "Nanoforja §YSeres de luz§!"
+  TECH_UNLOCK_NANO_FORGE_DESC:0 "Nanoforja"
+  building_nano_forgex:0 "Nanoforja"
+  building_nano_forgex_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a esta impresionante nanoforja única en su clase que nos impulsará un paso mas allá en la elaboración de aleaciones."
+  
+  tech_master_archive:0 "Archivo maestro"
+  tech_master_archive_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a estos impresionantes archivos maestros únicos en su clase que nos impulsará un paso mas allá de lo conocido."
+  TECH_UNLOCK_MASTER_ARCHIVE_TITLE:0 "Archivo maestro §YSeres de luz§!"
+  TECH_UNLOCK_MASTER_ARCHIVE_DESC:0 "Archivo maestro"
+  building_master_archivex:0 "Archivo maestro"
+  building_master_archivex_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a estos impresionantes archivos maestros únicos en su clase que nos impulsará un paso mas allá de lo conocido."
+  
+  tech_fe_stronghold:0 "Complejo aegis"
+  tech_fe_stronghold_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante complejo aegis único en su clase que nos impulsará un paso mas allá en la compresión táctica de defensa y ataque terrestre."
+  TECH_UNLOCK_FE_STRONGHOLD_TITLE:0 "Complejo aegis §YSeres de luz§!"
+  TECH_UNLOCK_FE_STRONGHOLD_DESC:0 "Complejo aegis"
+  building_fe_strongholdx:0 "Complejo aegis"
+  building_fe_strongholdx_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante complejo aegis único en su clase que nos impulsará un paso mas allá en la compresión táctica de defensa y ataque terrestre."
+  
+  tech_utopian_paradise_dome:0 "Cúpula celeste"
+  tech_utopian_paradise_dome_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a esta impresionante cúpula celeste única en su clase que nos impulsará un paso mas allá para las nuevas colonias de nuetro imperio."
+  TECH_UTOPIAN_PARADISE_DOME_TITLE:0 "Cúpula celeste §YSeres de luz§!"
+  TECH_UTOPIAN_PARADISE_DOME_DESC:0 "Cúpula celeste"
+  building_fe_domex:0 "Cúpula celeste"
+  building_fe_domex_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a esta impresionante cúpula celeste única en su clase que nos impulsará un paso mas allá para las nuevas colonias de nuetro imperio."
+  

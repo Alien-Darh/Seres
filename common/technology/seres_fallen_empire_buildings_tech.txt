@@ -1,0 +1,366 @@
+tech_class_4_singularity = {
+    area = physics
+    cost = @tier5cost3
+    tier = 5
+    weight = @tier5weight3
+    category = { field_manipulation }
+    is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_CLASS_4_SINGULARITY_TITLE"
+			desc = "TECH_UNLOCK_CLASS_4_SINGULARITY_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = no
+		}
+        modifier = {
+            factor = 0
+			years_passed < 200
+        }
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}	
+}
+
+tech_dimensional_fabricator = {
+    area = engineering
+    cost = @tier5cost3
+    tier = 5
+    weight = @tier5weight3
+    category = { materials }
+    is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE"
+			desc = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = no
+		}	
+        modifier = {
+            factor = 0
+			years_passed < 200
+        }
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_nourishment_center = {
+    area = society
+    cost = @tier5cost3
+    tier = 5
+    weight = @tier5weight3
+    category = { biology }
+    is_rare = yes
+
+	potential = {
+		country_uses_food = yes
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_NOURISHMENT_CENTER_TITLE"
+			desc = "TECH_UNLOCK_NOURISHMENT_CENTER_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = no
+		}	
+        modifier = {
+            factor = 0
+			years_passed < 200
+        }
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
+tech_affluence_center = {
+    area = engineering
+    cost = @tier5cost3
+    tier = 5
+    weight = @tier5weight3
+    category = { industry }
+    is_rare = yes
+
+	potential = {
+		country_uses_consumer_goods = yes
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_AFFLUENCE_CENTER_TITLE"
+			desc = "TECH_UNLOCK_AFFLUENCE_CENTER_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = no
+		}	
+        modifier = {
+            factor = 0
+			years_passed < 200
+        }
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+tech_nano_forge = {
+    area = engineering
+    cost = @tier5cost3
+    tier = 5
+    weight = @tier5weight3
+    category = { materials }
+    is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_NANO_FORGE_TITLE"
+			desc = "TECH_UNLOCK_NANO_FORGE_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = no
+		}	
+        modifier = {
+            factor = 0
+			years_passed < 200
+        }
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_master_archive = {
+    area = physics
+    cost = @tier5cost3
+    tier = 5
+    weight = @tier5weight3
+    category = { computing }
+    is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_MASTER_ARCHIVE_TITLE"
+			desc = "TECH_UNLOCK_MASTER_ARCHIVE_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = no
+		}	
+        modifier = {
+            factor = 0
+			years_passed < 200
+        }
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+tech_fe_stronghold = {
+    area = society
+    cost = @tier5cost3
+    tier = 5
+    weight = @tier5weight3
+    category = { military_theory }
+    is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_FE_STRONGHOLD_TITLE"
+			desc = "TECH_UNLOCK_FE_STRONGHOLD_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = no
+		}	
+        modifier = {
+            factor = 0
+			years_passed < 200
+        }
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+tech_utopian_paradise_dome = {
+    area = society
+    cost = @tier5cost3
+    tier = 5
+    weight = @tier5weight3
+    category = { statecraft }
+    is_rare = yes
+
+ 	prereqfor_desc = {
+		custom = {
+			title = "TECH_UTOPIAN_PARADISE_DOME_TITLE"
+			desc = "TECH_UTOPIAN_PARADISE_DOME_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = no
+		}	
+        modifier = {
+            factor = 0
+			years_passed < 200
+        }
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}

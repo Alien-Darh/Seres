@@ -133,7 +133,7 @@
   DARHMOD_PRECURSOR_SERES_SECRETS_DESC:0 "Examine the temple for more technology."
 
   darhmod_seres.18.name:0 "Ultra Defense Armor"
-  darhmod_seres.18.desc:0 "It seems that a way to materialize relic energy into armor had somehow been figured out, but they were never able to put it into practice. Our fleets could use this when it's finished"
+  darhmod_seres.18.desc:0 "It seems that a way to materialize relic energy into armor had somehow been figured out, but they were never able to put it into practice. Our fleets could use this when it's finished.\n\nIn addition, detailed plans of buildings and ancestral weapons have been found that our scientists will study to include our planets and ships respectively... we will have to wait until the turn of the century."
   darhmod_seres.18.a:0 "Use it for our fleets."
  
   mod_darhmod_precursor_seres_secrets:0 "Secrets of the light beings"
