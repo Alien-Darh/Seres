@@ -3,6 +3,7 @@ on_game_start = {
 		darhetc.1	
 	}
 }
+
 on_entering_system_first_time = {
 	events = {
 		darhmod_seres.13

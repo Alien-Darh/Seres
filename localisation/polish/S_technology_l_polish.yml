@@ -73,4 +73,63 @@
   TECH_UNLOCK_COMPUTER_TITAN_DESC:0 "A component taken from the ancient relic adds strike distance to our Titan ship ... Horus, the all-seeing eye."
   TECH_UNLOCK_COMPUTER_TITAN_TITLE:0 "§SUnlock the component:§! Horus \n§Scomponents:§! Titan \n§SClass:§! Ancestral." 
 
-  TITAN_BEHAVIOR_DESC:0 "§Hartillería táctica:§! The Titan stays behind the fleet formation to fire its primary weapons at the target (§Y200 pársec§!)" 
+  TITAN_BEHAVIOR_DESC:0 "§Hartillería táctica:§! The Titan stays behind the fleet formation to fire its primary weapons at the target (§Y200 pársec§!)"
+
+  ########### Tecnología Ancestral ###########
+  
+  tech_class_4_singularity:0 "Class 4 singularity"
+  tech_class_4_singularity_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have gained access to this impressive one-of-a-kind power generator that will take us one step further in understanding energy."
+  TECH_UNLOCK_CLASS_4_SINGULARITY_TITLE:0 "Energy building §YLight beings§!"
+  TECH_UNLOCK_CLASS_4_SINGULARITY_DESC:0 "Class 4 singularity"
+  building_class_4_singularityx:0 "Class 4 singularity"
+  building_class_4_singularityx_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have gained access to this impressive one-of-a-kind power generator that will take us one step further in understanding energy."
+  
+  tech_dimensional_fabricator:0 "Dimensional factory"
+  tech_dimensional_fabricator_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind factory that will take us a step further in the knowledge of new elements of the universe."
+  TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE:0 "Eccentric factory §YBeings of Light§!"
+  TECH_UNLOCK_DIMENSIONAL_FABRICATOR_DESC:0 "Dimensional factory"
+  building_dimensional_fabricatorx:0 "Dimensional factory"
+  building_dimensional_fabricatorx_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind factory that will take us a step further in the knowledge of new elements of the universe."
+  
+  tech_nourishment_center:0 "Nutrition center"
+  tech_nourishment_center_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind nutrition center that will take us one step further in the development of new food technologies."
+  TECH_UNLOCK_NOURISHMENT_CENTER_TITLE:0 "Nutrition center §YBeings of Light§!"
+  TECH_UNLOCK_NOURISHMENT_CENTER_DESC:0 "Nutrition center"
+  building_nourishment_centerx:0 "Nutrition center"
+  building_nourishment_centerx_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind nutrition center that will take us one step further in the development of new food technologies."
+  
+  tech_affluence_center:0 "Affluence center"
+  tech_affluence_center_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind affluence center that will take us one step further for the production of consumer goods."
+  TECH_UNLOCK_AFFLUENCE_CENTER_TITLE:0 "Center of affluence §YBeings of light§!"
+  TECH_UNLOCK_AFFLUENCE_CENTER_DESC:0 "Affluence center"
+  building_affluence_centerx:0 "Affluence center"
+  building_affluence_centerx_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind affluence center that will take us one step further for the production of consumer goods."
+  
+  tech_nano_forge:0 "Nanoforja"
+  tech_nano_forge_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind nanoforja that will take us a step further in the manufacture of alloys."
+  TECH_UNLOCK_NANO_FORGE_TITLE:0 "Nanoforja §YBeings of light§!"
+  TECH_UNLOCK_NANO_FORGE_DESC:0 "Nanoforja"
+  building_nano_forgex:0 "Nanoforja"
+  building_nano_forgex_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind nanoforja that will take us a step further in the manufacture of alloys."
+  
+  tech_master_archive:0 "Master file"
+  tech_master_archive_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have gained access to these impressive one-of-a-kind master files that will take us a step beyond the known."
+  TECH_UNLOCK_MASTER_ARCHIVE_TITLE:0 "Master file §YLight beings§!"
+  TECH_UNLOCK_MASTER_ARCHIVE_DESC:0 "Master file"
+  building_master_archivex:0 "Master file"
+  building_master_archivex_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have gained access to these impressive one-of-a-kind master files that will take us a step beyond the known."
+  
+  tech_fe_stronghold:0 "Aegis complex"
+  tech_fe_stronghold_desc:0 "Thanks to the detailed plans in the libraries of the §YLight Beings§! we have gained access to this impressive one-of-a-kind aegis complex that will take us one step further in our tactical understanding of defense and ground attack."
+  TECH_UNLOCK_FE_STRONGHOLD_TITLE:0 "Aegis complex §YBeings of light§!"
+  TECH_UNLOCK_FE_STRONGHOLD_DESC:0 "Aegis complex"
+  building_fe_strongholdx:0 "Aegis complex"
+  building_fe_strongholdx_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have gained access to this impressive one-of-a-kind aegis complex that will take us a step further in our tactical understanding of defense and ground attack."
+  
+  tech_utopian_paradise_dome:0 "Celestial dome"
+  tech_utopian_paradise_dome_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind celestial dome that will take us one step further for the new colonies of our empire."
+  TECH_UTOPIAN_PARADISE_DOME_TITLE:0 "Celestial dome §YBeings of light§!"
+  TECH_UTOPIAN_PARADISE_DOME_DESC:0 "Celestial dome"
+  building_fe_domex:0 "Celestial dome"
+  building_fe_domex_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind celestial dome that will take us one step further for the new colonies of our empire."
+  
