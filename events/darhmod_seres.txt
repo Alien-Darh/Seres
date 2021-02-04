@@ -132,15 +132,15 @@ fleet_event = {
 			}
 			else_if = {
 				limit = {
-					NOT = { has_technology = tech_archeology_lab }
+					NOT = { has_technology = tech_sensors_2 }
 				}
-				give_technology = { tech = tech_archeology_lab }
+				give_technology = { tech = tech_sensors_2 }
 			}
 			else_if = {
 				limit = {
-					NOT = { has_technology = tech_curator_lab }
+					NOT = { has_technology = tech_sensors_3 }
 				}
-				give_technology = { tech = tech_curator_lab }
+				give_technology = { tech = tech_sensors_3 }
 			}
 			create_point_of_interest = {
 				id = darhmod_seres_hidden_planet_1
@@ -702,11 +702,9 @@ country_event = {
 		}
 		set_spawn_system_batch = end
 		clear_global_event_target = darhmod_seres_12_temp
-		from = {
-			ship_event = {
-				id = darhmod_seres.55
-			}		
-		}	
+		FROM = { save_event_target_as = wormhole_system }
+		set_country_flag = encountered_first_wormhole
+		add_seen_bypass_type = wormhole
 	}
 }
 

@@ -9,3 +9,12 @@ on_entering_system_first_time = {
 		darhmod_seres.13
 	}
 }
+
+#on_game_start_country = {
+#	events = {
+#		game_start.31 # Create wormhole pairs
+#		distar.290 # Spawn Sealed System
+#		distar.242		
+#		apoc.5		
+#	}
+#}

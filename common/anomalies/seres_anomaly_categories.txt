@@ -4,33 +4,43 @@ seres_anomaly_category = {
 	desc = seres_anomaly_desc
 	picture = GFX_evt_ship_seres
 	level = 10
+	should_ai_use = no
 	max_once_global = yes
 	
 	spawn_chance = {
 		base = 25
 		modifier = {
-			add = 100
-			always = yes
+			factor = 0
 			is_star = no
-			is_asteroid = no			
-			uninhabitable_regular_planet = yes
+			is_asteroid = no					
+			OR = {
+				is_planet_class = pc_frozen
+				is_planet_class = pc_toxic			
+			}
 			NOT = {
 				is_planet_class = pc_gas_giant			
-			}
-			has_anomaly = no
-			from.owner = { is_ai = no }					
+			}			
+		}
+		modifier = {
+			factor = 0
 			OR = {
 				NOT = { has_global_flag = darhmod_precursor_seres }
 				has_global_flag = darhmod_precursor_seres_start
-			}	
+			}
+		}		
+		modifier = {
+			factor = 0
 			solar_system = {
-				exists = star
-				NOR = {
+				OR = {
+					NOT = { exists = star }
 					has_star_flag = empire_cluster
 					is_fe_cluster = yes
-				}
-				any_system_planet = {
-					NOT = { exists = archaeological_site }
+					any_system_planet = {
+						OR = {
+							exists = archaeological_site
+							has_anomaly = yes
+						}
+					}
 				}
 			}
 		}
