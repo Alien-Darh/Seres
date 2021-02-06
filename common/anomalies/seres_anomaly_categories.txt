@@ -8,29 +8,25 @@ seres_anomaly_category = {
 	max_once_global = yes
 	
 	spawn_chance = {
-		base = 25
-		modifier = {
-			factor = 0
-			is_star = no
-			is_asteroid = no					
-			OR = {
+        modifier = {
+            add = 1000
+            is_star = no
+            is_asteroid = no                    
+            OR = {
+				is_planet_class = pc_toxic
+				is_planet_class = pc_barren			
 				is_planet_class = pc_frozen
-				is_planet_class = pc_toxic			
-			}
+            }
 			NOT = {
-				is_planet_class = pc_gas_giant			
-			}			
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { has_global_flag = darhmod_precursor_seres }
-				has_global_flag = darhmod_precursor_seres_start
+				is_planet_class = pc_gas_giant
 			}
-		}		
-		modifier = {
-			factor = 0
-			solar_system = {
+            solar_system = {
+				any_neighbor_system = {
+					exists = space_owner	
+					space_owner = {
+						is_ai = no
+					}
+				}
 				OR = {
 					NOT = { exists = star }
 					has_star_flag = empire_cluster
@@ -41,9 +37,14 @@ seres_anomaly_category = {
 							has_anomaly = yes
 						}
 					}
-				}
-			}
+				}			
+			}			
 		}
+		modifier = {
+			factor = 0.01
+			years_passed < 5	
+		}		
 	}
+	
 	on_success = darhmod_seres.1
 }

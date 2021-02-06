@@ -14,6 +14,9 @@ ship_event = {
 		name = darhmod_seres.1.a
 		owner = { begin_event_chain = { event_chain = darhmod_seres_chain } }
 		from = { create_archaeological_site = DARH_seres_site_1 }
+		owner = { 
+			give_technology = { tech = tech_automated_exploration }
+		}		
 	}
 }
 #dig site 1
@@ -40,9 +43,9 @@ fleet_event = {
 		owner = {
 			if = {
 				limit = {
-					NOT = { has_technology = tech_reactor_boosters_1 }
+					NOT = { has_technology = tech_reactor_boosters_2 }
 				}
-				give_technology = { tech = tech_reactor_boosters_1 }
+				give_technology = { tech = tech_reactor_boosters_2 }
 			}
 		}
 	}
@@ -126,12 +129,6 @@ fleet_event = {
 		owner = {
 			if = {
 				limit = {
-					NOT = { has_technology = tech_automated_exploration }
-				}
-				give_technology = { tech = tech_automated_exploration }
-			}
-			else_if = {
-				limit = {
 					NOT = { has_technology = tech_sensors_2 }
 				}
 				give_technology = { tech = tech_sensors_2 }
@@ -139,6 +136,12 @@ fleet_event = {
 			else_if = {
 				limit = {
 					NOT = { has_technology = tech_sensors_3 }
+				}
+				give_technology = { tech = tech_sensors_3 }
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_sensors_4 }
 				}
 				give_technology = { tech = tech_sensors_3 }
 			}
@@ -310,22 +313,24 @@ fleet_event = {
 		owner = {
 			if = {
 				limit = {
-					NOT = { has_technology = tech_gateway_construction }
-				}
-				give_technology = { tech = tech_gateway_construction }
-			}
-			else_if = {
-				limit = {
-					NOT = { has_technology = tech_gateway_activation }
-				}
-				give_technology = {  tech = tech_gateway_activation }
-			}
-			else_if = {
-				limit = {
 					NOT = { has_technology = tech_wormhole_stabilization }
 				}
 				give_technology = { tech = tech_wormhole_stabilization }
-			}	
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_planetary_shield_generator }
+				}
+				give_technology = {  tech = tech_planetary_shield_generator }
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_experimental_subspace_navigation }
+				}
+				give_technology = { tech = tech_experimental_subspace_navigation }
+			}
+			add_research_option = tech_gateway_construction
+			add_research_option = tech_gateway_activation				
 		}				
 	}
 }
