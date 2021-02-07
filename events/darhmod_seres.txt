@@ -707,37 +707,6 @@ country_event = {
 		}
 		set_spawn_system_batch = end
 		clear_global_event_target = darhmod_seres_12_temp
-		FROM = { save_event_target_as = wormhole_system }
-		set_country_flag = encountered_first_wormhole
-		add_seen_bypass_type = wormhole
-	}
-}
-
-ship_event = {
-	id = darhmod_seres.55
-	title = apoc.5.name
-	desc = "apoc.5.desc"
-	picture = GFX_evt_wormhole
-	show_sound = event_radio_chatter
-	location = FROM
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_first_wormhole }
-		}
-	}
-	
-	immediate = {
-		owner = {
-			set_country_flag = encountered_first_wormhole
-			add_seen_bypass_type = wormhole
-		}
-	}	
-	
-	option = {
-		name = apoc.5.a
 	}
 }
 
