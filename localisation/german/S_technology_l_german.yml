@@ -76,6 +76,11 @@
   TITAN_BEHAVIOR_DESC:0 "§Hartillería táctica:§! The Titan stays behind the fleet formation to fire its primary weapons at the target (§Y200 pársec§!)"
 
   ########### Tecnología Ancestral ###########
+
+  tech_building_seres:0 "Architecture Beings of Light"
+  tech_building_seres_desc:0 "Access to the architecture of tactical and technical buildings of §YBeings of light§! from the libraries of Nibiru."
+  TECH_BUILDING_SERES_TITLE:0 "Buildings of Light"
+  TECH_BUILDING_SERES_DESC:0 "Access to the architecture of tactical and technical buildings of §YBeings of light§! from the libraries of Nibiru."
   
   tech_class_4_singularity:0 "Class 4 singularity"
   tech_class_4_singularity_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have gained access to this impressive one-of-a-kind power generator that will take us one step further in understanding energy."

@@ -1,8 +1,6 @@
 ﻿l_german:
 
   ### ETC ###
-  darhmod_test.1.c:0 "Precursor - The Seres Empire"
-  darhmod_test.1.d:0 "Exit."
   darhmod_relic_activation_cooldown:0 "Special $relic_activation_cooldown$"
   darhmod_special_relic_cooldown_info:0 "Special Relic can be activated independently with normal relics."
   darhmod_requires_relic_no_cooldown:0 "$TRIGGER_FAIL$§RCannot activate another relic while §Y$darhmod_relic_activation_cooldown$§! is active.§!"
@@ -133,7 +131,7 @@
   DARHMOD_PRECURSOR_SERES_SECRETS_DESC:0 "Examine the temple for more technology."
 
   darhmod_seres.18.name:0 "Ultra Defense Armor"
-  darhmod_seres.18.desc:0 "It seems that a way to materialize relic energy into armor had somehow been figured out, but they were never able to put it into practice. Our fleets could use this when it's finished.\n\nIn addition, detailed plans of buildings and ancestral weapons have been found that our scientists will study to include our planets and ships respectively... we will have to wait until the turn of the century."
+  darhmod_seres.18.desc:0 "It seems that a way to materialize relic energy into armor had somehow been figured out, but they were never able to put it into practice. Our fleets could use this when it's finished.\n\nIn addition, detailed plans of buildings and ancestral weapons have been found that our scientists will study to include our planets and ships respectively..."
   darhmod_seres.18.a:0 "Use it for our fleets."
  
   mod_darhmod_precursor_seres_secrets:0 "Secrets of the light beings"
