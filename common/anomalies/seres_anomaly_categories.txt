@@ -11,18 +11,22 @@ seres_anomaly_category = {
         modifier = {
             add = 1000
             is_star = no
-            is_asteroid = no                    
+            is_asteroid = no
+			is_ringworld = no			
             OR = {
 				is_planet_class = pc_toxic
 				is_planet_class = pc_barren			
 				is_planet_class = pc_frozen
+				is_planet_class = pc_barren_cold
+				is_planet_class = pc_molten				
             }
+			#uninhabitable_regular_planet = yes			
 			NOT = {
-				is_planet_class = pc_gas_giant
+				is_planet_class = pc_gas_giant	
 			}
-            solar_system = {
+			solar_system = {
 				any_neighbor_system = {
-					exists = space_owner	
+					exists = space_owner
 					space_owner = {
 						is_ai = no
 					}
@@ -37,13 +41,18 @@ seres_anomaly_category = {
 							has_anomaly = yes
 						}
 					}
-				}			
-			}			
+				}
+                NOR = {
+                    is_star_class = sc_black_hole
+                    is_star_class = sc_neutron_star
+                    is_star_class = sc_pulsar
+                }				
+			}
 		}
 		modifier = {
 			factor = 0.01
 			years_passed < 5	
-		}		
+		}			
 	}
 	
 	on_success = darhmod_seres.1

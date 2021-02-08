@@ -1,7 +1,7 @@
-namespace = darhetc
+namespace = darhseres
 
 event = {
-	id = darhetc.1
+	id = darhseres.1
 	hide_window = yes
 	is_triggered_only = yes
 

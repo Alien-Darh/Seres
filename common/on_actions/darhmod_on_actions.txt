@@ -1,6 +1,6 @@
 on_game_start = {
 	events = {
-		darhetc.1	
+		darhseres.1
 	}
 }
 

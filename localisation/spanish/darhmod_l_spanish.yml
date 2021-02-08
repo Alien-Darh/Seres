@@ -1,8 +1,6 @@
 ﻿l_spanish:
 
   ### ETC ###
-  darhmod_test.1.c:0 "Precursor - Imperio Seres"
-  darhmod_test.1.d:0 "Exit."
   darhmod_relic_activation_cooldown:0 "Special $relic_activation_cooldown$"
   darhmod_special_relic_cooldown_info:0 "La reliquia especial se puede activar de forma independiente con las reliquias normales."
   darhmod_requires_relic_no_cooldown:0 "$TRIGGER_FAIL$§RNo se puede activar otra reliquia mientras §Y$darhmod_relic_activation_cooldown$§! esta activo.§!"
@@ -133,7 +131,7 @@
   DARHMOD_PRECURSOR_SERES_SECRETS_DESC:0 "Examinar el templo en busca de mas tecnología."
 
   darhmod_seres.18.name:0 "Armadura Ultra Defensa"
-  darhmod_seres.18.desc:0 "Parece que se había descubierto de alguna manera la forma de materializar energía de la reliquia en armadura, pero nunca pudieron ponerla en práctica. Nuestras flotas podrían usar esto cuando este terminado.\n\nAdemás se han encontrado planos detallados de edificios y armamento ancestral que nuestros cientificos estudiarán para incluirlos a nuestros planetas y naves respectivamente... habrá que esperar hasta el cambio de siglo."
+  darhmod_seres.18.desc:0 "Parece que se había descubierto de alguna manera la forma de materializar energía de la reliquia en armadura, pero nunca pudieron ponerla en práctica. Nuestras flotas podrían usar esto cuando este terminado.\n\nAdemás se han encontrado planos detallados de edificios y armamento ancestral que nuestros científicos estudiarán para incluirlos a nuestros planetas y naves respectivamente..."
   darhmod_seres.18.a:0 "Úselo para nuestras flotas."
  
   mod_darhmod_precursor_seres_secrets:0 "Secretos de los seres de luz"

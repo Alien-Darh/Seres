@@ -853,6 +853,7 @@ fleet_event = {
 		name = darhmod_seres.17.a
 		owner = {
 			add_relic = r_darhmod_seres_last_projector
+			give_technology = { tech = tech_building_seres }			
 			add_research_option = tech_computer_titan
 			add_tech_progress = {
 				tech = tech_computer_titan
@@ -880,7 +881,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = darhmod_seres.18.a
-		give_technology = { tech = tech_psionic_armor }
+		give_technology = { tech = tech_psionic_armor }	
 		add_modifier = {
 			modifier = mod_darhmod_precursor_seres_secrets
 			days = -1

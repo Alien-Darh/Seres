@@ -1,3 +1,23 @@
+tech_building_seres = {
+    area = engineering
+    cost = @tier5cost3
+    tier = 5
+    weight = 0
+    category = { industry }
+    is_rare = yes
+	
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_BUILDING_SERES_TITLE"
+			desc = "TECH_BUILDING_SERES_DESC"
+		}
+	}
+
+	ai_weight = {
+        weight = 0       
+	}
+}	
+
 tech_class_4_singularity = {
     area = physics
     cost = @tier5cost3
@@ -5,6 +25,7 @@ tech_class_4_singularity = {
     weight = @tier5weight3
     category = { field_manipulation }
     is_rare = yes
+	prerequisites = { "tech_building_seres" }
 
 	prereqfor_desc = {
 		custom = {
@@ -14,10 +35,10 @@ tech_class_4_singularity = {
 	}
 
 	weight_modifier = {
-        modifier = {
-            factor = 0
-			years_passed < 200
-        }
+#        modifier = {
+#            factor = 0
+#			years_passed < 150
+#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -46,7 +67,8 @@ tech_dimensional_fabricator = {
     weight = @tier5weight3
     category = { materials }
     is_rare = yes
-
+	prerequisites = { "tech_building_seres" }
+	
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE"
@@ -55,10 +77,10 @@ tech_dimensional_fabricator = {
 	}
 
 	weight_modifier = {
-        modifier = {
-            factor = 0
-			years_passed < 200
-        }
+#        modifier = {
+#            factor = 0
+#			years_passed < 150
+#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -86,7 +108,8 @@ tech_nourishment_center = {
     weight = @tier5weight3
     category = { biology }
     is_rare = yes
-
+	prerequisites = { "tech_building_seres" }
+	
 	potential = {
 		country_uses_food = yes
 	}
@@ -99,10 +122,10 @@ tech_nourishment_center = {
 	}
 
 	weight_modifier = {
-        modifier = {
-            factor = 0
-			years_passed < 200
-        }
+#        modifier = {
+#            factor = 0
+#			years_passed < 150
+#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -130,6 +153,7 @@ tech_affluence_center = {
     weight = @tier5weight3
     category = { industry }
     is_rare = yes
+	prerequisites = { "tech_building_seres" }	
 
 	potential = {
 		country_uses_consumer_goods = yes
@@ -143,10 +167,10 @@ tech_affluence_center = {
 	}
 
 	weight_modifier = {
-        modifier = {
-            factor = 0
-			years_passed < 200
-        }
+#        modifier = {
+#            factor = 0
+#			years_passed < 150
+#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -174,7 +198,8 @@ tech_nano_forge = {
     weight = @tier5weight3
     category = { materials }
     is_rare = yes
-
+	prerequisites = { "tech_building_seres" }
+	
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NANO_FORGE_TITLE"
@@ -183,10 +208,10 @@ tech_nano_forge = {
 	}
 
 	weight_modifier = {
-        modifier = {
-            factor = 0
-			years_passed < 200
-        }
+#        modifier = {
+#            factor = 0
+#			years_passed < 150
+#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -214,7 +239,8 @@ tech_master_archive = {
     weight = @tier5weight3
     category = { computing }
     is_rare = yes
-
+	prerequisites = { "tech_building_seres" }
+	
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_MASTER_ARCHIVE_TITLE"
@@ -223,10 +249,10 @@ tech_master_archive = {
 	}
 
 	weight_modifier = {
-        modifier = {
-            factor = 0
-			years_passed < 200
-        }
+#        modifier = {
+#            factor = 0
+#			years_passed < 150
+#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -254,7 +280,8 @@ tech_fe_stronghold = {
     weight = @tier5weight3
     category = { military_theory }
     is_rare = yes
-
+	prerequisites = { "tech_building_seres" }
+	
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_FE_STRONGHOLD_TITLE"
@@ -263,10 +290,10 @@ tech_fe_stronghold = {
 	}
 
 	weight_modifier = {
-        modifier = {
-            factor = 0
-			years_passed < 200
-        }
+#        modifier = {
+#            factor = 0
+#			years_passed < 150
+#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -299,7 +326,8 @@ tech_utopian_paradise_dome = {
     weight = @tier5weight3
     category = { statecraft }
     is_rare = yes
-
+	prerequisites = { "tech_building_seres" }
+	
  	prereqfor_desc = {
 		custom = {
 			title = "TECH_UTOPIAN_PARADISE_DOME_TITLE"
@@ -308,10 +336,10 @@ tech_utopian_paradise_dome = {
 	}
 
 	weight_modifier = {
-        modifier = {
-            factor = 0
-			years_passed < 200
-        }
+#        modifier = {
+#            factor = 0
+#			years_passed < 150
+#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
