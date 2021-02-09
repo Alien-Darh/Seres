@@ -628,11 +628,11 @@ fleet_event = {
 		}
 		owner = {
 			create_point_of_interest = {
-			id = darhmod_seres_hidden_planet_4
-			name = "darhmod_seres_colony_5_coordinates_poi"
-			desc = "darhmod_seres_colony_5_coordinates_desc"
-			event_chain = darhmod_seres_chain
-			location = event_target:darhmod_seres_home_planet
+				id = darhmod_seres_hidden_planet_4
+				name = "darhmod_seres_colony_5_coordinates_poi"
+				desc = "darhmod_seres_colony_5_coordinates_desc"
+				event_chain = darhmod_seres_chain
+				location = event_target:darhmod_seres_12_temp
 			}
 			add_event_chain_counter = {
 				event_chain = darhmod_seres_chain
