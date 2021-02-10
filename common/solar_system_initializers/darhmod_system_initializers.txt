@@ -12,7 +12,7 @@ darhmod_seres_home_system = {
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 140
+		radius = 120
 	}
 	
 	planet = {
