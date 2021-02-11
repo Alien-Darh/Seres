@@ -12,7 +12,7 @@ darhmod_seres_home_system = {
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 95
+		radius = 120
 	}
 	
 	planet = {
@@ -30,13 +30,13 @@ darhmod_seres_home_system = {
 	
 	planet = {
 		name = "Nibiru"
-		orbit_distance = 80 #45
+		orbit_distance = 200 #45
 		class = pc_barren
 		orbit_angle = 140
 		size = 20
 		deposit_blockers = none
 		modifiers = none
-		has_ring = no
+		has_ring = yes
 
 		change_orbit = @base_moon_distance
 

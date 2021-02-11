@@ -632,7 +632,8 @@ fleet_event = {
 			name = "darhmod_seres_colony_5_coordinates_poi"
 			desc = "darhmod_seres_colony_5_coordinates_desc"
 			event_chain = darhmod_seres_chain
-			location = event_target:darhmod_seres_home_planet
+			#location = event_target:darhmod_seres_home_planet
+			location = event_target:darhmod_seres_12_temp
 			}
 			add_event_chain_counter = {
 				event_chain = darhmod_seres_chain
@@ -716,11 +717,16 @@ ship_event = {
 	desc = "darhmod_seres.13.desc"
 	picture = GFX_evt_ringworld
 	location = from
+		
 	is_triggered_only = yes
+	
 	trigger = {
 		from = { has_star_flag = darhmod_seres_home_system }
 	}
-	option = { name = darhmod_seres.13.a }
+	
+	option = { 
+		name = darhmod_seres.13.a
+	}	
 }
 
 #dig site 5
