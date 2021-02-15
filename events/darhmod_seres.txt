@@ -632,7 +632,6 @@ fleet_event = {
 			name = "darhmod_seres_colony_5_coordinates_poi"
 			desc = "darhmod_seres_colony_5_coordinates_desc"
 			event_chain = darhmod_seres_chain
-			#location = event_target:darhmod_seres_home_planet
 			location = event_target:darhmod_seres_12_temp
 			}
 			add_event_chain_counter = {
@@ -708,6 +707,23 @@ country_event = {
 		}
 		set_spawn_system_batch = end
 		clear_global_event_target = darhmod_seres_12_temp
+	}
+	option = {
+		name = darhmod_seres.12.a
+		owner = {
+			create_point_of_interest = {
+			id = darhmod_seres_hidden_planet_4
+			name = "darhmod_seres_colony_5_coordinates_poi"
+			desc = "darhmod_seres_colony_5_coordinates_desc"
+			event_chain = darhmod_seres_chain
+			location = event_target:darhmod_seres_home_planet
+			}
+			add_event_chain_counter = {
+				event_chain = darhmod_seres_chain
+				counter = darhmod_seres_colonies
+				amount = 1
+			}
+		}	
 	}
 }
 
