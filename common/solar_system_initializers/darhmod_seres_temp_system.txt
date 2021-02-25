@@ -371,7 +371,7 @@ darhmod_seres_temp_system = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_alloys_4
-			add_deposit = d_minerals_4	
+			add_deposit = d_minerals_4
 		}
 	}
 
