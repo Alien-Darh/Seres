@@ -1,0 +1,121 @@
+namespace = seres_init
+
+country_event = {
+    id = seres_init.01
+	title = seres_init.01.name
+	desc = seres_init.01.desc
+	picture = GFX_evt_seres_init
+	show_sound = event_mystic_reveal
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {	
+		owner = { is_ai = no }
+	}
+
+	option = {
+		name = seres_init.01.a
+		add_research_option = tech_wormhole_stabilization
+			add_tech_progress = {
+				tech = tech_wormhole_stabilization
+				progress = 0.95
+			}
+		hidden_effect = {
+			add_seen_bypass_type = wormhole
+			set_country_flag = encountered_first_wormhole
+			set_country_flag = isolated_system_owner
+			every_owned_planet = {
+				limit = { is_capital = yes }
+				solar_system = {
+					save_event_target_as = isolated_system
+					random_system = {
+						limit = { has_hyperlane_to = prev }
+						save_event_target_as = isolated_start_exit_system
+					}
+				}
+			}
+			event_target:isolated_system = {
+				every_system = {
+					limit = { has_hyperlane_to = prev }
+					remove_hyperlane = { from = this to = prev }
+				}
+			}
+			event_target:isolated_start_exit_system = {
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = yes
+				}
+				event_target:isolated_system = {
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+					}
+					link_wormholes = prev
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+    id = seres_init.02
+	title = seres_init.02.name
+	desc = seres_init.02.desc
+	picture = GFX_evt_seres_init_crisis
+	show_sound = event_mystic_reveal
+	location = root
+
+	fire_only_once = yes	
+	#is_triggered_only = yes
+
+	trigger = {	
+		owner = { is_ai = no }
+        OR = {
+            has_global_flag = prethoryn_arrival
+            has_global_flag = prethoryn_main_invasion
+            has_global_flag = ai_invasion_ongoing
+            has_global_flag = extradimensional_invasion_happened
+            has_global_flag = extradimensional_second_portal
+            has_global_flag = extradimensional_third_portal
+        }
+    }
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = seres_init.02.a
+		add_research_option = tech_dark_matter_deflector
+			add_tech_progress = {
+				tech = tech_dark_matter_deflector
+				progress = 0.25
+			}
+		add_research_option = tech_dark_matter_propulsion
+			add_tech_progress = {
+				tech = tech_dark_matter_propulsion
+				progress = 0.25
+			}
+		add_research_option = tech_dark_matter_power_core
+			add_tech_progress = {
+				tech = tech_dark_matter_power_core
+				progress = 0.25	
+		}		
+	}
+	
+	option = {
+		name = seres_init.02.b	
+		add_modifier = {
+			modifier = mod_darhmod_precursor_seres_secrets_final
+			days = -1
+		}
+	}
+	option = {
+		name = seres_init.02.c		
+		add_modifier = {
+			modifier = fallen_empire_gift_databanks
+			days = -1
+		}
+	}			
+}

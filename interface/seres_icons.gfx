@@ -38,5 +38,17 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/seres_artifact.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes				
-	}		
+	}	
+	spriteType = {
+		name = "GFX_evt_seres_init"
+		texturefile = "gfx/event_pictures/seres_init.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}
+	spriteType = {
+		name = "GFX_evt_seres_init_crisis"
+		texturefile = "gfx/event_pictures/seres_init_crisis.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}				
 }

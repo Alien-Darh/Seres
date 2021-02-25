@@ -77,9 +77,9 @@
   ########### Tecnología Ancestral ###########
   
   tech_building_seres:0 "Arquitectura Seres de Luz"
-  tech_building_seres_desc:0 "Acceso a la arquitectura de edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru."
+  tech_building_seres_desc:0 "Acceso a los planos y especificaciones de los edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru.\n\nTomará un tiempo a nuestros arquitectos e ingenieros construir estos increíbles edificios de trabajo pero serán esenciales para nuestras futuras colonias."
   TECH_BUILDING_SERES_TITLE:0 "Edificios Seres de Luz"
-  TECH_BUILDING_SERES_DESC:0 "Acceso a la arquitectura de edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru."
+  TECH_BUILDING_SERES_DESC:0 "Acceso a los planos y especificaciones de los edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru.\n\nTomará un tiempo a nuestros arquitectos e ingenieros construir estos increíbles edificios de trabajo pero serán esenciales para nuestras futuras colonias."
   
   tech_class_4_singularity:0 "Singularidad clase 4"
   tech_class_4_singularity_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante generador de energía único en su clase que nos impulsará un paso mas allá en el entendimiento energético."

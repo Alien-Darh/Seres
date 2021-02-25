@@ -18,3 +18,9 @@ mod_r_darhmod_seres_last_projector = {
 mod_darhmod_precursor_seres_secrets = {
 	all_technology_research_speed = 0.1
 }
+
+mod_darhmod_precursor_seres_secrets_final = {
+	ship_accuracy_add = 25
+	ship_tracking_add = 25
+	ship_evasion_mult = 0.25
+}

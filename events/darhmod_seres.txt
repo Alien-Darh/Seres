@@ -313,21 +313,15 @@ fleet_event = {
 		owner = {
 			if = {
 				limit = {
-					NOT = { has_technology = tech_wormhole_stabilization }
+					NOT = { has_technology = tech_experimental_subspace_navigation }
 				}
-				give_technology = { tech = tech_wormhole_stabilization }
+				give_technology = { tech = tech_experimental_subspace_navigation }
 			}
 			else_if = {
 				limit = {
 					NOT = { has_technology = tech_planetary_shield_generator }
 				}
 				give_technology = {  tech = tech_planetary_shield_generator }
-			}
-			else_if = {
-				limit = {
-					NOT = { has_technology = tech_experimental_subspace_navigation }
-				}
-				give_technology = { tech = tech_experimental_subspace_navigation }
 			}
 			add_research_option = tech_gateway_construction
 			add_research_option = tech_gateway_activation				
@@ -603,6 +597,7 @@ fleet_event = {
 		name = darhmod_seres.12.a
 		hidden_effect = {
 			set_spawn_system_batch = begin
+			set_country_flag = encountered_first_wormhole		
 			random_planet = {
 				limit = { has_planet_flag = darhmod_seres_near_home_colony }
 				spawn_system = {
@@ -674,9 +669,11 @@ fleet_event = {
 country_event = {
 	id = darhmod_seres.50
 	hide_window = yes
-	is_triggered_only = yes
 	
+	is_triggered_only = yes
+
 	immediate = {
+		from = { set_site_progress_locked = yes }	
 		log = "[event_target:darhmod_seres_12_temp.GetName]"
 		set_spawn_system_batch = begin
 		random_planet = {
@@ -708,22 +705,27 @@ country_event = {
 		set_spawn_system_batch = end
 		clear_global_event_target = darhmod_seres_12_temp
 	}
+	
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	
 	option = {
 		name = darhmod_seres.12.a
 		owner = {
 			create_point_of_interest = {
-			id = darhmod_seres_hidden_planet_4
-			name = "darhmod_seres_colony_5_coordinates_poi"
-			desc = "darhmod_seres_colony_5_coordinates_desc"
-			event_chain = darhmod_seres_chain
-			location = event_target:darhmod_seres_home_planet
+				id = darhmod_seres_hidden_planet_4
+				name = "darhmod_seres_colony_5_coordinates_poi"
+				desc = "darhmod_seres_colony_5_coordinates_desc"
+				event_chain = darhmod_seres_chain
+				location = event_target:darhmod_seres_home_planet
 			}
 			add_event_chain_counter = {
 				event_chain = darhmod_seres_chain
 				counter = darhmod_seres_colonies
 				amount = 1
 			}
-		}	
+		}
 	}
 }
 
@@ -733,7 +735,7 @@ ship_event = {
 	desc = "darhmod_seres.13.desc"
 	picture = GFX_evt_ringworld
 	location = from
-		
+			
 	is_triggered_only = yes
 	
 	trigger = {
@@ -877,10 +879,6 @@ fleet_event = {
 			add_relic = r_darhmod_seres_last_projector
 			give_technology = { tech = tech_building_seres }			
 			add_research_option = tech_computer_titan
-			add_tech_progress = {
-				tech = tech_computer_titan
-				progress = 0.25
-			}
 		}
 	}
 	option = {
@@ -911,3 +909,4 @@ country_event = {
 		add_resource = { unity = 1000 }
 	}
 }
+

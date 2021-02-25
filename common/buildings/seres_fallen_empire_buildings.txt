@@ -136,9 +136,9 @@ building_dimensional_fabricatorx = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_zro = 2
-			sr_dark_matter = 2
-			sr_living_metal = 2		
+			sr_zro = 1
+			sr_dark_matter = 1
+			sr_living_metal = 1		
 		}
 		cost = {
 			minerals = @b3_minerals

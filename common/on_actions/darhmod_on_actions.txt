@@ -9,3 +9,15 @@ on_entering_system_first_time = {
 		darhmod_seres.13
 	}
 }
+
+on_game_start_country = {
+	events = { 
+		seres_init.01
+	}
+}
+
+on_monthly_pulse = {
+	events = {
+		seres_init.02
+	}
+}
