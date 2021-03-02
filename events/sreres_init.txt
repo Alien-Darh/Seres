@@ -16,11 +16,14 @@ country_event = {
 
 	option = {
 		name = seres_init.01.a
-		add_research_option = tech_wormhole_stabilization
-			add_tech_progress = {
-				tech = tech_wormhole_stabilization
-				progress = 0.95
+		owner = {
+			if = {
+				limit = {
+				NOT = { has_technology = tech_wormhole_stabilization }
+				}
+				give_technology = { tech = tech_wormhole_stabilization }
 			}
+		}	
 		hidden_effect = {
 			add_seen_bypass_type = wormhole
 			set_country_flag = encountered_first_wormhole
@@ -45,17 +48,42 @@ country_event = {
 				spawn_natural_wormhole = {
 					bypass_type = wormhole
 					random_pos = yes
+					orbit_angle = 360
 				}
 				event_target:isolated_system = {
 					spawn_natural_wormhole = {
 						bypass_type = wormhole
 						random_pos = yes
+						orbit_angle = 360
 					}
 					link_wormholes = prev
 				}
 			}
 		}
 	}
+	
+	option = {
+		name = seres_init.01.b
+		hidden_effect = {
+			every_owned_planet = {
+				solar_system = {
+					save_event_target_as = isolated_system
+				}
+			}
+			event_target:isolated_system = {
+				random_neighbor_system = {
+					set_star_flag = isolated_outwards_system
+				}
+				every_system = {
+					limit = { 
+						NOT = { has_star_flag = isolated_outwards_system }
+						has_hyperlane_to = prev
+					}
+					remove_hyperlane = { from = this to = prev }
+				}
+			}
+		}
+	}	
 }
 
 country_event = {

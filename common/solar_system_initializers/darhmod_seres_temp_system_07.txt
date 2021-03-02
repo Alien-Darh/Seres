@@ -1,0 +1,86 @@
+@distance = 50
+@base_moon_distance = 10
+
+darhmod_seres_temp_system_07 = {
+	class = sc_black_hole
+	usage = misc_system_init	
+	usage_odds = 0
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 125
+	}
+	
+	flags = { ruined_matter_decompressor_system }	
+	flags = { darhmod_seres_temp_system }
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			save_event_target_as = matter_decompressor_hole
+			clear_deposits = yes
+		}
+	}
+
+	change_orbit = 200
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 110
+	}
+
+	init_effect = {
+		spawn_megastructure = { 
+			type = "matter_decompressor_ruined" 
+			location = event_target:matter_decompressor_hole
+
+			init_effect = {
+				create_ambient_object = {
+					type = "large_debris_object"
+					location = this
+				}
+				last_created_ambient_object = { 
+					set_location = {
+						target = prev
+						distance = 20
+						angle = 20
+					}
+				}
+				create_ambient_object = {
+					type = "large_debris_object"
+					location = this
+				}
+				last_created_ambient_object = { 
+					set_location = {
+						target = prev
+						distance = 20
+						angle = 150
+					}
+				}
+				create_ambient_object = {
+					type = "medium_debris_01_object"
+					location = this
+				}
+				last_created_ambient_object = { 
+					set_location = {
+						target = prev
+						distance = 35
+						angle = 90
+					}
+				}
+				create_ambient_object = {
+					type = "medium_debris_02_object"
+					location = this
+				}
+				last_created_ambient_object = { 
+					set_location = {
+						target = prev
+						distance = 3
+						angle = 270
+					}
+				}
+			}
+		}
+	}
+}

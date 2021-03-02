@@ -171,7 +171,6 @@ darhmod_seres_home_system = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			save_event_target_as = amoeba_giant
-			add_deposit = d_exotic_gases_2
 		}
 
 		change_orbit = @base_moon_distance
@@ -184,7 +183,7 @@ darhmod_seres_home_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
-				add_deposit = d_alloys_3
+				add_deposit = d_alloys_4
 			}
 		}
 		moon = {
@@ -196,7 +195,7 @@ darhmod_seres_home_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
-				add_deposit = d_alloys_3
+				add_deposit = d_alloys_2
 			}
 		}
 	}
@@ -214,7 +213,7 @@ darhmod_seres_home_system = {
 			set_planet_flag = amoeba_ice_asteroid_1		
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_rare_crystals_2
+				add_deposit = d_alloys_2
 		}
 	}
 	
@@ -228,7 +227,7 @@ darhmod_seres_home_system = {
 			save_event_target_as = amoeba_ice_asteroid_2
 			set_planet_flag = amoeba_ice_asteroid_2		
 			prevent_anomaly = yes
-			add_deposit = d_volatile_motes_2		
+				add_deposit = d_alloys_2	
 		}
 	}
 	
@@ -243,7 +242,7 @@ darhmod_seres_home_system = {
 			set_planet_flag = amoeba_ice_asteroid_3		
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_alloys_4
+			add_deposit = d_alloys_2
 		}
 	}
 	

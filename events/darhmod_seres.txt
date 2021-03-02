@@ -597,16 +597,83 @@ fleet_event = {
 		name = darhmod_seres.12.a
 		hidden_effect = {
 			set_spawn_system_batch = begin
-			set_country_flag = encountered_first_wormhole		
+			#set_country_flag = encountered_first_wormhole		
 			random_planet = {
 				limit = { has_planet_flag = darhmod_seres_near_home_colony }
-				spawn_system = {
-					min_jumps = 0
-					max_jumps = 0
-					min_distance = 5
-					max_distance = 20
-					initializer = darhmod_seres_temp_system
-				}
+				random_list = {
+					12 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system
+						}
+					}	
+					12 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system_02
+						}
+					}	
+					12 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system_03
+						}
+					}
+					12 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system_04
+						}
+					}
+					12 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system_05
+						}
+					}						
+					12 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system_06
+						}
+					}
+					12 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system_07
+						}
+					}
+					16 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system_08
+						}
+					}					
+				}						
 			}
 			random_system = {
 				limit = { has_star_flag = darhmod_seres_temp_system }
@@ -711,7 +778,6 @@ country_event = {
 	}
 	
 	option = {
-		name = darhmod_seres.12.a
 		owner = {
 			create_point_of_interest = {
 				id = darhmod_seres_hidden_planet_4
@@ -726,6 +792,7 @@ country_event = {
 				amount = 1
 			}
 		}
+		hidden_effect = { owner = { ship_event = { darhmod_seres.13 days = 5 } } }		
 	}
 }
 
@@ -735,7 +802,7 @@ ship_event = {
 	desc = "darhmod_seres.13.desc"
 	picture = GFX_evt_ringworld
 	location = from
-			
+	
 	is_triggered_only = yes
 	
 	trigger = {
@@ -849,6 +916,13 @@ fleet_event = {
 			}
 		}
 	}
+	option = {
+		name = darhmod_seres.16.c
+		large_artifact_reward = yes
+		owner = {
+			add_resource = { alloys = 25000 }
+		}
+	}	 
 }
 
 #chapter 4

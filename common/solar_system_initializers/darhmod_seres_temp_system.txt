@@ -371,7 +371,6 @@ darhmod_seres_temp_system = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_alloys_4
-			add_deposit = d_minerals_4
 		}
 	}
 
@@ -386,7 +385,6 @@ darhmod_seres_temp_system = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_alloys_4
-			add_deposit = d_minerals_4
 		}
 	}
 
@@ -399,6 +397,7 @@ darhmod_seres_temp_system = {
 		orbit_angle = { min = 0 max = 360 }
 		init_effect = {
 			prevent_anomaly = yes
+			add_deposit = d_alloys_2			
 		}
 	}
 
@@ -426,8 +425,9 @@ darhmod_seres_temp_system = {
 			orbit_angle = 270
 			orbit_distance = 45
 			location = planet
-		}			
-		create_country = {
+		}
+		
+	create_country = {
 			name = "NAME_Autonomous_Repurposer"
 			type = guardian_scavenger_bot
 			flag = {
@@ -548,5 +548,5 @@ darhmod_seres_temp_system = {
 				}
 			}
 		}
-	}
+	}	
 }

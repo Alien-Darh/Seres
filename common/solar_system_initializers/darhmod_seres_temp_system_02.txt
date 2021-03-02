@@ -1,0 +1,25 @@
+@distance = 50
+@base_moon_distance = 10
+
+darhmod_seres_temp_system_02 = {
+	class = "sc_black_hole"
+	usage = misc_system_init	
+	usage_odds = 0
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 124
+	}	
+
+	flags = { guardians_horror_system guardian hostile_system }	
+	flags = { darhmod_seres_temp_system }
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+}
