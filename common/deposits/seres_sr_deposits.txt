@@ -58,9 +58,10 @@ d_living_metal_deposit_3 = {
 		sr_living_metal = 3
 		}
 	}
+
 	station = shipclass_research_station 
 	is_for_colonizeable = no
-	
+
 	drop_weight = {
 		weight = 0	
 	}
@@ -73,10 +74,29 @@ d_living_metal_deposit_10 = {
 			sr_living_metal = 10
 		}
 	}
+
 	station = shipclass_research_station 
 	is_for_colonizeable = no
-	
+
 	drop_weight = {
 		weight = 0	
 	}
+}
+
+d_archaeological_artifacts_1 = {
+	station = shipclass_research_station 
+	is_for_colonizeable = no
+
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			minor_artifacts	= 1
+		}
+	}
+	
+	modifier = {
+	}
+	
+	potential = { always = no }
+	drop_weight = { weight = 0 }
 }

@@ -2,8 +2,9 @@
 
 
   seres_init.01.name:0 "Forerunner Beings of Light"
-  seres_init.01.desc:0 "In the year 2200 a hidden wormhole was found at the limits of the system §H[Root.Solar_System.GetName]§!.\n\nThere are vestiges that were once used thousands of years ago by some civilization §HAdvanced alien§! and now we are very close to discovering how to travel through them.\n\nIt is speculated that there are multiple connections of interstellar pathways that will lead us to know the ends of the galaxy and its secrets... where no one had ever been able to be before or imagine in any way."
-  seres_init.01.a:0 "Begin"
+  seres_init.01.desc:0 "In the year 2200, some kind of hidden stargate was found at the limits of the §H[Root.Solar_System.GetName]§! system.\n\nThere are vestiges that were once used thousands of years ago by some civilization §HAdvanced alien§! to travel between the stars and now we are very close to discovering how to travel through them.\n\nIt is speculated that there are multiple interstellar pathway connections that will lead us to know the ends of the galaxy and its secrets... where no one had been able to be before or imagine in some way."
+  seres_init.01.a:0 "Advanced startup"
+  seres_init.01.b:0 "Normal start"
 
   seres_init.02.name:0 "Forerunner Beings of Light"
   seres_init.02.desc:0 "We have detected the arrival of a great galactic threat... If you still haven't been able to get the advanced technologies of our old rivals, we can help you to get them but you will have to research them to adapt them to the ships... or perhaps you prefer other alternatives to face this galactic crisis."

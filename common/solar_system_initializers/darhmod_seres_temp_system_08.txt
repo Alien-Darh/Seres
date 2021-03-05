@@ -8,7 +8,7 @@ darhmod_seres_temp_system_08 = {
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 125
+		radius = 110
 	}
 	
 	flags = { guardians_technosphere_system guardian hostile_system }	

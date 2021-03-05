@@ -27,7 +27,7 @@ darhmod_seres_temp_system_07 = {
 
 	asteroid_belt = {
 		type = icy_asteroid_belt
-		radius = 110
+		radius = 90
 	}
 
 	init_effect = {

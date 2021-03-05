@@ -8,13 +8,8 @@ darhmod_seres_home_system = {
 	usage_odds = 0	
 	
 	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 124
-	}
-	
-	asteroid_belt = {
 		type = icy_asteroid_belt
-		radius = 280
+		radius = 125
 	}
 	
 	flags = { guardians_wraith_system guardian hostile_system }
@@ -35,7 +30,7 @@ darhmod_seres_home_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_energy_8
+			add_deposit = d_living_metal_deposit_1
 			save_event_target_as = amoeba_star
 			set_planet_flag = amoeba_star
 
@@ -103,36 +98,54 @@ darhmod_seres_home_system = {
 			save_global_event_target_as = darhmod_seres_home_planet
 			create_archaeological_site = DARH_seres_site_5
 
-			add_deposit = d_physics_10
-			add_deposit = d_society_10
-			add_deposit = d_engineering_10
+			add_deposit = d_archaeological_artifacts_1
+			clear_deposits = yes
 		}
+		
+		moon = {
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 10
+			size = 12
+	
+			init_effect = {
+				prevent_anomaly = yes
+				add_deposit = d_dark_matter_deposit_1
+				clear_deposits = yes				
+			}
+		}	
 	}
 	
 	change_orbit = 25
 	
 	planet = {
 		count = 1
-		orbit_distance = 60 # 35
+		orbit_distance = 60
 		orbit_angle = 270
 		deposit_blockers = none		
-		class = pc_barren_cold	
+		class = pc_barren_cold
 		modifiers = none		
 
 		change_orbit = @base_moon_distance
 
-		init_effect = {			
+		init_effect = {
 			add_deposit = d_exotic_gases_2
 			add_deposit = d_rare_crystals_2
-			add_deposit = d_volatile_motes_2
-			prevent_anomaly = yes		
+			add_deposit = d_volatile_motes_2		
+			prevent_anomaly = yes
+			clear_deposits = yes			
 		}
 
 		moon = {
 			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 3
+			orbit_distance = 5
 			class = random_non_colonizable
 			size = 12
+			
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes				
+			}
 		}
 	}
 	
@@ -140,24 +153,31 @@ darhmod_seres_home_system = {
 	
 	planet = {
 		count = 1	
-		class = pc_gaia
+		class = pc_barren
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 18 max = 25 }
 		has_ring = yes
-		
+			
+		init_effect = {
+			add_deposit = d_physics_10
+			add_deposit = d_society_10
+			add_deposit = d_engineering_10
+			prevent_anomaly = yes				
+		}
 		change_orbit = @base_moon_distance
 		
 		moon = {
 			class = "pc_toxic"
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-		}
 
-		init_effect = {			
-			prevent_anomaly = yes		
+			init_effect = {			
+				prevent_anomaly = yes
+				clear_deposits = yes				
+			}
 		}
-	}
+	}	
 	
 	planet = {
 		class = pc_gas_giant
@@ -169,11 +189,13 @@ darhmod_seres_home_system = {
 
 		init_effect = {
 			prevent_anomaly = yes
-			clear_deposits = yes
 			save_event_target_as = amoeba_giant
+			clear_deposits = yes			
+			add_deposit = d_zro_deposit_1			
 		}
 
 		change_orbit = @base_moon_distance
+		
 		moon = {
 			class = pc_barren_cold
 			orbit_angle = { min = 90 max = 270 }
@@ -183,7 +205,6 @@ darhmod_seres_home_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
-				add_deposit = d_alloys_4
 			}
 		}
 		moon = {
@@ -193,9 +214,8 @@ darhmod_seres_home_system = {
 			size = 9
 	
 			init_effect = {
-				prevent_anomaly = yes
+				prevent_anomaly = yes	
 				clear_deposits = yes
-				add_deposit = d_alloys_2
 			}
 		}
 	}
@@ -213,7 +233,7 @@ darhmod_seres_home_system = {
 			set_planet_flag = amoeba_ice_asteroid_1		
 			prevent_anomaly = yes
 			clear_deposits = yes
-				add_deposit = d_alloys_2
+			add_deposit = d_alloys_4
 		}
 	}
 	
@@ -227,7 +247,8 @@ darhmod_seres_home_system = {
 			save_event_target_as = amoeba_ice_asteroid_2
 			set_planet_flag = amoeba_ice_asteroid_2		
 			prevent_anomaly = yes
-				add_deposit = d_alloys_2	
+			clear_deposits = yes			
+			add_deposit = d_alloys_4
 		}
 	}
 	
@@ -242,7 +263,7 @@ darhmod_seres_home_system = {
 			set_planet_flag = amoeba_ice_asteroid_3		
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_alloys_2
+			add_deposit = d_nanites_deposit		
 		}
 	}
 	

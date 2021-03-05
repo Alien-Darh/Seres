@@ -211,7 +211,7 @@ darhmod_seres_temp_system_04 = {
 		count = { min = 1 max = 5 }
 		orbit_distance = 20
 		class = "rl_unhabitable_planets"
-		orbit_angle = { min = 90 max = 270 }
+		orbit_angle = { min = 90 max = 270 }		
 		
 		change_orbit = @base_moon_distance
 		
@@ -219,8 +219,8 @@ darhmod_seres_temp_system_04 = {
 			count = { min = 0 max = 1 }
 			class = "rl_unhabitable_planets"
 			orbit_angle = { min = 90 max = 270 }
+			size = { min = 8 max = 10 }			
 			orbit_distance = 5
 		}
-
 	}
 }

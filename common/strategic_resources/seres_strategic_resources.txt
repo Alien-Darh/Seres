@@ -1,0 +1,16 @@
+###########################
+### Advanced Resources  ###
+###########################
+
+
+archaeological artifacts = {
+	tradable = no
+	max = 1000
+	
+#	prerequisites = { "tech_archaeological_artifacts" }
+	visibility_prerequisite = { always = yes }	
+
+	ai_weight = {
+		weight = 100
+	}
+}

@@ -26,6 +26,7 @@ building_affluence_centerx = {
 		category = planet_buildings
 		produces = {
 			consumer_goods = 50
+			minor_artifacts = 0.05
 		}
 		cost = {
 			minerals = @b3_minerals

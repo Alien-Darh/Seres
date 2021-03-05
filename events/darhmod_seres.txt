@@ -297,7 +297,7 @@ fleet_event = {
 	id = darhmod_seres.7
 	title = "darhmod_seres.7.name"
 	desc = "darhmod_seres.7.desc"
-	picture = GFX_evt_ruined_system
+	picture = GFX_evt_exploding_planet
 	show_sound = event_mystic_reveal
 	archaeology = yes
 	is_triggered_only = yes
@@ -334,7 +334,7 @@ fleet_event = {
 	id = darhmod_seres.8
 	title = "darhmod_seres.8.name"
 	desc = "darhmod_seres.8.desc"
-	picture = GFX_evt_synth_sabotage
+	picture = GFX_evt_glitchy_matrix
 	show_sound = event_power_down
 	archaeology = yes
 	is_triggered_only = yes
@@ -580,7 +580,7 @@ fleet_event = {
 	id = darhmod_seres.12
 	title = "darhmod_seres.12.name"
 	desc = "darhmod_seres.12.desc"
-	picture = GFX_evt_underground_city
+	picture = GFX_evt_underground relic_world_building
 	show_sound = event_planetary_riot
 	archaeology = yes
 	is_triggered_only = yes
@@ -601,7 +601,7 @@ fleet_event = {
 			random_planet = {
 				limit = { has_planet_flag = darhmod_seres_near_home_colony }
 				random_list = {
-					12 = { 				
+					10 = { 				
 						spawn_system = {
 							min_jumps = 0
 							max_jumps = 0
@@ -610,7 +610,7 @@ fleet_event = {
 							initializer = darhmod_seres_temp_system
 						}
 					}	
-					12 = { 				
+					10 = { 				
 						spawn_system = {
 							min_jumps = 0
 							max_jumps = 0
@@ -619,7 +619,7 @@ fleet_event = {
 							initializer = darhmod_seres_temp_system_02
 						}
 					}	
-					12 = { 				
+					10 = { 				
 						spawn_system = {
 							min_jumps = 0
 							max_jumps = 0
@@ -628,7 +628,7 @@ fleet_event = {
 							initializer = darhmod_seres_temp_system_03
 						}
 					}
-					12 = { 				
+					10 = { 				
 						spawn_system = {
 							min_jumps = 0
 							max_jumps = 0
@@ -637,7 +637,7 @@ fleet_event = {
 							initializer = darhmod_seres_temp_system_04
 						}
 					}
-					12 = { 				
+					10 = { 				
 						spawn_system = {
 							min_jumps = 0
 							max_jumps = 0
@@ -646,7 +646,7 @@ fleet_event = {
 							initializer = darhmod_seres_temp_system_05
 						}
 					}						
-					12 = { 				
+					10 = { 				
 						spawn_system = {
 							min_jumps = 0
 							max_jumps = 0
@@ -655,7 +655,7 @@ fleet_event = {
 							initializer = darhmod_seres_temp_system_06
 						}
 					}
-					12 = { 				
+					10 = { 				
 						spawn_system = {
 							min_jumps = 0
 							max_jumps = 0
@@ -664,7 +664,7 @@ fleet_event = {
 							initializer = darhmod_seres_temp_system_07
 						}
 					}
-					16 = { 				
+					10 = { 				
 						spawn_system = {
 							min_jumps = 0
 							max_jumps = 0
@@ -672,8 +672,26 @@ fleet_event = {
 							max_distance = 20
 							initializer = darhmod_seres_temp_system_08
 						}
-					}					
-				}						
+					}
+					10 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system_09
+						}
+					}
+					10 = { 				
+						spawn_system = {
+							min_jumps = 0
+							max_jumps = 0
+							min_distance = 5
+							max_distance = 20
+							initializer = darhmod_seres_temp_system_10
+						}
+					}
+				}
 			}
 			random_system = {
 				limit = { has_star_flag = darhmod_seres_temp_system }
@@ -817,19 +835,23 @@ ship_event = {
 #dig site 5
 #chapter 1
 fleet_event = {
-	id = darhmod_seres.14
+	id = darhmod_seres.14	
 	title = "darhmod_seres.14.name"
 	desc = "darhmod_seres.14.desc"
 	picture = GFX_evt_sapient_AI
 	show_sound = event_scanner
 	archaeology = yes
+	
 	is_triggered_only = yes
+	
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
+	
 	after = {
 		from = { set_site_progress_locked = no }
 	}
+	
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -839,8 +861,31 @@ fleet_event = {
 					NOT = { has_technology = tech_swarmer_missiles_1 }
 				}
 				give_technology = { tech = tech_swarmer_missiles_1 }
-			}
+			}	
 		}
+		
+		from.planet = {
+			hidden_effect = {
+				reset_planet = yes
+				clear_deposits = yes
+			}
+			change_pc = pc_gaia
+			hidden_effect = {
+				set_planet_size = 18
+
+				add_deposit = d_searing_desert
+				add_deposit = d_underwater_vent
+
+				add_deposit = d_ore_rich_caverns
+				add_deposit = d_prosperous_mesa
+
+				add_deposit = d_lush_jungle
+				add_deposit = d_teeming_reef
+				
+				add_deposit = d_betharian_deposit
+				add_deposit = d_crystal_forest
+			}					
+		}		
 	}
 }
 
@@ -934,9 +979,11 @@ fleet_event = {
 	show_sound = event_conversation
 	archaeology = yes
 	is_triggered_only = yes
+	
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
+	
 	after = {
 		from = { set_site_progress_locked = no }
 		owner = {
@@ -947,6 +994,7 @@ fleet_event = {
 			owner = { set_country_flag = darhmod_precursor_seres_finished }
 		}
 	}
+	
 	option = {
 		name = darhmod_seres.17.a
 		owner = {
@@ -980,7 +1028,7 @@ country_event = {
 			modifier = mod_darhmod_precursor_seres_secrets
 			days = -1
 		}
-		add_resource = { unity = 1000 }
+		add_resource = { unity = 1000 }	
 	}
 }
 
