@@ -1,0 +1,79 @@
+﻿l_polish
+
+ #########Jum Drive#########################################
+
+ MOD_WARP_DRIVE_1:0 "Napęd zakrzywiający I" 
+ MOD_WARP_DRIVE_1_DESC:0 "Napęd zakrzywiający umożliwia podróżowanie z prędkością nadświetlną do i z obrzeży układów gwiezdnych. Mają ograniczony zasięg oraz okres przygotowania i wyłączania podczas odlotów i przylotów."
+ tech_mod_warp_drive_1:0 "Podróż zakrzywiająca"
+ tech_mod_warp_drive_1_desc:0 "Dzięki otoczeniu jednostki polem zakrzywiającym i utworzeniu wokół niego pęcherza podprzestrzeni teoretycznie można osiągnąć prędkości nadświetlne."
+
+ MOD_WARP_DRIVE_2:0 "Napęd zakrzywiający II"
+ MOD_WARP_DRIVE_2_DESC:0 "$WARP_DRIVE_1_DESC$"
+ tech_mod_warp_drive_2:0 "Stabilizatory pola zakrzywiającego"
+ tech_mod_warp_drive_2_desc:0 "Ulepszone techniki stabilizowania pola zakrzywiającego umożliwią naszym statkom przemierzanie przestrzeni kosmicznej kosztem mniejszej ilości energii."
+
+ MOD_WARP_DRIVE_3:0 "Napęd zakrzywiający III"
+ MOD_WARP_DRIVE_3_DESC:0 "$WARP_DRIVE_1_DESC$"
+ tech_mod_warp_drive_3:0 "Chwytaki napędu zakrzywiającego"
+ tech_mod_warp_drive_3_desc:0 "Te rewolucyjne urządzenia są przyłączane do silników napędu zakrzywiającego i pełnią funkcję kolektorów cząstek, uzupełniając paliwo jednostki."
+
+ #########Wormhole#########################################
+
+ TECH_UNLOCK_WORMHOLE_RELAY_0_TITLE:0 "§SUnlock the component:§! Capacity UL: Temporary wormholes"
+ TECH_UNLOCK_WORMHOLE_RELAY_0_DESC:0 "Ships equipped with temporary wormhole modulators are artificially created to allow passage between systems."
+ 
+ tech_wormhole_relays_0:0 "Temporary wormholes"
+ tech_wormhole_relays_0_desc:0 "Ships equipped with temporary wormhole modulators are artificially created to allow passage between systems."
+ 
+ TECH_UNLOCK_WORMHOLE_RELAY_1_TITLE:0 "§SUnlock the component:§! Worm Engine I"
+ TECH_UNLOCK_WORMHOLE_RELAY_1_DESC:0 "Ships equipped with temporary wormhole modulators are artificially created to allow passage between systems."
+ tech_wormhole_relays_1:0 "Subspace wormholes"
+ tech_wormhole_relays_1_desc:0 "By opening tunnels directly through the subspace, a duct can be established between two different points in normal space. The journey between them will be almost instantaneous."
+ MOD_RELAY_1:0 "Worm Engine I"
+ MOD_RELAY_1_DESC:0 "By opening tunnels directly through the subspace, a duct can be established between two different points in normal space. The journey between them will be almost instantaneous"
+ 
+ TECH_UNLOCK_WORMHOLE_RELAY_2_TITLE:0 "§SUnlock the component:§! Worm Engine II"
+ TECH_UNLOCK_WORMHOLE_RELAY_2_DESC:0 "Ships equipped with temporary wormhole modulators are artificially created to allow passage between systems."
+ tech_wormhole_relays_2:0 "Worm quantum calibrating matrix"
+ tech_wormhole_relays_2_desc:0 "Creating a stable wormhole takes time and large amounts of energy, but the process can be perfected with special calipers."
+ MOD_RELAY_2:0 "Worm Engine II"
+ MOD_RELAY_2_DESC:0 "By opening tunnels directly through the subspace, a duct can be established between two different points in normal space. The journey between them will be almost instantaneous"
+ 
+ TECH_UNLOCK_WORMHOLE_RELAY_3_TITLE:0 "§SUnlock the component:§! Worm Engine III"
+ TECH_UNLOCK_WORMHOLE_RELAY_3_DESC:0 "Ships equipped with temporary wormhole modulators are artificially created to allow passage between systems."
+ tech_wormhole_relays_3:0 "Worm quantum containment fields"
+ tech_wormhole_relays_3_desc:0 "These containment fields allow more powerful wormholes to be created without the danger of unleashing a sudden cascade of subspace energy."
+ MOD_RELAY_3:0 "Worm Engine III"
+ MOD_RELAY_3_DESC:0 "By opening tunnels directly through the subspace, a duct can be established between two different points in normal space. The journey between them will be almost instantaneous"
+ 
+ #########Tech Navegación##################################
+ 
+ tech_reduced_ftl_windup:0 "Navigation Settings"
+ tech_reduced_ftl_windup_desc: "Updating of navigation instruments"
+ 
+ TECH_EXPERIMENTAL_SUBSPACE_NAVITATION_TITLE:0 "§SUnlock the function:§! Reduced jump penalty"
+ TECH_EXPERIMENTAL_SUBSPACE_NAVITATION_DESC:0 "It is also possible that ships in emergency retreat will return faster"
+ 
+ #########Resource#########################################
+
+ sr_dilithium_crystals: "Dilithium Crystals"
+ sr_dilithium_crystals_desc: "Scattered in some strange asteroids throughout the galaxy are these crystals that produce a constant source of energy that can be used for jump units."
+ sr_quartz_crystals: "Quartz crystals"
+ sr_quartz_crystals_desc: "Scattered in some strange asteroids throughout the galaxy are these crystals that produce a constant source of energy that can be used for jump units."
+ 
+ action.92.dilithium_crystals:1 "During the survey of [From.GetName], the [Root.GetName] has discovered deposits of §HDilithium Crystals§!. These crystals have unique properties that make them very effective in generating energy. The collision of several atoms of matter with others of antimatter in a Dilithium Crystal generates a plasma that serves as an energy source for curvature engines that allow spacecraft to travel faster than light. However, its energy must be recharged and wait a while before using it again to avoid overheating of the motors."
+ action.92.dilithium_crystals.tooltip:1 "£sr_dilithium_crystals£§Y$sr_dilithium_crystals$§!\n§E$sr_dilithium_crystals_desc$§!"
+ action.92.quartz_crystals:1 "During the survey of [From.GetName], the [Root.GetName] has discovered depósitos de §HQuartz crystals§!. These crystals have unique properties that make them very effective in generating energy. The atomic properties of quantizing an antimatter collision when passing through a Quartz Crystal generates a plasma that can create a temporal distortion field against spacecraft, creating a long-range artificial hole that makes it unique in its class. However, its energy runs out quickly and its recharge is very slow, but it is effective against surprise attacks."
+ action.92.quartz_crystals.tooltip:1 "£sr_quartz_crystals£§Y$sr_quartz_crystals$§!\n§E$sr_quartz_crystals_desc$§!"
+ 
+ #########Tech Mine ################################## 
+ 
+ TECH_MINE_DILITHIUM_CRYSTALS_TITLE:0 "§SUnlock Technology:§! Jump Drive I"
+ TECH_MINE_DILITHIUM_CRYSTALS_DESC:0 "By extracting these crystals our scientists are able to enable bending motors to allow UL travel to and from the edges of star systems."
+ tech_mine_dilithium_crystals:0 "Minas de Dilithium"
+ tech_mine_dilithium_crystals_desc:0 "By extracting these crystals our scientists are able to enable bending motors to allow UL travel to and from the edges of star systems."
+ 
+ TECH_MINE_QUARTZ_CRYSTALS_TITLE:0 "§SUnlock Technology:§! Temporary Wormholes"
+ TECH_MINE_QUARTZ_CRYSTALS_DESC:0 "By removing these crystals, our scientists can enable temporary worm experimental engines to allow UL travel to and from the edges of star systems at great distances."
+ tech_mine_quartz_crystals:0 "Minas de Quartz"
+ tech_mine_quartz_crystals_desc:0 "By removing these crystals, our scientists can enable temporary worm experimental engines to allow UL travel to and from the edges of star systems at great distances."

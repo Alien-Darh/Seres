@@ -1,0 +1,84 @@
+
+##########################################################################
+# Crystals resource edicts
+##########################################################################
+
+fuel_gases_dilithium = {
+	length = 3600
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = ship_edicts
+		cost = {
+			sr_dilithium_crystals = 250
+		}
+	}
+
+	potential = {
+		OR = {
+			has_resource = { type = dilithium_crystals amount > 0 }
+			has_edict = fuel_gases_dilithium
+		}
+		exists = owner
+		owner = {
+			OR = {
+				has_technology = tech_mod_warp_drive_1 
+				has_technology = tech_mod_warp_drive_2
+				has_technology = tech_mod_warp_drive_3
+				has_technology = tech_jump_drive_1
+				has_technology = tech_psi_jump_drive_1 
+			}
+		}
+	}
+
+	modifier = {
+		ship_interstellar_speed_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+		}
+	}
+}
+
+fuel_gases_quartz = {
+	length = 3600
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = ship_edicts
+		cost = {
+			sr_quartz_crystals = 250
+		}
+	}
+
+	potential = {
+		OR = {
+			has_resource = { type = quartz_crystals amount > 0 }
+			has_edict = fuel_gases_quartz
+		}
+		exists = owner
+		owner = {
+			OR = {
+				has_technology = tech_wormhole_relays_1 
+				has_technology = tech_wormhole_relays_2
+				has_technology = tech_wormhole_relays_3
+				has_technology = tech_jump_drive_1
+				has_technology = tech_psi_jump_drive_1 
+			}
+		}
+	}
+
+	modifier = {
+		ship_speed_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+		}
+	}
+}

@@ -313,10 +313,16 @@ fleet_event = {
 		owner = {
 			if = {
 				limit = {
+					NOT = { has_technology = tech_wormhole_stabilization }
+				}
+				give_technology = { tech = tech_wormhole_stabilization }
+			}
+			else_if = {
+				limit = {
 					NOT = { has_technology = tech_experimental_subspace_navigation }
 				}
-				give_technology = { tech = tech_experimental_subspace_navigation }
-			}
+				give_technology = {  tech = tech_experimental_subspace_navigation }
+			}			
 			else_if = {
 				limit = {
 					NOT = { has_technology = tech_planetary_shield_generator }

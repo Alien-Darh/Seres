@@ -1,0 +1,141 @@
+@cost1 = 30
+@cost2 = 60
+@cost3 = 120
+@cost4 = 180
+
+@power1 = -20
+@power2 = -40
+@power3 = -60
+@power4 = -80
+
+@hyperlane1 = 1
+@hyperlane2 = 2
+@hyperlane3 = 3
+
+@hit2 = 5
+@hit3 = 10
+@hit4 = 15
+
+@acr2 = 5
+@acr3 = 10
+@acr4 = 15
+
+@eva2 = 0.05
+@eva3 = 0.10
+@eva4 = 0.15
+
+### Wormhole
+
+utility_component_template = {
+	key = "MOD_RELAY_1"
+	size = medium
+	icon = "GFX_ship_part_wormhole_1"
+	icon_frame = 1
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+
+		upkeep = {
+			sr_quartz_crystals = 0.02
+		}
+	}
+	
+	hyperlane_range = @hyperlane1
+	
+	ftl = no
+	jumpdrive = yes
+	ship_modifier = {
+		ship_ftl_jumpdrive_range_mult = -0.25
+		ship_evasion_mult = @eva2
+		ship_accuracy_add = @acr2
+		ship_tracking_add = @hit2
+		ship_disengage_chance_mult = 0.25
+		ship_winddown_mult = 0.30
+		ship_emergency_ftl_mult = -0.25
+		ship_speed_mult = -0.80
+	}
+
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	prerequisites = { "tech_wormhole_relays_1" }
+	upgrades_to = "MOD_RELAY_2"
+	component_set = "ftl_components"
+}
+
+utility_component_template = {
+	key = "MOD_RELAY_2"
+	size = medium
+	icon = "GFX_ship_part_wormhole_2"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+
+		upkeep = {
+			sr_quartz_crystals = 0.04
+		}
+	}
+
+	hyperlane_range = @hyperlane2
+	
+	ftl = no
+	jumpdrive = yes
+	ship_modifier = {
+		ship_ftl_jumpdrive_range_mult = 0.00
+		ship_evasion_mult = @eva3
+		ship_accuracy_add = @acr3
+		ship_tracking_add = @hit3
+		ship_disengage_chance_mult = 0.50
+		ship_winddown_mult = 0.20
+		ship_emergency_ftl_mult = -0.50
+		ship_speed_mult = -0.60
+	}
+
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	prerequisites = { "tech_wormhole_relays_2" }
+	upgrades_to = "MOD_RELAY_3"
+	component_set = "ftl_components"
+}
+
+utility_component_template = {
+	key = "MOD_RELAY_3"
+	size = medium
+	icon = "GFX_ship_part_wormhole_3"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+
+		upkeep = {
+			sr_quartz_crystals = 0.06
+		}
+	}
+
+	hyperlane_range = @hyperlane3
+	
+	ftl = no
+	jumpdrive = yes
+	ship_modifier = {
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_evasion_mult = @eva4
+		ship_accuracy_add = @acr4
+		ship_tracking_add = @hit4
+		ship_disengage_chance_mult = 0.75
+		ship_winddown_mult = 0.10
+		ship_emergency_ftl_mult = -0.75
+		ship_speed_mult = -0.40
+	}
+
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	prerequisites = { "tech_wormhole_relays_3" }
+	upgrades_to = "JUMP_DRIVE_1"
+	component_set = "ftl_components"
+}

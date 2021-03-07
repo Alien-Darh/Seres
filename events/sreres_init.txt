@@ -19,69 +19,51 @@ country_event = {
 		owner = {
 			if = {
 				limit = {
-				NOT = { has_technology = tech_wormhole_stabilization }
+				NOT = { has_technology = tech_mod_warp_drive_1 }
 				}
-				give_technology = { tech = tech_wormhole_stabilization }
-			}
-		}	
+				give_technology = { tech = tech_mod_warp_drive_1 }
+			}			
+		}
+		give_technology = {
+			tech = tech_mine_dilithium_crystals message = no
+		}		
+ 
 		hidden_effect = {
-			add_seen_bypass_type = wormhole
-			set_country_flag = encountered_first_wormhole
-			set_country_flag = isolated_system_owner
-			every_owned_planet = {
-				limit = { is_capital = yes }
-				solar_system = {
-					save_event_target_as = isolated_system
-					random_system = {
-						limit = { has_hyperlane_to = prev }
-						save_event_target_as = isolated_start_exit_system
-					}
-				}
-			}
-			event_target:isolated_system = {
-				every_system = {
-					limit = { has_hyperlane_to = prev }
-					remove_hyperlane = { from = this to = prev }
-				}
-			}
-			event_target:isolated_start_exit_system = {
-				spawn_natural_wormhole = {
-					bypass_type = wormhole
-					random_pos = yes
-					orbit_angle = 360
-				}
-				event_target:isolated_system = {
-					spawn_natural_wormhole = {
-						bypass_type = wormhole
-						random_pos = yes
-						orbit_angle = 360
-					}
-					link_wormholes = prev
-				}
+			solar_system = {
+				random_system_planet = {
+					limit = { is_moon = yes }
+					save_event_target_as = deposit_advance
+				}	
 			}
 		}
-	}
+		event_target:deposit_advance = {
+			planet_event = {
+				id = seres_init.011
+				days = 900
+			}
+		}	
+	}	
 	
 	option = {
 		name = seres_init.01.b
-		hidden_effect = {
-			every_owned_planet = {
-				solar_system = {
-					save_event_target_as = isolated_system
-				}
-			}
-			event_target:isolated_system = {
-				random_neighbor_system = {
-					set_star_flag = isolated_outwards_system
-				}
-				every_system = {
-					limit = { 
-						NOT = { has_star_flag = isolated_outwards_system }
-						has_hyperlane_to = prev
-					}
-					remove_hyperlane = { from = this to = prev }
-				}
-			}
+		give_technology = {
+			tech = tech_powered_exoskeletons message = no
+		}				
+	}	
+}
+
+planet_event = {
+	id = seres_init.011
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = { 
+		clear_deposits = yes
+		add_deposit = d_dilithium_crystals_2
+		if = {
+			limit = { has_mining_station = yes }
+			random_mining_station = { dismantle = yes }
 		}
 	}	
 }

@@ -1,0 +1,110 @@
+
+# ##################
+# Extra Resources
+# ##################
+
+#Dilithium Crystals
+tech_mine_dilithium_crystals = {
+	icon = tech_mine_dilithium_crystals
+	cost = @tier2cost1
+	area = physics
+	tier = 2
+	category = { particles }	
+	prerequisites = { "tech_space_construction" }
+	weight = @tier2weight2
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_MINE_DILITHIUM_CRYSTALS_TITLE" 
+			desc = "TECH_MINE_DILITHIUM_CRYSTALS_DESC"
+		}
+	}
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_planet_within_border = {
+					OR = {
+						has_deposit = d_dilithium_crystals_1
+						has_deposit = d_dilithium_crystals_2
+						has_deposit = d_dilithium_crystals_3
+					}
+				}	
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}	
+
+#quartz Crystals
+tech_mine_quartz_crystals = {
+	icon = tech_mine_quartz_crystals
+	cost = @tier2cost1
+	area = physics
+	tier = 2
+	category = { particles }	
+	prerequisites = { "tech_space_construction" }
+	weight = @tier2weight2
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_MINE_QUARTZ_CRYSTALS_TITLE"
+			desc = "TECH_MINE_QUARTZ_CRYSTALS_DESC"
+		}
+	}	
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_planet_within_border = {
+					OR = {
+						has_deposit = d_quartz_crystals_1
+						has_deposit = d_quartz_crystals_2
+						has_deposit = d_quartz_crystals_3
+					}
+				}	
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}

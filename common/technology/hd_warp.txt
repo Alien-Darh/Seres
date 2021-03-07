@@ -1,0 +1,144 @@
+# ###################### #
+#  Jump Drive Technology #
+# ###################### #
+
+tech_mod_warp_drive_1 = {
+	cost = @tier2cost1
+	area = physics
+	category = { particles }
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no	
+	modification = yes
+	ai_update_type = all
+	prerequisites = { "tech_mine_dilithium_crystals" "tech_fusion_power" }
+	weight = @tier2weight1
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_mod_warp_drive_1 }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+	
+
+tech_mod_warp_drive_2 = {
+	cost = @tier2cost3
+	area = physics
+	tier = 2
+	is_rare = yes
+	category = { particles }
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_mod_warp_drive_1" "tech_cold_fusion_power" }
+	weight = @tier2weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_mod_warp_drive_2 }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_mod_warp_drive_3 = {
+	cost = @tier3cost1
+	area = physics
+	tier = 3
+	is_rare = yes
+	category = { particles }
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_mod_warp_drive_2" "tech_antimatter_power" }
+	weight = @tier3weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_mod_warp_drive_3 }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}

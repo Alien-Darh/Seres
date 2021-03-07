@@ -1,0 +1,84 @@
+
+dilithium_refinery = {
+	icon = "GFX_spaceport_module_dilithium"
+	construction_days = 360
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_space_mining_3 }
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		from = { has_technology = tech_mod_warp_drive_1 }
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 25
+		}
+
+		produces = {
+			sr_dilithium_crystals = 2
+		}
+
+		upkeep = {
+			energy = 5
+			alloys = 2
+		}
+	}
+
+	show_in_tech = "tech_space_mining_3"
+	
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 150
+	}
+}
+
+quartz_refinery = {
+	icon = "GFX_spaceport_module_quartz"
+	construction_days = 360
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_space_mining_4 }
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		from = { has_technology = tech_wormhole_relays_1 }
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 25
+		}
+
+		produces = {
+			sr_quartz_crystals = 2
+		}
+
+		upkeep = {
+			energy = 5
+			alloys = 2
+		}
+	}
+
+	show_in_tech = "tech_space_mining_4"
+	
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 150
+	}
+}

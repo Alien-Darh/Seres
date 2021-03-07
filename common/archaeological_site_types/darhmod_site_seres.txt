@@ -50,7 +50,7 @@ DARH_seres_site_1 = {
 }
 DARH_seres_site_2 = {
 	desc = "DARH_seres_site_2_desc"
-	picture = GFX_evt_resource_cache
+	picture = GFX_evt_relic_world_building
 	stages = 2
 	weight = { base = 0 }
 

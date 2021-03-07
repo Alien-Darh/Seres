@@ -1,0 +1,139 @@
+tech_hyper_drive_1 = {
+	cost = @tier1cost1
+	area = physics
+	tier = 1
+	category = { particles }
+	prerequisites = { "tech_basic_science_lab_1" }
+	weight = @tier1weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_HYPERDRIVE_1_TITLE"
+			desc = "TECH_UNLOCK_HYPERDRIVE_1_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_jump_drive_1 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = yes
+	is_rare = yes
+	is_dangerous = yes
+	weight = @tier5weight3
+	prerequisites = { "tech_mod_warp_drive_3" "tech_hyper_drive_3" "tech_wormhole_relays_3" "tech_mine_living_metal" "tech_mine_dark_matter" }
+	
+	feature_flags = {
+		jump_method
+	}
+
+	potential = {
+			OR = {
+				has_ascension_perk = ap_defender_of_the_galaxy
+			}
+		}
+
+	weight_modifier = {
+		factor = 0.1
+		modifier = {
+			factor = 0.1
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_particles"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}		
+		modifier = {
+			factor = 0
+			NOT = {
+				any_planet_within_border = {
+					OR = {
+						has_deposit = d_dilithium_crystals_1
+						has_deposit = d_dilithium_crystals_2
+						has_deposit = d_dilithium_crystals_3
+					}
+				}	
+			}
+		}	
+		modifier = {
+			factor = 0
+			NOT = {
+				any_planet_within_border = {
+					OR = {
+						has_deposit = d_quartz_crystals_1
+						has_deposit = d_quartz_crystals_2
+						has_deposit = d_quartz_crystals_3
+					}
+				}	
+			}
+		}		
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_jump_drive_1 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+	}
+
+	ai_weight = {
+		factor = 20 #FTL techs are good
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_JUMPDRIVE_1_TITLE"
+			desc = "TECH_UNLOCK_JUMPDRIVE_1_DESC"
+		}
+	}
+}

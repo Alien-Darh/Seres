@@ -1,0 +1,162 @@
+# #################### #
+#  Wormhole Technology #
+# #################### #
+
+
+tech_wormhole_relays_1 = {
+	cost = @tier2cost1
+	area = physics
+	tier = 2
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_mine_quartz_crystals" "tech_cold_fusion_power" }
+	is_rare = yes
+	weight = @tier2weight1
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_WORMHOLE_RELAY_1_TITLE"
+			desc = "TECH_UNLOCK_WORMHOLE_RELAY_1_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_wormhole_relays_1 }
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_wormhole_relays_2 = {
+	cost = @tier2cost3
+	area = physics
+	tier = 2
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_wormhole_relays_1" "tech_antimatter_power" }
+	is_rare = yes
+	weight = @tier2weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_wormhole_relays_2 }
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_WORMHOLE_RELAY_2_TITLE"
+			desc = "TECH_UNLOCK_WORMHOLE_RELAY_2_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 100 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_wormhole_relays_3 = {
+	cost = @tier3cost1
+	area = physics
+	tier = 3
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_wormhole_relays_2" "tech_zero_point_power" }
+	is_rare = yes
+	weight = @tier3weight1
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_WORMHOLE_RELAY_3_TITLE"
+			desc = "TECH_UNLOCK_WORMHOLE_RELAY_3_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_wormhole_relays_3 }
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}

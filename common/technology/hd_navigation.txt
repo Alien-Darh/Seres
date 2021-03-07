@@ -1,0 +1,56 @@
+# navigation calibration
+
+tech_reduced_ftl_windup = {
+	area = physics
+	cost = @tier3cost1
+	tier = 3
+	category = { particles }
+	prerequisites = { "tech_basic_science_lab_3" }
+	weight = @tier2weight3
+	is_rare = yes
+
+	modifier = {
+		ship_interstellar_speed_mult = 0.10
+		ship_windup_mult = -0.10
+	}
+
+	weight_modifier = {
+		factor = 0.5
+
+		modifier = {
+			factor = 4
+			has_technology = tech_hyper_drive_1
+			has_technology = tech_mod_warp_drive_1
+			has_technology = tech_wormhole_relays_1
+		}
+
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_reduced_ftl_windup }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 4
+
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}

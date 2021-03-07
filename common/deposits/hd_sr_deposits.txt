@@ -1,0 +1,145 @@
+#########################
+### ADVANCED RESOURCES ##
+#########################
+
+d_dilithium_crystals_1 = {
+	station = shipclass_mining_station 
+	is_for_colonizeable = no
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			sr_dilithium_crystals = 1
+		}
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_asteroid
+			is_planet_class = pc_ice_asteroid	
+		}
+	}
+
+	drop_weight = {
+		weight = 1.5
+		modifier = {
+			factor = 1.5
+			is_inside_nebula = yes
+		}
+	}
+}
+
+d_dilithium_crystals_2 = {
+	station = shipclass_mining_station 
+	is_for_colonizeable = no
+	
+	resources = {
+		ccategory = orbital_mining_deposits
+		produces = {
+			sr_dilithium_crystals = 2
+		}
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_asteroid
+			is_planet_class = pc_ice_asteroid	
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 3
+			is_inside_nebula = yes
+		}
+	}
+}
+
+d_dilithium_crystals_3 = {
+	station = shipclass_mining_station 
+	is_for_colonizeable = no
+	
+	resources = {
+		ccategory = orbital_mining_deposits
+		produces = {
+			sr_dilithium_crystals = 3
+		}
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+###########################################
+
+d_quartz_crystals_1 = {
+	station = shipclass_mining_station 
+	is_for_colonizeable = no
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			sr_quartz_crystals = 1
+		}
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_asteroid
+			is_planet_class = pc_ice_asteroid	
+		}
+	}
+	
+	drop_weight = {
+		weight = 1.5
+		modifier = {
+			factor = 1.5
+			is_inside_nebula = yes
+		}
+	}
+}
+
+d_quartz_crystals_2 = {
+	station = shipclass_mining_station 
+	is_for_colonizeable = no
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			sr_quartz_crystals = 2
+		}
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_asteroid
+			is_planet_class = pc_ice_asteroid	
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 3
+			is_inside_nebula = yes
+		}
+	}
+}
+
+d_quartz_crystals_3 = {
+	station = shipclass_mining_station 
+	is_for_colonizeable = no
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			sr_quartz_crystals = 3
+		}
+	}	
+	
+	drop_weight = {
+		weight = 0
+	}
+}
