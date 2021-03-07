@@ -62,5 +62,4 @@ dilithium_crystals_deficit = {
 quartz_crystals_deficit = {
 	custom_tooltip = quartz_crystals_deficit_tooltip
 	ship_winddown_mult = 0.25
-	ship_ftl_jumpdrive_range_mult = -0.10	
-}
+	ship_ftl_jumpdrive_range_mult = -0.10

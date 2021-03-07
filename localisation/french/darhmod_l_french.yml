@@ -2,7 +2,7 @@
 
 
   seres_init.01.name:0 "Forerunner Beings of Light"
-  seres_init.01.desc:0 "In the year 2200, some kind of hidden stargate was found at the limits of the §H[Root.Solar_System.GetName]§! system.\n\nThere are vestiges that were once used thousands of years ago by some civilization §HAdvanced alien§! to travel between the stars and now we are very close to discovering how to travel through them.\n\nIt is speculated that there are multiple interstellar pathway connections that will lead us to know the ends of the galaxy and its secrets... where no one had been able to be before or imagine in some way."
+  seres_init.01.desc:0 "In the year 2200, some kind of hidden stargate was found at the limits of the §H[Root.Solar_System.GetName]§! system.\n\nThere are vestiges that were once used thousands of years ago by some civilization §HAdvanced alien§! to travel between the stars and now we are very close to discovering how to travel through them thanks to advances in space propulsion.\n\nIt is speculated that there are multiple interstellar pathway connections that will lead us to know the ends of the galaxy and its secrets... where no one had been able to be before or imagine in some way."
   seres_init.01.a:0 "Advanced startup"
   seres_init.01.b:0 "Normal start"
 
