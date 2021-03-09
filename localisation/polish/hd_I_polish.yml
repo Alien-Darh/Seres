@@ -61,9 +61,9 @@
  action.92.quartz_crystals.tooltip:1 "£sr_quartz_crystals£§Y$sr_quartz_crystals$§!\n§E$sr_quartz_crystals_desc$§!"
  
  dilithium_crystals:0 "Dilithium deficiency"
- dilithium_crystals_deficit_tooltip:0 "A lack of Dilithium will leave ships 25% slower in their jump recharge and 10% slower in their interstellar travel."
+ dilithium_crystals_deficit_tooltip:0 "A lack of Dilithium will leave ships with reduced jump range."
  quartz_crystals:0 "Quartz deficiency"
- quartz_crystals_deficit_tooltip:0 "A lack of Quartz will render ships 25% slower in jump recovery and 10% slower in jump range."
+ quartz_crystals_deficit_tooltip:0 "A lack of Quartz will leave ships with reduced jump range."
  
  sm_dilithium_refinery:0 " Dilithium laboratory"
  sm_dilithium_refinery_desc:0 "Thanks to the latest technologies found, artificial Dilithium can be replicated in our advanced laboratories."
