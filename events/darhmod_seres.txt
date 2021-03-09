@@ -297,7 +297,7 @@ fleet_event = {
 	id = darhmod_seres.7
 	title = "darhmod_seres.7.name"
 	desc = "darhmod_seres.7.desc"
-	picture = GFX_evt_exploding_planet
+	picture = GFX_evt_shattered_planet
 	show_sound = event_mystic_reveal
 	archaeology = yes
 	is_triggered_only = yes
@@ -603,7 +603,7 @@ fleet_event = {
 		name = darhmod_seres.12.a
 		hidden_effect = {
 			set_spawn_system_batch = begin
-			#set_country_flag = encountered_first_wormhole		
+			set_country_flag = encountered_first_wormhole		
 			random_planet = {
 				limit = { has_planet_flag = darhmod_seres_near_home_colony }
 				random_list = {
@@ -816,7 +816,6 @@ country_event = {
 				amount = 1
 			}
 		}
-		hidden_effect = { owner = { ship_event = { darhmod_seres.13 days = 5 } } }		
 	}
 }
 

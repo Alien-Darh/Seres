@@ -94,7 +94,7 @@ DARH_seres_site_2 = {
 }
 DARH_seres_site_3 = {
 	desc = "DARH_seres_site_3_desc"
-	picture = GFX_evt_shattered_planet
+	picture = GFX_evt_exploding_planet
 	stages = 4
 	weight = { base = 0 }
 

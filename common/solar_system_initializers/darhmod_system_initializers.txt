@@ -5,28 +5,28 @@ darhmod_seres_home_system = {
 	name = "Nubbia"
 	class = "sc_pulsar"
 	usage = misc_system_init
-	usage_odds = 0	
-	
+	usage_odds = 0
+
 	asteroid_belt = {
 		type = icy_asteroid_belt
 		radius = 125
 	}
-	
+
 	flags = { guardians_wraith_system guardian hostile_system }
 	flags = { darhmod_seres_home_system }
 	flags = { hostile_system amoeba_home_system }
-	
+
 	prevent_anomalies = yes
-	
+
 	planet = {
 		count = 1
 		class = star
 		orbit_distance = 0
 		orbit_angle = 1
-		size = 36		
+		size = 36
 		has_ring = no
 		flags = { guardians_wraith_pulsar }
-		
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -83,7 +83,7 @@ darhmod_seres_home_system = {
 	
 	planet = {
 		name = "Nibiru"
-		orbit_distance = 200 #45
+		orbit_distance = 200
 		class = pc_barren
 		orbit_angle = 140
 		size = 20
@@ -97,9 +97,8 @@ darhmod_seres_home_system = {
 			prevent_anomaly = yes
 			save_global_event_target_as = darhmod_seres_home_planet
 			create_archaeological_site = DARH_seres_site_5
-
+			
 			add_deposit = d_archaeological_artifacts_1
-			clear_deposits = yes
 		}
 		
 		moon = {
@@ -111,7 +110,6 @@ darhmod_seres_home_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				add_deposit = d_dark_matter_deposit_1
-				clear_deposits = yes				
 			}
 		}	
 	}
@@ -132,8 +130,7 @@ darhmod_seres_home_system = {
 			add_deposit = d_exotic_gases_2
 			add_deposit = d_rare_crystals_2
 			add_deposit = d_volatile_motes_2		
-			prevent_anomaly = yes
-			clear_deposits = yes			
+			prevent_anomaly = yes	
 		}
 
 		moon = {
@@ -190,7 +187,7 @@ darhmod_seres_home_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			save_event_target_as = amoeba_giant
-			clear_deposits = yes			
+			clear_deposits = yes
 			add_deposit = d_zro_deposit_1			
 		}
 

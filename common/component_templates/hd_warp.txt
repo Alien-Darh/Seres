@@ -1,12 +1,12 @@
-@cost1 = 30
-@cost2 = 60
-@cost3 = 120
-@cost4 = 180
+@cost1 = 10
+@cost2 = 15
+@cost3 = 20
+@cost4 = 25
 
-@power1 = -20
-@power2 = -40
-@power3 = -60
-@power4 = -80
+@power1 = -10
+@power2 = -20
+@power3 = -30
+@power4 = -40
 
 
 ### Warp Drive
@@ -31,9 +31,13 @@ utility_component_template = {
 	ftl = yes
 	jumpdrive = yes
 	ship_modifier = {
-		ship_ftl_jumpdrive_range_mult = -0.55
+		ship_ftl_jumpdrive_range_mult = -0.60
 		ship_windup_mult = 0.30
-		ship_interstellar_speed_mult = -0.50
+		ship_interstellar_speed_mult = -0.60
+	}
+	
+	ai_weight = {
+		weight = 2
 	}
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
@@ -65,8 +69,12 @@ utility_component_template = {
 	ship_modifier = {
 		ship_ftl_jumpdrive_range_mult = -0.40
 		ship_windup_mult = 0.20
-		ship_interstellar_speed_mult = -0.35
+		ship_interstellar_speed_mult = -0.40
 	}
+	
+	ai_weight = {
+		weight = 3
+	}	
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "tech_mod_warp_drive_2" }
@@ -99,6 +107,10 @@ utility_component_template = {
 		ship_windup_mult = 0.10
 		ship_interstellar_speed_mult = -0.20
 	}
+	
+	ai_weight = {
+		weight = 4
+	}	
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "tech_mod_warp_drive_3" }

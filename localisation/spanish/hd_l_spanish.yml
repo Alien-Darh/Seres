@@ -61,9 +61,9 @@
  action.92.quartz_crystals.tooltip:1 "£sr_quartz_crystals£§Y$sr_quartz_crystals$§!\n§E$sr_quartz_crystals_desc$§!"
  
  dilithium_crystals:0 "Déficit de Dilithium"
- dilithium_crystals_deficit_tooltip:0 "Una falta de Dilithium dejará a las naves 25% mas lentas en su recarga de salto y 10% mas lenta en sus viajes interestelares."
+ dilithium_crystals_deficit_tooltip:0 "Una falta de Dilithium dejará a las naves con rango de salto reducido."
  quartz_crystals:0 "Déficit de Cuarzo"
- quartz_crystals_deficit_tooltip:0 "Una falta de Cuarzo dejará a las naves 25% mas lentas en su recuperación de salto y 10% menos en su alcance de salto."
+ quartz_crystals_deficit_tooltip:0 "Una falta de Cuarzo dejará a las naves con rango de salto reducido."
  
  sm_dilithium_refinery:0 "Laboratorio Dilithium"
  sm_dilithium_refinery_desc:0 "Gracias a las ultimas tecnologías encontradas se puede replicar Dilithium artificial en nuestros laboratorios avanzados"

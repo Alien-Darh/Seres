@@ -22,11 +22,10 @@ country_event = {
 				NOT = { has_technology = tech_mod_warp_drive_1 }
 				}
 				give_technology = { tech = tech_mod_warp_drive_1 }
-			}			
-		}
-		give_technology = {
-			tech = tech_mine_dilithium_crystals message = no
-		}		
+			}
+			else = {			
+			}
+		}	
  
 		hidden_effect = {
 			solar_system = {
@@ -36,26 +35,28 @@ country_event = {
 				}	
 			}
 		}
+		
 		event_target:deposit_advance = {
 			planet_event = {
 				id = seres_init.011
 				days = 900
 			}
-		}	
+		}
+		hidden_effect = {
+			country_event = { id = seres_init.022 days = 1800 }
+		}						
 	}	
 	
 	option = {
 		name = seres_init.01.b
-		give_technology = {
-			tech = tech_powered_exoskeletons message = no
-		}				
 	}	
 }
 
 planet_event = {
 	id = seres_init.011
 	hide_window = yes
-	
+	location = root	
+
 	is_triggered_only = yes
 	
 	immediate = { 
@@ -64,6 +65,24 @@ planet_event = {
 		if = {
 			limit = { has_mining_station = yes }
 			random_mining_station = { dismantle = yes }
+		}
+		if = {
+			limit = { has_research_station = yes }
+			random_research_station = { dismantle = yes }
+		}		
+	}
+}
+
+country_event = {
+    id = seres_init.022
+	hide_window = yes	
+	location = root	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		give_technology = {
+			tech = tech_mine_dilithium_crystals
 		}
 	}	
 }
