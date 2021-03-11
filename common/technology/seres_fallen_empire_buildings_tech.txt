@@ -35,10 +35,6 @@ tech_class_4_singularity = {
 	}
 
 	weight_modifier = {
-#        modifier = {
-#            factor = 0
-#			years_passed < 150
-#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -77,10 +73,6 @@ tech_dimensional_fabricator = {
 	}
 
 	weight_modifier = {
-#        modifier = {
-#            factor = 0
-#			years_passed < 150
-#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -122,10 +114,6 @@ tech_nourishment_center = {
 	}
 
 	weight_modifier = {
-#        modifier = {
-#            factor = 0
-#			years_passed < 150
-#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -167,10 +155,6 @@ tech_affluence_center = {
 	}
 
 	weight_modifier = {
-#        modifier = {
-#            factor = 0
-#			years_passed < 150
-#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -208,10 +192,6 @@ tech_nano_forge = {
 	}
 
 	weight_modifier = {
-#        modifier = {
-#            factor = 0
-#			years_passed < 150
-#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -249,10 +229,6 @@ tech_master_archive = {
 	}
 
 	weight_modifier = {
-#        modifier = {
-#            factor = 0
-#			years_passed < 150
-#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -290,10 +266,6 @@ tech_fe_stronghold = {
 	}
 
 	weight_modifier = {
-#        modifier = {
-#            factor = 0
-#			years_passed < 150
-#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -336,10 +308,6 @@ tech_utopian_paradise_dome = {
 	}
 
 	weight_modifier = {
-#        modifier = {
-#            factor = 0
-#			years_passed < 150
-#        }
 		modifier = {
 			factor = 1.25
 			research_leader = {

@@ -29,6 +29,7 @@
   SMALL_CRYSTAL_ARMOR_1a_DESC:0 "Auxiliary Crystal Infused Armor"
   SMALL_CRYSTAL_ARMOR_2a:0 "Auxiliary Crystal Infused Armor"
   SMALL_CRYSTAL_ARMOR_2a_DESC:0 "Auxiliary Crystal Infused Armor"
+
   ################
  
   tech_sbs_swarmer_missiles_3:0 "Tornado missiles"
@@ -78,10 +79,10 @@
   ########### Tecnología Ancestral ###########
 
   tech_building_seres:0 "Architecture Beings of Light"
-  tech_building_seres_desc:0 "Access to the architecture of tactical and technical buildings of §YBeings of light§! from the libraries of Nibiru."
+  tech_building_seres_desc:0 "Access to the plans and specifications of the tactical and technical buildings of §YSeres de luz§! from the Nibiru Libraries.\n\nIt will take a while for our architects and engineers to construct these buildings, but they will be essential to our future colonies."
   TECH_BUILDING_SERES_TITLE:0 "Buildings of Light"
-  TECH_BUILDING_SERES_DESC:0 "Access to the architecture of tactical and technical buildings of §YBeings of light§! from the libraries of Nibiru."
-  
+  TECH_BUILDING_SERES_DESC:0 "Access to the plans and specifications of the tactical and technical buildings of §YSeres de luz§! from the Nibiru Libraries.\n\nIt will take a while for our architects and engineers to construct these buildings, but they will be essential to our future colonies."
+
   tech_class_4_singularity:0 "Class 4 singularity"
   tech_class_4_singularity_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have gained access to this impressive one-of-a-kind power generator that will take us one step further in understanding energy."
   TECH_UNLOCK_CLASS_4_SINGULARITY_TITLE:0 "Energy building §YLight beings§!"
@@ -137,4 +138,11 @@
   TECH_UTOPIAN_PARADISE_DOME_DESC:0 "Celestial dome"
   building_fe_domex:0 "Celestial dome"
   building_fe_domex_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind celestial dome that will take us one step further for the new colonies of our empire."
+
+  ################
   
+  tech_mind_control:0 "Genetic control"
+  tech_mind_control_desc:0 "Discoveries in molecular genetics cause the mind to expand to new horizons with new abilities and more longevity. \nUnlocks Psionic Admiral"
+  
+  leader_trait_lethargic:0 "Telépata"
+  leader_trait_lethargic_desc:1 "This leader is indomitable and is to be feared, his telepathy coordinates the entire fleet in unison into a single total attack force."

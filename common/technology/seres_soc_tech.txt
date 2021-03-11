@@ -15,3 +15,37 @@ tech_regenerative_hull_tissue = {
 		factor = 0 		# Can only be reverse engineered
 	}
 }
+
+tech_mind_control = {
+	cost = @tier2cost2
+	area = society
+	tier = 2	
+	category = { biology }
+	is_rare = yes
+	weight = 0
+	
+	modifier = {
+		leader_age = 5
+		description = tech_gene_tailoring_modifier_desc
+		description_parameters = {
+			POINTS = 1
+		}
+		BIOLOGICAL_species_trait_points_add = 1
+	}
+
+	potential = {
+		OR = {
+			NOT = { has_authority = auth_machine_intelligence }		
+			has_civic = civic_fanatic_purifiers
+			has_civic = civic_machine_assimilator
+			has_civic = civic_machine_servitor			
+			has_civic = civic_barbaric_despoilers
+			has_civic = civic_hive_devouring_swarm
+		}
+	}
+
+	feature_flags = {
+		modify_traits
+		pop_self_modification
+	}
+}

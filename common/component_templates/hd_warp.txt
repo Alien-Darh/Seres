@@ -31,8 +31,8 @@ utility_component_template = {
 	ftl = yes
 	jumpdrive = yes
 	ship_modifier = {
-		ship_ftl_jumpdrive_range_mult = -0.60
-		ship_windup_mult = 0.30
+		ship_ftl_jumpdrive_range_mult = -0.55
+		ship_windup_mult = 0.25
 		ship_interstellar_speed_mult = -0.60
 	}
 	
@@ -68,7 +68,7 @@ utility_component_template = {
 	jumpdrive = yes
 	ship_modifier = {
 		ship_ftl_jumpdrive_range_mult = -0.40
-		ship_windup_mult = 0.20
+		#ship_windup_mult = 0.15
 		ship_interstellar_speed_mult = -0.40
 	}
 	
@@ -104,7 +104,7 @@ utility_component_template = {
 	jumpdrive = yes
 	ship_modifier = {
 		ship_ftl_jumpdrive_range_mult = -0.20
-		ship_windup_mult = 0.10
+		ship_windup_mult = -0.25
 		ship_interstellar_speed_mult = -0.20
 	}
 	

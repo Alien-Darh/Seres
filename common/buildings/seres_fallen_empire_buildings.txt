@@ -1,139 +1,248 @@
 
 building_affluence_centerx = {
-	base_buildtime = @b2_time
-	can_build = yes
+	base_buildtime = 900
 	can_demolish = yes
 	base_cap_amount = 1
-	icon = building_hyper_entertainment_forum
+	icon = building_hyper_entertainment_forumx
+	
+	category = resource	
 	
 	prerequisites = { "tech_affluence_center" }	
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
 	
 	potential = {
 		custom_tooltip = {
-			exists = owner
+			text = EMPIRE_UNIQUE_BUILDING
 			OR = {
-				owner = { is_regular_empire = yes }
-				owner = { has_technology = "tech_affluence_center" }
+				#owner = { is_regular_empire = yes }
+				owner = { has_technology = "tech_affluence_center" }				
 				owner = {
-					check_variable = { which = affluence_center_build_count value >= 1 }
+					has_country_flag = darhmod_precursor_seres_finished
+					NOT = {
+						has_country_flag = built_one_ministry_seres
+					}
 				}
 			}
-			fail_text = "ancrel.10004.failtext"
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_artisan_add = 15
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_artisan_drone_add = 15
+		}
+	}
+	
 	resources = {
 		category = planet_buildings
 		produces = {
-			consumer_goods = 50
 			minor_artifacts = 0.05
 		}
 		cost = {
-			minerals = @b3_minerals
+			minerals = 800
 		}
 		upkeep = {
-			minerals = 25
-			energy = 10
+			minerals = 250
+			energy = 100
 		}
 	}
 
 	on_queued = {
-		owner = {
-			subtract_variable = { which = affluence_center_build_count value = 1 }
-		}
+		owner = { remove_country_flag = darhmod_precursor_seres_finished }
 	}
 
 	on_unqueued = {
+		owner = { set_country_flag = darhmod_precursor_seres_finished }
+	}
+
+	on_built = {
+		owner = { set_country_flag = built_one_ministry_seres }
+	}
+
+	on_destroy = {
 		owner = {
-			change_variable = { which = affluence_center_build_count value = 1 }
+			if = {
+				limit = {
+					has_country_flag = built_one_ministry_seres
+				}
+				remove_country_flag = built_one_ministry_seres
+				set_country_flag = darhmod_precursor_seres_finished
+			}
 		}
 	}
-		
-	upgrades = {
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			is_planet_class = pc_habitat
+		}
 	}
 }
 
 building_nourishment_centerx = {
-	base_buildtime = @b2_time
-	can_build = yes
+	base_buildtime = 900
 	can_demolish = yes
 	base_cap_amount = 1
 	icon = building_food_processing_center
+
+	category = resource
 	
 	prerequisites = { "tech_nourishment_center" }	
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
 	
 	potential = {
 		custom_tooltip = {
-			exists = owner
+			text = EMPIRE_UNIQUE_BUILDING
 			OR = {
-				owner = { is_regular_empire = yes }
-				owner = { has_technology = "tech_nourishment_center" }
+				#owner = { is_regular_empire = yes }
+				owner = { has_technology = "tech_nourishment_center" }				
 				owner = {
-					check_variable = { which = nourishment_center_build_count value >= 1 }
+					has_country_flag = darhmod_precursor_seres_finished
+					NOT = {
+						has_country_flag = built_one_ministry_seres
+					}
 				}
 			}
-			fail_text = "ancrel.10004.failtext"
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+	
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
 		}
 	}
 	
-	planet_modifier = {
-	}
-
-	resources = {
-		category = planet_buildings
-		produces = {
-			food = 100
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
 		}
+		modifier = {
+			job_farmer_add = 10
+			planet_farmers_food_produces_mult = 0.25
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_agri_drone_add = 10
+			planet_farmers_food_produces_mult = 0.25			
+		}
+	}
+	
+	resources = {
+		category = planet_buildings		
 		cost = {
-			minerals = @b3_minerals
+			minerals = 800
 		}
 		upkeep = {
-			energy = 20
+			energy = 100
 		}
 	}
 	
 	on_queued = {
-		owner = {
-			subtract_variable = { which = nourishment_center_build_count value = 1 }
-		}
+		owner = { remove_country_flag = darhmod_precursor_seres_finished }
 	}
 
 	on_unqueued = {
+		owner = { set_country_flag = darhmod_precursor_seres_finished }
+	}
+
+	on_built = {
+		owner = { set_country_flag = built_one_ministry_seres }
+	}
+
+	on_destroy = {
 		owner = {
-			change_variable = { which = nourishment_center_build_count value = 1 }
+			if = {
+				limit = {
+					has_country_flag = built_one_ministry_seres
+				}
+				remove_country_flag = built_one_ministry_seres
+				set_country_flag = darhmod_precursor_seres_finished
+			}
 		}
 	}
-		
-	upgrades = {
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			is_planet_class = pc_habitat
+		}
 	}
 }
 
 building_dimensional_fabricatorx = {
-	base_buildtime = @b2_time
-	can_build = yes
+	base_buildtime = 900
 	can_demolish = yes
 	base_cap_amount = 1
 	icon = building_nanite_transmuter
 	
 	prerequisites = { "tech_dimensional_fabricator" }
-		
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	
 	potential = {
 		custom_tooltip = {
-			exists = owner
+			text = EMPIRE_UNIQUE_BUILDING
 			OR = {
-				owner = { is_regular_empire = yes }
-				owner = { has_technology = "tech_dimensional_fabricator" }
+				#owner = { is_regular_empire = yes }
+				owner = { has_technology = "tech_dimensional_fabricator" }				
 				owner = {
-					check_variable = { which = dimensional_fabricator_build_count value >= 1 }
+					has_country_flag = darhmod_precursor_seres_finished
+					NOT = {
+						has_country_flag = built_one_ministry_seres
+					}
 				}
 			}
-			fail_text = "ancrel.10004.failtext"
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
 		}
 	}
 	
-	planet_modifier = {
-	}
-
 	resources = {
 		category = planet_buildings
 		produces = {
@@ -142,298 +251,436 @@ building_dimensional_fabricatorx = {
 			sr_living_metal = 1		
 		}
 		cost = {
-			minerals = @b3_minerals
+			minerals = 1000
 		}
 		upkeep = {
 			energy = 100
 		}
 	}
 
-	on_queued = {
+	on_unqueued = {
+		owner = { set_country_flag = darhmod_precursor_seres_finished }
+	}
+
+	on_built = {
+		owner = { set_country_flag = built_one_ministry_seres }
+	}
+
+	on_destroy = {
 		owner = {
-			subtract_variable = { which = dimensional_fabricator_build_count value = 1 }
+			if = {
+				limit = {
+					has_country_flag = built_one_ministry_seres
+				}
+				remove_country_flag = built_one_ministry_seres
+				set_country_flag = darhmod_precursor_seres_finished
+			}
 		}
 	}
 
-	on_unqueued = {
-		owner = {
-			change_variable = { which = dimensional_fabricator_build_count value = 1 }
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			is_planet_class = pc_habitat
 		}
-	}
-		
-	upgrades = {
 	}
 }
 
 
 building_class_4_singularityx = {
-	base_buildtime = @b2_time
-	can_build = yes
+	base_buildtime = 900
 	can_demolish = yes
 	base_cap_amount = 1
 	icon = building_class_4_singularity
+	
+	category = resource	
 
 	prerequisites = { "tech_class_4_singularity" }
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
 	
 	potential = {
 		custom_tooltip = {
-			exists = owner
+			text = EMPIRE_UNIQUE_BUILDING
 			OR = {
-				owner = { is_regular_empire = yes }
+				#owner = { is_regular_empire = yes }
 				owner = { has_technology = "tech_class_4_singularity" }				
 				owner = {
-					check_variable = { which = class_4_singularity_build_count value >= 1 }
+					has_country_flag = darhmod_precursor_seres_finished
+					NOT = {
+						has_country_flag = built_one_ministry_seres
+					}
 				}
 			}
-			fail_text = "ancrel.10004.failtext"
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
 		}
 	}
 	
-	planet_modifier = {
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_technician_add = 20
+			planet_technician_energy_produces_mult = 0.25
+		}
 	}
-
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 20
+			planet_technician_energy_produces_mult = 0.25		
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_technician_add = 20
+			planet_technician_energy_produces_mult = 0.25
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_technician_add = 20
+			planet_technician_energy_produces_mult = 0.25
+		}		
+	}
+	
 	resources = {
 		category = planet_buildings
-		cost = {
-			minerals = @b3_minerals
-		}
 		produces = {
-			energy = 250
+			energy = 50
+		}		
+		cost = {
+			minerals = 800
+		}		
+		upkeep = {
+			minerals = 100
 		}
-	}
-		
-	upgrades = {
 	}
 
 	on_queued = {
-		owner = {
-			subtract_variable = { which = class_4_singularity_build_count value = 1 }
-		}
+		owner = { remove_country_flag = darhmod_precursor_seres_finished }
 	}
 
 	on_unqueued = {
+		owner = { set_country_flag = darhmod_precursor_seres_finished }
+	}
+	
+	on_built = {
+		owner = { set_country_flag = built_one_ministry_seres }
+	}
+	
+	on_destroy = {
 		owner = {
-			change_variable = { which = class_4_singularity_build_count value = 1 }
+			if = {
+				limit = {
+					has_country_flag = built_one_ministry_seres
+				}
+				remove_country_flag = built_one_ministry_seres
+				set_country_flag = darhmod_precursor_seres_finished
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			is_planet_class = pc_habitat
 		}
 	}
 }
 
 building_nano_forgex = {
-	base_buildtime = @b2_time
-	can_build = yes
+	base_buildtime = 900
 	can_demolish = yes
 	base_cap_amount = 1
 	icon = building_nano_forge
 
+	category = manufacturing
+	
 	prerequisites = { "tech_nano_forge" }
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
 	
 	potential = {
 		custom_tooltip = {
-			exists = owner
+			text = EMPIRE_UNIQUE_BUILDING
 			OR = {
-				owner = { is_regular_empire = yes }
-				owner = { has_technology = "tech_nano_forge" }
+				#owner = { is_regular_empire = yes }
+				owner = { has_technology = "tech_nano_forge" }				
 				owner = {
-					check_variable = { which = nano_forge_build_count value >= 1 }
+					has_country_flag = darhmod_precursor_seres_finished
+					NOT = {
+						has_country_flag = built_one_ministry_seres
+					}
 				}
 			}
-			fail_text = "ancrel.10004.failtext"
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
 		}
 	}
 	
-	planet_modifier = {
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_foundry_add = 25
+		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_alloy_drone_add = 25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_fabricator_add = 25
+		}
+	}
+	
 	resources = {
 		category = planet_buildings
 		produces = {
-			alloys = 25
+			alloys = 50
 		}
 		cost = {
-			minerals = @b3_minerals
+			minerals = 800
 		}
 		upkeep = {
-			minerals = 50
-			energy = 10
+			minerals = 250
+			energy = 100
 		}
-	}
-		
-	upgrades = {
 	}
 
 	on_queued = {
-		owner = {
-			subtract_variable = { which = nano_forge_build_count value = 1 }
-		}
+		owner = { remove_country_flag = darhmod_precursor_seres_finished }
 	}
 
 	on_unqueued = {
+		owner = { set_country_flag = darhmod_precursor_seres_finished }
+	}
+
+	on_built = {
+		owner = { set_country_flag = built_one_ministry_seres }
+	}
+
+	on_destroy = {
 		owner = {
-			change_variable = { which = nano_forge_build_count value = 1 }
+			if = {
+				limit = {
+					has_country_flag = built_one_ministry_seres
+				}
+				remove_country_flag = built_one_ministry_seres
+				set_country_flag = darhmod_precursor_seres_finished
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			is_planet_class = pc_habitat
 		}
 	}
 }
 
 building_master_archivex = {
-	base_buildtime = @b2_time
-	can_build = yes
+	base_buildtime = 900
 	can_demolish = yes
 	base_cap_amount = 1
 	icon = building_master_archive
 	
-	category = research
+	category = research	
 	
 	prerequisites = { "tech_master_archive" }
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
 	
 	potential = {
 		custom_tooltip = {
-			exists = owner
+			text = EMPIRE_UNIQUE_BUILDING
 			OR = {
-				owner = { is_regular_empire = yes }
-				owner = { has_technology = "tech_master_archive" }
+				#owner = { is_regular_empire = yes }
+				owner = { has_technology = "tech_master_archive" }				
 				owner = {
-					check_variable = { which = master_archive_build_count value >= 1 }
+					has_country_flag = darhmod_precursor_seres_finished
+					NOT = {
+						has_country_flag = built_one_ministry_seres
+					}
 				}
 			}
-			fail_text = "ancrel.10004.failtext"
 		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_regular_empire = yes
-            }
-		}
-		job_fe_archivist_add = 10
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_regular_empire = yes
-            }
-		}
-		modifier = {
-			job_researcher_add = 5
-		}
-	}
-	
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_regular_empire = yes
-            }
-		}
-		text = job_researcher_effect_desc
+		NOT = { has_modifier = slave_colony }
 	}
 
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {	
+			job_researcher_add = 15
+			job_researcher_add = 5			
+		}
+	}
 
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_hive_empire = yes
-            }
+			owner = { is_hive_empire = yes }
 		}
 		modifier = {
 			job_brain_drone_add = 5
 		}
 	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_hive_empire = yes
-            }
-		}
-		text = job_brain_drone_effect_desc
-	}
-
 
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_machine_empire = yes
-            }
+			owner = { is_machine_empire = yes }
 		}
 		modifier = {
 			job_calculator_add = 5
 		}
 	}
-	
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_machine_empire = yes
-            }
-		}
-		text = job_calculator_effect_desc
-	}
-	
+
 	resources = {
-		category = planet_buildings
+		category = planet_building
 		produces = {
-			physics_research = 100
-			society_research = 100
-			engineering_research = 100
+			physics_research = 50
+			society_research = 50
+			engineering_research = 50
 		}
 		cost = {
-			minerals = @b2_minerals
+			minerals = 800
 		}
 		upkeep = {
-			energy = 25
+			energy = 100
 		}
-	}
-		
-	upgrades = {
 	}
 	
 	on_queued = {
-		owner = {
-			subtract_variable = { which = master_archive_build_count value = 1 }
-		}
+		owner = { remove_country_flag = darhmod_precursor_seres_finished }
 	}
 
 	on_unqueued = {
+		owner = { set_country_flag = darhmod_precursor_seres_finished }
+	}
+
+	on_built = {
+		owner = { set_country_flag = built_one_ministry_seres }
+	}
+
+	on_destroy = {
 		owner = {
-			change_variable = { which = master_archive_build_count value = 1 }
+			if = {
+				limit = {
+					has_country_flag = built_one_ministry_seres
+				}
+				remove_country_flag = built_one_ministry_seres
+				set_country_flag = darhmod_precursor_seres_finished
+			}
 		}
-	}	
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			is_planet_class = pc_habitat
+		}
+	}
 }
 
 building_fe_domex = {
-	base_buildtime = @b2_time
-	can_build = yes
-	can_demolish = yes	
-	icon = building_paradise_dome
-	base_cap_amount = 1	
+	base_buildtime = 900
+	can_demolish = yes
+	base_cap_amount = 1
+	icon = building_paradise_dome	
 	
 	prerequisites = { "tech_utopian_paradise_dome" }	
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
 	
 	potential = {
 		custom_tooltip = {
-			exists = owner
+			text = EMPIRE_UNIQUE_BUILDING
 			OR = {
-				owner = { is_regular_empire = yes }
+				#owner = { is_regular_empire = yes }
 				owner = { has_technology = "tech_utopian_paradise_dome" }
 				owner = {
-					check_variable = { which = skydome_build_count value >= 1 }
+					has_country_flag = darhmod_precursor_seres_finished
+					NOT = {
+						has_country_flag = built_one_ministry_seres
+					}
 				}
 			}
-			fail_text = "ancrel.10004.failtext"
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
 		}
 	}
 	
@@ -445,41 +692,80 @@ building_fe_domex = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @b2_minerals
+			minerals = 800
 		}
 		upkeep = {
-			energy = 10
+			energy = 100
 		}
 	}
 
 	on_queued = {
-		owner = {
-			subtract_variable = { which = skydome_build_count value = 1 }
-		}
+		owner = { remove_country_flag = darhmod_precursor_seres_finished }
 	}
 
 	on_unqueued = {
+		owner = { set_country_flag = darhmod_precursor_seres_finished }
+	}
+
+	on_built = {
+		owner = { set_country_flag = built_one_ministry_seres }
+	}
+
+	on_destroy = {
 		owner = {
-			change_variable = { which = skydome_build_count value = 1 }
+			if = {
+				limit = {
+					has_country_flag = built_one_ministry_seres
+				}
+				remove_country_flag = built_one_ministry_seres
+				set_country_flag = darhmod_precursor_seres_finished
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			is_planet_class = pc_habitat
 		}
 	}
 }
 
 building_fe_strongholdx = {
-	base_buildtime = @b2_time
-	can_build = yes
+	base_buildtime = 900
 	can_demolish = yes	
 	base_cap_amount = 1		
 	icon = building_fortress
 
 	prerequisites = { "tech_fe_stronghold" }
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
 	
 	potential = {
-		exists = owner
-	    OR = {	
-            owner = { is_regular_empire = yes }
-	        owner = { has_technology = "tech_fe_stronghold" }
-	    }				
+		custom_tooltip = {
+			text = EMPIRE_UNIQUE_BUILDING
+			OR = {
+				#owner = { is_regular_empire = yes }
+				owner = { has_technology = "tech_fe_stronghold" }
+				owner = {
+					has_country_flag = darhmod_precursor_seres_finished
+					NOT = {
+						has_country_flag = built_one_ministry_seres
+					}
+				}
+			}
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 	
 	convert_to = {
@@ -487,7 +773,7 @@ building_fe_strongholdx = {
 	}
 	
 	planet_modifier = {
-		job_fe_protector_add = 10
+		job_fe_protector_add = 5
 		planet_orbital_bombardment_damage = -0.25		
 	}
 	
@@ -498,10 +784,42 @@ building_fe_strongholdx = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @b2_minerals
+			minerals = 800
 		}
 		upkeep = {
-			energy = 25
+			energy = 100
+		}
+	}
+	
+	on_queued = {
+		owner = { remove_country_flag = darhmod_precursor_seres_finished }
+	}
+
+	on_unqueued = {
+		owner = { set_country_flag = darhmod_precursor_seres_finished }
+	}
+
+	on_built = {
+		owner = { set_country_flag = built_one_ministry_seres }
+	}
+
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_one_ministry_seres
+				}
+				remove_country_flag = built_one_ministry_seres
+				set_country_flag = darhmod_precursor_seres_finished
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			is_planet_class = pc_habitat
 		}
 	}
 }

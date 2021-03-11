@@ -26,7 +26,9 @@
   ################
  
   SMALL_CRYSTAL_ARMOR_1a:0 "Blindaje imbuidos de cristales auxiliares"
+  SMALL_CRYSTAL_ARMOR_1a_DESC:0 "Auxiliary Crystal Infused Armor"
   SMALL_CRYSTAL_ARMOR_2a:0 "Blindaje imbuidos de cristales auxiliares"
+  SMALL_CRYSTAL_ARMOR_2a_DESC:0 "Auxiliary Crystal Infused Armor"
  
   ################
  
@@ -50,7 +52,7 @@
   TITAN_BEHAVIOR_DESC:0 "§HArtilleria táctica:§! El Titan se queda detrás de la formación de la flota para disparar sus armas principales al objetivo (§Y200 pársec§!)"
   COMBAT_COMPUTER_TITAN:0 "Ordenador de combate Titan" 
  
- ################
+  ################
 
   tech_psionic_armor:0 "Armadura ancestral"
   tech_psionic_armor_desc:0 "Armadura elemental de poderes ancestrales, único en su tipo es fuertemente resistente... debe ser manipulada por almirantes capaces de soportar la tensión del combate mas extremo." 
@@ -77,9 +79,9 @@
   ########### Tecnología Ancestral ###########
   
   tech_building_seres:0 "Arquitectura Seres de Luz"
-  tech_building_seres_desc:0 "Acceso a los planos y especificaciones de los edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru.\n\nTomará un tiempo a nuestros arquitectos e ingenieros construir estos increíbles edificios de trabajo pero serán esenciales para nuestras futuras colonias."
+  tech_building_seres_desc:0 "Acceso a los planos y especificaciones de los edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru.\n\nTomará un tiempo a nuestros arquitectos e ingenieros construir estos edificios pero serán esenciales para nuestras futuras colonias."
   TECH_BUILDING_SERES_TITLE:0 "Edificios Seres de Luz"
-  TECH_BUILDING_SERES_DESC:0 "Acceso a los planos y especificaciones de los edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru.\n\nTomará un tiempo a nuestros arquitectos e ingenieros construir estos increíbles edificios de trabajo pero serán esenciales para nuestras futuras colonias."
+  TECH_BUILDING_SERES_DESC:0 "Acceso a los planos y especificaciones de los edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru.\n\nTomará un tiempo a nuestros arquitectos e ingenieros construir estos edificios pero serán esenciales para nuestras futuras colonias."
   
   tech_class_4_singularity:0 "Singularidad clase 4"
   tech_class_4_singularity_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante generador de energía único en su clase que nos impulsará un paso mas allá en el entendimiento energético."
@@ -136,4 +138,11 @@
   TECH_UTOPIAN_PARADISE_DOME_DESC:0 "Cúpula celeste"
   building_fe_domex:0 "Cúpula celeste"
   building_fe_domex_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a esta impresionante cúpula celeste única en su clase que nos impulsará un paso mas allá para las nuevas colonias de nuetro imperio."
+
+  ################
   
+  tech_mind_control:0 "Control genético"
+  tech_mind_control_desc:0 "Los descubrimientos en genética molecular hacen que la mente se expanda a nuevos horizontes con nuevas habilidades y mas longevidad. \nDesbloquea Almirante Psiónico"
+  
+  leader_trait_lethargic:0 "Telépata"
+  leader_trait_lethargic_desc:1 "Este líder es indomable y es de temer, su telepatía coordina la flota completa al unisono en una sola fuerza de ataque total."
