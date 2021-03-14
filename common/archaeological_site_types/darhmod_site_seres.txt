@@ -218,7 +218,7 @@ DARH_seres_site_5 = {
 	}
 
 	stage = {
-		difficulty = 12
+		difficulty = 10
 		icon = GFX_archaeology_runes_D1
 		event = darhmod_seres.14
 	}
@@ -228,12 +228,12 @@ DARH_seres_site_5 = {
 		event = darhmod_seres.15
 	}
 	stage = {
-		difficulty = 12
+		difficulty = 14
 		icon = GFX_archaeology_runes_D3
 		event = darhmod_seres.16
 	}
 	stage = {
-		difficulty = 12
+		difficulty = 14
 		icon = GFX_archaeology_runes_D4
 		event = darhmod_seres.17
 	}

@@ -404,32 +404,29 @@ fleet_event = {
 	option = {
 		name = darhmod_seres.9.a
 		small_artifact_reward = yes
-		owner = {	
+		owner = {
 			if = {
-				limit = {
-					NOT = { has_technology = tech_amoeba_strike_craft_1 }
+ 			    limit = {
+					NOT = { has_technology = tech_mind_control }
+					OR = {
+						NOT = { has_authority = auth_machine_intelligence }
+						has_civic = civic_machine_assimilator
+						has_civic = civic_machine_servitor
+					}
 				}
-				give_technology = { tech = tech_amoeba_strike_craft_1 }
-			}
-			else_if = {
-				limit = {
-					NOT = { has_technology = tech_destroyer_hull_1 }
+ 			    give_technology = { tech = tech_mind_control }
+ 			}		
+			if = {
+ 			    limit = {
+					NOT = { has_technology = tech_biomechanics }
+					OR = {
+						has_authority = auth_machine_intelligence
+						has_country_flag = synthetic_empire
+					}
 				}
-				give_technology = { tech = tech_destroyer_hull_1 }
-			}
-			else_if = {
-				limit = {
-					NOT = { has_technology = tech_destroyer_hull_2 }
-				}
-				give_technology = { tech = tech_destroyer_hull_2 }
-			}
-			else_if = {
-				limit = {
-					NOT = { has_technology = tech_destroyer_build_speed }
-				}
-				give_technology = { tech = tech_destroyer_build_speed }
-			}
-			add_research_option = tech_mind_control
+ 			    give_technology = { tech = tech_biomechanics }
+ 			}				
+			add_research_option = tech_amoeba_strike_craft_1
 		}
 	}
 }
@@ -875,21 +872,10 @@ fleet_event = {
 				reset_planet = yes
 				clear_deposits = yes
 			}
-			change_pc = pc_gaia
+			change_pc = pc_relic
 			hidden_effect = {
-				set_planet_size = 18
-
-				add_deposit = d_searing_desert
-				add_deposit = d_underwater_vent
-
-				add_deposit = d_ore_rich_caverns
-				add_deposit = d_prosperous_mesa
-
-				add_deposit = d_lush_jungle
-				add_deposit = d_teeming_reef
-				
-				add_deposit = d_betharian_deposit
-				add_deposit = d_crystal_forest
+				set_planet_size = 25
+				relic_world_deposits = yes					
 			}					
 		}		
 	}

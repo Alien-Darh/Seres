@@ -9,7 +9,7 @@ fuel_gases_dilithium = {
 	resources = {
 		category = ship_edicts
 		cost = {
-			sr_dilithium_crystals = 250
+			sr_dilithium_crystals = 500
 		}
 	}
 
@@ -49,7 +49,7 @@ fuel_gases_quartz = {
 	resources = {
 		category = ship_edicts
 		cost = {
-			sr_quartz_crystals = 250
+			sr_quartz_crystals = 500
 		}
 	}
 

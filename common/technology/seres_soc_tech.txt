@@ -35,12 +35,9 @@ tech_mind_control = {
 
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }		
-			has_civic = civic_fanatic_purifiers
+			NOT = { has_authority = auth_machine_intelligence }
 			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor			
-			has_civic = civic_barbaric_despoilers
-			has_civic = civic_hive_devouring_swarm
+			has_civic = civic_machine_servitor
 		}
 	}
 

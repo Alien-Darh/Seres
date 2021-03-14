@@ -1,0 +1,101 @@
+######### Gas #########
+
+tech_mine_volatile_motes_seres = {
+	cost = @tier3cost1
+	area = physics
+	tier = 3
+	category = { particles } 
+	prerequisites = { "tech_building_seres" }
+	weight = @tier3weight1
+	icon = tech_volatile_motes_II
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+######### Gas #########
+
+tech_mine_exotic_gases_seres = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { materials } 
+	prerequisites = { "tech_building_seres" }
+	weight = @tier3weight1
+	icon = tech_exotic_gases_II
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+######### Crystals #########
+
+tech_mine_rare_crystals_seres = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { materials } 
+	prerequisites = { "tech_building_seres" }
+	weight = @tier3weight1
+	icon = tech_mine_rare_crystals_II
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
