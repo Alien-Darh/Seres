@@ -149,17 +149,17 @@
   
   ################ 
   
-  tech_mine_volatile_motes_II:0 "Volatile Speck Refinement"
-  tech_mine_volatile_motes_II_desc:0 "Speckle refining processes have been developed through advances in nanotechnology."
-  building_mote_harvesters_II:0 "Volatile Speck Refinement"
-  building_mote_harvesters_II_desc:0 "Nanotechnology-assisted speckle collection facility that uses a refining process to increase production."
+  tech_mine_volatile_motes_seres:0 "Volatile Speck Refinement"
+  tech_mine_volatile_motes_seres_desc:0 "Speckle refining processes have been developed through advances in nanotechnology."
+  building_mote_harvesters_seres:0 "Volatile Speck Refinement"
+  building_mote_harvesters_seres_desc:0 "Nanotechnology-assisted speckle collection facility that uses a refining process to increase production."
   
-  tech_mine_exotic_gases_II:0 "Deep Exotic Gas Extraction"
-  tech_mine_exotic_gases_II_desc:0 "Modern nano engineering has enabled deeper extraction of exotic gases."
-  building_gas_extractors_II:0 "Deep Exotic Gas Extraction"
-  building_gas_extractors_II_desc:0 "Gas extraction wells have been improved by nanoengineering to further extract exotic gases from the planet's mantle."
+  tech_mine_exotic_gases_seres:0 "Deep Exotic Gas Extraction"
+  tech_mine_exotic_gases_seres_desc:0 "Modern nano engineering has enabled deeper extraction of exotic gases."
+  building_gas_extractors_seres:0 "Deep Exotic Gas Extraction"
+  building_gas_extractors_seres_desc:0 "Gas extraction wells have been improved by nanoengineering to further extract exotic gases from the planet's mantle."
 
-  tech_mine_rare_crystals_II:0 "Rare Crystal Advanced Mining"
-  tech_mine_rare_crystals_II_desc:0 "By means of new processes with nanotechnology, the mining of rare crystals has prospered considerably and it is now possible to refine them and increase production."
-  building_crystal_mines_II:0 "Rare Crystal Advanced Mining"
-  building_crystal_mines_II_desc:0 "Using nanotechnology, this facility excavates rare crystals with greater precision to avoid cracks is extraction and avoid waste."
+  tech_mine_rare_crystals_seres:0 "Rare Crystal Advanced Mining"
+  tech_mine_rare_crystals_seres_desc:0 "By means of new processes with nanotechnology, the mining of rare crystals has prospered considerably and it is now possible to refine them and increase production."
+  building_crystal_mines_seres:0 "Rare Crystal Advanced Mining"
+  building_crystal_mines_seres_desc:0 "Using nanotechnology, this facility excavates rare crystals with greater precision to avoid cracks is extraction and avoid waste."

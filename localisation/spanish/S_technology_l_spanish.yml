@@ -149,17 +149,17 @@
   
   ################ 
   
-  tech_mine_volatile_motes_II:0 "Refinado de motas volátiles"
-  tech_mine_volatile_motes_II_desc:0 "Se han desarrollado procesos de refinado de motas a través de avances en nanotecnología."
-  building_mote_harvesters_II:0 "Refinado de motas volátiles"
-  building_mote_harvesters_II_desc:0 "Instalación de recolección de motas asistida por nanotecnología que utiliza un proceso de refinado para aumentar la producción."
+  tech_mine_volatile_motes_seres:0 "Refinado de motas volátiles"
+  tech_mine_volatile_motes_seres_desc:0 "Se han desarrollado procesos de refinado de motas a través de avances en nanotecnología."
+  building_mote_harvesters_seres:0 "Refinado de motas volátiles"
+  building_mote_harvesters_seres_desc:0 "Instalación de recolección de motas asistida por nanotecnología que utiliza un proceso de refinado para aumentar la producción."
   
-  tech_mine_exotic_gases_II:0 "Extracción profunda de gases exóticos"
-  tech_mine_exotic_gases_II_desc:0 "La nano ingeniería moderna ha permitido una extracción más profunda de gases exóticos."
-  building_gas_extractors_II:0 "Extracción profunda de gases exóticos"
-  building_gas_extractors_II_desc:0 "Los pozos de extracción de gas se han mejorado gracias a la nanoingeniería para extraer más a fondo gases exóticos del manto del planeta."
+  tech_mine_exotic_gases_seres:0 "Extracción profunda de gases exóticos"
+  tech_mine_exotic_gases_seres_desc:0 "La nano ingeniería moderna ha permitido una extracción más profunda de gases exóticos."
+  building_gas_extractors_seres:0 "Extracción profunda de gases exóticos"
+  building_gas_extractors_seres_desc:0 "Los pozos de extracción de gas se han mejorado gracias a la nanoingeniería para extraer más a fondo gases exóticos del manto del planeta."
 
-  tech_mine_rare_crystals_II:0 "Minería avanzada de cristales raros"
-  tech_mine_rare_crystals_II_desc:0 "Mediante nuevos procesos con nanotecnología la minería de cristales raros ha prosperado considerablemente y ahora es posible su refinado y aumento de producción."
-  building_crystal_mines_II:0 "Minería avanzada de cristales raros"
-  building_crystal_mines_II_desc:0 "Usando nanotecnología, esta instalación excava con mayor presición cristales raros para evitar fisuras es la extración y evitar desperdicios."
+  tech_mine_rare_crystals_seres:0 "Minería avanzada de cristales raros"
+  tech_mine_rare_crystals_seres_desc:0 "Mediante nuevos procesos con nanotecnología la minería de cristales raros ha prosperado considerablemente y ahora es posible su refinado y aumento de producción."
+  building_crystal_mines_seres:0 "Minería avanzada de cristales raros"
+  building_crystal_mines_seres_desc:0 "Usando nanotecnología, esta instalación excava con mayor presición cristales raros para evitar fisuras es la extración y evitar desperdicios."
