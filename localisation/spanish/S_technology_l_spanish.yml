@@ -46,9 +46,7 @@
   tech_sbs_swarmer_missiles_5_desc:0 "Mejoras en el control de guía, propulsión y sensores le dan a estos misiles un patrón de vuelo fantasma. Las ojivas están compuestas por materia neutra y calibradas con liquido de Litio que al dar en el blanco crea una onda de expansión sonora que destruye todo lo sólido a su alrededor causando mucho  daño a las defensas enemigas."
   SBS_SWARMER_MISSILE_5:0 "$tech_sbs_swarmer_missiles_5$"
   SBS_SWARMER_MISSILE_5_DESC:0 "Misiles de alta precisión y velocidad categoría V."
- 
-  ARTILLERY_BEHAVIOR_DESC:0 "§HTácticas de artillería:§! la nave se mantiene a gran distancia (§Y100§!) y dispara las armas de largo alcance al objetivo."
-  LINE_BEHAVIORS_DESC:0 "§HTáctica en Linea:§! la nave mantendrá el avance a rango medio (§Y60§!) y mantendrá la formación." 
+
   TITAN_BEHAVIOR_DESC:0 "§HArtilleria táctica:§! El Titan se queda detrás de la formación de la flota para disparar sus armas principales al objetivo (§Y200 pársec§!)"
   COMBAT_COMPUTER_TITAN:0 "Ordenador de combate Titan" 
  

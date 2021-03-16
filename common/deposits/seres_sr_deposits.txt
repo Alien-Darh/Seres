@@ -94,9 +94,6 @@ d_archaeological_artifacts_1 = {
 		}
 	}
 	
-	modifier = {
-	}
-	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
 }

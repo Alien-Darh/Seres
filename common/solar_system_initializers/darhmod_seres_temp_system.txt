@@ -480,7 +480,7 @@ darhmod_seres_temp_system = {
 						repeat = {
 							find_random_planet = {
 								trigger = {
-									id = scav.1
+									id = scav.11
 									always = yes
 								}
 								found_planet = {
@@ -493,7 +493,7 @@ darhmod_seres_temp_system = {
 							}
 							find_random_planet = {
 								trigger = {
-									id = scav.2
+									id = scav.22
 									always = yes
 								}
 								found_planet = {
@@ -506,7 +506,7 @@ darhmod_seres_temp_system = {
 							}
 							find_random_planet = {
 								trigger = {
-									id = scav.3
+									id = scav.33
 									always = yes
 								}
 								found_planet = {
@@ -519,7 +519,7 @@ darhmod_seres_temp_system = {
 							}
 							find_random_planet = {
 								trigger = {
-									id = scav.4
+									id = scav.44
 									always = yes
 								}
 								found_planet = {
@@ -532,7 +532,7 @@ darhmod_seres_temp_system = {
 							}
 							find_random_planet = {
 								trigger = {
-									id = scav.5
+									id = scav.55
 									always = yes
 								}
 								found_planet = {

@@ -127,6 +127,7 @@ darhmod_seres_home_system = {
 		change_orbit = @base_moon_distance
 
 		init_effect = {
+			clear_deposits = yes			
 			add_deposit = d_exotic_gases_1
 			add_deposit = d_rare_crystals_1
 			add_deposit = d_volatile_motes_1		

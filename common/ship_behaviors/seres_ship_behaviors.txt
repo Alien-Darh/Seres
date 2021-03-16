@@ -1,0 +1,22 @@
+###########behavior###########
+
+ship_behavior = {
+	name = "titan"
+
+	preferred_attack_range = 200
+	formation_distance = 200
+	return_to_formation_distance = 200
+
+	combat_target_anchor = root
+	
+	collision_awareness = 0.2
+	collision_strafe = 1.0
+	collision_radius = 2.5
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+
+	ignore_combat_movement = no
+	
+	desc = "TITAN_BEHAVIOR_DESC"
+}

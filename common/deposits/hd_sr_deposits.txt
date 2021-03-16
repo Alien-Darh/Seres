@@ -34,7 +34,7 @@ d_dilithium_crystals_2 = {
 	is_for_colonizeable = no
 	
 	resources = {
-		ccategory = orbital_mining_deposits
+		category = orbital_mining_deposits
 		produces = {
 			sr_dilithium_crystals = 2
 		}
@@ -61,7 +61,7 @@ d_dilithium_crystals_3 = {
 	is_for_colonizeable = no
 	
 	resources = {
-		ccategory = orbital_mining_deposits
+		category = orbital_mining_deposits
 		produces = {
 			sr_dilithium_crystals = 3
 		}

@@ -414,8 +414,13 @@ fleet_event = {
 						has_civic = civic_machine_servitor
 					}
 				}
- 			    give_technology = { tech = tech_mind_control }
- 			}		
+				add_research_option = tech_mind_control
+				add_tech_progress = {
+					tech = tech_mind_control
+					progress = 0.25				
+ 			    #give_technology = { tech = tech_mind_control }
+				}
+			}	
 			if = {
  			    limit = {
 					NOT = { has_technology = tech_biomechanics }
@@ -584,7 +589,7 @@ fleet_event = {
 	id = darhmod_seres.12
 	title = "darhmod_seres.12.name"
 	desc = "darhmod_seres.12.desc"
-	picture = GFX_evt_underground relic_world_building
+	picture = GFX_evt_relic_world_building
 	show_sound = event_planetary_riot
 	archaeology = yes
 	is_triggered_only = yes
@@ -601,7 +606,7 @@ fleet_event = {
 		name = darhmod_seres.12.a
 		hidden_effect = {
 			set_spawn_system_batch = begin
-			set_country_flag = encountered_first_wormhole		
+			#set_country_flag = encountered_first_wormhole		
 			random_planet = {
 				limit = { has_planet_flag = darhmod_seres_near_home_colony }
 				random_list = {

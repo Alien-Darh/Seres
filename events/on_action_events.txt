@@ -9183,8 +9183,6 @@ event = {
 			NOT = { is_on_market = sr_living_metal }
 			NOT = { is_on_market = sr_zro }
 			NOT = { is_on_market = sr_dark_matter }
-			NOT = { is_on_market = dilithium_crystals }
-			NOT = { is_on_market = quartz_crystals }
 		}
 	}
 
@@ -9228,22 +9226,6 @@ event = {
 				resource_stockpile_compare = {  resource = sr_zro value >= 1 } }
 			}
 										enable_on_market = sr_zro
-		}
-		else_if = {
-			limit = {
-									NOT = { is_on_market = sr_dilithium_crystals }
-				any_playable_country = {
-				resource_stockpile_compare = {  resource = sr_dilithium_crystals value >= 1 } }
-			}
-										enable_on_market = sr_dilithium_crystals
-		}
-		else_if = {
-			limit = {
-									NOT = { is_on_market = sr_quartz_crystals }
-				any_playable_country = {
-				resource_stockpile_compare = {  resource = sr_quartz_crystals value >= 1 } }
-			}
-										enable_on_market = sr_quartz_crystals
 		}
 		else_if = {
 			limit = {

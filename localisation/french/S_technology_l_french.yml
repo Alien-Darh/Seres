@@ -47,8 +47,6 @@
   SBS_SWARMER_MISSILE_5:0 "$tech_sbs_swarmer_missiles_5$"
   SBS_SWARMER_MISSILE_5_DESC:0 "High precision and speed category V missiles."
  
-  ARTILLERY_BEHAVIOR_DESC:0 "§HArtillery tactics:§! the ship stays at a great distance (§Y100§!) and fires the long-range weapons at the target."
-  LINE_BEHAVIORS_DESC:0 "§HOnline Tactic:§! the ship will maintain mid-range advance (§Y60§!) and maintain formation." 
   TITAN_BEHAVIOR_DESC:0 "§HArtillería táctica:§! The Titan stays behind the fleet formation to fire its primary weapons at the target (§Y200 pársec§!)"
   COMBAT_COMPUTER_TITAN:0 "Titan combat computer" 
  

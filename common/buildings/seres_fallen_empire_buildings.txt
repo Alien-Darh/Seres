@@ -433,14 +433,14 @@ building_master_archivex = {
 	}
 
 	resources = {
-		category = planet_building
-		produces = {
-			physics_research = 50
-			society_research = 50
-			engineering_research = 50
-		}
+		category = planet_buildings
 		cost = {
 			minerals = 800
+		}		
+		produces = {
+			physics_research = 50
+			engineering_research = 50
+			society_research = 50
 		}
 		upkeep = {
 			energy = 100
