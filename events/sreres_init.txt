@@ -28,9 +28,23 @@ country_event = {
 		}	
  
 		hidden_effect = {
-			solar_system = {
-				random_system_planet = {
-					limit = { is_moon = yes }
+			closest_system = {
+				limit = {
+					has_owner = no
+					any_system_planet = {
+						is_planet_class = pc_asteroid 
+						has_anomaly = no
+						NOT = { exists = archaeological_site }
+					}
+				}
+                min_steps = 1
+                max_steps = 3
+                random_system_planet = {
+                    limit = {
+                        is_planet_class = pc_asteroid 
+                        has_anomaly = no
+                        NOT = { exists = archaeological_site }
+                    }				
 					save_event_target_as = deposit_advance
 				}	
 			}
@@ -39,11 +53,11 @@ country_event = {
 		event_target:deposit_advance = {
 			planet_event = {
 				id = seres_init.011
-				days = 900
+				days = 30
 			}
 		}
 		hidden_effect = {
-			country_event = { id = seres_init.022 days = 1800 }
+			country_event = { id = seres_init.022 days = 3600 }
 		}						
 	}	
 	
@@ -61,7 +75,7 @@ planet_event = {
 	
 	immediate = { 
 		clear_deposits = yes
-		add_deposit = d_dilithium_crystals_2
+		add_deposit = d_dilithium_crystals_1
 		if = {
 			limit = { has_mining_station = yes }
 			random_mining_station = { dismantle = yes }
@@ -80,7 +94,7 @@ country_event = {
 	
 	is_triggered_only = yes	
 	
-	option = {
+	immediate = {
 		give_technology = {
 			tech = tech_mine_dilithium_crystals
 		}

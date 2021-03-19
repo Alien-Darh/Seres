@@ -56,5 +56,53 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/underground.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes				
-	}					
+	}
+	spriteType = {
+		name = "GFX_evt_underground_2"
+		texturefile = "gfx/event_pictures/underground_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}
+	spriteType = {
+		name = "GFX_evt_clone_2"
+		texturefile = "gfx/event_pictures/clone_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}
+	spriteType = {
+		name = "GFX_evt_night_raid_2"
+		texturefile = "gfx/event_pictures/night_raid_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}
+	spriteType = {
+		name = "GFX_evt_discovered_hidden_door_2"
+		texturefile = "gfx/event_pictures/discovered_hidden_door_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}
+	spriteType = {
+		name = "GFX_evt_glitchy_matrix_2"
+		texturefile = "gfx/event_pictures/glitchy_matrix_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}
+	spriteType = {
+		name = "GFX_evt_ship_offloading_cargo_2"
+		texturefile = "gfx/event_pictures/ship_offloading_cargo_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}
+	spriteType = {
+		name = "GFX_evt_ship_in_orbit_4"
+		texturefile = "gfx/event_pictures/ship_in_orbit_4.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}
+	spriteType = {
+		name = "GFX_evt_small_space_battle_2"
+		texturefile = "gfx/event_pictures/small_space_battle_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}						
 }

@@ -87,7 +87,7 @@ darhmod_seres_temp_system_10 = {
 						repeat = {
 							find_closest_planet = {
 								trigger = {
-									id = dreadnought.patrol.1
+									id = dreadnought.patrol.11
 									has_planet_flag = patrol_1
 								}
 								found_planet = {
@@ -100,7 +100,7 @@ darhmod_seres_temp_system_10 = {
 							}
 							find_closest_planet  = {
 								trigger = {
-									id = dreadnought.patrol.2
+									id = dreadnought.patrol.22
 									has_planet_flag = patrol_2
 								}
 								found_planet = {
@@ -113,7 +113,7 @@ darhmod_seres_temp_system_10 = {
 							}
 							find_closest_planet  = {
 								trigger = {
-									id = dreadnought.patrol.3
+									id = dreadnought.patrol.33
 									has_planet_flag = patrol_3
 								}
 								found_planet = {

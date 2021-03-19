@@ -1,70 +1,72 @@
 ####################
 # Reactor Booster #
 ####################
-utility_component_template = {
-	key = "REACTOR_BOOSTER_1"
-	size = aux
-	icon = "GFX_ship_part_reactor_booster_1"
-	icon_frame = 1
-	power = 50
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 5
-		}
-	}
-
-	prerequisites = { "tech_reactor_boosters_1" }
-	component_set = "REACTOR_BOOSTER_1"
-	upgrades_to = "REACTOR_BOOSTER_2"
-	
-	ai_weight = {
-		weight = 1
-	}
-}
-
-utility_component_template = {
-	key = "REACTOR_BOOSTER_2"
-	size = aux
-	icon = "GFX_ship_part_reactor_booster_2"
-	icon_frame = 1
-	power = 100
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 10
-		}
-	}
-
-	prerequisites = { "tech_reactor_boosters_2" }
-	component_set = "REACTOR_BOOSTER_2"
-	upgrades_to = "REACTOR_BOOSTER_3"
-
-	ai_weight = {
-		weight = 3
-	}
-}
 
 utility_component_template = {
 	key = "REACTOR_BOOSTER_3"
 	size = aux
 	icon = "GFX_ship_part_reactor_booster_3"
 	icon_frame = 1
-	power = 150
+	power = 100
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 15
 		}
 	}
-
+	
 	prerequisites = { "tech_reactor_boosters_3" }
 	component_set = "REACTOR_BOOSTER_3"
+	upgrades_to = "REACTOR_BOOSTER_4"
 
 	ai_weight = {
 		weight = 5
 	}
 }
+
+utility_component_template = {
+	key = "REACTOR_BOOSTER_4"
+	size = aux
+	icon = "GFX_ship_part_reactor_booster_4"
+	icon_frame = 1
+	power = 150
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
+	
+	prerequisites = { "tech_reactor_boosters_4" }
+	component_set = "REACTOR_BOOSTER_4"
+	upgrades_to = "REACTOR_BOOSTER_5"
+
+	ai_weight = {
+		weight = 7
+	}
+}
+
+utility_component_template = {
+	key = "REACTOR_BOOSTER_5"
+	size = aux
+	icon = "GFX_ship_part_reactor_booster_5"
+	icon_frame = 1
+	power = 200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+		}
+	}
+	
+	prerequisites = { "tech_reactor_boosters_5" }
+	component_set = "REACTOR_BOOSTER_5"
+
+	ai_weight = {
+		weight = 9
+	}
+}
+
 
 #############################
 # Regenerative Hull Tissue  #

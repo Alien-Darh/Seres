@@ -3,10 +3,10 @@
 @cost3 = 20
 @cost4 = 25
 
-@power1 = -10
-@power2 = -20
-@power3 = -30
-@power4 = -40
+@power1 = -20
+@power2 = -30
+@power3 = -40
+@power4 = -50
 
 
 ### Warp Drive

@@ -1,0 +1,61 @@
+
+tech_reactor_boosters_4 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 1
+	category = { particles }
+	ai_update_type = all
+	weight = 0
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_reactor_boosters_5 = {
+	area = physics
+	cost = @tier4cost3
+	tier = 1
+	category = { particles }
+	ai_update_type = all
+	prerequisites = { "tech_reactor_boosters_4" }
+	weight = @tier4weight2
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}

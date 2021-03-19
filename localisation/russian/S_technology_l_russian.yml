@@ -11,10 +11,13 @@
  
   ################
  
-  PMS_EXPLORATION:0 "Pups exploration"
-  PMS_EXPLORATION_DESC:0 "Prometheus 3D Scanner; The installation of this module improves the exploration of the systems using advanced probes."
+  tech_automated_exploration_seres:0 "Prometheus exploration protocols"
+  tech_automated_exploration_seres_desc:0 "An advanced AI will help scientists in their archaeological exploration task. The scientific ship will explore the galaxy with the help of advanced algorithms that will streamline the exploration of solar systems and new discoveries with greater safety and precision."
+ 
+  PMS_EXPLORATION:0 "Exploration Pups"
+  PMS_EXPLORATION_DESC:0 "Prometheus 3D Scanner; The installation of this module improves the exploration of the systems by advanced probes."
 
-  TECH_UNLOCK_PROMETHEUS_PROTOCOLS_DESC:0 "Incorporates an advanced Pups search section into science ships; §YPrometheus 3D Scanner§! to probe the planets with better accuracy and faster."
+  TECH_UNLOCK_PROMETHEUS_PROTOCOLS_DESC:0 "Incorporate an advanced PUPS search section into scientific sections; §YPrometheus 3D Scanner§! To probe the planets with better accuracy and faster."
   TECH_UNLOCK_PROMETHEUS_PROTOCOLS_TITLE:0 "§SUnlock the component:§! Scanner Pups"
 
   ################
@@ -161,3 +164,15 @@
   tech_mine_rare_crystals_seres_desc:0 "By means of new processes with nanotechnology, the mining of rare crystals has prospered considerably and it is now possible to refine them and increase production."
   building_crystal_mines_seres:0 "Rare Crystal Advanced Mining"
   building_crystal_mines_seres_desc:0 "Using nanotechnology, this facility excavates rare crystals with greater precision to avoid cracks is extraction and avoid waste."
+  
+  ################  
+  
+  REACTOR_BOOSTER_4:0 "Reactor impellers IV"
+  REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+  REACTOR_BOOSTER_5:0 "Reactor impellers V"
+  REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+ 
+  tech_reactor_boosters_4:0 "Reactor impellers IV"
+  tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+  tech_reactor_boosters_5:0 "Reactor impellers V"
+  tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"

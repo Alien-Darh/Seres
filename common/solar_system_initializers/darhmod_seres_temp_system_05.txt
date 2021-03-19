@@ -81,7 +81,7 @@ darhmod_seres_temp_system_05 = {
 						repeat = {
 							find_closest_planet = {
 								trigger = {
-									id = dragon.home.1
+									id = dragon.home.11
 									is_star = yes
 								}
 								found_planet = {
@@ -95,7 +95,7 @@ darhmod_seres_temp_system_05 = {
 							}
 							find_closest_planet = {
 								trigger = {
-									id = dragon.home.2
+									id = dragon.home.22
 									is_star = no
 									NOT = {
 										is_same_value = event_target:guardian_dragon_planet
@@ -112,7 +112,7 @@ darhmod_seres_temp_system_05 = {
 							}
 							find_closest_planet = {
 								trigger = {
-									id = dragon.home.3
+									id = dragon.home.33
 									is_same_value = event_target:guardian_dragon_planet
 								}
 								found_planet = {

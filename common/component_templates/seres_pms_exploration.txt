@@ -7,7 +7,7 @@ utility_component_template = {
 	size = aux
 	icon = "GFX_ship_part_pms_exploration"
 	icon_frame = 1
-	power = -50
+	power = -30
 	resources = {
 		category = ship_components
 		cost = {
@@ -22,7 +22,7 @@ utility_component_template = {
 		ship_anomaly_generation_chance_mult = 0.25
 	}
 
-	prerequisites = { tech_automated_exploration }
+	prerequisites = { tech_automated_exploration_seres }
 	size_restriction = { "science" }
 	component_set = "PMS_EXPLORATION"
 

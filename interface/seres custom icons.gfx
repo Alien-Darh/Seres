@@ -22,4 +22,14 @@ spriteTypes = {
 		name = "GFX_resource_archaeological_artifacts_grey"
 		textureFile = "gfx/interface/icons/resources/archaeological_artifacts_grey.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ship_part_reactor_booster_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_reactor_booster_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_reactor_booster_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_reactor_booster_5.dds"
+	}			
 }	

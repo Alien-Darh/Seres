@@ -15,10 +15,11 @@ ship_event = {
 		owner = { begin_event_chain = { event_chain = darhmod_seres_chain } }
 		from = { create_archaeological_site = DARH_seres_site_1 }
 		owner = { 
-			give_technology = { tech = tech_automated_exploration }
+			give_technology = { tech = tech_automated_exploration_seres }
 		}		
 	}
 }
+
 #dig site 1
 #chapter 1	
 fleet_event = {
@@ -43,9 +44,21 @@ fleet_event = {
 		owner = {
 			if = {
 				limit = {
-					NOT = { has_technology = tech_reactor_boosters_2 }
+					NOT = { has_technology = tech_auxiliary_fire_control }
 				}
-				give_technology = { tech = tech_reactor_boosters_2 }
+				give_technology = { tech = tech_auxiliary_fire_control }
+			}	
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_corvette_hull_1 }
+				}
+				give_technology = { tech = tech_corvette_hull_1 }
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_corvette_hull_2 }
+				}
+				give_technology = { tech = tech_corvette_hull_2 }						
 			}
 		}
 	}
@@ -56,7 +69,7 @@ fleet_event = {
 	id = darhmod_seres.3
 	title = "darhmod_seres.3.name"
 	desc = "darhmod_seres.3.desc"
-	picture = GFX_evt_discovered_hidden_door
+	picture = GFX_evt_discovered_hidden_door_2
 	show_sound = event_big_door_opening
 	archaeology = yes
 	is_triggered_only = yes
@@ -75,10 +88,22 @@ fleet_event = {
 		owner = {
 			if = {
 				limit = {
-					NOT = { has_technology = tech_afterburners_1 }
+					NOT = { has_technology = tech_reactor_boosters_2 }
 				}
-				give_technology = { tech = tech_afterburners_1 }
+				give_technology = { tech = tech_reactor_boosters_2 }
 			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_corvette_hull_1 }
+				}
+				give_technology = { tech = tech_corvette_hull_1 }
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_corvette_hull_2 }
+				}
+				give_technology = { tech = tech_corvette_hull_2 }
+			}						
 		}
 	}
 }
@@ -88,10 +113,11 @@ fleet_event = {
 	id = darhmod_seres.4
 	title = "darhmod_seres.4.name"
 	desc = "darhmod_seres.4.desc"
-	picture = GFX_evt_archaeologists_escaping
+	picture = GFX_evt_night_raid_2
 	show_sound = event_ship_explosion
 	archaeology = yes
 	is_triggered_only = yes
+	
 	immediate = {
 		from = { set_site_progress_locked = yes }
 		closest_system = {
@@ -120,14 +146,22 @@ fleet_event = {
 			}
 		}
 	}
+	
 	after = {
 		from = { set_site_progress_locked = no }
 	}
+	
 	option = {
 		name = darhmod_seres.4.a
 		small_artifact_reward = yes
 		owner = {
 			if = {
+				limit = {
+					NOT = { has_technology = tech_automated_exploration }
+				}
+				give_technology = { tech = tech_automated_exploration }
+			}
+			else_if = {
 				limit = {
 					NOT = { has_technology = tech_sensors_2 }
 				}
@@ -143,8 +177,8 @@ fleet_event = {
 				limit = {
 					NOT = { has_technology = tech_sensors_4 }
 				}
-				give_technology = { tech = tech_sensors_3 }
-			}
+				give_technology = { tech = tech_sensors_4 }
+			}			
 			create_point_of_interest = {
 				id = darhmod_seres_hidden_planet_1
 				name = "darhmod_seres_colony_2_coordinates_poi"
@@ -174,7 +208,7 @@ fleet_event = {
 	id = darhmod_seres.5
 	title = "darhmod_seres.5.name"
 	desc = "darhmod_seres.5.desc"
-	picture = GFX_evt_ship_offloading_cargo
+	picture = GFX_evt_ship_offloading_cargo_2
 	show_sound = event_finding_loot
 	archaeology = yes
 	is_triggered_only = yes
@@ -190,10 +224,22 @@ fleet_event = {
 		owner = {
 			if = {
 				limit = {
-					NOT = { has_technology = tech_auxiliary_fire_control }
+					NOT = { has_technology = tech_afterburners_1 }
 				}
-				give_technology = { tech = tech_auxiliary_fire_control }
+				give_technology = { tech = tech_afterburners_1 }
 			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_corvette_hull_1 }
+				}
+				give_technology = { tech = tech_corvette_hull_1 }
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_corvette_hull_2 }
+				}
+				give_technology = { tech = tech_corvette_hull_2 }
+			}							
 		}
 	}
 }
@@ -330,7 +376,15 @@ fleet_event = {
 				give_technology = {  tech = tech_planetary_shield_generator }
 			}
 			add_research_option = tech_gateway_construction
-			add_research_option = tech_gateway_activation				
+			add_tech_progress = {
+				tech = tech_gateway_construction
+				progress = 0.25				
+			}			
+			add_research_option = tech_gateway_activation
+			add_tech_progress = {
+				tech = tech_gateway_activation
+				progress = 0.25				
+			}
 		}				
 	}
 }
@@ -340,7 +394,7 @@ fleet_event = {
 	id = darhmod_seres.8
 	title = "darhmod_seres.8.name"
 	desc = "darhmod_seres.8.desc"
-	picture = GFX_evt_glitchy_matrix
+	picture = GFX_evt_glitchy_matrix_2
 	show_sound = event_power_down
 	archaeology = yes
 	is_triggered_only = yes
@@ -391,7 +445,7 @@ fleet_event = {
 	id = darhmod_seres.9
 	title = "darhmod_seres.9.name"
 	desc = "darhmod_seres.9.desc"
-	picture = GFX_evt_unidentified_monster
+	picture = GFX_evt_clone_2
 	show_sound = event_bad_omen
 	archaeology = yes
 	is_triggered_only = yes
@@ -418,7 +472,6 @@ fleet_event = {
 				add_tech_progress = {
 					tech = tech_mind_control
 					progress = 0.25				
- 			    #give_technology = { tech = tech_mind_control }
 				}
 			}	
 			if = {
@@ -430,8 +483,12 @@ fleet_event = {
 					}
 				}
  			    give_technology = { tech = tech_biomechanics }
- 			}				
+ 			}
 			add_research_option = tech_amoeba_strike_craft_1
+			add_tech_progress = {
+				tech = tech_amoeba_strike_craft_1
+				progress = 0.25				
+			}
 		}
 	}
 }
@@ -441,7 +498,7 @@ fleet_event = {
 	id = darhmod_seres.10
 	title = "darhmod_seres.10.name"
 	desc = "darhmod_seres.10.desc"
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_unidentified_monster
 	show_sound = event_radio_chatter
 	archaeology = yes
 	is_triggered_only = yes
@@ -537,7 +594,7 @@ fleet_event = {
 	id = darhmod_seres.11
 	title = "darhmod_seres.11.name"
 	desc = "darhmod_seres.11.desc"
-	picture = GFX_evt_archaeology_camp
+	picture = GFX_evt_ship_in_orbit_4
 	show_sound = event_alien_signal
 	archaeology = yes
 	is_triggered_only = yes
@@ -580,6 +637,10 @@ fleet_event = {
 				give_technology = { tech = tech_cruiser_build_speed }
 			}
 			add_research_option = tech_crystal_armor_2
+			add_tech_progress = {
+				tech = tech_crystal_armor_2
+				progress = 0.25				
+			}
 		}
 	}
 }
@@ -589,7 +650,7 @@ fleet_event = {
 	id = darhmod_seres.12
 	title = "darhmod_seres.12.name"
 	desc = "darhmod_seres.12.desc"
-	picture = GFX_evt_relic_world_building
+	picture = GFX_evt_underground
 	show_sound = event_planetary_riot
 	archaeology = yes
 	is_triggered_only = yes
@@ -869,7 +930,7 @@ fleet_event = {
 					NOT = { has_technology = tech_swarmer_missiles_1 }
 				}
 				give_technology = { tech = tech_swarmer_missiles_1 }
-			}	
+			}
 		}
 		
 		from.planet = {
@@ -891,7 +952,7 @@ fleet_event = {
 	id = darhmod_seres.15
 	title = "darhmod_seres.15.name"
 	desc = "darhmod_seres.15.desc"
-	picture = GFX_evt_small_space_battle
+	picture = GFX_evt_small_space_battle_2
 	show_sound = event_space_battle
 	archaeology = yes
 	is_triggered_only = yes
@@ -911,6 +972,7 @@ fleet_event = {
 				tech = tech_arc_emitter_1
 				progress = 0.25
 			}
+			add_research_option = tech_reactor_boosters_4			
 		}
 	}
 }

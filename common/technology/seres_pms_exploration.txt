@@ -1,14 +1,10 @@
 
-tech_automated_exploration = {
+tech_automated_exploration_seres = {
 	area = physics
 	tier = 2
 	cost = 3000
 	category = { computing }
 	weight = 0
-
-	feature_flags = {
-		tech_automated_exploration
-	}
 	
 	prereqfor_desc = {
 		component = {
@@ -18,50 +14,10 @@ tech_automated_exploration = {
 	}
 	
 	modifier = {
-		science_ship_survey_speed = 0.25
+		ship_archeaological_site_clues_add = 1
 	}
 
 	ai_weight = {
         weight = 0       
-	}
-}
-
-tech_assembly_pattern  = {
-	cost = 3000
-	area = engineering
-	tier = 2
-	category = { industry }
-	#prerequisites = { "tech_engineering_1" }
-	weight = 0
-
-	modifier = {
-		planet_building_build_speed_mult = 0.25
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
-		}
 	}
 }

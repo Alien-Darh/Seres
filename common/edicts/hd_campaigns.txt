@@ -9,13 +9,13 @@ fuel_gases_dilithium = {
 	resources = {
 		category = ship_edicts
 		cost = {
-			sr_dilithium_crystals = 500
+			sr_dilithium_crystals = 300
 		}
 	}
 
 	potential = {
 		OR = {
-			has_resource = { type = dilithium_crystals amount > 0 }
+			has_resource = { type = sr_dilithium_crystals amount > 0 }
 			has_edict = fuel_gases_dilithium
 		}
 		exists = owner
@@ -49,13 +49,13 @@ fuel_gases_quartz = {
 	resources = {
 		category = ship_edicts
 		cost = {
-			sr_quartz_crystals = 500
+			sr_quartz_crystals = 300
 		}
 	}
 
 	potential = {
 		OR = {
-			has_resource = { type = quartz_crystals amount > 0 }
+			has_resource = { type = sr_quartz_crystals amount > 0 }
 			has_edict = fuel_gases_quartz
 		}
 		exists = owner

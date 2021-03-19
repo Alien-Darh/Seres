@@ -50,7 +50,7 @@ DARH_seres_site_1 = {
 }
 DARH_seres_site_2 = {
 	desc = "DARH_seres_site_2_desc"
-	picture = GFX_evt_relic_world_building
+	picture = GFX_evt_underground_2
 	stages = 2
 	weight = { base = 0 }
 
@@ -148,7 +148,7 @@ DARH_seres_site_3 = {
 }
 DARH_seres_site_4 = {
 	desc = "DARH_seres_site_4_desc"
-	picture = GFX_evt_ship_in_orbit_2
+	picture = GFX_evt_surreal_visions
 	stages = 2
 	weight = { base = 0 }
 

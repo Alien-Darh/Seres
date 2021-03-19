@@ -11,6 +11,9 @@
 
   ################
  
+  tech_automated_exploration_seres:0 "Protocolos de exploración Prometheus"
+  tech_automated_exploration_seres_desc:0 "Una IA avanzada ayudará a los científicos en su tarea de exploración arqueológica. La nave científica explorará la galaxia con ayuda de algoritmos avanzados que agilizarán la exploración de sistemas solares y nuevos descubrimientos con mayor seguridad y precisión."
+ 
   PMS_EXPLORATION:0 "Exploración Pups"
   PMS_EXPLORATION_DESC:0 "Prometheus 3D Scanner; La instalación de este modulo mejora la exploración de los sistemas mediante sondas avanzadas."
 
@@ -161,3 +164,15 @@
   tech_mine_rare_crystals_seres_desc:0 "Mediante nuevos procesos con nanotecnología la minería de cristales raros ha prosperado considerablemente y ahora es posible su refinado y aumento de producción."
   building_crystal_mines_seres:0 "Minería avanzada de cristales raros"
   building_crystal_mines_seres_desc:0 "Usando nanotecnología, esta instalación excava con mayor presición cristales raros para evitar fisuras es la extración y evitar desperdicios."
+  
+  ################  
+  
+  REACTOR_BOOSTER_4:0 "Impulsores de reactor IV"
+  REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+  REACTOR_BOOSTER_5:0 "Impulsores de reactor V"
+  REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+ 
+  tech_reactor_boosters_4:0 "Impulsores de reactor IV"
+  tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+  tech_reactor_boosters_5:0 "Impulsores de reactor V"
+  tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
