@@ -1,0 +1,724 @@
+@distance = 50
+@base_moon_distance = 10
+
+darhmod_seres_home_system_03 = {
+	name = "Nubbia"
+	class = sc_black_hole
+	usage = misc_system_init
+	usage_odds = 0
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 125
+	}
+
+	flags = { darhmod_seres_home_system }
+	flags = { time_loop_world_system }
+	flags = { marauder_system marauder_capital_2 }
+	
+	prevent_anomalies = yes
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		size = 40
+
+		init_effect = {
+			create_species = {
+				name = random
+				class = random
+				blocked_archetypes = {
+					MACHINE       
+					ROBOT       
+					LITHOID
+				}
+				portrait = random
+				traits = {
+					trait = "trait_pc_habitat_preference"
+					trait = "trait_extremely_adaptive"
+					trait = "trait_rapid_breeders"
+					trait = "trait_nomadic"
+					trait = "trait_quarrelsome"
+					trait = "trait_deviants"
+				}
+			}
+			create_country = {
+				name_list = random
+				species = last_created
+				type = dormant_marauders
+				civics = { civic = civic_anarcho_tribalism }
+				origin = "origin_default"
+				flag = {
+					background= {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors={
+						"black"
+						"black"
+						"null"
+						"null"
+					}
+				}
+				ethos = {
+					ethic = ethic_fanatic_militarist
+					ethic = ethic_xenophobe
+				}
+				ignore_initial_colony_error = yes
+			}
+			last_created_country = {
+				set_graphical_culture = pirate_01
+				save_global_event_target_as = marauder_country_2
+				set_country_flag = marauder_2
+				set_name = random
+				create_ship_design = { design = "NAME_Marauder_Starbase" }
+				add_ship_design = last_created_design
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Warrior_Freehold"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 300
+						angle = 40
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Warrior_Freehold"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 300
+						angle = 90
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Warrior_Freehold"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 300
+						angle = 140
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Warrior_Freehold"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 300
+						angle = 200
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Warrior_Freehold"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 300
+						angle = 250
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Warrior_Freehold"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 300
+						angle = 280
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Warrior_Freehold"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 300
+						angle = 330
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Warrior_Freehold"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 300
+						angle = 0
+					}				
+				}
+			}
+
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Void_Dwelling"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 180
+						angle = 0
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Void_Dwelling"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 180
+						angle = 60
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Void_Dwelling"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 180
+						angle = 120
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Void_Dwelling"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 180
+						angle = 180
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Void_Dwelling"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 180
+						angle = 240
+					}				
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Void_Dwelling"
+						graphical_culture = "pirate_01"
+					}
+					set_location = {
+						target = prev
+						distance = 180
+						angle = 300
+					}				
+				}
+			}
+
+			create_ambient_object = {
+				type = "abandoned_starbase_01_object"
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 30
+				}
+			}
+			create_ambient_object = {
+				type = "abandoned_starbase_01_object"
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 90
+				}
+			}
+			create_ambient_object = {
+				type = "abandoned_starbase_01_object"
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 150
+				}
+			}
+			create_ambient_object = {
+				type = "abandoned_starbase_01_object"
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 210
+				}
+			}
+			create_ambient_object = {
+				type = "abandoned_starbase_01_object"
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 270
+				}
+			}
+			create_ambient_object = {
+				type = "abandoned_starbase_01_object"
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 330
+				}
+			}
+		}
+	}
+	
+	planet = {
+		name = "Nibiru"
+		orbit_distance = 200
+		class = pc_barren
+		orbit_angle = 140
+		size = 25
+		deposit_blockers = none
+		modifiers = none
+		has_ring = yes
+
+		change_orbit = @base_moon_distance
+
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = darhmod_seres_home_planet
+			create_archaeological_site = DARH_seres_site_5
+			
+			clear_deposits = yes			
+			add_deposit = d_archaeological_artifacts_1
+		}
+		
+		moon = {
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 10
+			size = 12
+	
+			init_effect = {
+				clear_deposits = yes				
+				prevent_anomaly = yes			
+			}
+		}	
+	}
+	
+	change_orbit = 25
+	
+	planet = {
+		count = 1
+		orbit_distance = 60
+		orbit_angle = 270
+		deposit_blockers = none		
+		class = pc_barren_cold
+		modifiers = none		
+
+		change_orbit = @base_moon_distance
+
+		init_effect = {
+			clear_deposits = yes			
+			add_deposit = d_exotic_gases_1
+			add_deposit = d_rare_crystals_1
+			add_deposit = d_volatile_motes_1		
+			prevent_anomaly = yes
+			
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Ancestral_Glory"
+						graphical_culture = "pirate_01"
+					}
+					set_formation_scale = 2
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 250
+					set_location = {
+						target = prev
+						distance = 20
+						angle = 120
+					}
+				}
+				settings = {
+					garrison = yes
+				}
+			}
+		}
+
+		moon = {
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			class = random_non_colonizable
+			size = 12
+			
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes				
+			}
+		}
+	}
+	
+	change_orbit = 25
+	
+	planet = {
+		count = 1	
+		class = pc_desert	
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = yes
+		deposit_blockers = none
+		anomaly = time_loop_world	
+			
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_searing_desert
+			add_deposit = d_searing_desert
+			add_deposit = d_searing_desert
+			add_deposit = d_rushing_waterfalls
+			add_deposit = d_arid_highlands
+			add_deposit = d_tempestous_mountain
+			add_deposit = d_ore_rich_caverns
+			add_deposit = d_ore_rich_caverns
+			add_deposit = d_submerged_ore_veins
+			add_deposit = d_great_river
+			add_deposit = d_great_river
+			add_deposit = d_black_soil
+			add_deposit = d_dust_desert
+			set_planet_flag = time_loop_world
+			save_global_event_target_as = time_loop_world
+			change_pc = {
+				class = pc_shielded
+				inherit_entity = yes
+			}
+			set_planet_flag = is_time_loop_world
+		}
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			class = "pc_toxic"
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+
+			init_effect = {			
+				prevent_anomaly = yes
+				clear_deposits = yes				
+			}
+		}
+	}	
+	
+	planet = {
+		class = pc_gas_giant
+		orbit_distance = 57
+		orbit_angle = 110
+		size = 42
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_zro_deposit_1			
+		}
+
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			class = pc_barren_cold
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 10
+			size = 12
+	
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			class = pc_barren_cold
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 9
+	
+			init_effect = {
+				prevent_anomaly = yes	
+				clear_deposits = yes
+			}
+		}
+	}
+	
+	change_orbit = 42
+
+	#Some asteroids
+	planet = {
+		class = pc_ice_asteroid
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+		
+		flags = { raid_source }	
+		
+		init_effect = {	
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_quartz_crystals_1
+			
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Ancestral_Glory"
+						graphical_culture = "pirate_01"
+					}
+					set_formation_scale = 2
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 250
+					set_location = {
+						target = prev
+						distance = 20
+						angle = random
+					}
+				}
+				settings = {
+					garrison = yes
+				}
+			}
+		}		
+	}
+	
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+		
+		init_effect = {	
+			prevent_anomaly = yes
+			clear_deposits = yes			
+			add_deposit = d_dilithium_crystals_1		
+			
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					while = {
+						count = 22
+						create_ship = {
+							name = random
+							design = "NAME_Outrider"
+							graphical_culture = "pirate_01"
+						}
+					}
+					while = {
+						count = 14
+						create_ship = {
+							name = random
+							design = "NAME_Lancer"
+							graphical_culture = "pirate_01"
+						}
+					}
+					while = {
+						count = 8
+						create_ship = {
+							name = random
+							design = "NAME_Void_Champion"
+							graphical_culture = "pirate_01"
+						}
+					}
+					set_formation_scale = 2
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 250
+					set_location = {
+						target = prev
+						distance = 20
+						angle = 120
+					}
+				}
+				settings = {
+					garrison = yes
+				}
+			}
+		}
+	}
+	
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+		
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_nanites_deposit
+			
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					while = {
+						count = 12
+						create_ship = {
+							name = random
+							design = "NAME_Outrider"
+							graphical_culture = "pirate_01"
+						}
+					}
+					while = {
+						count = 6
+						create_ship = {
+							name = random
+							design = "NAME_Lancer"
+							graphical_culture = "pirate_01"
+						}
+					}
+					while = {
+						count = 3
+						create_ship = {
+							name = random
+							design = "NAME_Void_Champion"
+							graphical_culture = "pirate_01"
+						}
+					}
+					set_formation_scale = 2
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 250
+					set_location = {
+						target = prev
+						distance = 20
+						angle = 120
+					}
+				}
+				settings = {
+					garrison = yes
+				}
+			}
+		}
+	}
+	
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 5
+		has_ring = no
+		
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_dark_matter_deposit_1
+
+			create_fleet = {
+				effect = {
+					set_owner = event_target:marauder_country_2
+					create_ship = {
+						name = random
+						design = "NAME_Ancestral_Glory"
+						graphical_culture = "pirate_01"
+					}
+					set_formation_scale = 2
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 250
+					set_location = {
+						target = prev
+						distance = 20
+						angle = 120
+					}
+				}
+				settings = {
+					garrison = yes
+				}
+			}
+		}
+	}
+	
+	init_effect = {
+		event_target:marauder_country_2 = { save_event_target_as = marauder_starbase_owner }
+		create_marauder_starbase = yes
+	}
+}	

@@ -42,6 +42,10 @@ tech_class_4_singularity = {
 				has_trait = "leader_trait_expertise_field_manipulation"
 			}
 		}
+        modifier = {
+            factor = 0
+			years_passed < 175
+        }				
 	}
 
 	ai_weight = {
@@ -80,6 +84,10 @@ tech_dimensional_fabricator = {
 				has_trait = "leader_trait_expertise_materials"
 			}
 		}
+        modifier = {
+            factor = 0
+			years_passed < 175
+        }				
 	}
 
 	ai_weight = {
@@ -121,6 +129,10 @@ tech_nourishment_center = {
 				has_trait = "leader_trait_expertise_biology"
 			}
 		}
+        modifier = {
+            factor = 0
+			years_passed < 175
+        }				
 	}
 
 	ai_weight = {
@@ -162,6 +174,10 @@ tech_affluence_center = {
 				has_trait = "leader_trait_expertise_industry"
 			}
 		}
+        modifier = {
+            factor = 0
+			years_passed < 175
+        }
 	}
 
 	ai_weight = {
@@ -199,6 +215,10 @@ tech_nano_forge = {
 				has_trait = "leader_trait_expertise_materials"
 			}
 		}
+        modifier = {
+            factor = 0
+			years_passed < 175
+        }		
 	}
 
 	ai_weight = {
@@ -236,6 +256,10 @@ tech_master_archive = {
 				has_trait = "leader_trait_expertise_computing"
 			}
 		}
+        modifier = {
+            factor = 0
+			years_passed < 175
+        }		
 	}
 
 	ai_weight = {
@@ -273,6 +297,10 @@ tech_fe_stronghold = {
 				has_trait = "leader_trait_expertise_military_theory"
 			}
 		}
+        modifier = {
+            factor = 0
+			years_passed < 175
+        }		
 	}
 
 	ai_weight = {
@@ -315,6 +343,10 @@ tech_utopian_paradise_dome = {
 				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
+        modifier = {
+            factor = 0
+			years_passed < 175
+        }		
 	}
 
 	ai_weight = {

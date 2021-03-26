@@ -29,6 +29,8 @@ utility_component_template = {
 		category = ship_components
 		cost = {
 			alloys = 5
+			sr_living_metal = 0.1
+			sr_dark_matter = 0.1
 		}		
 		upkeep = {
 			sr_dark_matter = 0.005
@@ -54,6 +56,8 @@ utility_component_template = {
 		category = ship_components
 		cost = {
 			alloys = 10
+			sr_living_metal = 0.5
+			sr_dark_matter = 0.5
 		}		
 		upkeep = {
 			sr_dark_matter = 0.01
@@ -79,6 +83,8 @@ utility_component_template = {
 		category = ship_components
 		cost = {
 			alloys = 15
+			sr_living_metal = 1
+			sr_dark_matter = 1
 		}		
 		upkeep = {
 			sr_dark_matter = 0.015

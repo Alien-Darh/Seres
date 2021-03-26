@@ -2,7 +2,7 @@
 @base_moon_distance = 10
 
 darhmod_seres_temp_system_04 = {
-	class = sc_a
+	class = "sc_black_hole"
 	usage = misc_system_init	
 	usage_odds = 0
 	

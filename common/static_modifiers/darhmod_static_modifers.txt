@@ -24,3 +24,27 @@ mod_darhmod_precursor_seres_secrets_final = {
 	ship_tracking_add = 25
 	ship_evasion_mult = 0.25
 }
+
+### RESOURCE DEFICITS
+
+dilithium_crystals_deficit = {
+	custom_tooltip = dilithium_crystals_deficit_tooltip
+	ship_ftl_jumpdrive_range_mult = -0.80
+}
+
+quartz_crystals_deficit = {
+	custom_tooltip = quartz_crystals_deficit_tooltip
+	ship_ftl_jumpdrive_range_mult = -0.80
+	
+#living_metal_deficit = {
+#	custom_tooltip = living_metal_deficit_tooltip
+#	ship_armor_mult = -0.25
+	
+#dark_matter_deficit = {
+#	custom_tooltip = dark_matter_deficit_tooltip
+#	ship_shield_mult = -0.25		
+	
+	
+	
+	
+	

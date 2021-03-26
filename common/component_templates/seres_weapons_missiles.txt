@@ -3,34 +3,6 @@
 # ####################
 
 weapon_component_template = {
-	key = "SWARMER_MISSILE_1"
-	size = torpedo
-	
-	icon = "GFX_ship_part_swarmer_missile_1"
-	icon_frame = 1
-	type = missile
-	
-	prerequisites = { "tech_swarmer_missiles_1" }
-	component_set = "SWARMER_MISSILE_1"
-	projectile_gfx = "swarmer_missiles"
-	tags = { weapon_type_explosive }
-	ai_tags = { weapon_role_artillery }
-	ai_tag_weight = 0
-	upgrades_to = "SWARMER_MISSILE_2"
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @m_t3_cost
-		}		
-		upkeep = {
-			energy = @m_t3_upkeep_energy
-			alloys = @m_t3_upkeep_alloys
-		}
-	}
-}
-
-### Advanced Swarmer Missile Launcher
-weapon_component_template = {
 	key = "SWARMER_MISSILE_2"
 	size = torpedo
 	
@@ -41,18 +13,19 @@ weapon_component_template = {
 	prerequisites = { "tech_swarmer_missiles_2" }
 	component_set = "SWARMER_MISSILE_2"
 	projectile_gfx = "swarmer_missiles_02"
+	upgrades_to = "SBS_SWARMER_MISSILE_3"	
 	tags = { weapon_type_explosive }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @m_t4_cost
-			volatile_motes = @m_t4_rare
+			alloys = @m_t5_cost
+			volatile_motes = @m_t5_rare
 		}		
 		upkeep = {
-			energy = @m_t4_upkeep_energy
-			alloys = @m_t4_upkeep_alloys
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
 		}
 	}
 

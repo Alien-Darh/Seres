@@ -597,7 +597,9 @@ fleet_event = {
 	picture = GFX_evt_ship_in_orbit_4
 	show_sound = event_alien_signal
 	archaeology = yes
+	
 	is_triggered_only = yes
+	
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
@@ -666,8 +668,7 @@ fleet_event = {
 	option = {
 		name = darhmod_seres.12.a
 		hidden_effect = {
-			set_spawn_system_batch = begin
-			#set_country_flag = encountered_first_wormhole		
+			set_spawn_system_batch = begin	
 			random_planet = {
 				limit = { has_planet_flag = darhmod_seres_near_home_colony }
 				random_list = {
@@ -725,7 +726,7 @@ fleet_event = {
 							initializer = darhmod_seres_temp_system_06
 						}
 					}
-					10 = { 				
+					10 = {
 						spawn_system = {
 							min_jumps = 0
 							max_jumps = 0
@@ -764,7 +765,21 @@ fleet_event = {
 				}
 			}
 			random_system = {
-				limit = { has_star_flag = darhmod_seres_temp_system }
+				limit = { 
+					OR = {
+						has_star_flag = darhmod_seres_temp_system 
+						has_star_flag = darhmod_seres_temp_system_01
+						has_star_flag = darhmod_seres_temp_system_02
+						has_star_flag = darhmod_seres_temp_system_03
+						has_star_flag = darhmod_seres_temp_system_04
+						has_star_flag = darhmod_seres_temp_system_05
+						has_star_flag = darhmod_seres_temp_system_06
+						has_star_flag = darhmod_seres_temp_system_07
+						has_star_flag = darhmod_seres_temp_system_08
+						has_star_flag = darhmod_seres_temp_system_09
+						has_star_flag = darhmod_seres_temp_system_10
+					}
+				}	
 				save_global_event_target_as = darhmod_seres_12_temp
 				every_system_planet = { prevent_anomaly = yes }
 			}
@@ -818,28 +833,51 @@ fleet_event = {
 				give_technology = { tech = tech_cruiser_build_speed }
 			}
 		}
-	}
+	}	
 }
 
 country_event = {
 	id = darhmod_seres.50
-	hide_window = yes
+	title = "darhmod_seres.50.name"
+	desc = "darhmod_seres.50.desc"
+	picture = GFX_evt_strategic_resources
+	location = from	
+	#hide_window = yes
 	
 	is_triggered_only = yes
 
 	immediate = {
-		from = { set_site_progress_locked = yes }	
 		log = "[event_target:darhmod_seres_12_temp.GetName]"
 		set_spawn_system_batch = begin
 		random_planet = {
 			limit = { has_planet_flag = darhmod_seres_near_home_colony }
-				spawn_system = {
-				min_distance = 10
-				max_distance = 25
-				hyperlane = no
-				initializer = darhmod_seres_home_system
+			random_list = {
+				33 = { 				
+					spawn_system = {
+						min_distance = 10
+						max_distance = 25
+						hyperlane = no
+						initializer = darhmod_seres_home_system
+					}
 				}
+				33 = { 				
+					spawn_system = {
+						min_distance = 10
+						max_distance = 25
+						hyperlane = no
+						initializer = darhmod_seres_home_system_02
+					}
+				}
+				33 = { 				
+					spawn_system = {
+						min_distance = 10
+						max_distance = 25
+						hyperlane = no
+						initializer = darhmod_seres_home_system_03
+					}
+				}				
 			}
+		}			
 		event_target:darhmod_seres_12_temp = {
 			spawn_natural_wormhole = {
 			bypass_type = wormhole
@@ -848,24 +886,25 @@ country_event = {
 		}
 		random_system = {
 			limit = {
-				has_star_flag = darhmod_seres_home_system
-				NOT = { is_same_value = event_target:darhmod_seres_12_temp }
+				OR = {
+					has_star_flag = darhmod_seres_home_system
+					has_star_flag = darhmod_seres_home_system_02 
+					has_star_flag = darhmod_seres_home_system_03
+				}
+				NOT = { is_same_value = event_target:darhmod_seres_12_temp }				
 			}
 			spawn_natural_wormhole = {
 				bypass_type = wormhole
 				random_pos = yes
-				}
+			}
 			link_wormholes = event_target:darhmod_seres_12_temp
 		}
 		set_spawn_system_batch = end
 		clear_global_event_target = darhmod_seres_12_temp
 	}
 	
-	after = {
-		from = { set_site_progress_locked = no }
-	}
-	
 	option = {
+		name = "darhmod_seres.50.a"	
 		owner = {
 			create_point_of_interest = {
 				id = darhmod_seres_hidden_planet_4
@@ -878,8 +917,9 @@ country_event = {
 				event_chain = darhmod_seres_chain
 				counter = darhmod_seres_colonies
 				amount = 1
+				
 			}
-		}
+		}						
 	}
 }
 
@@ -887,7 +927,7 @@ ship_event = {
 	id = darhmod_seres.13
 	title = "darhmod_seres.13.name"
 	desc = "darhmod_seres.13.desc"
-	picture = GFX_evt_ringworld
+	picture = GFX_evt_strategic_resources
 	location = from
 	
 	is_triggered_only = yes
@@ -925,12 +965,7 @@ fleet_event = {
 		name = DIG
 		small_artifact_reward = yes
 		owner = {
-			if = {
-				limit = {
-					NOT = { has_technology = tech_swarmer_missiles_1 }
-				}
-				give_technology = { tech = tech_swarmer_missiles_1 }
-			}
+			add_research_option = tech_sbs_swarmer_missiles_3
 		}
 		
 		from.planet = {

@@ -1,0 +1,348 @@
+@distance = 50
+@base_moon_distance = 10
+
+darhmod_seres_home_system_02 = {
+	name = "Nubbia"
+	class = "sc_neutron_star"
+	usage = misc_system_init
+	usage_odds = 0
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 125
+	}
+
+	flags = { darhmod_seres_home_system }
+	flags = { guardians_of_zanaam hostile_system }
+	
+	prevent_anomalies = yes
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		size = 40
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_living_metal_deposit_1
+		}
+	}
+	
+	planet = {
+		name = "Nibiru"
+		orbit_distance = 200
+		class = pc_barren
+		orbit_angle = 140
+		size = 25
+		deposit_blockers = none
+		modifiers = none
+		has_ring = yes
+
+		change_orbit = @base_moon_distance
+
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = darhmod_seres_home_planet
+			create_archaeological_site = DARH_seres_site_5
+			
+			clear_deposits = yes			
+			add_deposit = d_archaeological_artifacts_1
+		}
+		
+		moon = {
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 10
+			size = 12
+	
+			init_effect = {
+				clear_deposits = yes				
+				prevent_anomaly = yes
+			}
+		}	
+	}
+	
+	change_orbit = 25
+	
+	planet = {
+		count = 1
+		orbit_distance = 60
+		orbit_angle = 270
+		deposit_blockers = none		
+		class = pc_barren_cold
+		modifiers = none		
+
+		change_orbit = @base_moon_distance
+
+		init_effect = {
+			clear_deposits = yes			
+			add_deposit = d_exotic_gases_1
+			add_deposit = d_rare_crystals_1
+			add_deposit = d_volatile_motes_1		
+			prevent_anomaly = yes
+			save_event_target_as = patrol_2			
+		}
+
+		moon = {
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			class = random_non_colonizable
+			size = 12
+			
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes				
+			}
+		}
+	}
+	
+	change_orbit = 25
+	
+	planet = {
+		count = 1	
+		class = "pc_gaia"
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = yes
+			
+		init_effect = {
+			save_event_target_as = zanaam_planet
+			add_deposit = d_valley_of_zanaam
+				
+			create_country = {
+				name = "NAME_Guardians_of_Zanaam"
+				type = faction
+			}
+			last_created_country = {
+				set_country_flag = zanaam_country
+				create_fleet = {
+					name = "NAME_Guardians_of_Zanaam"
+					settings = { spawn_debris = no }
+					effect = {
+						set_owner = PREV
+						set_fleet_flag = zanaam_fleet						
+						create_ship = {
+							name = "NAME_Defensive_Alpha"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Beta"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Gamma"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Delta"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Epsilon"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Zeta"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Eta"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Theta"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Iota"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Kappa"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Lambda"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Mu"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Nu"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Ksi"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Omicron"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Pi"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Rho"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Sigma"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Tau"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Upsilon"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Phi"
+							design = "NAME_Guardian"
+						}							
+						create_ship = {
+							name = "NAME_Defensive_Chi"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Psi"
+							design = "NAME_Guardian"
+						}
+						create_ship = {
+							name = "NAME_Defensive_Omega"
+							design = "NAME_Guardian"
+						}									
+						set_location = event_target:zanaam_planet
+						add_modifier = {
+							modifier = sanctuary_power
+							days = -1
+						}							
+					}
+				}
+			}
+		}
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			class = "pc_toxic"
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+
+			init_effect = {			
+				prevent_anomaly = yes
+				clear_deposits = yes				
+			}
+		}
+	}	
+	
+	planet = {
+		class = pc_gas_giant
+		orbit_distance = 57
+		orbit_angle = 110
+		size = 42
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_zro_deposit_1			
+		}
+
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			class = pc_barren_cold
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 10
+			size = 12
+	
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			class = pc_barren_cold
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 9
+	
+			init_effect = {
+				prevent_anomaly = yes	
+				clear_deposits = yes
+			}
+		}
+	}
+	
+	change_orbit = 42
+
+	#Some asteroids
+	planet = {
+		class = pc_ice_asteroid
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+		init_effect = {	
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_quartz_crystals_1				
+		}
+	}
+	
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+		init_effect = {	
+			prevent_anomaly = yes
+			clear_deposits = yes			
+			add_deposit = d_dilithium_crystals_1		
+		}
+	}
+	
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_nanites_deposit		
+		}
+	}
+	
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 5
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_dark_matter_deposit_1		
+		}
+	}
+	
+	init_effect = {
+		while = {
+			count = 6
+			create_ambient_object = {
+				type = "abandoned_ship_2_object"
+				location = solar_system
+			}
+		}
+	}
+}

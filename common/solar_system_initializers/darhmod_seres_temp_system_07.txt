@@ -11,7 +11,8 @@ darhmod_seres_temp_system_07 = {
 		radius = 125
 	}
 	
-	flags = { ruined_matter_decompressor_system }	
+	flags = { ruined_matter_decompressor_system }
+	flags = { guardians_hive_system guardian hostile_system }	
 	flags = { darhmod_seres_temp_system }
 	
 	planet = {
@@ -20,10 +21,132 @@ darhmod_seres_temp_system_07 = {
 		init_effect = {
 			save_event_target_as = matter_decompressor_hole
 			clear_deposits = yes
+			create_ambient_object = {
+				type = "dormant_hive_base_object"
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = PREV
+					distance = 160
+					angle = 245
+				}
+				set_ambient_object_flag = hive_asteroid_1
+			}
+			create_ambient_object = {
+				type = "dormant_hive_base_object"
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = PREV
+					distance = 160
+					angle = 280
+				}
+				set_ambient_object_flag = hive_asteroid_2
+			}
+			create_ambient_object = {
+				type = "dormant_hive_base_object"
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = PREV
+					distance = 160
+					angle = 320
+				}
+				set_ambient_object_flag = hive_asteroid_3
+			}
+			create_ambient_object = {
+				type = "dormant_hive_base_object"
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = PREV
+					distance = 160
+					angle = 35
+				}
+				set_ambient_object_flag = hive_asteroid_4
+			}
+			create_ambient_object = {
+				type = "dormant_hive_base_object"
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = PREV
+					distance = 160
+					angle = 110
+				}
+				set_ambient_object_flag = hive_asteroid_5
+			}
+			create_ambient_object = {
+				type = "dormant_hive_base_object"
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = PREV
+					distance = 160
+					angle = 180
+				}
+				set_ambient_object_flag = hive_asteroid_6
+			}
 		}
 	}
 
-	change_orbit = 200
+	change_orbit = 160
+	
+	planet = {
+		class = pc_crystal_asteroid
+		orbit_distance = 0
+		orbit_angle = 75
+		flags = { hiver_asteroid_1 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_deposit = d_minerals_6
+		}
+	}
+	planet = {
+		class = pc_crystal_asteroid
+		orbit_distance = 0
+		orbit_angle = 75
+		flags = { hiver_asteroid_2 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_deposit = d_minerals_8
+		}
+	}
+	planet = {
+		class = pc_crystal_asteroid
+		orbit_distance = 0
+		orbit_angle = 75
+		flags = { hiver_asteroid_3 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_deposit = d_minerals_6
+		}
+	}
+	planet = {
+		class = pc_crystal_asteroid
+		orbit_distance = 0
+		orbit_angle = 75
+		flags = { hiver_asteroid_4 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_deposit = d_minerals_8
+		}
+	}
+	planet = {
+		class = pc_crystal_asteroid
+		orbit_distance = 0
+		orbit_angle = 70
+		flags = { hiver_asteroid_5 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_deposit = d_minerals_6
+		}
+	}
 
 	asteroid_belt = {
 		type = icy_asteroid_belt

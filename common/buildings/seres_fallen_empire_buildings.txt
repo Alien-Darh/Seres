@@ -53,8 +53,10 @@ building_affluence_centerx = {
 		}
 		cost = {
 			minerals = 800
+			influence = 100
 		}
 		upkeep = {
+			influence = 1	
 			minerals = 250
 			energy = 100
 		}
@@ -358,7 +360,7 @@ building_nano_forgex = {
 			minerals = 800
 		}
 		upkeep = {
-			minerals = 250
+			minerals = 200
 			energy = 100
 		}
 	}

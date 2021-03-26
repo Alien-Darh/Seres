@@ -4,7 +4,7 @@ tech_arc_emitter_1 = {
 	tier = 4
 	category = { particles }
 	ai_update_type = military	
-	prerequisites = { "tech_disruptors_3" "tech_swarmer_missiles_2" }
+	prerequisites = { "tech_disruptors_3" "tech_swarmer_missiles_1" }
 	weight = @tier4weight2
 	
 	weight_modifier = {

@@ -4,7 +4,7 @@
 darhmod_seres_home_system = {
 	name = "Nubbia"
 	class = "sc_pulsar"
-	usage = misc_system_init
+	usage = misc_system_init	
 	usage_odds = 0
 
 	asteroid_belt = {
@@ -98,6 +98,7 @@ darhmod_seres_home_system = {
 			save_global_event_target_as = darhmod_seres_home_planet
 			create_archaeological_site = DARH_seres_site_5
 			
+			clear_deposits = yes			
 			add_deposit = d_archaeological_artifacts_1
 		}
 		
