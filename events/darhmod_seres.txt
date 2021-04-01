@@ -26,7 +26,7 @@ fleet_event = {
 	id = darhmod_seres.2
 	title = "darhmod_seres.2.name"
 	desc = "darhmod_seres.2.desc"
-	picture = GFX_evt_alien_city
+	picture = GFX_evt_ancient_alien_temple
 	show_sound = event_ghost_town
 	archaeology = yes
 	is_triggered_only = yes
@@ -655,6 +655,7 @@ fleet_event = {
 	picture = GFX_evt_underground
 	show_sound = event_planetary_riot
 	archaeology = yes
+	
 	is_triggered_only = yes
 	
 	immediate = {
@@ -840,8 +841,7 @@ country_event = {
 	id = darhmod_seres.50
 	title = "darhmod_seres.50.name"
 	desc = "darhmod_seres.50.desc"
-	picture = GFX_evt_strategic_resources
-	location = from	
+	picture = GFX_evt_wormhole
 	#hide_window = yes
 	
 	is_triggered_only = yes
@@ -990,13 +990,17 @@ fleet_event = {
 	picture = GFX_evt_small_space_battle_2
 	show_sound = event_space_battle
 	archaeology = yes
+	
 	is_triggered_only = yes
+	
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
+	
 	after = {
 		from = { set_site_progress_locked = no }
 	}
+	
 	option = {
 		name = darhmod_seres.15.a
 		medium_artifact_reward = yes
@@ -1007,8 +1011,8 @@ fleet_event = {
 				tech = tech_arc_emitter_1
 				progress = 0.25
 			}
-			add_research_option = tech_reactor_boosters_4			
-		}
+			add_research_option = tech_reactor_boosters_4
+		}		
 	}
 }
 

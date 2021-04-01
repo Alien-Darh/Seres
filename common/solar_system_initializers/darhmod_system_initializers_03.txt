@@ -24,6 +24,9 @@ darhmod_seres_home_system_03 = {
 		size = 40
 
 		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_living_metal_deposit_1		
 			create_species = {
 				name = random
 				class = random

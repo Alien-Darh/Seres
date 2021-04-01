@@ -1,24 +1,25 @@
 on_game_start = {
 	events = {
-		darhseres.1	
+		darhseres.1
 	}
 }
 
 on_entering_system_first_time = {
 	events = {
-		darhmod_seres.13
+		darhmod_seres.13	
 	}
 }
 
 on_game_start_country = {
 	events = { 
 		seres_init.01
-		seres_init.023		
+		seres_init.023
 	}
 }
 
 on_monthly_pulse = {
 	events = {
 		seres_init.02
+		seres_init.03		
 	}
 }

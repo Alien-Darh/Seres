@@ -12,6 +12,15 @@
   seres_init.02.b:0 "Interesting option."
   seres_init.02.c:0 "Excellent progress." 
 
+  seres_init.03.name:0 "Beings of light"
+  seres_init.03.desc:0 "The crisis has been defeated again but we have only seen the surface as to the functioning of this galaxy that is only part of a great programming called §HMultiverse§! where time does not exist... §HWhere the end, is the beginning of everything...§!.\n\nThey say that time is the bonfire in which we arrange... ¿You will be ready to understand the secrets of the universe without burning?"
+  seres_init.03.a:0 "If we are ready..."
+  seres_init.03.b:0 "No not yet..."
+  
+  seres_init.04.name:0 "Beings of light"
+  seres_init.04.desc:0 "Wise choice... We are amazed with your strategic level and wisdom, you are definitely ready to ascend to levels beyond understanding.\n\nWe will see each other soon..."
+  seres_init.04.a:0 "Until then..."
+  
   ### ETC ###
   darhmod_relic_activation_cooldown:0 "Special $relic_activation_cooldown$"
   darhmod_special_relic_cooldown_info:0 "Special Relic can be activated independently with normal relics."
@@ -122,6 +131,7 @@
   darhmod_seres.16.desc:0 "Upon reaching the temple of §H[From.Planet.GetName]§! the mysterious aura could be observed, an assault team is sent to the place to protect the area while the investigators prepare to enter with extreme caution.\n\nThe interior looks like a large glass library and in the center an immense §Broca blue§! naturally lit by the opening in the ceiling.\n\nIn the crystal modules there is revealing information about this civilization:\n\n1.- The incomplete files of the first module indicate that the relic they were looking for was actually found by the relic. them and had been hidden in the galaxy for millennia, until there was some imminent danger.\n\n2.- While the second module was being investigated, the curiosity of our scientist §Y[Root.GetLeaderName]§! I took him to touch some symbols on the central rock and suddenly some holographic images of some §GSeres de Luz§ appeared! who invited us to listen carefully:\n\n§H"We have been waiting for you since you were created... you are our last hope, you were created in our laboratories with only one purpose, to be 'unpredictable' and so on to be able to fight such a great threat in galaxy that we could not defeat. We ascended to a level beyond the obvious and very different from the earthly... we hope that one day you too, when you are ready.\n\nLife is a a very peculiar and at the same time dangerous state of matter, but interesting to experience it... have all the technology found so far to defeat this threat that has not yet been completely defeated and you are a few years away from arriving in this galaxy again... if they are defeated it will be all over§!.\n\nSuddenly the central stone began to levitate and revealed just below, a door that one of the §Yers of light§! leads us to enter...\n\nHistory has not left anyone indifferent ie and the effect on the population has been favorable and has united all ideologies in a better way.\n\nIn the modules, two highlighted lights appeared; a decision will have to be made as to which one to take."
   darhmod_seres.16.a:0 "Juggernaut"
   darhmod_seres.16.b:0 "Megashipyard"
+  darhmod_seres.16.c:0 "Excellent..."
 
   darhmod_seres.17.name:0 "Ultra Crisis"
   darhmod_seres.17.desc:0 "Our team finally reached an enclosure where the §Yers of light§! they were waiting for us to take the §GUltra Crisis§ relic!... This relic is particularly special to combat end-of-century crises, however you have to know how to activate it at the right time since it is very powerful but its effect dissolves very quickly and it takes a while to recharge.\n\n"However, our scientists believe that more §GUltra§! technology will be able to be extracted from the temple as detailed information on the relic found has been discovered in the crystal modules." 
@@ -138,10 +148,10 @@
   mod_r_darhmod_seres_last_projector:0 "Ultra Crisis Paradox"
   mod_r_darhmod_seres_last_projector_tooltip:0 "§HUnlock:§!"
 
-  artifact_darhmod_precursor_seres_research:0 "Secrets of the Beings of Light."
+  artifact_darhmod_precursor_seres_research:0 "Secrets of the Beings of Light"
   artifact_darhmod_precursor_seres_research_desc:0 "Deepening the Secrets of the Beings of Light"
-  DARHMOD_PRECURSOR_SERES_SECRETS:0 "Investigate secrets of the Beings of Light."
-  DARHMOD_PRECURSOR_SERES_SECRETS_DESC:0 "Examine the temple for more technology."
+  DARHMOD_PRECURSOR_SERES_SECRETS:0 "Investigate secrets of the Beings of Light"
+  DARHMOD_PRECURSOR_SERES_SECRETS_DESC:0 "Examine the temple for more technology"
 
   darhmod_seres.18.name:0 "Ultra Defense Armor"
   darhmod_seres.18.desc:0 "It seems that a way to materialize relic energy into armor had somehow been discovered, but they were never able to put it into practice. Our fleets could use this when it's finished.\n\nIn addition, detailed plans of buildings and ancestral weapons have been found that our scientists will study to include our planets and ships respectively..."
@@ -152,3 +162,6 @@
   
   mod_darhmod_precursor_seres_secrets_final:0 "Forerunner Impulse"
   mod_darhmod_precursor_seres_secrets_final_desc:0 "Ancestral Help"
+
+  mod_darhmod_precursor_seres_diplo:0 "Arrogance"
+  mod_darhmod_precursor_seres_diplo_desc: "Believe that we are worthy is an error that we see all the time"

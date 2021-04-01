@@ -22,7 +22,32 @@ mod_darhmod_precursor_seres_secrets = {
 mod_darhmod_precursor_seres_secrets_final = {
 	ship_accuracy_add = 25
 	ship_tracking_add = 25
-	ship_evasion_mult = 0.25
+	ship_evasion_mult = 0.25	
+}
+
+mod_darhmod_precursor_seres_diplo = {
+	diplo_weight_economy_mult = -3
+	diplo_weight_mult = -3
+	
+	country_admin_cap_mult = -1
+	pop_citizen_happiness = -1
+	planet_crime_add = 100
+	pop_environment_tolerance = -1
+	pop_government_ethic_attraction = -2
+	planet_stability_add = -50
+	
+	country_minerals_produces_mult = -1
+	country_energy_produces_mult = -1
+	country_alloys_produces_mult = -1
+	
+	ships_upkeep_mult = 1
+	country_subject_power_penalty_mult = 2.0
+	
+	ship_weapon_damage = -0.50
+	ship_hull_mult = -0.50
+	ship_armor_mult = -0.50
+	ship_shield_mult = -0.50
+	ship_fire_rate_mult = -0.50
 }
 
 ### RESOURCE DEFICITS
@@ -35,15 +60,7 @@ dilithium_crystals_deficit = {
 quartz_crystals_deficit = {
 	custom_tooltip = quartz_crystals_deficit_tooltip
 	ship_ftl_jumpdrive_range_mult = -0.80
-	
-#living_metal_deficit = {
-#	custom_tooltip = living_metal_deficit_tooltip
-#	ship_armor_mult = -0.25
-	
-#dark_matter_deficit = {
-#	custom_tooltip = dark_matter_deficit_tooltip
-#	ship_shield_mult = -0.25		
-	
+}
 	
 	
 	

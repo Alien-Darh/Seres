@@ -48,7 +48,7 @@ building_affluence_centerx = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			minor_artifacts = 0.05
+			minor_artifacts = 0.2
 			consumer_goods = 50			
 		}
 		cost = {
@@ -57,7 +57,7 @@ building_affluence_centerx = {
 		}
 		upkeep = {
 			influence = 1	
-			minerals = 250
+			minerals = 100
 			energy = 100
 		}
 	}
@@ -360,7 +360,7 @@ building_nano_forgex = {
 			minerals = 800
 		}
 		upkeep = {
-			minerals = 200
+			minerals = 100
 			energy = 100
 		}
 	}

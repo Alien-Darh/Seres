@@ -288,3 +288,76 @@ country_event = {
 		}
 	}			
 }
+
+country_event = {
+	id = seres_init.03
+	title = "seres_init.03.name"
+	desc = "seres_init.03.desc"
+	show_sound = event_swarm_crisis_ambient_stage_final_01
+
+	diplomatic = yes
+	fire_only_once = yes
+
+	picture_event_data = {
+		room = seres_space_room
+	}
+	
+	trigger = {	
+		owner = { is_ai = no }
+        OR = {
+            has_global_flag = prethoryn_invasion_defeated
+            has_global_flag = ai_invasion_defeated
+            has_global_flag = extradimensional_invasion_defeated
+        }
+    }
+	
+	option = {
+		name = seres_init.03.a
+
+		hidden_effect = {			
+			add_modifier = {	
+				modifier = mod_darhmod_precursor_seres_diplo
+				days = -1	
+			}
+			if = {
+				limit = {
+					is_ai = no
+					has_country_flag = darhmod_precursor_seres_finished
+				}
+			force_add_civic = civic_machine_assimilator
+			}
+			root = {
+				capital_scope = {
+				while = {
+					count = 3
+					remove_district = district_generator
+				}
+				add_planet_devastation = 100
+				}
+			}
+			remove_country_flag = ai_no_wars
+			total_war = yes
+			country_event = { id = war_in_heaven.1000 }			
+        }
+	}	
+	
+	option = {
+		name = seres_init.03.b
+		hidden_effect = {	
+			country_event = { id = seres_init.04 }
+		}	
+	}			
+}
+
+country_event = {
+	id = seres_init.04
+	title = "seres_init.04.name"
+	desc = "seres_init.04.desc"
+	picture = GFX_evt_seres_init_end
+	show_sound = event_swarm_crisis_ambient_stage_final_01
+	is_triggered_only = yes
+	
+	option = {
+		name = seres_init.04.a
+	}	
+}

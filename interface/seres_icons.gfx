@@ -104,5 +104,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/small_space_battle_2.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes				
-	}						
+	}
+	spriteType = {
+		name = "GFX_evt_seres_init_end"
+		texturefile = "gfx/event_pictures/seres_init_end.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes				
+	}					
 }

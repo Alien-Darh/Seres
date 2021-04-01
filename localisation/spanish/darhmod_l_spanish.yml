@@ -1,6 +1,5 @@
 ﻿l_spanish:
 
-
   seres_init.01.name:0 "Precursor Seres de luz"
   seres_init.01.desc:0 "En el año 2200 se ha encontrado algún tipo de puerta estelar oculta en los limites del sistema §H[Root.Solar_System.GetName]§!.\n\nHay vestigios que alguna vez fue usada hace miles de años por alguna civilización §HAlienígena avanzada§! para viajar entre las estrellas y ahora nosotros estamos muy cerca de descubrir la forma de viajar a través de ellos gracias a los avances en propulsión espacial.\n\nSe especula que hay múltiples conexiones de vías interestelares que nos llevarán a conocer los confines de la galaxia y sus secretos... donde nadie había podido estar antes o imaginar de alguna forma."
   seres_init.01.a:0 "Inicio avanzado"
@@ -10,7 +9,16 @@
   seres_init.02.desc:0 "Hemos detectado el arribo de una gran amenaza galáctica... si aun no haz podido conseguir las tecnologías avanzadas de nuestros antiguos rivales, nosotros podemos ayudarte a conseguirlas pero deberás investigarlas para adaptarlas a las naves... o quizás prefieras otras alternativas para enfrentar esta crisis galáctica."
   seres_init.02.a:0 "Increíble tecnología."
   seres_init.02.b:0 "Interesante opción."
-  seres_init.02.c:0 "Excelente avance." 
+  seres_init.02.c:0 "Excelente avance."
+  
+  seres_init.03.name:0 "Seres de Luz"
+  seres_init.03.desc:0 "La crisis ha sido derrotada nuevamente pero solo hemos visto la superficie en cuanto al funcionamiento de esta galaxia que solo es parte de una gran programación llamada §HMultiverso§! en donde el tiempo no existe... §HDonde el final, es el principio de todo...§!.\n\nDicen que el tiempo es la hoguera en la que ardemos... ¿Estarás listo para entender los secretos del universo sin quemarse?"
+  seres_init.03.a:0 "Si, estamos listos..."
+  seres_init.03.b:0 "No, aún no..."
+  
+  seres_init.04.name:0 "Seres de Luz"
+  seres_init.04.desc:0 "Sabia decisión... nos haz asombrado con tu nivel estratégico y sabiduría, sin duda estas listo para ascender a niveles mas allá de la comprensión.\n\nNos volveremos a ver pronto..."
+  seres_init.04.a:0 "Hasta entonces..."
   
   ### ETC ###
   darhmod_relic_activation_cooldown:0 "Special $relic_activation_cooldown$"
@@ -139,10 +147,10 @@
   mod_r_darhmod_seres_last_projector:0 "Ultra Crisis Paradox"
   mod_r_darhmod_seres_last_projector_tooltip:0 "§HDesbloquea:§!"
 
-  artifact_darhmod_precursor_seres_research:0 "Secretos de los Seres de Luz."
+  artifact_darhmod_precursor_seres_research:0 "Secretos de los Seres de Luz"
   artifact_darhmod_precursor_seres_research_desc:0 "Profundizar los Secretos de los Seres de Luz"
-  DARHMOD_PRECURSOR_SERES_SECRETS:0 "Investigar secretos de los Seres de Luz."
-  DARHMOD_PRECURSOR_SERES_SECRETS_DESC:0 "Examinar el templo en busca de mas tecnología."
+  DARHMOD_PRECURSOR_SERES_SECRETS:0 "Investigar secretos de los Seres de Luz"
+  DARHMOD_PRECURSOR_SERES_SECRETS_DESC:0 "Examinar el templo en busca de mas tecnología"
 
   darhmod_seres.18.name:0 "Armadura Ultra Defensa"
   darhmod_seres.18.desc:0 "Parece que se había descubierto de alguna manera la forma de materializar energía de la reliquia en armadura, pero nunca pudieron ponerla en práctica. Nuestras flotas podrían usar esto cuando este terminado.\n\nAdemás se han encontrado planos detallados de edificios y armamento ancestral que nuestros científicos estudiarán para incluirlos a nuestros planetas y naves respectivamente..."
@@ -153,3 +161,6 @@
   
   mod_darhmod_precursor_seres_secrets_final:0 "Impulso precursor"
   mod_darhmod_precursor_seres_secrets_final_desc:0 "Ayuda Ancestral"
+  
+  mod_darhmod_precursor_seres_diplo:0 "Arrogancia"
+  mod_darhmod_precursor_seres_diplo_desc: "Creer que somos dignos es un error que vemos todo el tiempo"
