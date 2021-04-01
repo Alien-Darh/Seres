@@ -25,6 +25,13 @@ mod_darhmod_precursor_seres_secrets_final = {
 	ship_evasion_mult = 0.25	
 }
 
+mod_seres_homeworld = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_factory.dds"
+	country_society_research_produces_add = 10
+	country_physics_research_produces_add = 10
+	country_engineering_research_produces_add = 10
+}
+
 mod_darhmod_precursor_seres_diplo = {
 	diplo_weight_economy_mult = -3
 	diplo_weight_mult = -3

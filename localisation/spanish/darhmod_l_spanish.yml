@@ -164,3 +164,7 @@
   
   mod_darhmod_precursor_seres_diplo:0 "Arrogancia"
   mod_darhmod_precursor_seres_diplo_desc: "Creer que somos dignos es un error que vemos todo el tiempo"
+  
+  mod_seres_homeworld:0 "Capital Seres de Luz"
+  mod_seres_homeworld_desc:0 "Este mausoleo planetario fue antaño el flamante centro administrativo de esta gran civilización. Ya no alberga vida, pero las ruinas de la ciudad que antes cubría toda su superficie se pueden encontrar por todas partes."
+  

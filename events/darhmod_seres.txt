@@ -976,7 +976,11 @@ fleet_event = {
 			change_pc = pc_relic
 			hidden_effect = {
 				set_planet_size = 25
-				relic_world_deposits = yes					
+				relic_world_deposits = yes
+				add_modifier = {
+					modifier = "mod_seres_homeworld"
+					days = -1
+				}				
 			}					
 		}		
 	}
