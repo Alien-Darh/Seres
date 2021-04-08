@@ -173,9 +173,7 @@ building_dimensional_fabricatorx = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_zro = 1
-			sr_dark_matter = 1
-			sr_living_metal = 1		
+			sr_quartz_crystals = 3
 		}
 		cost = {
 			minerals = 1000
@@ -198,6 +196,55 @@ building_dimensional_fabricatorx = {
 	}
 }
 
+building_dimensional_fabricatorxx = {
+	base_buildtime = 900
+	can_demolish = yes
+	base_cap_amount = 1
+	icon = building_nanite_transmuterxx
+	
+	prerequisites = { "tech_dimensional_fabricator" }
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	
+	potential = {
+		custom_tooltip = {
+			text = EMPIRE_UNIQUE_BUILDING
+			OR = {
+				owner = { is_regular_empire = yes }
+				owner = { has_technology = "tech_dimensional_fabricator" }
+				check_variable = { which = dimensional_fabricatorxx_build_count value >= 1 }
+			}
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+	
+	resources = {
+		category = planet_buildings
+		produces = {
+			sr_dilithium_crystals = 3
+		}
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 100
+		}
+	}
+
+	on_queued = {
+		owner = {
+			subtract_variable = { which = dimensional_fabricatorxx_build_count value = 1 }
+		}
+	}
+
+	on_unqueued = {
+		owner = {
+			change_variable = { which = dimensional_fabricatorxx_build_count value = 1 }
+		}
+	}
+}
 
 building_class_4_singularityx = {
 	base_buildtime = 900

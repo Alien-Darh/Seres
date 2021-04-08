@@ -95,8 +95,10 @@
   tech_dimensional_fabricator_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind factory that will take us a step further in the knowledge of new elements of the universe."
   TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE:0 "Eccentric factory §YBeings of Light§!"
   TECH_UNLOCK_DIMENSIONAL_FABRICATOR_DESC:0 "Dimensional factory"
-  building_dimensional_fabricatorx:0 "Dimensional factory"
-  building_dimensional_fabricatorx_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind factory that will take us a step further in the knowledge of new elements of the universe."
+  building_dimensional_fabricatorx:0 "Quartz factory"
+  building_dimensional_fabricatorx_desc:0 "Thanks to the latest technologies found, artificial quartz can be replicated in our advanced laboratories"
+  building_dimensional_fabricatorxx:0 "Dilithium factory"
+  building_dimensional_fabricatorxx_desc:0 "Thanks to the latest technologies found, dilithium artificial can be replicated in our advanced laboratories"
   
   tech_nourishment_center:0 "Nutrition center"
   tech_nourishment_center_desc:0 "Thanks to the detailed plans in the libraries of the §YLight beings§! we have managed to access this impressive one-of-a-kind nutrition center that will take us one step further in the development of new food technologies."

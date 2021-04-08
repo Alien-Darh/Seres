@@ -65,11 +65,6 @@
  quartz_crystals:0 "Déficit de Cuarzo"
  quartz_crystals_deficit_tooltip:0 "Una falta de Cuarzo dejará a las naves con rango de salto reducido."
  
- sm_dilithium_refinery:0 "Laboratorio Dilithium"
- sm_dilithium_refinery_desc:0 "Gracias a las ultimas tecnologías encontradas se puede replicar Dilithium artificial en nuestros laboratorios avanzados"
- sm_quartz_refinery:0 "Laboratorio Cuarzo"
- sm_quartz_refinery_desc:0 "Gracias a las ultimas tecnologías encontradas se puede replicar Cuarzo artificial en nuestros laboratorios avanzados"
- 
  edict_fuel_gases_dilithium:0 "Dilithium reactivo"
  edict_fuel_gases_dilithium_desc:0 "Al exponer Dilithium a fuertes radiaciones de rayos gamma en nuestros laboratorios, estos pueden ser almacenadas en nuestras naves por un breve periodo para acelerar la navegación."
  

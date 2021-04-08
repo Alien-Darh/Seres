@@ -4,8 +4,8 @@
 
 tech_sbs_swarmer_missiles_3 = {
 	area = physics
-	cost = 0
-	tier = 0
+	cost = @tier4cost3
+	tier = 4
 	category = { propulsion }
 	ai_update_type = military
 	weight = 0
@@ -50,7 +50,7 @@ tech_sbs_swarmer_missiles_3 = {
 
 tech_sbs_swarmer_missiles_4 = {
 	area = physics
-	cost = @tier4cost3
+	cost = @tier5cost1
 	tier = 4
 	category = { propulsion }
 	ai_update_type = military
@@ -97,7 +97,7 @@ tech_sbs_swarmer_missiles_4 = {
 
 tech_sbs_swarmer_missiles_5 = {
 	area = physics
-	cost = @tier5cost1
+	cost = @tier5cost2
 	tier = 5
 	category = { propulsion }
 	ai_update_type = military

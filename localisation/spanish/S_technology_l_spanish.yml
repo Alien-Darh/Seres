@@ -95,8 +95,10 @@
   tech_dimensional_fabricator_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a esta impresionante fabrica única en su clase que nos impulsará un paso mas allá en el conocimiento de nuevos elementos del universo."
   TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE:0 "Fábrica excéntrica §YSeres de luz§!"
   TECH_UNLOCK_DIMENSIONAL_FABRICATOR_DESC:0 "Fábrica Dimensional"
-  building_dimensional_fabricatorx:0 "Fábrica dimensional"
-  building_dimensional_fabricatorx_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a esta impresionante fábrica única en su clase que nos impulsará un paso mas allá en el conocimiento de nuevos elementos del universo."
+  building_dimensional_fabricatorx:0 "Fábrica de cuarzo"
+  building_dimensional_fabricatorx_desc:0 "Gracias a las ultimas tecnologías encontradas se puede replicar Cuarzo artificial en nuestros laboratorios avanzados"
+  building_dimensional_fabricatorxx:0 "Fábrica de Dilithium"
+  building_dimensional_fabricatorxx_desc:0 "Gracias a las ultimas tecnologías encontradas se puede replicar Dilithium artificial en nuestros laboratorios avanzados"
   
   tech_nourishment_center:0 "Centro de nutrición"
   tech_nourishment_center_desc:0 "Gracias a los planos detallados en las bibliotecas de los §YSeres de luz§! hemos conseguido acceder a este impresionante centro de nutrición único en su clase que nos impulsará un paso mas allá en la elaboración de nuevas tecnologías alimenticias."

@@ -29,14 +29,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/resources/sr_quartz_crystals_large.dds"
 	}
 	spriteType = {
-		name = "GFX_spaceport_module_dilithium"
-		texturefile = "gfx/interface/icons/modules/spaceport_module_dilithium.dds"   
-	}
-	spriteType = {
-		name = "GFX_spaceport_module_quartz"
-		texturefile = "gfx/interface/icons/modules/spaceport_module_quartz.dds"  
-	}
-	spriteType = {
 		name = "GFX_resource_archaeological_artifacts"
 		texturefile = "gfx/interface/icons/resources/archaeological_artifacts.dds"  
 	}

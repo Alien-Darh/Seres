@@ -110,5 +110,23 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/seres_init_end.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes				
-	}					
+	}
+	spriteType = {
+		name = "GFX_evt_star_chart_2"
+		texturefile = "gfx/event_pictures/star_chart_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_shattered_planet_2"
+		texturefile = "gfx/event_pictures/shattered_planet_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_big_bang"
+		texturefile = "gfx/event_pictures/big_bang.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}			
 }

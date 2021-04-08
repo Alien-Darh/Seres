@@ -337,8 +337,8 @@ country_event = {
 			}
 			remove_country_flag = ai_no_wars
 			total_war = yes
-			country_event = { id = war_in_heaven.1000 }			
-        }
+			country_event = { id = seres_init.05 }
+		}			
 	}	
 	
 	option = {
@@ -359,5 +359,18 @@ country_event = {
 	
 	option = {
 		name = seres_init.04.a
+	}	
+}
+
+country_event = {
+	id = seres_init.05
+	title = "seres_init.05.name"
+	desc = "seres_init.05.desc"
+	picture = GFX_evt_big_bang
+	show_sound = event_swarm_crisis_ambient_stage_final_01
+	is_triggered_only = yes
+	
+	option = {
+		name = seres_init.05.a
 	}	
 }

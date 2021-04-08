@@ -1,6 +1,6 @@
 DARH_seres_site_1 = {
 	desc = "DARH_seres_site_1_desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_satellite_in_orbit
 	stages = 3
 	weight = { base = 0 } 
 	
