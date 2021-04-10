@@ -73,7 +73,30 @@ country_event = {
 	
 	option = {
 		name = seres_init.01.b
-	}	
+		hidden_effect = {
+			every_planet = {
+					limit = {
+						OR = {
+							is_planet_class = pc_asteroid
+							is_planet_class = pc_ice_asteroid
+						}	
+					}		
+					every_deposit = {
+						limit = {
+							OR = {
+								is_deposit_type = d_dilithium_crystals_1
+								is_deposit_type = d_dilithium_crystals_2
+								is_deposit_type = d_dilithium_crystals_3
+								is_deposit_type = d_quartz_crystals_1
+								is_deposit_type = d_quartz_crystals_2
+								is_deposit_type = d_quartz_crystals_3
+							}	
+						}
+						remove_deposit = yes
+					}
+				}	
+			}	
+		}	
 }
 
 planet_event = {

@@ -152,19 +152,21 @@ building_dimensional_fabricatorx = {
 	base_cap_amount = 1
 	icon = building_nanite_transmuterx
 	
-	prerequisites = { "tech_dimensional_fabricator" }
+	prerequisites = { "tech_mine_quartz_crystals" }
 
 	allow = {
-		has_major_upgraded_capital = yes
+		has_fully_upgraded_capital = yes
 	}
 	
 	potential = {
 		custom_tooltip = {
 			text = EMPIRE_UNIQUE_BUILDING
+			exists = owner
 			OR = {
 				owner = { is_regular_empire = yes }
-				owner = { has_technology = "tech_dimensional_fabricator" }
-				check_variable = { which = dimensional_fabricatorx_build_count value >= 1 }
+				owner = {
+					check_variable = { which = dimensional_fabricatorx_build_count value >= 1 }
+				}
 			}
 		}
 		NOT = { has_modifier = slave_colony }
@@ -176,10 +178,10 @@ building_dimensional_fabricatorx = {
 			sr_quartz_crystals = 3
 		}
 		cost = {
-			minerals = 1000
+			minerals = 25
 		}
 		upkeep = {
-			energy = 100
+			energy = 5
 		}
 	}
 
@@ -202,19 +204,21 @@ building_dimensional_fabricatorxx = {
 	base_cap_amount = 1
 	icon = building_nanite_transmuterxx
 	
-	prerequisites = { "tech_dimensional_fabricator" }
+	prerequisites = { "tech_mine_dilithium_crystals" }
 
 	allow = {
-		has_major_upgraded_capital = yes
+		has_fully_upgraded_capital = yes
 	}
 	
 	potential = {
 		custom_tooltip = {
 			text = EMPIRE_UNIQUE_BUILDING
+			exists = owner			
 			OR = {
 				owner = { is_regular_empire = yes }
-				owner = { has_technology = "tech_dimensional_fabricator" }
-				check_variable = { which = dimensional_fabricatorxx_build_count value >= 1 }
+				owner = {
+					check_variable = { which = dimensional_fabricatorxx_build_count value >= 1 }
+				}
 			}
 		}
 		NOT = { has_modifier = slave_colony }
@@ -226,10 +230,10 @@ building_dimensional_fabricatorxx = {
 			sr_dilithium_crystals = 3
 		}
 		cost = {
-			minerals = 1000
+			minerals = 25
 		}
 		upkeep = {
-			energy = 100
+			energy = 5
 		}
 	}
 

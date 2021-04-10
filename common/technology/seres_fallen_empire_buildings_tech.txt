@@ -60,46 +60,46 @@ tech_class_4_singularity = {
 	}	
 }
 
-tech_dimensional_fabricator = {
-    area = engineering
-    cost = @tier5cost3
-    tier = 5
-    weight = @tier5weight3
-    category = { materials }
-    is_rare = yes
-	prerequisites = { "tech_building_seres" }
-	
-	prereqfor_desc = {
-		custom = {
-			title = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE"
-			desc = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_DESC"
-		}
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
-		}
-        modifier = {
-            factor = 0
-			years_passed < 175
-        }				
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
-		}
-	}
-}
+#tech_dimensional_fabricator = {
+#    area = engineering
+#    cost = @tier2cost2
+#    tier = 2
+#    weight = @tier2weight2
+#    category = { materials }
+#   is_rare = yes
+#	prerequisites = { "tech_colonial_centralization" }
+#	
+#	prereqfor_desc = {
+#		custom = {
+#			title = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE"
+#			desc = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_DESC"
+#		}
+#	}
+#
+#	weight_modifier = {
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_materials"
+#			}
+#		}
+#        modifier = {
+#           factor = 0
+#			years_passed < 175
+#        }				
+#	}
+#
+#	ai_weight = {
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_materials"
+#			}
+#		}
+#	}
+#}
 
 tech_nourishment_center = {
     area = society

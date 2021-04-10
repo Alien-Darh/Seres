@@ -231,7 +231,7 @@ darhmod_seres_home_system = {
 			set_planet_flag = amoeba_ice_asteroid_1		
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_quartz_crystals_1				
+			add_deposit = d_alloys_2		
 		}
 	}
 	
@@ -245,8 +245,8 @@ darhmod_seres_home_system = {
 			save_event_target_as = amoeba_ice_asteroid_2
 			set_planet_flag = amoeba_ice_asteroid_2		
 			prevent_anomaly = yes
-			clear_deposits = yes			
-			add_deposit = d_dilithium_crystals_1		
+			clear_deposits = yes
+			add_deposit = d_alloys_2				
 		}
 	}
 	

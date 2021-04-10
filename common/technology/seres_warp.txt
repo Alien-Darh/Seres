@@ -50,7 +50,7 @@ tech_mod_warp_drive_1 = {
 	
 
 tech_mod_warp_drive_2 = {
-	cost = @tier2cost3
+	cost = @tier3cost1
 	area = physics
 	tier = 2
 	is_rare = yes
@@ -58,7 +58,7 @@ tech_mod_warp_drive_2 = {
 	is_reverse_engineerable = no
 	ai_update_type = all
 	prerequisites = { "tech_mod_warp_drive_1" "tech_cold_fusion_power" }
-	weight = @tier2weight3
+	weight = @tier3weight1
 	
 	weight_modifier = {
 		modifier = {
@@ -96,15 +96,15 @@ tech_mod_warp_drive_2 = {
 }
 
 tech_mod_warp_drive_3 = {
-	cost = @tier3cost2
+	cost = @tier4cost1
 	area = physics
-	tier = 3
+	tier = 4
 	is_rare = yes
 	category = { particles }
 	is_reverse_engineerable = no
 	ai_update_type = all
 	prerequisites = { "tech_mod_warp_drive_2" "tech_antimatter_power" }
-	weight = @tier3weight2
+	weight = @tier4weight1
 	
 	weight_modifier = {
 		modifier = {

@@ -544,7 +544,7 @@ darhmod_seres_home_system_03 = {
 		init_effect = {	
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_quartz_crystals_1
+			add_deposit = d_alloys_2
 			
 			create_fleet = {
 				effect = {
@@ -580,9 +580,8 @@ darhmod_seres_home_system_03 = {
 		
 		init_effect = {	
 			prevent_anomaly = yes
-			clear_deposits = yes			
-			add_deposit = d_dilithium_crystals_1		
-			
+			clear_deposits = yes
+			add_deposit = d_alloys_2			
 			create_fleet = {
 				effect = {
 					set_owner = event_target:marauder_country_2

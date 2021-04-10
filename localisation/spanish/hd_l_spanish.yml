@@ -21,7 +21,7 @@
 
  TECH_UNLOCK_WORMHOLE_RELAY_1_TITLE:0 "§SDesbloquea el componente:§! Motor de gusano I"
  TECH_UNLOCK_WORMHOLE_RELAY_1_DESC:0 "Las naves equipadas con moduladores de agujeros de gusano temporales son creados artificialmente para permitir el paso entre sistemas."
- tech_wormhole_relays_1:0 "Agujeros de gusano temporales"
+ tech_wormhole_relays_1:0 "Agujeros de gusano"
  tech_wormhole_relays_1_desc:0 "Abriendo túneles directamente por el subespacio se puede establecer un conducto entre dos puntos distintos del espacio normal. El viaje entre ellos será casi instantáneo."
  MOD_RELAY_1:0 "Motor de gusano I"
  MOD_RELAY_1_DESC:0 "Abriendo túneles directamente por el subespacio se puede establecer un conducto entre dos puntos distintos del espacio normal. El viaje entre ellos será casi instantáneo."
@@ -80,7 +80,7 @@
  tech_mine_dilithium_crystals:0 "Minas de Dilithium"
  tech_mine_dilithium_crystals_desc:0 "Con la extracción de estos cristales nuestros científicos pueden hacer posible que los motores de curvatura permitan el viaje UL desde y hasta los bordes de los sistemas estelares."
  
- TECH_MINE_QUARTZ_CRYSTALS_TITLE:0 "§SDesbloquea la tecnología:§! Agujeros de gusano temporales"
+ TECH_MINE_QUARTZ_CRYSTALS_TITLE:0 "§SDesbloquea la tecnología:§! Agujeros de gusano"
  TECH_MINE_QUARTZ_CRYSTALS_DESC:0 "Con la extracción de estos cristales nuestros científicos puedes hacer posible que los motores experimentales temporales de gusano permitan el viaje UL desde y hasta los bordes de los sistemas estelares a gran distancia."
  tech_mine_quartz_crystals:0 "Minas de Cuarzo"
  tech_mine_quartz_crystals_desc:0 "Con la extracción de estos cristales nuestros científicos puedes hacer posible que los motores experimentales temporales de gusano permitan el viaje UL desde y hasta los bordes de los sistemas estelares a gran distancia."

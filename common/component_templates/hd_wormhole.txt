@@ -20,9 +20,9 @@
 @acr3 = 10
 @acr4 = 15
 
-@eva2 = 0.05
-@eva3 = 0.10
-@eva4 = 0.15
+@eva2 = 0.15
+@eva3 = 0.20
+@eva4 = 0.25
 
 ### Wormhole
 
@@ -133,6 +133,5 @@ utility_component_template = {
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "tech_wormhole_relays_3" }
-	upgrades_to = "JUMP_DRIVE_1"
 	component_set = "ftl_components"
 }

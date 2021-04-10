@@ -40,9 +40,4 @@ tech_mind_control = {
 			has_civic = civic_machine_servitor
 		}
 	}
-
-	feature_flags = {
-		modify_traits
-		pop_self_modification
-	}
 }
