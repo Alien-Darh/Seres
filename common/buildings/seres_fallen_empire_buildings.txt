@@ -56,7 +56,7 @@ building_affluence_centerx = {
 			influence = 100
 		}
 		upkeep = {
-			influence = 1	
+			influence = 0.25
 			minerals = 100
 			energy = 100
 		}
@@ -129,6 +129,7 @@ building_nourishment_centerx = {
 			minerals = 800
 		}
 		upkeep = {
+			influence = 0.25
 			energy = 100
 		}
 	}
@@ -175,12 +176,13 @@ building_dimensional_fabricatorx = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_quartz_crystals = 3
+			sr_quartz_crystals = 5
 		}
 		cost = {
 			minerals = 25
 		}
 		upkeep = {
+			influence = 0.25
 			energy = 5
 		}
 	}
@@ -227,12 +229,13 @@ building_dimensional_fabricatorxx = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_dilithium_crystals = 3
+			sr_dilithium_crystals = 5
 		}
 		cost = {
 			minerals = 25
 		}
 		upkeep = {
+			influence = 0.25		
 			energy = 5
 		}
 	}
@@ -329,6 +332,7 @@ building_class_4_singularityx = {
 			minerals = 800
 		}		
 		upkeep = {
+			influence = 0.25
 			minerals = 100
 		}
 	}
@@ -411,6 +415,7 @@ building_nano_forgex = {
 			minerals = 800
 		}
 		upkeep = {
+			influence = 0.25
 			minerals = 100
 			energy = 100
 		}
@@ -496,6 +501,7 @@ building_master_archivex = {
 			society_research = 50
 		}
 		upkeep = {
+			influence = 0.25
 			energy = 100
 		}
 	}
@@ -548,6 +554,7 @@ building_fe_domex = {
 			minerals = 800
 		}
 		upkeep = {
+			influence = 0.25		
 			energy = 100
 		}
 	}
@@ -608,6 +615,7 @@ building_fe_strongholdx = {
 			minerals = 800
 		}
 		upkeep = {
+			influence = 0.25
 			energy = 100
 		}
 	}

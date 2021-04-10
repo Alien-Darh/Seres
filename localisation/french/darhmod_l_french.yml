@@ -23,7 +23,7 @@
   seres_init.05.name:0 "Beings of light"
   seres_init.05.desc:0 "Superb decision... This time you have taken the wrong way to follow, you are definitely not ready to ascend to levels beyond understanding.\n\nWe will see each other soon..."
   seres_init.05.a:0 "Until then..."
-  
+
   ### ETC ###
   darhmod_relic_activation_cooldown:0 "Special $relic_activation_cooldown$"
   darhmod_special_relic_cooldown_info:0 "Special Relic can be activated independently with normal relics."
@@ -67,7 +67,7 @@
   DARH_seres_site_2_desc:0 "The first probes have reached the coordinates located in §H[From.Planet.GetName]§! And the scanners indicate that it would be an installation under the surface, of industrial characteristics and assembly of components.\n\nThe entrance to the facilities is uncertain and only a terrestrial exploration team in §H[From.Planet.GetName]§! I could find out how to access your interior.\n\nThe installation still has some kind of very slight energy and no organic life is detected although if some type of mechanical movement is detected that can be seen through the scanners.\n\nA first team of explorers is directed to the coordinates for an archaeological study more closely."
  
   darhmod_seres.5.name:0 "Like at home"
-  darhmod_seres.5.desc:0 "After a time of exploration on the surface of §H[From.Planet.GetName]§!, the scientist §Y[Root.GetLeaderName]§! It was encountered an entrance which did not have any form of lock and without symbols that investigate was practically impossible to open, however, when the §HExploration Pups§! to the place, A portal was opened towards the interior as if they were waiting for us.\n\nWhile our engineers continue to discover technological advances from generators at the main facilities... The expedition to the interior has been delayed by the defense systems and will have to be very attentive not to activate any type of sensor that can put excavation at risk."
+  darhmod_seres.5.desc:0 "After a time of exploration at the facilities of §H[From.Planet.GetName]§!, the scientist §Y[Root.GetLeaderName]§! It was found with a kind of entrance which had no way of lock and without symbols that investigate was practically impossible to access, however, when the §HExploration pups§! to the place, A portal was opened towards the interior as if they were waiting for us.\n\nWhile our engineers continue to discover technological advances from generators at the main facilities... The expedition to the interior has been delayed by the defense systems and will have to be very attentive not to activate any type of sensor that can put excavation at risk."
   darhmod_seres.5.a:0 "Search for records"
 
   darhmod_seres.6.name:0 "Close up"

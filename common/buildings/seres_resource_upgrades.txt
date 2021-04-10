@@ -42,7 +42,7 @@ building_mote_harvesters_seres = {
 			minerals = 500
 		}
 		upkeep = {
-			energy = 4
+			energy = 5
 		}
 	}
 
@@ -99,7 +99,7 @@ building_gas_extractors_seres = {
 			minerals = 500
 		}
 		upkeep = {
-			energy = 4
+			energy = 5
 		}
 	}
 
@@ -156,7 +156,7 @@ building_crystal_mines_seres = {
 			minerals = 500
 		}
 		upkeep = {
-			energy = 4
+			energy = 5
 		}
 	}
 
