@@ -156,7 +156,8 @@ building_dimensional_fabricatorx = {
 	prerequisites = { "tech_mine_quartz_crystals" }
 
 	allow = {
-		has_fully_upgraded_capital = yes
+		has_major_upgraded_capital = yes
+		#has_fully_upgraded_capital = yes
 	}
 	
 	potential = {
@@ -176,7 +177,7 @@ building_dimensional_fabricatorx = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_quartz_crystals = 5
+			sr_quartz_crystals = 3
 		}
 		cost = {
 			minerals = 25
@@ -209,7 +210,8 @@ building_dimensional_fabricatorxx = {
 	prerequisites = { "tech_mine_dilithium_crystals" }
 
 	allow = {
-		has_fully_upgraded_capital = yes
+		has_major_upgraded_capital = yes
+		#has_fully_upgraded_capital = yes
 	}
 	
 	potential = {
@@ -229,7 +231,7 @@ building_dimensional_fabricatorxx = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_dilithium_crystals = 5
+			sr_dilithium_crystals = 3
 		}
 		cost = {
 			minerals = 25

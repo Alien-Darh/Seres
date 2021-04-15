@@ -24,7 +24,7 @@ utility_component_template = {
 		}
 
 		upkeep = {
-			sr_dilithium_crystals = 0.01
+			sr_dilithium_crystals = 0.02
 		}
 	}
 
@@ -61,7 +61,7 @@ utility_component_template = {
 		}
 
 		upkeep = {
-			sr_dilithium_crystals = 0.02
+			sr_dilithium_crystals = 0.05
 		}
 	}
 
@@ -98,7 +98,7 @@ utility_component_template = {
 		}
 
 		upkeep = {
-			sr_dilithium_crystals = 0.2
+			sr_dilithium_crystals = 0.1
 		}
 	}
 
