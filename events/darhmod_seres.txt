@@ -671,7 +671,7 @@ fleet_event = {
 		name = darhmod_seres.12.a
 		hidden_effect = {
 			set_spawn_system_batch = begin	
-			random_planet = {
+			random_galaxy_planet = {
 				limit = { has_planet_flag = darhmod_seres_near_home_colony }
 				random_list = {
 					10 = { 				
@@ -851,7 +851,7 @@ country_event = {
 	immediate = {
 		log = "[event_target:darhmod_seres_12_temp.GetName]"
 		set_spawn_system_batch = begin
-		random_planet = {
+		random_galaxy_planet = {
 			limit = { has_planet_flag = darhmod_seres_near_home_colony }
 			random_list = {
 				33 = { 				
@@ -1013,11 +1013,7 @@ fleet_event = {
 		medium_artifact_reward = yes
 		owner = {
 			add_resource = { energy = -1000 }
-			add_research_option = tech_arc_emitter_1
-			add_tech_progress = {
-				tech = tech_arc_emitter_1
-				progress = 0.25
-			}
+			add_research_option = tech_arc_emitter_3
 			add_research_option = tech_reactor_boosters_4
 		}		
 	}

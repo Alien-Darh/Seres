@@ -1,6 +1,6 @@
 DARH_seres_site_1 = {
 	desc = "DARH_seres_site_1_desc"
-	picture = GFX_evt_satellite_in_orbit
+	picture = GFX_evt_sonda
 	stages = 3
 	weight = { base = 0 } 
 	
@@ -192,7 +192,7 @@ DARH_seres_site_4 = {
 }
 DARH_seres_site_5 = {
 	desc = "DARH_seres_site_5_desc"
-	picture = GFX_evt_city_planet
+	picture = GFX_evt_capital
 	stages = 4
 	weight = { base = 0 }
 

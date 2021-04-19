@@ -19,8 +19,7 @@ seres_anomaly_category = {
 				is_planet_class = pc_frozen
 				is_planet_class = pc_barren_cold
 				is_planet_class = pc_molten				
-            }
-			#uninhabitable_regular_planet = yes			
+            }		
 			NOT = {
 				is_planet_class = pc_gas_giant	
 			}

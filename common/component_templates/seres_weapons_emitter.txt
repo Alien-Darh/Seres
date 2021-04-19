@@ -1,0 +1,103 @@
+# ####################
+#  Arc Emitter
+# ####################
+
+# ## Arc Emitter 3
+weapon_component_template = {
+	key = "ARC_EMITTER_3"
+	size = large
+	type = instant
+	
+	icon = "GFX_ship_part_arc_emitter_3"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	damage = { min = 560 max = 700 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 71
+	range = 150.0
+	accuracy = 1
+	armor_penetration = 1
+	shield_penetration = 1
+	power = -110
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+			rare_crystals = 4
+		}		
+		upkeep = {
+			energy = 5
+			alloys = 0.6
+		}
+	}
+	
+	prerequisites = { "tech_arc_emitter_3" }
+	component_set = "ARC_EMITTER_3"
+	projectile_gfx = "arc_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "ARC_EMITTER_4"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+# ## Arc Emitter 4
+weapon_component_template = {
+	key = "ARC_EMITTER_4"
+	size = large
+	type = instant
+	
+	icon = "GFX_ship_part_arc_emitter_4"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	damage = { min = 660 max = 800 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 71
+	range = 150.0
+	accuracy = 1
+	armor_penetration = 1
+	shield_penetration = 1
+	power = -130
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 475
+			rare_crystals = 5
+		}		
+		upkeep = {
+			energy = 10
+			alloys = 1
+		}
+	}
+	
+	prerequisites = { "tech_arc_emitter_4" }
+	component_set = "ARC_EMITTER_4"
+	projectile_gfx = "focused_arc_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
