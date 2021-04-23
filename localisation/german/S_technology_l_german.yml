@@ -53,15 +53,15 @@
   TITAN_BEHAVIOR_DESC:0 "§HArtillería táctica:§! The Titan stays behind the fleet formation to fire its primary weapons at the target (§Y200 pársec§!)"
   COMBAT_COMPUTER_TITAN:0 "Titan combat computer"
 
-  tech_arc_emitter_3:0 "Estabilors of arches in plasma"
-  tech_arc_emitter_3_desc:0 "Powerful weapons throwing an arc of energy rays in plasma to the objectives, capable of ignoring in part armor and shields."
+  tech_arc_emitter_3:0 "Phaser issuers"
+  tech_arc_emitter_3_desc:0 "Powerful weapons throwing an energy fasser arc to the objectives, capable of ignoring in part shield and shields."
   ARC_EMITTER_3:0 "$tech_arc_emitter_3$"
-  ARC_EMITTER_3_DESC:0 "Energy ray arc in plasma"
+  ARC_EMITTER_3_DESC:0 "Phaser arch"
   
-  tech_arc_emitter_4:0 "Estabilors of concentrated plasma arches"
-  tech_arc_emitter_4_desc:0 "These improved emitters have higher focus lenses, which involves a more potent discharge of energy in plasma"
+  tech_arc_emitter_4:0 "Concentrated Phaser Estabers"
+  tech_arc_emitter_4_desc:0 "These improved emitters have higher focus lenses, which involves a more powerful Phaser energy discharge."
   ARC_EMITTER_4:0 "$tech_arc_emitter_4$"
-  ARC_EMITTER_4_DESC:0 "Energy ray arc in ultra concentrated plasma"
+  ARC_EMITTER_4_DESC:0 "Ultra concentrated Phaser bow"
  
   ################ 
 
