@@ -26,18 +26,18 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 400
-			rare_crystals = 4
+			alloys = 148
+			exotic_gases = 2.2
 		}		
 		upkeep = {
-			energy = 5
-			alloys = 0.6
+			energy = 1.48
+			alloys = 0.296
 		}
 	}
 	
 	prerequisites = { "tech_arc_emitter_3" }
-	component_set = "ARC_EMITTER_3"
-	projectile_gfx = "arc_emitter"
+	component_set = "ARC_EMITTER_3"	
+	projectile_gfx = "gamma_laser_l"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
@@ -47,7 +47,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0
-			has_monthly_income = { resource = rare_crystals value <= 0 }
+			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}
 }
@@ -76,18 +76,18 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 475
-			rare_crystals = 5
+			alloys = 182
+			exotic_gases = 2.71
 		}		
 		upkeep = {
-			energy = 10
-			alloys = 1
+			energy = 1.52
+			alloys = 0.364
 		}
 	}
 	
 	prerequisites = { "tech_arc_emitter_4" }
 	component_set = "ARC_EMITTER_4"
-	projectile_gfx = "focused_arc_emitter"
+	projectile_gfx = "infrared_laser_l"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
@@ -96,7 +96,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0
-			has_monthly_income = { resource = rare_crystals value <= 0 }
+			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}
 }

@@ -10613,7 +10613,7 @@ country_event = {
 					initializer = vechtar_zavonia_system
 				}
 			}
-			add_extra_hyperlane_to_spawned_system_effect = yes
+			#add_extra_hyperlane_to_spawned_system_effect = yes
 		}
 		begin_event_chain = {
 			event_chain = "generation_ship_chain"
@@ -12524,7 +12524,7 @@ ship_event = {
 							max_jumps = 0
 							initializer = "star_crazy_fallback_system"
 						}
-						add_extra_hyperlane_to_spawned_system_effect = yes
+						#add_extra_hyperlane_to_spawned_system_effect = yes
 					}
 					save_event_target_as = anomalous_star_system
 					star = {

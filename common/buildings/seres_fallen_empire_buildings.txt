@@ -177,7 +177,7 @@ building_dimensional_fabricatorx = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_quartz_crystals = 3
+			sr_quartz_crystals = 2
 		}
 		cost = {
 			minerals = 25
@@ -231,7 +231,7 @@ building_dimensional_fabricatorxx = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_dilithium_crystals = 3
+			sr_dilithium_crystals = 2
 		}
 		cost = {
 			minerals = 25

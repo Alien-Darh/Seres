@@ -53,15 +53,15 @@
   TITAN_BEHAVIOR_DESC:0 "§HArtilleria táctica:§! El Titan se queda detrás de la formación de la flota para disparar sus armas principales al objetivo (§Y200 pársec§!)"
   COMBAT_COMPUTER_TITAN:0 "Ordenador de combate Titan"
   
-  tech_arc_emitter_3:0 "Emisores de arcos en plasma"
-  tech_arc_emitter_3_desc:0 "Armas potentes que lanzan un arco de rayos de energía en plasma a los objetivos, capaz de ignorar en parte blindaje y escudos."
+  tech_arc_emitter_3:0 "Emisores de fáser"
+  tech_arc_emitter_3_desc:0 "Armas potentes que lanzan un arco de fáser de energía a los objetivos, capaz de ignorar en parte blindaje y escudos."
   ARC_EMITTER_3:0 "$tech_arc_emitter_3$"
-  ARC_EMITTER_3_DESC:0 "Arco de rayos de energía en plasma"
+  ARC_EMITTER_3_DESC:0 "Arco de fáser"
   
-  tech_arc_emitter_4:0 "Emisores de arcos en plasma concentrados"
-  tech_arc_emitter_4_desc:0 "Estos emisores mejorados cuentan con lentes de enfoque superiores, lo cual comporta una descarga más potente de energía en plasma"
+  tech_arc_emitter_4:0 "Emisores de fáser concentrados"
+  tech_arc_emitter_4_desc:0 "Estos emisores mejorados cuentan con lentes de enfoque superiores, lo cual comporta una descarga más potente de energía fáser"
   ARC_EMITTER_4:0 "$tech_arc_emitter_4$"
-  ARC_EMITTER_4_DESC:0 "Arco de rayos de energía en plasma ultra concentrados"
+  ARC_EMITTER_4_DESC:0 "Arco de fáser ultra concentrados"
 
   ################
 

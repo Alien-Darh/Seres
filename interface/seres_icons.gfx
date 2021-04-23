@@ -141,4 +141,16 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_alert"
+		texturefile = "gfx/event_pictures/alert.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_secretos"
+		texturefile = "gfx/event_pictures/secretos.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}		
 }

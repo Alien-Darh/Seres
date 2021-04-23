@@ -69,7 +69,11 @@ tech_arc_emitter_4 = {
 				area = physics
 				has_trait = "leader_trait_expertise_particles"
 			}
-		}	
+		}
+        modifier = {
+            factor = 0
+			years_passed < 200
+        }						
 	}
 	
 	ai_weight = {

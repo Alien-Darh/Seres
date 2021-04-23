@@ -18,7 +18,7 @@ mod_r_darhmod_seres_last_projector = {
 mod_darhmod_precursor_seres_secrets = {
 	all_technology_research_speed = 0.1
 	planet_max_districts_add = 2
-	planet_max_buildings_add = 1
+	planet_max_buildings_add = 2
 }
 
 mod_darhmod_precursor_seres_secrets_final = {
