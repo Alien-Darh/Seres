@@ -6,3 +6,10 @@ component_set = {
 	icon = "GFX_ship_part_psi_armor"
 	icon_frame = 1
 }
+
+component_set = {
+	key = "MOD_RELAY_4"
+	
+	icon = "GFX_ship_part_wormhole_4"
+	icon_frame = 1
+}

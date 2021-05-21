@@ -152,5 +152,52 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/secretos.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_extra_portal"
+		texturefile = "gfx/event_pictures/extra_portal.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_extra_luna"
+		texturefile = "gfx/event_pictures/extra_luna.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_extra_acceso"
+		texturefile = "gfx/event_pictures/extra_acceso.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_extra_biblioteca"
+		texturefile = "gfx/event_pictures/extra_biblioteca.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_extra_aura"
+		texturefile = "gfx/event_pictures/extra_aura.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_extra_matrix"
+		texturefile = "gfx/event_pictures/extra_matrix.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_luna"
+		texturefile = "gfx/event_pictures/luna.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
 	}		
 }

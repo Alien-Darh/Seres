@@ -48,6 +48,7 @@ DARH_seres_site_1 = {
 		}
 	}
 }
+
 DARH_seres_site_2 = {
 	desc = "DARH_seres_site_2_desc"
 	picture = GFX_evt_underground_2
@@ -92,6 +93,7 @@ DARH_seres_site_2 = {
 		}
 	}
 }
+
 DARH_seres_site_3 = {
 	desc = "DARH_seres_site_3_desc"
 	picture = GFX_evt_exploding_planet
@@ -146,6 +148,7 @@ DARH_seres_site_3 = {
 		}
 	}
 }
+
 DARH_seres_site_4 = {
 	desc = "DARH_seres_site_4_desc"
 	picture = GFX_evt_surreal_visions
@@ -190,6 +193,7 @@ DARH_seres_site_4 = {
 		}
 	}
 }
+
 DARH_seres_site_5 = {
 	desc = "DARH_seres_site_5_desc"
 	picture = GFX_evt_capital

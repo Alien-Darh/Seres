@@ -1,0 +1,54 @@
+
+DARH_seres_site_extra_1 = {
+	desc = "DARH_seres_site_extra_1_desc"
+	picture = GFX_evt_extra_luna
+	max_instances = 1	
+	stages = 5
+	weight = {
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+
+	visible = {
+		default_site_visible_trigger = yes
+	}
+
+	on_visible = {
+		country_event = { id = story.5 days = 30 }
+	}
+
+	stage = {
+		difficulty = 10
+		icon = GFX_archaeology_runes_F1
+		event = seres_extra.3
+	}
+	stage = {
+		difficulty = 10
+		icon = GFX_archaeology_runes_F2
+		event = seres_extra.4
+	}
+	stage = {
+		difficulty = 10
+		icon = GFX_archaeology_runes_F3
+		event = seres_extra.5
+	}
+	stage = {
+		difficulty = 10
+		icon = GFX_archaeology_runes_F4
+		event = seres_extra.6
+	}
+	stage = {
+		difficulty = 10
+		icon = GFX_archaeology_runes_F5
+		event = seres_extra.7
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

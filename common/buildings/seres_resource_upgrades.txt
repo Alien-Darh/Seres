@@ -1,4 +1,4 @@
-######### Gas #########
+######### mote #########
 
 building_mote_harvesters_seres = { 
 	base_buildtime = 360 

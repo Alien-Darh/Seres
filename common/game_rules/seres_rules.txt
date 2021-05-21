@@ -12,10 +12,8 @@ can_enter_system_by_jump = {
 				has_star_flag = sealed_system
 			}
 		}
-
 		# L-Cluster
 		NOT = { has_star_flag = lcluster }
-		
 		#seres
 		NOT = { has_star_flag = darhmod_seres_home_system }	
 	}

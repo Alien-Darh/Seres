@@ -10,7 +10,7 @@ d_living_metal_deposit_1 = {
 			sr_living_metal = 1
 		}
 	}
-	station = shipclass_research_station 
+	station = shipclass_mining_station
 	is_for_colonizeable = no
 	
 	drop_weight = {
@@ -31,18 +31,18 @@ d_living_metal_deposit_1 = {
 
 d_living_metal_deposit_2 = {
 	resources = { 
-		category = orbital_research_deposits
+		category = orbital_mining_deposits
 		produces = {
 			sr_living_metal = 2
 		}
 	}
-	station = shipclass_research_station 
+	station = shipclass_mining_station
 	is_for_colonizeable = no
 	
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 5
+			weight = 10
 			OR = {
 				is_planet_class = pc_pulsar
 				is_planet_class = pc_neutron_star
@@ -53,13 +53,13 @@ d_living_metal_deposit_2 = {
 
 d_living_metal_deposit_3 = {
 	resources = { 
-		category = orbital_research_deposits
+		category = orbital_mining_deposits
 		produces = {
 		sr_living_metal = 3
 		}
 	}
 
-	station = shipclass_research_station 
+	station = shipclass_mining_station
 	is_for_colonizeable = no
 
 	drop_weight = {
@@ -69,13 +69,13 @@ d_living_metal_deposit_3 = {
 
 d_living_metal_deposit_10 = {
 	resources = { 
-		category = orbital_research_deposits
+		category = orbital_mining_deposits
 		produces = {
 			sr_living_metal = 10
 		}
 	}
 
-	station = shipclass_research_station 
+	station = shipclass_mining_station
 	is_for_colonizeable = no
 
 	drop_weight = {

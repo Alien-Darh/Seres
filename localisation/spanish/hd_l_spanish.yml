@@ -16,7 +16,7 @@
  MOD_WARP_DRIVE_3_DESC:0 "$WARP_DRIVE_1_DESC$"
  tech_mod_warp_drive_3:0 "Colectores de curvatura"
  tech_mod_warp_drive_3_desc:0 "Estos revolucionarios colectores se montan en los motores de curvatura y recogen las partículas, reponiendo el combustible de la nave."
-
+ 
 #########Wormhole#########################################
 
  TECH_UNLOCK_WORMHOLE_RELAY_1_TITLE:0 "§SDesbloquea el componente:§! Motor de gusano I"
@@ -39,6 +39,13 @@
  tech_wormhole_relays_3_desc:0 "Estos campos de contención permiten crear agujeros de gusano más potentes sin el peligro de desencadenar una súbita cascada de energía subespacial."
  MOD_RELAY_3:0 "Motor de gusano III"
  MOD_RELAY_3_DESC:0 "Abriendo túneles directamente por el subespacio se puede establecer un conducto entre dos puntos distintos del espacio normal. El viaje entre ellos será casi instantáneo."
+
+ TECH_UNLOCK_WORMHOLE_RELAY_4_TITLE:0 "§SDesbloquea el componente:§! Motor Ancestral"
+ TECH_UNLOCK_WORMHOLE_RELAY_4_DESC:0 "Estos revolucionarios colectores se montan en los motores de curvatura recogiendo materia oscura de los rayos cósmicos, permitiendo crear agujero de gusano artificial con un aerosol extremadamente raro de partículas exóticas, reponiendo el combustible de la nave."
+ tech_wormhole_relays_4:0 "§SDesbloquea el componente:§! Motor Ancestral"
+ tech_wormhole_relays_4_desc:0 "Estos campos de recolección permiten crear agujeros de gusano más potentes y estables sin el peligro de desencadenar una súbita cascada de energía subespacial."
+ MOD_RELAY_4:0 "Motor Ancestral"
+ MOD_RELAY_4_DESC:0 "Abriendo túneles temporales directamente por el subespacio se puede establecer un conducto entre dos puntos distintos del espacio cuántico. El viaje entre ellos será instantáneo sin afectar la materia tiempo/espacio."
  
  #########Tech Navegación##################################
  

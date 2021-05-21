@@ -1,0 +1,68 @@
+action_close_borders = {
+	icon = "GFX_diplomacy_status_closed_borders"
+	auto_accepted = yes
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	should_show_auto_accept_message_recipient = yes
+	#should_notify_all_communications = yes
+	action_type = negative
+	
+		possible = {
+		can_control_access_for = from
+		
+		custom_tooltip = {
+			fail_text = "requires_ap_galactic_contender"
+			OR = {
+				is_country_type = fallen_empire
+				from = { NOT = { is_country_type = fallen_empire } }
+				AND = {
+					has_ascension_perk = ap_galactic_contender
+					from = { is_country_type = fallen_empire }
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_technology_seres_codex"
+			OR = {
+				is_country_type = fallen_empire
+				from = { NOT = { is_country_type = awakened_fallen_empire } }
+				AND = {
+					has_technology = tech_seres_codex
+					from = { is_country_type = awakened_fallen_empire }
+				}
+			}
+		}
+	}
+}
+
+#		possible = {
+#		can_control_access_for = from
+#		
+#		custom_tooltip = {
+#			fail_text = "requires_ap_galactic_contender"
+#			OR = {
+#				is_country_type = fallen_empire
+#				from = { NOT = { is_country_type = fallen_empire } }
+#				AND = {
+#					has_ascension_perk = ap_galactic_contender
+#					from = { is_country_type = fallen_empire }
+#				}
+#			}
+#		}
+#	}
+
+#		custom_tooltip = {
+#			fail_text = "requires_ap_galactic_contender"
+#			if = { 
+#				limit = { from = { is_country_type = fallen_empire } }
+#			has_ascension_perk = ap_galactic_contender
+#			}
+#		}
+
+#		custom_tooltip = {
+#			fail_text = "requires_technology_seres_codex"
+#			if = { 
+#				limit = { from = { is_country_type = awakened_fallen_empire } }
+#			has_technology = tech_seres_codex
+#			}
+#		}		

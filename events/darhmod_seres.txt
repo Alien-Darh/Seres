@@ -840,11 +840,7 @@ fleet_event = {
 
 country_event = {
 	id = darhmod_seres.50
-	title = "darhmod_seres.50.name"
-	desc = "darhmod_seres.50.desc"
-	picture = GFX_evt_wormhole
-	show_sound = event_scanner	
-	#hide_window = yes
+	hide_window = yes
 	
 	is_triggered_only = yes
 
@@ -906,7 +902,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "darhmod_seres.50.a"	
+		#name = "darhmod_seres.50.a"	
 		owner = {
 			create_point_of_interest = {
 				id = darhmod_seres_hidden_planet_4
@@ -1028,12 +1024,15 @@ fleet_event = {
 	show_sound = event_wind_ruins
 	archaeology = yes
 	is_triggered_only = yes
+	
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
+	
 	after = {
 		from = { set_site_progress_locked = no }
 	}
+	
 	option = {
 		name = darhmod_seres.16.a
 		medium_artifact_reward = yes
@@ -1122,9 +1121,11 @@ country_event = {
 	desc = "darhmod_seres.18.desc"
 	picture = GFX_evt_secretos
 	is_triggered_only = yes
+	
 	option = {
 		name = darhmod_seres.18.a
-		give_technology = { tech = tech_psionic_armor }	
+		give_technology = { tech = tech_psionic_armor }
+		add_research_option = tech_seres_codex
 		add_modifier = {
 			modifier = mod_darhmod_precursor_seres_secrets
 			days = -1

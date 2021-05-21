@@ -1,7 +1,6 @@
 on_game_start = {
 	events = {
 		darhseres.1
-	}
 }
 
 on_entering_system_first_time = {
@@ -23,3 +22,9 @@ on_monthly_pulse = {
 		seres_init.03		
 	}
 }
+
+on_yearly_pulse_country = {
+	events = {
+		seres_extra.1
+	}
+}	

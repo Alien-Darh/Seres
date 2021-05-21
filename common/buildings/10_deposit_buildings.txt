@@ -44,7 +44,6 @@ building_mote_harvesters = {
 		}
 	}
 
-
 	upgrades = { 
 		"building_mote_harvesters_seres"
 	}
@@ -52,10 +51,6 @@ building_mote_harvesters = {
 	prerequisites = {
 		"tech_mine_volatile_motes"
 	}
-
-	ai_weight = {
-		weight = 1000
-	}#Always build the pop to work it can come later.
 }
 
 building_gas_extractors = {
@@ -107,10 +102,6 @@ building_gas_extractors = {
 	prerequisites = {
 		"tech_mine_exotic_gases"
 	}
-
-	ai_weight = {
-		weight = 1000
-	}#Always build the pop to work it can come later.
 }
 
 building_crystal_mines = {
@@ -161,10 +152,6 @@ building_crystal_mines = {
 	prerequisites = {
 		"tech_mine_rare_crystals"
 	}
-
-	ai_weight = {
-		weight = 1000
-	}#Always build the pop to work it can come later.
 }
 
 building_betharian_power_plant = {
@@ -225,10 +212,6 @@ building_betharian_power_plant = {
 
 	prerequisites = {
 		"tech_mine_betharian"
-	}
-
-	ai_weight = {
-		weight = 500
 	}
 }
 
@@ -303,9 +286,5 @@ building_xeno_zoo = {
 
 	triggered_desc = {
 		text = job_culture_worker_effect_desc
-	}
-
-	ai_weight = {
-		weight = 500
 	}
 }

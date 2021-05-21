@@ -37,7 +37,7 @@ darhmod_seres_home_system_02 = {
 		size = 25
 		deposit_blockers = none
 		modifiers = none
-		has_ring = yes
+		has_ring = yes	
 
 		change_orbit = @base_moon_distance
 
@@ -55,6 +55,7 @@ darhmod_seres_home_system_02 = {
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 10
 			size = 12
+			flags = { seres_extra_moon }			
 	
 			init_effect = {
 				clear_deposits = yes				

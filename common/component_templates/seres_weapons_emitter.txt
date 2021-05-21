@@ -80,7 +80,7 @@ weapon_component_template = {
 			exotic_gases = 2.71
 		}		
 		upkeep = {
-			energy = 1.52
+			energy = 1.55
 			alloys = 0.364
 		}
 	}

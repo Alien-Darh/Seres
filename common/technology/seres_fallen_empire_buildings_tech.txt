@@ -360,3 +360,23 @@ tech_utopian_paradise_dome = {
 		}
 	}
 }
+
+tech_seres_codex = {
+    area =society
+    cost = @tier5cost1
+    tier = 5
+    weight = 0
+    category = { statecraft }
+    is_rare = yes
+	
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_SERES_CODEX_TITLE"
+			desc = "TECH_SERES_CODEX_DESC"
+		}
+	}
+
+	ai_weight = {
+        weight = 0       
+	}
+}	

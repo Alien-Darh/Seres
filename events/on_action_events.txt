@@ -6271,6 +6271,87 @@ planet_event = {
 	}
 }
 
+# Purging: Gain resources from forced labor etc
+planet_event = {
+	id = action.22
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		fromfrom = {
+			OR = {
+				has_purge_type = { country = from type = purge_labor_camps }
+				has_purge_type = { country = from type = purge_matrix }
+				has_purge_type = { country = from type = purge_processing }
+			}
+		}
+		is_controlled_by = FROM
+	}
+
+	immediate = {
+		# Values are monthly amount * 4
+		if = {
+			limit = {
+				fromfrom = { has_purge_type = { country = from type = purge_labor_camps }  }
+			}
+			if = {
+				limit = {
+					fromfrom = {
+						is_robotic_species = no
+						is_lithoid = no
+					}
+				}
+				from = {
+					add_resource = {
+						food = 24
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					fromfrom = { is_lithoid = yes }
+				}
+				from = {
+					add_resource = {
+						minerals = 16
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					fromfrom = { is_robotic_species = yes }
+				}
+				from = {
+					add_resource = {
+						alloys = 12
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				fromfrom = { has_purge_type = { country = from type = purge_matrix }  }
+			}
+			from = {
+				add_resource = {
+					energy = 24
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				fromfrom = { has_purge_type = { country = from type = purge_processing }  }
+			}
+			from = {
+				add_resource = {
+					food = 12
+					minerals = 12
+				}
+			}
+		}
+	}
+}
+
 # Sets <planet_class>_surveyed country flag
 ship_event = {
 	id = action.24
@@ -7930,8 +8011,21 @@ event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		any_playable_country = {
+			num_unique_species > 1
+			any_owned_species = {
+				has_citizenship_type = {
+					type = citizenship_assimilation
+					country = prev
+				}
+			}
+		}
+	}
+
 	immediate = {
 		log = "action.64"
+		set_update_modifiers_batch = begin
         every_playable_country = {
             limit = {
                 num_unique_species > 1
@@ -8200,6 +8294,7 @@ event = {
                 planet_event = { id = action.65 }
             }
         }
+		set_update_modifiers_batch = end
     }
 }
 
@@ -8228,7 +8323,7 @@ planet_event = {
 				while = {
 					count = 3
 					limit = {
-						any_owned_species = {
+						any_owned_pop = {
 							has_citizenship_type = {
 								type = citizenship_assimilation
 								country = root.owner
@@ -8251,7 +8346,7 @@ planet_event = {
 				while = {
 					count = 6
 					limit = {
-						any_owned_species = {
+						any_owned_pop = {
 							has_citizenship_type = {
 								type = citizenship_assimilation
 								country = root.owner
@@ -8274,7 +8369,7 @@ planet_event = {
 				while = {
 					count = 12
 					limit = {
-						any_owned_species = {
+						any_owned_pop = {
 							has_citizenship_type = {
 								type = citizenship_assimilation
 								country = root.owner
@@ -8693,15 +8788,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
-		if = {
-			limit = {
-				has_ascension_perk = ap_become_the_crisis
-			}
-			country_event = { id = crisis.5016 }
-		}
-	}
-
 	option = {
 		name = EXCELLENT
 		custom_tooltip = bombed_to_tomb_world
@@ -8896,9 +8982,7 @@ planet_event = {
 event = {
 	id = action.90
 	hide_window = yes
-
 	is_triggered_only = yes
-
 	trigger = {
 		any_playable_country = {
 			any_owned_planet = {
@@ -8911,7 +8995,6 @@ event = {
 			}
 		}
 	}
-
 	immediate = {
 		every_system = {
 			limit = {
@@ -8928,7 +9011,7 @@ event = {
 						}
 					}
 					solar_system = {
-						NOT = {
+						NOR = {
 							any_fleet_in_system = {
 								exists = owner
 								owner = {
@@ -8936,6 +9019,18 @@ event = {
 									OR = {
 										is_hostile = prevprevprev.owner
 										is_at_war_with = prevprevprev.owner
+									}
+								}
+							}
+							any_system_planet = {
+								exists = owner
+								NOT = { is_same_value = prevprev }
+								owner = {
+									NOT = { is_same_value = prevprevprev.owner }
+									OR = {
+										is_country_type = default
+										is_country_type = fallen_empire
+										is_country_type = awakened_fallen_empire
 									}
 								}
 							}
@@ -8953,6 +9048,31 @@ event = {
 							is_country_type = default
 							is_country_type = fallen_empire
 							is_country_type = awakened_fallen_empire
+						}
+					}
+					solar_system = {
+						NOR = {
+							any_fleet_in_system = {
+								exists = owner
+								owner = {
+									NOT = { is_same_value = prevprevprev.owner }
+									OR = {
+										is_hostile = prevprevprev.owner
+										is_at_war_with = prevprevprev.owner
+									}
+								}
+							}
+							any_system_planet = {
+								exists = owner
+								owner = {
+									NOT = { is_same_value = prevprev.owner }
+									OR = {
+										is_country_type = default
+										is_country_type = fallen_empire
+										is_country_type = awakened_fallen_empire
+									}
+								}
+							}
 						}
 					}
 				}
@@ -11229,6 +11349,18 @@ country_event = {
 		else = {
 			set_origin = origin_default
 		}
+		if = {
+			limit = {
+				has_civic = civic_galactic_sovereign
+			}
+			force_remove_civic = civic_galactic_sovereign
+		}
+		if = {
+			limit = {
+				has_civic = civic_galactic_sovereign_megacorp
+			}
+			force_remove_civic = civic_galactic_sovereign_megacorp
+		}
 	}
 }
 
@@ -11401,6 +11533,32 @@ country_event = {
 					}
 				}
 			}
+		}
+	}
+}
+
+# on_country_released_in_war
+# Root = new country
+# From = country forcing the release
+# FromFrom = country they are released from
+# FromFromFrom = war
+country_event = {
+	id = action.320
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_civic = civic_galactic_sovereign
+			}
+			force_remove_civic = civic_galactic_sovereign
+		}
+		if = {
+			limit = {
+				has_civic = civic_galactic_sovereign_megacorp
+			}
+			force_remove_civic = civic_galactic_sovereign_megacorp
 		}
 	}
 }

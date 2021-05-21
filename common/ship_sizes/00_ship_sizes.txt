@@ -11,6 +11,8 @@
 # weapon damage mult
 # upkeep mult
 # for other modifiers, use ship_modifier = { }
+# use_shipnames_from = other_size # allows a ship size to use names from another size
+# text_icon = military_size_1 #military_size_1 is default, it will use GFX_text_<key> in fleet composition screens
 ####################
 
 ############
@@ -353,7 +355,7 @@ constructor = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	valid_target_aggressive_stance = no
-	auto_upgrade = yes
+	auto_upgrade = no
 
 	resources = {
 		category = ships
@@ -628,7 +630,7 @@ science = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	valid_target_aggressive_stance = no
-	auto_upgrade = yes
+	auto_upgrade = no
 
 	resources = {
 		category = ships

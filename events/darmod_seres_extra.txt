@@ -1,0 +1,208 @@
+namespace = seres_extra
+
+#0
+event = {
+	id = seres_extra.1
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		years_passed >= 200  #>= mayor que / <= menor que		
+		any_planet_within_border = { has_planet_flag = seres_extra_moon }
+		NOT = { has_global_flag = seres_extra_site_spawned }		
+		is_ai = no
+		is_at_war = no
+		is_subject = no	
+	}
+
+	immediate = {
+		set_global_flag = seres_extra_site_spawned	
+		country_event = { id = seres_extra.2 days = 1800 random = 3600 }
+	}
+}	
+
+country_event = {
+	id = seres_extra.2
+	title = "seres_extra.2.name"
+	desc = "seres_extra.2.desc"
+	picture = GFX_evt_luna
+	show_sound = event_power_down
+	location = event_target:seres_extra_moon
+	
+	is_triggered_only = yes
+
+	
+	immediate = {
+		set_global_flag = seres_extra_site_spawned
+		random_planet_within_border = {
+			limit = {
+				has_planet_flag = seres_extra_moon
+			}
+			save_event_target_as = seres_extra_moon
+		}
+	}
+
+	option = {
+		name = seres_extra.2.a
+		event_target:seres_extra_moon = {
+			create_archaeological_site = DARH_seres_site_extra_1
+		}
+	}
+}	
+
+#1
+fleet_event = {
+	id = seres_extra.3
+	title = "seres_extra.3.name"
+	desc = "seres_extra.3.desc"
+	picture = GFX_evt_extra_portal
+	show_sound = event_scanner
+	
+	archaeology = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = seres_extra.3.a
+		owner = {
+			add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier5researchreward
+			min = @tier5researchmin
+			max = @tier5researchmax
+			}
+		}
+	}
+}
+
+#2
+fleet_event = {
+	id = seres_extra.4
+	title = "seres_extra.4.name"
+	desc = "seres_extra.4.desc"
+	picture = GFX_evt_extra_acceso
+	show_sound = event_big_door_opening
+	
+	archaeology = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = seres_extra.4.a
+		owner = {		
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier5researchreward
+				min = @tier5researchmin
+				max = @tier5researchmax
+			}
+		}	
+	}
+}
+
+#3
+fleet_event = {
+	id = seres_extra.5
+	title = "seres_extra.5.name"
+	desc = "seres_extra.5.desc"
+	picture = GFX_evt_extra_biblioteca
+	show_sound = event_ghost_town
+	
+	archaeology = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = seres_extra.5.a
+		owner = {			
+			add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier5researchreward
+			min = @tier5researchmin
+			max = @tier5researchmax
+			}
+		}	
+	}
+}
+
+#4
+fleet_event = {
+	id = seres_extra.6
+	title = "seres_extra.6.name"
+	desc = "seres_extra.6.desc"
+	picture = GFX_evt_extra_aura
+	show_sound = event_finding_loot
+	
+	archaeology = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = seres_extra.6.a
+		owner = {		
+			add_research_option = tech_aura_shield_crisis
+		}
+	}
+}
+
+#5
+fleet_event = {
+	id = seres_extra.7
+	title = "seres_extra.7.name"
+	desc = "seres_extra.7.desc"
+	picture = GFX_evt_extra_matrix
+	show_sound = event_mystic_reveal
+	
+	archaeology = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = seres_extra.7.a
+		owner = {		
+			add_research_option = tech_wormhole_relays_4
+		}
+		hidden_effect = {
+			fleet = {
+				kill_leader = { type = scientist show_notification = no}
+			}
+			set_disabled = no
+		}
+	}
+}

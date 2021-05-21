@@ -2,27 +2,33 @@
 @cost2 = 60
 @cost3 = 120
 @cost4 = 180
+@cost5 = 200
 
 @power1 = -20
 @power2 = -40
 @power3 = -60
 @power4 = -80
+@power5 = -100
 
 @hyperlane1 = 1
 @hyperlane2 = 2
 @hyperlane3 = 3
+@hyperlane4 = 4
 
 @hit2 = 5
 @hit3 = 10
 @hit4 = 15
+@hit5 = 20
 
 @acr2 = 5
 @acr3 = 10
 @acr4 = 15
+@acr5 = 20
 
 @eva2 = 0.15
 @eva3 = 0.20
 @eva4 = 0.25
+@eva5 = 0.30
 
 ### Wormhole
 
@@ -133,5 +139,41 @@ utility_component_template = {
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "tech_wormhole_relays_3" }
+	component_set = "ftl_components"
+}
+
+utility_component_template = {
+	key = "MOD_RELAY_4"
+	size = medium
+	icon = "GFX_ship_part_wormhole_4"
+	icon_frame = 1
+	power = @power5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost5
+		}
+
+		upkeep = {
+			sr_zro = 0.1
+			sr_dark_matter = 0.02			
+		}
+	}
+
+	hyperlane_range = @hyperlane4
+	
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_ftl_jumpdrive_range_mult = 1
+		ship_evasion_mult = @eva5
+		ship_accuracy_add = @acr5
+		ship_tracking_add = @hit5
+		ship_windup_mult = -1
+		ship_interstellar_speed_mult = 1
+	}
+
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	prerequisites = { "tech_wormhole_relays_4" }
 	component_set = "ftl_components"
 }

@@ -172,3 +172,31 @@
   mod_seres_homeworld:0 "Capital Seres de Luz"
   mod_seres_homeworld_desc:0 "Este mausoleo planetario fue antaño el flamante centro administrativo de esta gran civilización. Ya no alberga vida, pero las ruinas de la ciudad que antes cubría toda su superficie se pueden encontrar por todas partes."
   
+  ############################## Extra ###################################
+  
+  seres_extra.2.name:0 "Orbita variable"
+  seres_extra.2.desc:0 "Desde la sala de control de sistema en nuestra base estelar, advierten que han detectado pequeñas variaciones inestables en la orbita en Nibiru y quizás tengan alguna relación con su luna, así que habrá que investigar mas de cerca esta anomalía.\n\nSe ha enviado un equipo de astroquímicos para sondear la superficie y un equipo de geólogos experimentados para estudiar su composición."
+  seres_extra.2.a:0 "Investigar"
+  
+  DARH_seres_site_extra_1:0 "Luna estelar"
+  DARH_seres_site_extra_1_desc:0 "Nuestros científicos estudian la posibilidad que la luna §H[From.Planet.GetName]§! de Nibiru... aparentemente natural, no es tal...\n\nLa luna de alguna forma fue trasladada a este lugar con algún propósito desconocido ya que al explorar unas instalaciones subterráneas en Nibiru, nuestros científicos encontraron información para trasladar cuerpos celestes por el espacio además de un portal que debería conectar la luna con el planeta.\n\nSin embargo los escaneos gravimétricos de la luna no muestran signos inusuales a un satélite natural común.\n\nNuestros científicos afirman estar muy cerca de descubrir este enigma y acceder a este misterioso portal."
+  
+  seres_extra.3.name:0 "Portal"
+  seres_extra.3.desc:0 "Después de un tiempo de estudio nuestros científicos lograron activar el portal y la sospecha como se esperaba fue confirmada.\n\nLa luna §H[From.Planet.GetName]§! fue ocupada por los seres que vivían aquí como un gran laboratorio experimental súper secreto ya que desde la superficie de la luna es imposible rastrear y acceder.\n\nEl portal ya esta estable y se ha programado un grupo de expedición para investigar el lugar."
+  seres_extra.3.a:0 "Fascinante"
+  
+  seres_extra.4.name:0 "Laboratorio experimental"
+  seres_extra.4.desc:0 "La luna §H[From.Planet.GetName]§! fue ocupada por los ancestros como un gran laboratorio experimental avanzado ya que se detecta mucho material desconocido en la composición que soportan las estructuras interiores que no dejan de ser increíbles a nivel arquitectónico.\n\nDespués de recorrer grandes extensiones de laberintos, bodegas y salas de investigación se ha llegado al §Hlaboratorio central§! que sin duda estará llena de nuevos descubrimientos tecnológicos que podremos usar en nuestras naves de combate ya que los archivos descubiertos hasta ahora detallan sofisticada ingeniería militar."
+  seres_extra.4.a:0 "Muy bien"
+  
+  seres_extra.5.name:0 "Acceso a las instalaciones"
+  seres_extra.5.desc:0 "Al acceder al laboratorio nuestro equipo de exploración encontró una gran §Hbiblioteca§!, en donde había mucha información de tipo social.\n\nSu sociedad era colectiva y se evitaba el contacto personal, en gran parte todo se realizaba virtualmente, los trabajos que requerían manufactura lo hacían uno o varios androides manejados por un individuo a nivel de implantes §Hbiocodex§!.\n\nNo existía el dinero sino la capacidad de superarse, es decir, que hasta el menos inteligente tenia algo que aportar a la sociedad colectiva, directa o indirectamente alguna vez en la vida... sin duda habían muchos recursos y algo más."
+  seres_extra.5.a:0 "Lógico"
+  
+  seres_extra.6.name:0 "Sección de armamento"
+  seres_extra.6.desc:0 "Nuestros ingenieros quedaron fascinados con la tecnología encontrada en las instalaciones.\n\nSe ha encontrado un §Hfluctuador de aura§!, que puede ser colocado en nuestras naves acorazadas §HTitán§! y así contrarrestar cualquier crisis galáctica con nuestra flota.\n\nSi bien esta tecnología estaba en desarrollo ahora podemos terminar y mejorar este proyecto con algunos ajustes de diseño y rendimiento gracias a los expedientes encontrados en las computadoras §Hquantum plex§! del lugar."
+  seres_extra.6.a:0 "Excelente"
+  
+  seres_extra.7.name:0 "Salto cuántico"
+  seres_extra.7.desc:0 "En una sección apartada del laboratorio se encontró una sala aislada oscura que al entrar nuestro científico activo el sistema interior que reacciona a estímulos ciber-biologicos y fueron implantados en su cerebro vía aerosol miles de ship nano moleculares.\n\nEnseguida nuestro cientifico §Y[Leader.GetName]§! comenzó a entender nuevas leyes de física y a entenderse con la computadora central de la estación.\n\nLuego de un tiempo nuestro científico §Y[Leader.GetName]§! nos advierte que no volverá y que es su deseo seguir conectado a la red y seguir aprendiendo leyes universales desconocidas e inimaginables hasta ahora... En sus escritos que ha dejado hay suficiente material de investigación de saltos de agujeros de gusanos artificiales que se proyectaban a gran distancia para que podamos usar en nuestras naves."
+  seres_extra.7.a:0 "Impresionante" 

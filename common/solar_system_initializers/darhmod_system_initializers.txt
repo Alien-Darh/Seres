@@ -15,7 +15,7 @@ darhmod_seres_home_system = {
 	flags = { guardians_wraith_system guardian hostile_system }
 	flags = { darhmod_seres_home_system }
 	flags = { hostile_system amoeba_home_system }
-
+	
 	prevent_anomalies = yes
 
 	planet = {
@@ -89,7 +89,7 @@ darhmod_seres_home_system = {
 		size = 25
 		deposit_blockers = none
 		modifiers = none
-		has_ring = yes
+		has_ring = yes	
 
 		change_orbit = @base_moon_distance
 
@@ -107,8 +107,9 @@ darhmod_seres_home_system = {
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 10
 			size = 12
+			flags = { seres_extra_moon }			
 	
-			init_effect = {
+			init_effect = {			
 				clear_deposits = yes				
 				prevent_anomaly = yes
 			}

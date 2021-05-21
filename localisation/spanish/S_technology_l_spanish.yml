@@ -88,9 +88,14 @@
   TITAN_BEHAVIOR_DESC:0 "§HArtilleria táctica:§! El Titan se queda detrás de la formación de la flota para disparar sus armas principales al objetivo (§Y200 pársec§!)" 
   
   ########### Tecnología Ancestral ###########
+
+  tech_seres_codex:0 "Codificación Ancestral"
+  tech_seres_codex_desc:0 "Acceso a los códigos tácticos nivel tipo: Galaxia de §YSeres de luz§! encontrados en las bibliotecas de Nibiru.\n\nEsto impedirá que los imperios caídos transiten dentro de nuestras fronteras sin nuestro permiso obteniendo pleno control de nuestras fronteras a posibles amenazas..."
+  TECH_SERES_CODEX_TITLE:0 "Codificación ancestral"
+  TECH_SERES_CODEX_DESC:0 "Se ha encontrado una poderosa tecnología de Codificación Ancestral que permite tener el control de acceso a Imperios despertados."
   
   tech_building_seres:0 "Arquitectura Seres de Luz"
-  tech_building_seres_desc:0 "Acceso a los planos y especificaciones de los edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru.\n\nTomará un tiempo a nuestros arquitectos e ingenieros construir estos edificios pero serán esenciales para nuestras futuras colonias."
+  tech_building_seres_desc:0 "Acceso a los planos y especificaciones técnicas de los edificios tácticos de §YSeres de luz§! desde las bibliotecas de Nibiru.\n\nTomará un tiempo a nuestros arquitectos e ingenieros construir estos edificios pero serán esenciales para nuestras futuras colonias."
   TECH_BUILDING_SERES_TITLE:0 "Edificios Seres de Luz"
   TECH_BUILDING_SERES_DESC:0 "Acceso a los planos y especificaciones de los edificios tácticos y técnicos de §YSeres de luz§! desde las bibliotecas de Nibiru.\n\nTomará un tiempo a nuestros arquitectos e ingenieros construir estos edificios pero serán esenciales para nuestras futuras colonias."
   
@@ -188,3 +193,6 @@
   tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
   tech_reactor_boosters_5:0 "Impulsores de reactor V"
   tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+  
+  requires_ap_galactic_contender:1 "$TRIGGER_FAIL$Requiere la ventaja de ascenso §Y$ap_galactic_contender$§!."
+  requires_technology_seres_codex:1 "$TRIGGER_FAIL$Requiere la tecnología de Codificación Ancestral §Y$tech_seres_codex$§!."
