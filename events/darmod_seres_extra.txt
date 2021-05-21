@@ -4,7 +4,7 @@ namespace = seres_extra
 event = {
 	id = seres_extra.1
 	hide_window = yes
-	
+
 	is_triggered_only = yes
 	
 	trigger = {
