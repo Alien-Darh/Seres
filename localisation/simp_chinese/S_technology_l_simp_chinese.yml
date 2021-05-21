@@ -53,15 +53,15 @@
   TITAN_BEHAVIOR_DESC:0 "§HArtillería táctica:§! The Titan stays behind the fleet formation to fire its primary weapons at the target (§Y200 pársec§!)"
   COMBAT_COMPUTER_TITAN:0 "Titan combat computer" 
  
-  tech_arc_emitter_3:0 "Phaser issuers"
+  tech_arc_emitter_3:0 "Fasher issuers"
   tech_arc_emitter_3_desc:0 "Powerful weapons throwing an energy fasser arc to the objectives, capable of ignoring in part shield and shields."
   ARC_EMITTER_3:0 "$tech_arc_emitter_3$"
-  ARC_EMITTER_3_DESC:0 "Phaser arch"
+  ARC_EMITTER_3_DESC:0 "Fasher arch"
   
-  tech_arc_emitter_4:0 "Concentrated Phaser Estabers"
-  tech_arc_emitter_4_desc:0 "These improved emitters have higher focus lenses, which involves a more powerful Phaser energy discharge."
+  tech_arc_emitter_4:0 "Concentrated fasher estabers"
+  tech_arc_emitter_4_desc:0 "These improved emitters have higher focus lenses, which implies a more powerful phaser power download."
   ARC_EMITTER_4:0 "$tech_arc_emitter_4$"
-  ARC_EMITTER_4_DESC:0 "Ultra concentrated Phaser bow"
+  ARC_EMITTER_4_DESC:0 "Ultra concentrated fasher bow"
 
   ################ 
 
@@ -88,6 +88,11 @@
   TITAN_BEHAVIOR_DESC:0 "§Hartillería táctica:§! The Titan stays behind the fleet formation to fire its primary weapons at the target (§Y200 pársec§!)"
 
   ########### Tecnología Ancestral ###########
+
+  tech_seres_codex:0 "Ancestral coding"
+  tech_seres_codex_desc:0 "Access to tactical codes Level Type: Galaxy §YBeings of light§! Found in Nibiru libraries.\n\nThis will prevent the fallen empires from transiting within our borders without our permission, obtaining full control of our borders to possible threats..."
+  TECH_SERES_CODEX_TITLE:0 "Ancestral coding"
+  TECH_SERES_CODEX_DESC:0 "A powerful ancestral coding technology has been found that allows control of access to awakening empires."
 
   tech_building_seres:0 "Architecture Beings of Light"
   tech_building_seres_desc:0 "Access to the plans and specifications of the tactical and technical buildings of §YSeres de luz§! from the Nibiru Libraries.\n\nIt will take a while for our architects and engineers to construct these buildings, but they will be essential to our future colonies."
@@ -188,3 +193,6 @@
   tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
   tech_reactor_boosters_5:0 "Reactor impellers V"
   tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+
+  requires_ap_galactic_contender:1 "$TRIGGER_FAIL$Requires the advantage of promotion §Y$ap_galactic_contender$§!."
+  requires_technology_seres_codex:1 "$TRIGGER_FAIL$Requires Ancestral Coding Technology §Y$tech_seres_codex$§!."

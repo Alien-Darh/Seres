@@ -193,6 +193,6 @@
   tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
   tech_reactor_boosters_5:0 "Impulsores de reactor V"
   tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
-  
+
   requires_ap_galactic_contender:1 "$TRIGGER_FAIL$Requiere la ventaja de ascenso §Y$ap_galactic_contender$§!."
   requires_technology_seres_codex:1 "$TRIGGER_FAIL$Requiere la tecnología de Codificación Ancestral §Y$tech_seres_codex$§!."

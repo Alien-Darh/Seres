@@ -171,3 +171,32 @@
   
   mod_seres_homeworld:0 "Capital beings of light"
   mod_seres_homeworld_desc:0 "This planetary mausoleum was once the brand new administrative center of this great civilization. It no longer houses life, but the ruins of the city that previously covered all its surface can be found everywhere."
+  
+  ############################## Extra ###################################
+  
+  seres_extra.2.name:0 "Variable orbit"
+  seres_extra.2.desc:0 "From the system control room on our stellar base, they warn that they have detected small unstable variations in the Orbit in Nibiru and may have some relationship with their moon, so it will have to investigate more closely this anomaly.\n\nA team of astrochemicals has been sent to probe the surface and team of experienced geologists to study their composition."
+  seres_extra.2.a:0 "Investigate"
+  
+  DARH_seres_site_extra_1:0 "Stelar moon"
+  DARH_seres_site_extra_1_desc:0 "Our scientists study the possibility that the moon §h[from.planet.getname]§! of Nibiru... Apparently natural, it is not such...\n\nThe moon was somehow moved to this place with some unknown purpose since by exploring underground facilities in Nibiru, our scientists found information to move celestial bodies by space as well as a portal that should connect the moon with the planet.\n\nHowever, the gravimetric scans of the Moon do not show unusual signs to a common natural satellite.\n\nOur scientists affirm being very close to discovering this enigma and access this mysterious portal."
+  
+  seres_extra.3.name:0 "Portal"
+  seres_extra.3.desc:0 "After a study time, our scientists managed to activate the portal and suspicion as expected was confirmed.\n\nThe moon §H[From.Planet.GetName]§! It was occupied by the beings who lived here as a great super secret experimental laboratory since from the surface of the moon it is impossible to trace and access.\n\nThe portal is already stable and an expedition group has been scheduled to investigate the place."
+  seres_extra.3.a:0 "Fascinating"
+  
+  seres_extra.4.name:0 "Experimental laboratory"
+  seres_extra.4.desc:0 "The moon §H[From.Planet.GetName]§! It was occupied by the ancestors as a great advanced experimental laboratory since much unknown material is detected in the composition that support the interior structures that do not cease to be incredible at an architectural level.\n\nAfter traveling large extensions of labyrinths, wineries and research rooms has reached §HCentral laboratory§! That will undoubtedly be full of new technological discoveries that we can use in our combat ships since the files discovered so far detail sophisticated military engineering."
+  seres_extra.4.a:0 "Very well"
+  
+  seres_extra.5.name:0 "Access to the facilities"
+  seres_extra.5.desc:0 "By accessing the laboratory our exploration team found a great §Hlibrary§!, Where there was a lot of social information.\n\nHis society was collective and personal contact was avoided, largely everything was made virtually, the works that required manufacturing did one or more androids managed by an individual level of implants §Hbiocodex§!.\n\nThere was no money but the ability to overcome, that is, that even the least intelligent I had something to contribute to collective society, directly or indirectly ever in life... there were no doubt many resources and something else."
+  seres_extra.5.a:0 "Logical"
+  
+  seres_extra.6.name:0 "Armament section"
+  seres_extra.6.desc:0 "Our engineers were fascinated with the technology found in the facilities.\n\nA §Hfluctuador of aura§!, that can be placed in our battleships §HTitan§! And thus counteract any galactic crisis with our fleet.\n\nWhile this technology was in development now we can end up and improve this project with some design and performance settings thanks to the records found on computers §Hquantum plex§!of the place."
+  seres_extra.6.a:0 "Excellent"
+  
+  seres_extra.7.name:0 "Quantum jump."
+  seres_extra.7.desc:0 "In a secluded section of the laboratory, a dark isolated room was found that, when entering our active scientist the inner system that reacts to cyber biological stimuli and were implanted in their brain via aerosol thousands of molecular ship.\n\nImmediately our scientist §Y[Leader.GetName]§! He began to understand new physics laws and understand with the station's central computer.\n\nAfter a while our scientist §Y[Leader.GetName]§! He warns us that he will not return and that it is his desire to continue connected to the network and continue learning universal and unimaginable universal laws until now... In his writings he has left, there is enough research material for hoisting of artificial worms that were projected at a great distance so that we can use in our ships."
+  seres_extra.7.a:0 "Impressive" 
